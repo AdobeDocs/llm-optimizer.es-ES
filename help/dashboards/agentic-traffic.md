@@ -1,9 +1,9 @@
 ---
 title: Tráfico de agente
-description: Esta es la descripción general del artículo.
-source-git-commit: f92ca3eaa81d05135c65df60267280314c6e2d6f
+description: Aprenda a utilizar el tablero Tráfico agéntico para ver cómo los agentes de IA interactúan con el sitio.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '969'
 ht-degree: 0%
 
 ---

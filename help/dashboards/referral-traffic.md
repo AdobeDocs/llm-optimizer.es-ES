@@ -1,9 +1,9 @@
 ---
 title: Tráfico de referencia
-description: Esta es la descripción general del artículo.
-source-git-commit: c83b4929a82331534654fcfdccd41d91eefe6d92
+description: Aprenda a utilizar el panel Tráfico de referencia para ver cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---

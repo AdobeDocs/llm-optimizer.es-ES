@@ -1,9 +1,9 @@
 ---
 title: Oportunidades de optimización
-description: Esta es la descripción general del artículo.
-source-git-commit: ea8434daef2402f0dc9ac2d4f6060c38c9137fe6
+description: Aprenda a utilizar el panel de oportunidades para detectar automáticamente cómo se puede mejorar el sitio con el fin de aumentar la visibilidad de la marca.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
