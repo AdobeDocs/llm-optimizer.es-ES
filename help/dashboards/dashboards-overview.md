@@ -1,7 +1,7 @@
 ---
 title: Información general de paneles
 description: Esta es la descripción general del artículo.
-source-git-commit: 746a5d50d39a0681d5a3ff8c050bef0f010b4e55
+source-git-commit: 6b740ad00d9767598b6ec66f64e8d045b607dcd4
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 5%
@@ -19,43 +19,43 @@ Las vistas clave incluyen Presencia de marca, Tráfico de agente y referencia, I
 
 * ./brand-presence.md
   {title= Brand presence dashboard}
-  {image= ../assets/overview/brand-presence-card.png}
+  {image= /help/assets/overview/brand-presence-card.png}
   {description= Tracks how your brand appears across LLM search platforms, including sentiment analysis and competitor benchmarking.}
   {target=_blank}
   {cta=Learn more}
 * ./agentic-traffic.md
   {title= Agentic traffic dashboard}
   {description= Surfaces traffic from LLMs that traditional analytics miss, helping you connect AI-assisted discovery to engagement and revenue.}
-  {image= ../assets/overview/agentic-traffic-card.png}
+  {image= /help/assets/overview/agentic-traffic-card.png}
   {target=_blank}
   {cta=Learn more}
 * ./referral-traffic.md
   {title= Referral traffic dashboard}
-  {image= ../assets/overview/referral-traffic-card.png}
+  {image= /help/assets/overview/referral-traffic-card.png}
   {description= Measures human visits that originate from AI-generated citations that let you discover actual AI user engagement}
   {target=_blank}
   {cta=Learn more}
 * ./collaboration.md
   {title= Collaboration dashboard}
-  {image= ../assets/overview/collaboration-card.png}
+  {image= /help/assets/overview/collaboration-card.png}
   {description= Lets you enable cross-functional teamwork by allowing you to invite colleagues into a shared workspace.}
   {target=_blank}
   {cta=Learn more}
 * ./opportunities.md
   {title= Opportunities dashboard}
-  {image= ../assets/overview/opportunities-card.png}
+  {image= /help/assets/overview/opportunities-card.png}
   {description= Surfaces and prioritizes actionable insights that improve brand visibility and citation performance across AI-powered search platforms}
   {target=_blank}
   {cta=Learn more}
 * ./url-inspector.md
   {title= URL inspector dashboard}
-  {image= ../assets/overview/url-inspector-card.png}
+  {image= /help/assets/overview/url-inspector-card.png}
   {description= Gives you visibility into how your owned URLs are performing in AI-driven search environments.}
   {target=_blank}
   {cta=Learn more}
 * ./customer-configuration.md
   {title= Customer Configuration dashboard}
-  {image= ../assets/overview/customer-configuration-card.png}
+  {image= /help/assets/overview/customer-configuration-card.png}
   {description= Lets organizations control how the Adobe LLM Optimizer operates for their specific needs.}
   {target=_blank}
   {cta=Learn more}
@@ -68,7 +68,7 @@ Las vistas clave incluyen Presencia de marca, Tráfico de agente y referencia, I
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./brand-presence.md" title="Panel de presencia de marca" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="../assets/overview/brand-presence-card.png" alt="Panel de presencia de marca"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Panel de presencia de marca"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -91,7 +91,7 @@ Las vistas clave incluyen Presencia de marca, Tráfico de agente y referencia, I
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./agentic-traffic.md" title="Panel de tráfico del agente" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="../assets/overview/agentic-traffic-card.png" alt="Panel de tráfico del agente"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/agentic-traffic-card.png" alt="Panel de tráfico del agente"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -114,7 +114,7 @@ Las vistas clave incluyen Presencia de marca, Tráfico de agente y referencia, I
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./referral-traffic.md" title="Tablero de tráfico de referencia" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="../assets/overview/referral-traffic-card.png" alt="Tablero de tráfico de referencia"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="Tablero de tráfico de referencia"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -137,7 +137,7 @@ Las vistas clave incluyen Presencia de marca, Tráfico de agente y referencia, I
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./collaboration.md" title="Panel de Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="../assets/overview/collaboration-card.png" alt="Panel de Collaboration"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/collaboration-card.png" alt="Panel de Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -160,7 +160,7 @@ Las vistas clave incluyen Presencia de marca, Tráfico de agente y referencia, I
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./opportunities.md" title="Panel de oportunidades" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="../assets/overview/opportunities-card.png" alt="Panel de oportunidades"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/opportunities-card.png" alt="Panel de oportunidades"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -183,7 +183,7 @@ Las vistas clave incluyen Presencia de marca, Tráfico de agente y referencia, I
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./url-inspector.md" title="panel del inspector de URL" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="../assets/overview/url-inspector-card.png" alt="panel del inspector de URL"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/url-inspector-card.png" alt="panel del inspector de URL"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -206,7 +206,7 @@ Las vistas clave incluyen Presencia de marca, Tráfico de agente y referencia, I
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./customer-configuration.md" title="Panel de configuración del cliente" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="../assets/overview/customer-configuration-card.png" alt="Panel de configuración del cliente"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Panel de configuración del cliente"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
