@@ -1,9 +1,9 @@
 ---
 title: Oportunidades de optimización
 description: Esta es la descripción general del artículo.
-source-git-commit: 8c38027e46b53d85776fffe17597883c742235d6
+source-git-commit: ea8434daef2402f0dc9ac2d4f6060c38c9137fe6
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ A continuación se muestra una tabla de las oportunidades que admite actualmente
 
 ### Recuperar oportunidad de visibilidad de contenido {#recover-contet}
 
-Como se ha indicado anteriormente, la oportunidad de visibilidad del contenido marca las páginas en las que los agentes de IA pierden contenido clave debido al procesamiento en el lado del cliente. Para cada página identificada, muestra exactamente qué contenido falta en la vista del agente de IA, lo que le ayuda a identificar lagunas de visibilidad. También es compatible con una capacidad de procesamiento previo basada en Edge que puede servir más contenido de HTML al tráfico real sin requerir cambios en el Sistema de administración de contenido (CMS). Tenga en cuenta que esta funcionalidad se encuentra actualmente en **Acceso anticipado** y también requiere la configuración del equipo de LLMO para habilitar la entrega de contenido optimizado.
+Como se ha indicado anteriormente, la oportunidad de visibilidad del contenido marca las páginas en las que los agentes de IA pierden contenido clave debido al procesamiento en el lado del cliente. Para cada página identificada, muestra exactamente qué contenido falta en la vista del agente de IA, lo que le ayuda a identificar lagunas de visibilidad. También es compatible con una capacidad de procesamiento previo basada en Edge que puede servir más contenido de HTML al tráfico real sin requerir cambios en el Sistema de administración de contenido (CMS). Esta funcionalidad se encuentra actualmente en Acceso anticipado y requiere la configuración del equipo de LLMO. Póngase en contacto con `llmo-at-edge@adobe.com` para activar la oportunidad de visibilidad del contenido.
 
 ### Herramientas adicionales
 
