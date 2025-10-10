@@ -21,7 +21,7 @@ El proceso de incorporación comienza con la incorporación de su dominio. El pr
 
 ### Clientes de AEM Cloud
 
-Los clientes de AEM Cloud (servicio Cloud Service/Managed Services/Edge Delivery) verán la opción de probar LLM Optimizer en la tarjeta de anuncio de productos de [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Los clientes de AEM Cloud (servicio Cloud Service/Managed Services/Edge Delivery) verán la opción de probar LLM Optimizer en la tarjeta de anuncio de productos de [Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Los mensajes añadidos recientemente no aparecerán en la presencia de marca hasta que se complete el procesamiento. Los clientes de AEM Cloud (Cloud Service, Managed Services/servicio de Edge Delivery) pueden utilizar la versión de prueba gratuita de LLM Optimizer. El uso de más de 200 peticiones de datos requiere un contrato de licencia independiente. El acceso se proporciona &quot;tal cual&quot; y &quot;según esté disponible&quot;, y Adobe puede modificarlo, limitarlo o eliminarlo en cualquier momento. Póngase en contacto con el [representante de la cuenta] para obtener más información.
