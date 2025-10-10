@@ -1,9 +1,9 @@
 ---
 title: Configuración del cliente
-description: Esta es la descripción general del artículo.
-source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
+description: Utilice la configuración del cliente para definir cómo se supervisará y analizará su marca dentro de la plataforma del optimizador LLM.
+source-git-commit: 7d01b35cb2153e020f0b64e493aad263fb9bb09f
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '736'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Configuración del cliente
 
-La configuración del cliente es el lugar donde se define cómo se supervisará y analizará la marca dentro de la plataforma. Puede personalizar categorías (como unidades de negocio o líneas de productos), rastrear competidores y agregar alias de mención de marca para capturar todas las variaciones de su marca en los mensajes. Esta configuración garantiza que la plataforma adapte las perspectivas a su contexto empresarial, lo que permite una visibilidad precisa, el tráfico y el análisis de oportunidades.
+Configuración del cliente es donde se define cómo se supervisará y analizará la marca dentro de la plataforma del optimizador de LLM. Puede personalizar categorías (como unidades de negocio o líneas de productos), rastrear competidores y agregar alias de mención de marca para capturar todas las variaciones de su marca en los mensajes. Esta configuración garantiza que la plataforma adapte las perspectivas a su contexto empresarial, lo que permite una visibilidad precisa, el tráfico y el análisis de oportunidades.
 
 ![Panel de configuración del cliente](/help/dashboards/assets/customer-config.png)
 
