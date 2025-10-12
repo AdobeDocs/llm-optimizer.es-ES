@@ -1,9 +1,9 @@
 ---
 title: Tráfico de agente
 description: Aprenda a utilizar el tablero Tráfico agéntico para ver cómo los agentes de IA interactúan con el sitio.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,26 @@ Esta página detalla lo siguiente:
 * [Movimientos superior e inferior](#top-bottom-movers)
 * [Análisis del rendimiento del agente de usuario y la URL](#user-url-performance)
 
-## Configuración de CDN {#cdn-setup}
+## Reenvío de registros de CDN {#cdn-setup}
 
-En el primer inicio de sesión, el tablero Tráfico agéntico está en blanco. Para ver interacciones reales, debe configurar **reenvío de registros de CDN**. **TBD señala a la configuración de CDN en inicio rápido/incorporación?**
+Sin **reenvío de registro de CDN**, el tablero Tráfico de agente está en blanco. Para ver interacciones reales, debe configurar **reenvío de registros de CDN**.  Al iniciar sesión por primera vez, verá un mensaje como se muestra en la siguiente imagen.
 
-![Configuración de CDN](/help/dashboards/assets/ag-log-forward.png)
+![Configuración de CDN](/help/dashboards/assets/ag-log-forward1.png)
+
+Seleccione **Ir a la configuración** y navegará automáticamente a la pestaña **Configuración de CDN** del [panel de configuración del cliente](/help/dashboards/customer-configuration.md).
+
+![Configuración de CDN integrada](/help/dashboards/assets/ag-log-forward2.png)
+
+En esta pestaña, seleccione **CDN integrada**. Y se muestra la ventana del proveedor de CDN.
+
+![Proveedor de CDN](/help/dashboards/assets/ag-log-forward3.png)
+
+En la ventana **Incorporar proveedor de CDN**:
 
 1. Seleccione su proveedor de CDN (por ejemplo, Akamai, Fastly administrado por Adobe, Fastly, AWS Cloudfront, CDN de Azure, Cloudflare u otro).
-2. Introduzca un correo electrónico de contacto principal.
-3. Haga clic en **Solicitar activación** para habilitar el reenvío de registros.
+2. Haga clic en **Incorporar** para habilitar el reenvío de registros.
+
+Si seleccionas **Otro**, tendrás que ponerte en contacto con Adobe para obtener ayuda.
 
 Una vez activados, los registros se incorporan y el tablero se rellena con métricas como interacciones totales del agente, tasa de éxito, visitas por mercado, análisis de agentes de usuario y rendimiento a nivel de URL.
 
@@ -39,11 +50,11 @@ Una vez activados, los registros se incorporan y el tablero se rellena con métr
 En la parte superior de la página, puede aplicar filtros para restringir la vista. Los filtros que elija afectarán **todas** las secciones presentes en el panel. Puede personalizar lo siguiente:
 
 * **Intervalo de fecha**: seleccione el lapso de tiempo para los datos mostrados. Por ejemplo, las últimas 4 semanas. También tiene la opción de personalizar el período de tiempo seleccionando la opción **Semanas personalizadas**.
-* **Categoría**: filtre los resultados mostrados por categorías predefinidas. También puede agregar categorías personalizadas a este campo (**SR**-how?).
+* **Categoría**: filtre los resultados mostrados por categorías predefinidas o personalizadas.
 * **Plataforma**: elige qué motor de IA analizar.
 * **Tipo de agente**: filtre por el tipo de agente de IA que interactuó con el sitio. Puede filtrar entre rastreadores, bots de chat o todos los agentes.
-* **Tasa de éxito** - Filtre por la calidad de la interacción (alta, media o baja). Esta métrica representa el porcentaje de solicitudes HTTP correctas, incluidas las respuestas correctas directas y las redirecciones.
-* **Tipo de contenido** - Filtre por tipo de contenido, ya sea HTML o txt.
+* **Tasa de éxito** - Filtre por la calidad de la interacción (alta, media o baja). Esta métrica representa el porcentaje de solicitudes HTTP correctas, incluidas las respuestas correctas directas (códigos de estado 2xx) y las redirecciones (códigos de estado 3xx).
+* **Tipo de contenido**: vea la interacción auténtica para diferentes tipos de contenido, como HTML, PDF, etc.
 
 Después de seleccionar el filtro deseado, haga clic en **Aplicar filtros** para aplicar la selección al panel.
 
@@ -69,10 +80,9 @@ Utilice el gráfico Tendencias de tráfico agente para realizar un seguimiento d
 
 ## Movimientos superior e inferior {#top-bottom-movers}
 
-Estas dos métricas ordenan las direcciones URL de la siguiente manera:
+La vista Desplazamientos superiores e inferiores resalta las direcciones URL con los mayores cambios de una semana a otra en el tráfico auténtico: visitas o visitas de sistemas de IA que acceden a su contenido. Los Visitantes principales muestran las páginas que ganan visibilidad o participación, mientras que los Visitantes inferiores muestran las URL con las caídas más pronunciadas. Esto le ayuda a identificar rápidamente qué contenido tiende al alza, qué contenido puede necesitar atención y dónde se están cambiando los patrones de detección impulsados por IA.
 
-* **Principales visitantes**: Las direcciones URL con el mayor aumento en el tráfico auténtico de la semana más antigua a la más reciente.
-* **Modificadores inferiores**: URL con la mayor disminución del tráfico auténtico de la semana más antigua a la más reciente.
+![Movimientos superiores e inferiores](/help/dashboards/assets/movers.png)
 
 ## Análisis del rendimiento del agente de usuario y la URL {#user-url-performance}
 
@@ -104,6 +114,12 @@ La tabla Análisis de Rendimiento de URL muestra una vista detallada de las dire
 * **Tasa de éxito**: porcentaje de solicitudes HTTP correctas, incluidas las respuestas correctas directas y las redirecciones.
 * **Categoría**: La categoría que más se asemeja al contenido de su página.
 
-La tabla de rendimiento de URL tiene un campo de búsqueda para acceder rápidamente a las URL. Además, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir las perspectivas con su equipo o incluir la tabla en los informes ejecutivos.
+La tabla de rendimiento de URL tiene un campo de búsqueda para acceder rápidamente a las URL. También puede ver detalles adicionales de cada URL haciendo clic en el icono de información al final de cada fila.
+
+![Detalles de URL](/help/dashboards/assets/details.png)
+
+La vista Detalles de la URL proporciona una comprensión integral del rendimiento de una página, que muestra la frecuencia con la que se cita, el sentimiento de las respuestas de IA donde se menciona, los temas y las indicaciones en los que aparece y las tendencias del tráfico auténtico y de referencia a lo largo del tiempo.
 
 >[!ENDTABS]
+
+Para ambas tablas, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir las perspectivas con su equipo o incluir la tabla en los informes ejecutivos.

@@ -1,9 +1,9 @@
 ---
 title: Presencia de marca
 description: Aprenda a utilizar el panel Presencia de la marca para comprender cómo se percibe su marca en el nivel de respuestas generadas por IA.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,17 @@ Esta página detalla lo siguiente:
 En la parte superior de la página, puede aplicar filtros para restringir la vista. Los filtros que elija afectarán **todas** las secciones presentes en el panel. Puede personalizar lo siguiente:
 
 * **Intervalo de fecha**: seleccione el lapso de tiempo para los datos mostrados. Por ejemplo, las últimas 4 semanas. También tiene la opción de personalizar el período de tiempo seleccionando la opción **Semanas personalizadas**.
-* **Categoría**: filtre los resultados mostrados por categorías predefinidas. También puede agregar categorías personalizadas a este campo (**SR**-how?).
+* **Categoría**: filtre los resultados mostrados por categorías predefinidas o por categorías personalizadas.
 * **Plataforma**: elige qué motor de IA analizar.
+* **Origen de mensajes** - Elija el origen de los mensajes. El origen puede ser introducido por el usuario o generado por IA.
+* **Promoción de marca en el mensaje**: filtre los resultados mediante mensajes con marca o sin marca.
 * **Región**: filtre los resultados por ubicación geográfica. No todas las regiones estarán disponibles en el momento del lanzamiento.
 
 Después de seleccionar el filtro deseado, haga clic en **Aplicar filtros** para aplicar la selección al panel.
 
 ## Métricas de información general {#overview-metrics}
 
-El panel destaca tres métricas muy importantes en la parte superior de la página: puntuación de visibilidad, menciones y citas. Cuanto menor sea el recuento de estas métricas, peor se percibirá su marca y deberá actuar para mejorar su presencia en la marca. Me gusta **SR - AGREGAR vínculo de optimización aquí**. A continuación se presenta una breve descripción de cada métrica y lo que representa.
+El panel destaca tres métricas muy importantes en la parte superior de la página: puntuación de visibilidad, menciones y citas. Cuanto menor sea el recuento de estas métricas, peor se percibirá su marca y deberá actuar para mejorar su presencia en la marca. A continuación se presenta una breve descripción de cada métrica y lo que representa.
 
 ![Métricas de información general](/help/dashboards/assets/overview-metrics.png)
 
@@ -84,25 +86,26 @@ Haga clic en las pestañas siguientes para obtener detalles sobre cada tabla y l
 
 La tabla de perspectivas de datos le ayuda a explorar temas y mensajes del usuario para evaluar y optimizar el impacto del contenido. Muestra las siguientes métricas:
 
-* **Categoría**: la categoría del tema representa palabras clave de SEO y preguntas del usuario relacionadas con su marca. Puede hacer clic en para expandir cada tema y ver las solicitudes individuales analizadas para comprobar la presencia de la marca. Cada tema y botón tiene un botón **Detalles** cuando pasa el ratón sobre él. Al hacer clic en el botón, se muestra una ventana independiente con más detalles.
+* **Tema**: la categoría del tema representa palabras clave de SEO y preguntas del usuario relacionadas con su marca. Puede hacer clic en para expandir cada tema y ver las solicitudes individuales analizadas para comprobar la presencia de la marca. Cada tema y botón tiene un botón **Detalles** cuando pasa el ratón sobre él. Al hacer clic en el botón, se muestra una ventana independiente con más detalles.
+* **Región** - muestra la región de las indicaciones.
 * **Popularidad**: la categoría de popularidad representa el volumen de búsqueda de este tema en relación con todos los demás temas del análisis. El valor puede ser Alto, Medium o Bajo.
 * **Puntuación de visibilidad**: la puntuación de visibilidad de ese tema. Refleja factores ponderados como menciones, citas, opiniones y rango.
 * **Menciones**: la cantidad de veces que se mencionó su marca en las respuestas de IA para este tema o esta combinación de tema/solicitud.
-* **Opinión**: la percepción de la marca en las respuestas de IA en relación con cada tema. La métrica de opinión puede ser positiva, neutra o negativa.
-* **Posición**: la anticipación con la que tu marca aparece en la respuesta de IA, calculada como un promedio en todas las semanas.
+* **Opinión**: la percepción de la marca en las respuestas de IA en relación con cada tema calculada como un promedio en todas las semanas. Solo se rellena cuando se menciona realmente su marca
+* **Posición**: la importancia relativa de su marca en las respuestas de IA, calculada como un promedio en todas las semanas.
 * **Todas las citas** - El número de fuentes únicas citadas en las respuestas de IA para este tema o esta combinación de tema/petición de datos (incluye citas propias).
 * **Citas en propiedad**: el número de veces que se citó su marca en las respuestas de IA para esta palabra clave o esta combinación de palabra clave y pregunta.
 
 >[!TAB Uso compartido de voz]
 
-La tabla **cuota de voz** compara la voz de su marca con la de otros competidores en distintos temas. Muestra las siguientes métricas:
+La tabla Uso compartido de voz proporciona una vista comparativa del rendimiento de su marca en varios temas clave de las respuestas de IA generativas. Le ayuda a identificar lagunas de visibilidad, realizar un seguimiento del rendimiento competitivo y priorizar áreas para la optimización. Muestra las siguientes métricas:
 
 * **Tema**: el tema analizado.
 * **Popularidad**: el volumen de búsqueda del tema en relación con todos los demás temas del análisis.
 * **Menciones**: número de veces que se mencionó su marca en las respuestas de IA para el tema o la combinación de tema/solicitud.
 * **Clasificación**: la clasificación de la cuota de voz de su marca en relación con todos los competidores identificados.
-* **Cuota de voz**: el porcentaje de tiempo que se menciona una marca en relación con todas las menciones de las respuestas de IA.
-* **Principales 5 competidores**: los cinco principales competidores organizados por su cuota de voz (de mayor a menor).
+* **Cuota de voz**: el porcentaje del total de menciones que tu marca contiene en las respuestas generadas por IA.
+* **Principales 5 competidores**: las cinco marcas más mencionadas con mayor frecuencia para los mismos temas. Los competidores están organizados por su Cuota de Voz (de mayor a menor).
 
 >[!ENDTABS]
 

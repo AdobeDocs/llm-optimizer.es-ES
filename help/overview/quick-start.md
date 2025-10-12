@@ -1,7 +1,7 @@
 ---
 title: Inicio rápido
 description: 'Empiece con Adobe LLM Optimizer: Incorpore su marca, desbloquee las perspectivas de visibilidad de la IA y explore los paneles para mejorar el rendimiento de la búsqueda.'
-source-git-commit: c64995176f6cb50bf23543fe95471c4723ae9a10
+source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Consulte la sección siguiente para obtener detalles sobre cómo activar la vers
 
 ### Clientes de AEM Cloud
 
-Si eres cliente de AEM Cloud, tienes la opción de probar LLM Optimizer usando la tarjeta Anuncio del producto en [Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Si eres cliente de AEM Cloud, tienes la opción de probar LLM Optimizer usando la tarjeta Anuncio del producto en [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Las solicitudes agregadas recientemente no aparecerán en el [Tablero de presencia de marca](/help/dashboards/brand-presence.md) hasta que se complete el procesamiento. Los clientes de AEM Cloud (Cloud Service, Managed Services/servicio de Edge Delivery) pueden utilizar la versión de prueba gratuita de LLM Optimizer. El uso de más de 200 peticiones de datos requiere un contrato de licencia independiente. El acceso se proporciona &quot;tal cual&quot; y &quot;según esté disponible&quot;, y Adobe puede modificarlo, limitarlo o eliminarlo en cualquier momento. Póngase en contacto con el representante de su cuenta para obtener más información.
@@ -79,11 +79,11 @@ Una vez que el dominio se haya incorporado y haya proporcionado las categorías 
 
 ### Paso 4: Proporcionar información para el reenvío de registros de CDN {#step-4}
 
-Para desbloquear las perspectivas de tráfico agente y tráfico de referencia, debe proporcionar información para el reenvío de registros de CDN. Se puede agregar desde el panel de configuración del cliente yendo a la pestaña Configuración de CDN y haciendo clic en **Incorporar CDN**.
+Para desbloquear las perspectivas de tráfico agente y tráfico de referencia, debe proporcionar información para el reenvío de registros de CDN. Se puede agregar desde el [panel de configuración del cliente](/help/dashboards/customer-configuration.md) navegando a la pestaña **Configuración de CDN** y haciendo clic en **Incorporar CDN**.
 
 ![CDN de configuración de cliente](/help/overview/assets/cc-cdn.png)
 
-Alternativamente, si no se ha seleccionado ningún proveedor de CDN anteriormente, se le pedirá que añada el reenvío de registros de CDN al acceder a los paneles de tráfico de agente y referencia por primera vez. Para obtener más información, consulte:
+Alternativamente, si no se ha agregado ningún proveedor de CDN con anterioridad, se le pedirá que agregue el reenvío de registros de CDN al acceder a los paneles de tráfico de agencia y referencia por primera vez. Para obtener más información, consulte:
 
 * [Tráfico de agente](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [Tráfico de referencia](/help/dashboards/referral-traffic.md#setup#setup)
