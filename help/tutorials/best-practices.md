@@ -1,9 +1,9 @@
 ---
 title: Prácticas recomendadas de LLM Optimizer
 description: Descubra las prácticas recomendadas para la optimización de LLM a fin de aumentar la visibilidad de la marca en la búsqueda de IA. Perspectivas de para la realización de pruebas comparativas y optimización de contenido.
-source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
+source-git-commit: a76d348a94495682d648ef0aad268e835e321017
 workflow-type: tm+mt
-source-wordcount: '1655'
+source-wordcount: '1659'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Una base sólida de SEO admite la optimización de LLM, pero se necesitan nuevas
 
 >[!NOTE]
 >
->Actualmente, el tráfico SEO sigue siendo el mayor motor de tráfico para la mayoría de los sitios web, lo que lo hace muy importante para la estrategia de visibilidad de su marca.
+>Actualmente, el tráfico SEO sigue siendo el mayor motor de tráfico para la mayoría de las webs, lo que lo hace muy importante para la estrategia de visibilidad de su marca.
 
 
 | SEO | LLM |
@@ -147,7 +147,7 @@ Rastree estas métricas clave:
 * **Menciones:** Cuántas veces se menciona tu marca en las respuestas.
 * **Citas:** La frecuencia con la que los LLM usan tu contenido o fuentes para responder preguntas.
 * **Opinión:** Si la mención de tu marca es positiva, neutral o negativa.
-* **Posición:** Donde se menciona su marca en la respuesta (por ejemplo, primero, medio o último).
+* **Posición:** Donde se menciona su marca en la respuesta (por ejemplo, primera, media o última).
 
 Estas métricas se combinan en una puntuación de **visibilidad**, lo que le indica la solidez de la presencia de su marca en las respuestas LLM. Ver el tablero [Presencia de marca](/help/dashboards/brand-presence.md).
 
@@ -192,7 +192,7 @@ El tráfico agéntico se muestra de dos maneras: experiencias sin clics y visibi
 
 ### Experiencias de clic cero
 
-En las búsquedas tradicionales, los usuarios acceden a los sitios web para consumir contenido. Sin embargo, con LLMs los usuarios a menudo obtienen respuestas completas directamente en la interfaz de chat o la página de resultados de los motores de búsqueda sin visitar su sitio. Esto se denomina experiencia de clic cero.
+En las búsquedas tradicionales, los usuarios acceden a los sitios web para consumir contenido. Pero con LLMs los usuarios a menudo obtienen respuestas completas directamente en la interfaz de chat o en la página de resultados de los motores de búsqueda sin visitar su sitio. Esto se denomina experiencia de clic cero.
 
 Qué significa esto para su marca:
 
@@ -224,7 +224,7 @@ El seguimiento del tráfico auténtico le ayuda a comprender cómo ve y utiliza 
 Para optimizar el tráfico auténtico:
 
 * Asegúrese de la rastreabilidad revisando la configuración de robots.txt y CDN.
-* Use el [Inspector de URL](/help/dashboards/url-inspector.md)para analizar el rendimiento de la URL.
+* Use el [Inspector de URL](/help/dashboards/url-inspector.md) para analizar el rendimiento de las URL.
 * Rastree el comportamiento de bots accediendo a sus registros de CDN en el [tablero de tráfico de agente](/help/dashboards/agentic-traffic.md).
 * Segmente el tráfico para comprender los resultados empresariales. Vea [Prácticas recomendadas para categorías, temas, mensajes y competidores](/help/overview/best-practices-topics-prompts.md).
 
