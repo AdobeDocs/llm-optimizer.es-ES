@@ -1,9 +1,9 @@
 ---
 title: Información general de LLM Optimizer
 description: Obtenga información sobre cómo Adobe LLM Optimizer aumenta la visibilidad de la marca en la búsqueda impulsada por IA. Realice un seguimiento de menciones, citas y perspectivas. Empiece a optimizar hoy para mejorar la participación y la influencia.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -54,12 +54,11 @@ La optimización generativa del motor es interfuncional por naturaleza. LLM Opti
 
 Con Adobe LLM Optimizer, puede:
 
-**Medir la visibilidad de la marca**: realiza un seguimiento de cuándo, dónde y con qué frecuencia se menciona tu marca en los resultados de búsqueda con tecnología de IA. Supere las conjeturas con una puntuación de visibilidad clara que pueda comparar con el paso del tiempo.
-**Competidores de Benchmark** - Vea cómo su marca se enfrenta a la competencia en motores generativos. Identificar la cuota de huecos de voz y descubrir ventajas competitivas.
-**Descubre oportunidades procesables** - Encuentra oportunidades de contenido (por ejemplo, preguntas frecuentes, resúmenes, esquemas) y oportunidades técnicas (rastreabilidad, problemas de indexación) que aumentan directamente las menciones y citas.
-**Seguimiento del impacto del tráfico desde IA**: supervise el tráfico auténtico (de los asistentes de IA) y el tráfico de referencia (los clics de los usuarios en las citas) a sus propiedades. Vincule la visibilidad GEO con la participación real.
-**Habilitar Team Collaboration**: comparta paneles, asigne propietarios para preguntas o categorías y asegúrese de que se realiza un seguimiento de los objetivos de visibilidad en las funciones de marketing, SEO y comunicaciones.
-
+**Medir la visibilidad de la marca**: realiza un seguimiento de cuándo, dónde y con qué frecuencia se menciona tu marca en los resultados de búsqueda con tecnología de IA. Supere las conjeturas con una puntuación de visibilidad clara que pueda comparar con el paso del tiempo. Consulte [Panel de presencia de marca](/help/dashboards/brand-presence.md).
+**Competidores de Benchmark** - Vea cómo su marca se enfrenta a la competencia en motores generativos. Identificar la cuota de huecos de voz y descubrir ventajas competitivas. Consulte [Panel de presencia de marca](/help/dashboards/brand-presence.md).
+**Descubre oportunidades procesables** - Encuentra oportunidades de contenido (por ejemplo, preguntas frecuentes, resúmenes, esquemas) y oportunidades técnicas (rastreabilidad, problemas de indexación) que aumentan directamente las menciones y citas. Ver [tablero de oportunidades](/help/dashboards/opportunities.md).
+**Seguimiento del impacto del tráfico desde IA**: supervise el tráfico auténtico (de los asistentes de IA) y el tráfico de referencia (los clics de los usuarios en las citas) a sus propiedades. Vincule la visibilidad GEO con la participación real. Ver [Tablero de tráfico de agente](/help/dashboards/agentic-traffic.md) y [Tablero de tráfico de referencia](/help/dashboards/referral-traffic.md).
+**Habilitar Team Collaboration**: comparta paneles, asigne propietarios para preguntas o categorías y asegúrese de que se realiza un seguimiento de los objetivos de visibilidad en las funciones de marketing, optimización de los motores de búsqueda (SEO) y comunicaciones. Ver [tablero de Collaboration](/help/dashboards/collaboration.md).
 
 ## Más información
 

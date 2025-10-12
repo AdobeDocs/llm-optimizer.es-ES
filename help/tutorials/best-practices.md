@@ -1,9 +1,9 @@
 ---
 title: Prácticas recomendadas de LLM Optimizer
 description: Descubra las prácticas recomendadas para la optimización de LLM a fin de aumentar la visibilidad de la marca en la búsqueda de IA. Perspectivas de para la realización de pruebas comparativas y optimización de contenido.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1655'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,12 @@ Si la SEO tradicional le ayudó a ganar clasificaciones de página uno, la optim
 
 En este artículo se describen las prácticas recomendadas para medir y mejorar la visibilidad y la influencia de los usuarios en entornos de búsqueda impulsados por IA que utilizan Adobe LLM Optimizer.
 
-* [LLM vs SEO](#key-differences)
-* [Desbloquear la visibilidad de marca LLM](#unlocking-llm-brand-visibility)
+* [LLM vs SEO: diferencias clave](#key-differences)
 * [Planificación estratégica de campañas](#strategic-campaign-planning)
-* [Pasos de optimización procesables](#actionable-optimization-steps)
-* [Optimización fuera del sitio para visibilidad LLM](#offsite-optimization-for-llm-visibility)
-* [Medición de visibilidad LLM](#measuring-llm-visibility)
-* [Seguimiento de cambios de visibilidad](#tracking-visibility-changes)
+* [Optimización in situ](#onsite-optimization---strengthening-your-owned-content)
+* [Optimización fuera del sitio](#offsite-optimization---expanding-your-brand-footprint)
+* [Medición de la visibilidad LLM y seguimiento de cambios](#measuring-llm-visibility-and-tracking-changes)
+* [Optimización para el tráfico real](#how-to-optimize-for-agentic-traffic)
 
 ## LLM vs SEO: diferencias clave {#key-differences}
 
@@ -52,69 +51,98 @@ Otras consideraciones para la optimización de LLM:
 * La frescura del contenido importa: los LLM priorizan el contenido actualizado recientemente. (Los motores de búsqueda también dan prioridad a esto en las consultas con distinción de tiempo, pero dependen más de otros valores).
 * Conseguir ganarse (terceros) en forma de menciones y citas es muy importante.
 
-## Desbloquear la visibilidad de marca LLM
+## Planificación estratégica de campañas
+
+La creación de una campaña de optimización de LLM exitosa implica:
+
+* Identifique los temas de alto valor alineados con la intención del cliente. Alinee la intención inmediata con los objetivos empresariales y las necesidades del cliente.
+* El competidor de Spot menciona para encontrar lagunas y oportunidades. Céntrese en los indicadores donde se citan los competidores, lo que indica una oportunidad para la inclusión de la marca.
+* Agrupar peticiones de datos por intención mediante clústeres de temas: utilice los temas y los campos de búsqueda para agrupar objetivos de usuario similares para comparar la visibilidad.
+* Evalúe la credibilidad de la marca utilizando los estándares EAT (experiencia, pericia, autoridad, confiabilidad) y YMYL (su dinero o su vida).
+
+Este enfoque estratégico garantiza mejoras específicas y basadas en datos en la visibilidad de LLM.
+
+### Desbloquear la visibilidad de marca LLM
 
 La visibilidad de LLM se basa en la frecuencia y la importancia de la marca en las respuestas generadas por IA.
 
-Para mejorar su visibilidad,
+Para mejorar su visibilidad, siga este ciclo:
 
-1. **Analizar:** Revisa cómo aparece tu marca en los mensajes clave del cliente en los LLM.
-2. **Plan:** Segmente clústeres de indicadores con una intención similar para las campañas enfocadas.
-3. **Actuar:** Implementar cambios y supervisar los cambios en la visibilidad de LLM a lo largo del tiempo.
-4. **Adaptar:** Refinar estrategias basadas en datos procesables del optimizador.
+Analizar > Plan > Actuar > Adaptar
+
+* **Analizar:** Revisa cómo aparece tu marca en los mensajes clave del cliente en los LLM.
+* **Plan:** Segmente clústeres de indicadores con una intención similar para las campañas enfocadas.
+* **Actuar:** Implementar cambios y supervisar los cambios en la visibilidad de LLM a lo largo del tiempo.
+* **Adaptar:** Refinar estrategias basadas en datos procesables del optimizador.
 
 <!--insert image-->
 
 Comprender y aprovechar estos pasos puede ayudar a su marca a seguir siendo relevante, ya que la IA se convierte en un elemento central para la detección de información.
 
-## Planificación estratégica de campañas
+## Optimización in situ: fortalecimiento del contenido propio
 
-La creación de una campaña de optimización de LLM exitosa implica:
+La optimización in situ mejora el contenido que posee para mejorar la visibilidad de LLM. Estas son acciones que usted toma en su propio sitio web y propiedades digitales para mejorar la forma en que los LLM perciben, acceden y citan su marca.
 
-* Identificar temas de alto valor: alinee la intención inmediata con los objetivos empresariales y las necesidades del cliente.
-* Menciones de competidor puntual: Céntrese en las indicaciones en las que se cita a los competidores, lo que indica una oportunidad para la inclusión de la marca.
-* Agrupar mensajes por intención: utilice los temas y los campos de búsqueda para agrupar objetivos de usuario similares para ver las pruebas comparativas.
-* Evaluar la inclusión realista de la marca: evalúe si su marca puede mencionarse de forma creíble, teniendo en cuenta factores como los estándares EAT (experiencia, experiencia, autoridad, fiabilidad) y YMYL (su dinero o su vida).
+>[!TIP]
+>
+>LLM Optimizer sugiere oportunidades de optimización in situ y fuera del sitio en el panel [Oportunidades](/help/dashboards/opportunities.md). Estas oportunidades son específicas para el sitio. A menudo puede implementar optimizaciones directamente en el sitio.
 
-Este enfoque estratégico garantiza mejoras específicas y basadas en datos en la visibilidad de LLM.
+Estas son algunas prácticas recomendadas de optimización:
 
-## Pasos de optimización procesables
+1. Garantizar la accesibilidad técnica
 
-LLM Optimizer sugiere oportunidades de optimización en el panel [Oportunidades](/help/dashboards/opportunities.md).
+   * Revise la configuración de robots.txt y CDN para permitir que los agentes de IA rastreen el sitio.
+   * Utilice el Inspector de URL para identificar las páginas bloqueadas o inaccesibles. Consulte [inspector de URL](/help/dashboards/url-inspector.md).
 
-Estas son algunas acciones prácticas que hay que tener en cuenta para aumentar la visibilidad de la marca en los LLM:
+2. Actualizar y estructurar contenido
 
-* Actualizar páginas de Wikipedia: Asegúrese de que las páginas de la empresa y citadas sean actuales y relevantes.
-* Habilitar el acceso LLM: supervise la configuración de robots.txt y CDN para evitar el bloqueo de bots de IA.
-* Renovar contenido: actualice entre el 10 y el 15 % del contenido de la página, añada referencias y mejore la estructura con encabezados (H1, H2, H3).
-* Añadir preguntas más frecuentes: integre las preguntas más frecuentes relevantes en función de un análisis rápido para abordar las consultas de los usuarios.
-* Aumentar las menciones de marca en Reddit/Quora: contribuir a las plataformas de contenido generadas por los usuarios donde las LLM generan citas. Tenga cuidado de cómo abordar esto a medida que pueda déclencheur
+   * Actualice regularmente entre el 10 y el 15 % del contenido de la página. Las LLM priorizan el contenido nuevo.
+   * Agregue citas y referencias a fuentes autorizadas.
+   * Utilice encabezados estructurados (H1, H2, H3) para un mejor análisis.
 
-La ejecución coherente de estos pasos puede mejorar significativamente la presencia de su marca en los resultados de búsqueda impulsados por IA.
+3. Integrar preguntas frecuentes
 
-## Optimización fuera del sitio para visibilidad LLM
+   * Agregar preguntas más frecuentes en lenguaje natural basadas en un análisis rápido.
+   * Aborde preguntas comunes del usuario en formatos conversacionales.
 
-La optimización fuera del sitio se centra en mejorar la visibilidad de su marca en las respuestas generadas por IA influyendo en las fuentes de contenido de terceros que los LLM citan con frecuencia.
+4. Monitorización e iteración
+
+   * Use el [panel de oportunidades](/help/dashboards/opportunities.md) para identificar recomendaciones y actuar en consecuencia.
+   * Rastree la puntuación de visibilidad, la opinión y la frecuencia de las citas.
+   * Ajuste en función de la actividad de la competencia y las tendencias inmediatas.
+
+## Optimización fuera del sitio: ampliación del espacio de marca
+
+La optimización fuera del sitio se centra en mejorar la visibilidad de su marca en las respuestas generadas por IA influyendo en las fuentes de contenido de terceros que los LLM citan con frecuencia. Estas son acciones tomadas fuera de sus propiedades para influir en cómo los LLM encuentran y citan su marca.
+
+>[!TIP]
+>
+>LLM Optimizer sugiere oportunidades de optimización in situ y fuera del sitio en el panel [Oportunidades](/help/dashboards/opportunities.md). Estas oportunidades son específicas para el sitio. A menudo puede implementar optimizaciones directamente en el sitio.
+
 
 Canales clave fuera del sitio:
 
 * Wikipedia: Asegúrese de que las páginas estén actualizadas, tengan buenas fuentes y estén escritas de forma neutral.
-* Reddit &amp; Quora: Participe en debates con contribuciones auténticas y útiles.
+* Reddit y Quora: Participe en debates con contribuciones auténticas y útiles y menciones de marca.
 * Artículos y revisiones de afiliados: Colabore con editores para obtener contenido de alta calidad.
 * YouTube y medios sociales: cree vídeos y publicaciones que respondan a preguntas comunes.
-* Noticias y relaciones públicas: Cobertura segura en puntos de venta de buena reputación.
+* Noticias y relaciones públicas: Cobertura segura en medios de buena reputación.
 
 Prácticas recomendadas:
 
 * Diversifique su huella fuera del sitio.
-* Monitorice las citas con el LLM Optimizer de Adobe.
+* Monitorice las citas con Adobe LLM Optimizer. Consulte [Panel de presencia de marca](/help/dashboards/brand-presence.md).
 * Actualice contenido obsoleto y busque nuevas oportunidades de inclusión.
 * Coordinar con equipos de relaciones públicas y sociales.
 * Asegúrese de que las contribuciones sean imparciales e informativas.
 
-## Medición de visibilidad LLM
+La ejecución coherente de estos pasos puede mejorar significativamente la presencia de su marca en los resultados de búsqueda impulsados por IA.
 
-Para comparar la visibilidad de su sitio web o ver mejoras en la visibilidad, realice un seguimiento de estas métricas clave:
+## Medición de la visibilidad LLM y seguimiento de cambios
+
+Comprender cómo se muestra su marca en las respuestas generadas por IA es esencial para optimizar para los LLM. Adobe LLM Optimizer ofrece una forma estructurada de medir la visibilidad, comparar el rendimiento y rastrear las mejoras con el paso del tiempo
+
+Rastree estas métricas clave:
 
 * **Menciones:** Cuántas veces se menciona tu marca en las respuestas.
 * **Citas:** La frecuencia con la que los LLM usan tu contenido o fuentes para responder preguntas.
@@ -123,26 +151,26 @@ Para comparar la visibilidad de su sitio web o ver mejoras en la visibilidad, re
 
 Estas métricas se combinan en una puntuación de **visibilidad**, lo que le indica la solidez de la presencia de su marca en las respuestas LLM. Ver el tablero [Presencia de marca](/help/dashboards/brand-presence.md).
 
-## Seguimiento de cambios de visibilidad
+### Estrategia de seguimiento
 
 Estos son los pasos que puede seguir para monitorizar el progreso:
 
-1. Compruebe Su Visibilidad Actual
-   * Utilice Adobe LLM Optimizer para mostrar la frecuencia con la que se menciona y cita su marca y cuál es la opinión en las respuestas de LLM. Consulte el panel [Presencia de marca](/help/dashboards/brand-presence.md).
+1. Establezca como referencia su visibilidad actual.
+   * Identifique con qué frecuencia y dónde se menciona y cita su marca, y cuál es la opinión en Adobe LLM Optimizer. Consulte el panel [Presencia de marca](/help/dashboards/brand-presence.md).
    * Analice las indicaciones donde aparece su marca y donde no.
-   * Referencia frente a competidores.
-   * Revise la visibilidad en plataformas generadas por los usuarios como Reddit, Quora y Wikipedia. Estas plataformas UGC son citadas a menudo por los LLM para encontrar información.
+   * Compare la visibilidad con la de la competencia.
+   * Revise la visibilidad en plataformas generadas por los usuarios como Reddit, Quora y Wikipedia. Segmentar por plataforma (ChatGPT, modo Google AI, etc.)
    * Monitorice el tráfico auténtico para comprender qué páginas visitan los LLM. El tráfico de agente a menudo **no** va a la página de inicio, pero otras páginas inferiores en la jerarquía. Consulte el tablero [Tráfico agéntico](/help/assets/overview/agentic-traffic-card.png).
-   * Asegúrese de que el contenido sea visible y accesible para los LLM. Puede utilizar el complemento de Chrome para ver qué pueden ver los agentes de IA.
-
-1. Planifique su estrategia
-   * Agrupe indicaciones similares en función de lo que pregunte la gente.
-   * Céntrese en las indicaciones que sean más importantes para sus clientes.
-   * Compruebe si su marca tiene buenas posibilidades de que se le mencione en relación con determinadas indicaciones.
-   * Asegúrese de que su contenido muestre su experiencia, fiabilidad y autoridad (EAT).
-
+1. Monitorice los cambios con el tiempo.
+   * Utilice filtros de tiempo para rastrear los turnos semanales y mensuales
+   * Observe si hay picos o caídas en la puntuación de visibilidad.
+   * Analice las tendencias de opinión para comprender la percepción de marca.
+1. Correlacione la visibilidad con el tráfico, la participación y las conversiones.
+   * Utilice funciones de atribución para conectar las mejoras de visibilidad al tráfico, la participación y las conversiones. Las funciones de atribución de Adobe LLM Optimizer le ayudan a conectar las mejoras en las métricas de visibilidad (menciones, citas, opiniones) con resultados comerciales reales como el tráfico del sitio, la participación del usuario y las conversiones. Esto demuestra el retorno de la inversión en sus esfuerzos de optimización.
+   * Rastree los cambios en el tráfico agéntico y de referencia para validar el ROI de la optimización.
 1. Mejore su contenido
-   * Utilice las oportunidades de LLM Optimizer para identificar y realizar cambios inmediatos y recomendados específicamente en el sitio. Ver [Oportunidades](/help/dashboards/opportunities.md) (luego medir los resultados). Revise la sección de oportunidades regularmente y tome medidas sobre las recomendaciones proporcionadas.
+   * Use el [panel de oportunidades](/help/dashboards/opportunities.md) de LLM Optimizer para identificar y realizar cambios inmediatos y recomendados específicamente en su sitio. Ver [Oportunidades](/help/dashboards/opportunities.md) (luego medir los resultados). Revise la sección de oportunidades regularmente y tome medidas sobre las recomendaciones proporcionadas.
+   * Priorice las páginas con una visibilidad en declive.
    * Actualice el sitio web y otro contenido para que sea más relevante para las indicaciones que desea dirigir.
    * Agregue preguntas más frecuentes a sus páginas que respondan a preguntas comunes que la gente pueda hacer.
    * Asegúrese de que el contenido sea fácil de encontrar y leer para los LLM. Corrija cualquier problema, como páginas bloqueadas o problemas con el código del sitio web.
@@ -150,8 +178,13 @@ Estos son los pasos que puede seguir para monitorizar el progreso:
    * Utilice Adobe LLM Optimizer para realizar un seguimiento de cómo cambia la visibilidad con el paso del tiempo.
    * Si observa que los competidores se mencionan más a menudo, ajuste su estrategia para mantenerse por delante.
    * Siga actualizando el contenido para que coincida con lo que la gente está buscando y preguntando.
+1. Ajustar las estrategias [fuera del sitio](#offsite-optimization---expanding-your-brand-footprint) y [dentro del sitio](#onsite-optimization---strengthening-your-owned-content) según las perspectivas.
 
-## Explicación del tráfico agéntico
+>[!NOTE]
+>
+>Asegúrese de que el contenido sea visible y accesible para los LLM. Puede utilizar el complemento de Chrome para ver qué pueden ver los agentes de IA.
+
+## Explicación del tráfico auténtico
 
 El tráfico de agente se refiere a las visitas de agentes de IA como ChatGPT, el modo/descripción general de IA de Google, Copilot o Perplejidad. Estos agentes rastrean el sitio para recopilar información y generar respuestas.
 
@@ -186,7 +219,7 @@ Por qué importa esto:
 
 El seguimiento del tráfico auténtico le ayuda a comprender cómo ve y utiliza AI su contenido.
 
-### Cómo optimizar el tráfico agéntico:
+### Optimización para el tráfico real
 
 Para optimizar el tráfico auténtico:
 

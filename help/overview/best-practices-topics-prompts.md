@@ -1,9 +1,9 @@
 ---
 title: Prácticas recomendadas para categorías, temas e indicadores
 description: Optimice las perspectivas de LLM configurando categorías, temas, indicadores y competidores para un seguimiento de marca y un análisis de contenido estratégico personalizados.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Al crear la lista, tenga en cuenta lo siguiente:
 
 * ¿Puede un editor comprender el tema en 5 segundos desde el texto del mensaje? Si no es así, cambie el nombre o simplifique.
 * ¿Será propiedad de un equipo diferente la corrección de diferentes temas? Si es así, ha elegido temas útiles.
-  <!-- Last bullet point does not make sense. Clarification needed.-->
+  <!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
 
 Algunas sugerencias útiles adicionales:
 
@@ -94,14 +94,20 @@ Algunas sugerencias útiles adicionales:
 >
 > * Mantenga los temas basados en intenciones, no en la organización.
 > * No agregue categorías/filtros para marcas/no marcas/zonas geográficas, ya que puede filtrar específicamente para esto en la pestaña **[!UICONTROL Marcas]**.
-> * Los temas se distribuyen en varias categorías. **no** puede tener diferentes temas por categoría.
-> * Una sola solicitud puede existir en varios temas o categorías.
+> * Los temas se distribuyen en varias categorías. Usted **no puede** definir temas únicos para cada categoría.
+> * Un solo mensaje **can** existe en varios temas o categorías.
 
 ## Prácticas recomendadas para mensajes
 
 Los indicadores identifican las preguntas o consultas específicas que los clientes formulan y que pueden afectar a su negocio. Son las preguntas o consultas reales que los usuarios introducen en los LLM.
 
 Asegúrese de revisar y actualizar las solicitudes regularmente para asegurarse de que se alinean con las necesidades del cliente y los objetivos empresariales.
+
+Prácticas recomendadas para mensajes:
+
+* Agrupe indicaciones similares en función de lo que pregunte la gente.
+* Céntrese en las indicaciones que sean más importantes para sus clientes.
+* Compruebe si su marca tiene buenas posibilidades de que se le mencione en relación con determinadas indicaciones.
 
 >[!TIP]
 >
