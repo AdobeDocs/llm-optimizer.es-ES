@@ -1,9 +1,9 @@
 ---
 title: Información general de LLM Optimizer
 description: Obtenga información sobre cómo Adobe LLM Optimizer aumenta la visibilidad de la marca en la búsqueda impulsada por IA. Realice un seguimiento de menciones, citas y perspectivas. Empiece a optimizar hoy para mejorar la participación y la influencia.
-source-git-commit: bb3e3e4ebc7499fb8c8dfc165eb87595b40a4b4c
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,8 @@ Estos son los recursos que pueden ayudarle a sacar el máximo partido a LLM Opti
 
 * [Quickstart](/help/overview/quick-start.md) le permite ponerse en marcha rápidamente.
 * [Información general sobre paneles](/help/dashboards/dashboards-overview.md) describe todos los paneles disponibles en LLM Optimizer.
-* [Prácticas recomendadas](/help/tutorials/best-practices.md) le guía para usar la herramienta con el fin de obtener la información que necesita para su marca.
+* [Prácticas recomendadas para configurar categorías, temas, mensajes y competidores](/help/overview/best-practices-topics-prompts.md) incluye información esencial para configurar LLM Optimizer.
+* [Prácticas recomendadas](/help/tutorials/best-practices.md) le permite descubrir prácticas recomendadas para la optimización de LLM a fin de aumentar la visibilidad de su marca en la búsqueda de IA.
 
 
 

@@ -1,10 +1,10 @@
 ---
 title: Colaboración
 description: Aprenda a utilizar el panel de colaboración para invitar a miembros del equipo al espacio de trabajo de LLM Optimizer de su organización.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

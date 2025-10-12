@@ -1,24 +1,27 @@
 ---
 title: Prácticas recomendadas para categorías, temas e indicadores
-description: Descripción aquí
-source-git-commit: 099d4387b6a5efd25e142db13e309a181fe67941
+description: Optimice las perspectivas de LLM configurando categorías, temas, indicadores y competidores para un seguimiento de marca y un análisis de contenido estratégico personalizados.
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
 
 
-# Introducción aquí
-
-Configuración del cliente es donde se define cómo se supervisará y analizará la marca dentro de la plataforma del optimizador de LLM. Puede personalizar categorías (como unidades de negocio o líneas de productos), rastrear competidores y agregar alias de mención de marca para capturar todas las variaciones de su marca en los mensajes. Esta configuración garantiza que la plataforma adapte las perspectivas a su contexto empresarial, lo que permite una visibilidad precisa, el tráfico y el análisis de oportunidades.
-
-## Prácticas recomendadas para configurar categorías, temas y preguntas
+# Prácticas recomendadas para configurar categorías, temas, mensajes y competidores
 
 En esta sección se describen las prácticas recomendadas para decidir cómo desea configurar las categorías, los temas, los mensajes y la competencia.
+
 Este es un primer paso vital. Lo que decida ahora determina cómo se adapta la información a su contexto empresarial. Cualquier cambio en las categorías en el futuro restablecerá los datos históricos.
 
-### Prácticas recomendadas para categorías
+En el tablero de [[!UICONTROL Configuración del cliente]](/help/dashboards/customer-configuration.md) se define cómo se supervisará y analizará su marca dentro de la plataforma del optimizador LLM. Consulte [[!UICONTROL Configuración del cliente]](/help/dashboards/customer-configuration.md) para obtener información sobre cómo usar el tablero.
+
+![Ventana de configuración del cliente](/help/assets/best-practices/customer-configuration-best-practices.png)
+
+En el tablero de [!UICONTROL Configuración del cliente], puede personalizar categorías (como unidades de negocio o líneas de productos), rastrear competidores y agregar alias de mención de marca para capturar todas las variaciones de su marca en los mensajes. Esta configuración garantiza que la plataforma adapte las perspectivas a su contexto empresarial, lo que permite una visibilidad precisa, el tráfico y el análisis de oportunidades.
+
+## Prácticas recomendadas para categorías
 
 Las categorías permiten organizar el contenido en unidades de negocio estratégicas o agrupaciones lógicas. Son el bloque &quot;donde pertenece&quot; y la estructura organizativa de nivel superior para su contenido.
 
@@ -46,16 +49,17 @@ La forma de decidir cómo se configuran las categorías se basa en una pregunta:
 >
 > * Elige un enfoque y apégate a él.
 > * Solo puede tener **un** modelo de categoría por cuenta o marca. No mezcles **SBU** y **URL_DIR** al mismo tiempo.
+>   <!--Can you mix Product/Service with these?-->
 
 Ejemplo:
 
 | Tipo de sitio | Categoría | Ejemplos de taxonomía de temas |
 |---------|----------|---------|
-| Empresas con varios negocios | SBU | conjunto de intención pequeño (procedimientos, resolución de problemas, comparación, precios, política) |
+| Empresas con varios negocios | SBU | Conjunto de intención pequeño (procedimientos, resolución de problemas, comparación, precios, política) |
 | Documentación/sitio con gran presencia de asistencia | URL_DIR | Instrucciones, resolución de problemas, referencia, notas de la versión |
 | Catálogo de eCommerce/Services | Producto/servicio | Comparación, comentarios, precios/disponibilidad, procedimientos, resolución de problemas |
 
-### Prácticas recomendadas por temas
+## Prácticas recomendadas por temas
 
 Los temas le ayudan a comprender la intención del usuario: le muestran lo que este quiere. Permiten agrupar indicadores con una intención de usuario similar. Piense en ello como agrupar los indicadores relevantes.
 
@@ -73,12 +77,13 @@ Al decidir los temas, desea crear una lista corta y plana (de 6 a 12 como máxim
 * Precios y disponibilidad
 * Política y garantía
 * Contacto de asistencia
-* Corporativo / Noticias (si realmente los necesita)
+* Corporativo/Noticias (si realmente lo necesita)
 
 Al crear la lista, tenga en cuenta lo siguiente:
 
 * ¿Puede un editor comprender el tema en 5 segundos desde el texto del mensaje? Si no es así, cambie el nombre o simplifique.
 * ¿Será propiedad de un equipo diferente la corrección de diferentes temas? Si es así, ha elegido temas útiles.
+  <!-- Last bullet point does not make sense. Clarification needed.-->
 
 Algunas sugerencias útiles adicionales:
 
@@ -88,11 +93,11 @@ Algunas sugerencias útiles adicionales:
 >[!IMPORTANT]
 >
 > * Mantenga los temas basados en intenciones, no en la organización.
-> * No agregue categorías/filtros para marcas/no marcas/zonas geográficas, ya que puede filtrar específicamente para esto en la pestaña **Marcas**.
+> * No agregue categorías/filtros para marcas/no marcas/zonas geográficas, ya que puede filtrar específicamente para esto en la pestaña **[!UICONTROL Marcas]**.
 > * Los temas se distribuyen en varias categorías. **no** puede tener diferentes temas por categoría.
 > * Una sola solicitud puede existir en varios temas o categorías.
 
-### Prácticas recomendadas para mensajes
+## Prácticas recomendadas para mensajes
 
 Los indicadores identifican las preguntas o consultas específicas que los clientes formulan y que pueden afectar a su negocio. Son las preguntas o consultas reales que los usuarios introducen en los LLM.
 
@@ -103,7 +108,7 @@ Asegúrese de revisar y actualizar las solicitudes regularmente para asegurarse 
 >* Puede utilizar herramientas como Adobe LLM Optimizer y la consola de búsqueda de Google con filtros regex para identificar estructuras de preguntas comunes (por ejemplo, &quot;cómo&quot;, &quot;qué&quot;, &quot;cuándo&quot;, &quot;dónde&quot;) y averiguar las indicaciones que utilizan los visitantes para visitar el sitio.
 >* Para saber qué indicadores son relevantes para su sitio/marca, puede utilizar datos de búsqueda en el sitio, preguntas frecuentes en las páginas de resultados de motores de búsqueda o incluso preguntar directamente a los bots de chat de LLM qué preguntas podrían hacer los clientes sobre su marca.
 
-### Prácticas recomendadas para la competencia
+## Prácticas recomendadas para la competencia
 
 Los competidores le permiten supervisar la visibilidad y las menciones en las respuestas de LLM para obtener indicaciones y temas que son importantes para su negocio.
 
@@ -114,4 +119,9 @@ Con el seguimiento de competidores, puede ver con qué frecuencia se mencionan l
 >[!TIP]
 >
 >Revise regularmente las menciones y citas de los competidores para identificar las áreas en las que su marca puede mejorar.
+
+## Más información
+
+* [Panel de configuración del cliente](/help/dashboards/customer-configuration.md) es donde configuras tus categorías, temas, mensajes y competidores.
+* [Prácticas recomendadas de LLM Optimizer](/help/tutorials/best-practices.md) describe las prácticas recomendadas en la optimización de LLM
 
