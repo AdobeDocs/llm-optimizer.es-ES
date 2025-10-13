@@ -1,9 +1,9 @@
 ---
 title: Inicio rápido
 description: 'Empiece con Adobe LLM Optimizer: Incorpore su marca, desbloquee las perspectivas de visibilidad de la IA y explore los paneles para mejorar el rendimiento de la búsqueda.'
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Consulte la sección siguiente para obtener detalles sobre cómo activar la vers
 
 ### Clientes de AEM Cloud
 
-Si eres cliente de AEM Cloud, tienes la opción de probar LLM Optimizer usando la tarjeta Anuncio del producto en [Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Si eres cliente de AEM Cloud, tienes la opción de probar LLM Optimizer usando la tarjeta Anuncio del producto en [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Las solicitudes agregadas recientemente no aparecerán en el [Tablero de presencia de marca](/help/dashboards/brand-presence.md) hasta que se complete el procesamiento. Los clientes de AEM Cloud pueden utilizar la versión de prueba gratuita de LLM Optimizer. El uso de más de 200 peticiones de datos requiere un contrato de licencia independiente. El acceso se proporciona &quot;tal cual&quot; y &quot;según esté disponible&quot;, y Adobe puede modificarlo, limitarlo o eliminarlo en cualquier momento. Póngase en contacto con el representante de su cuenta para obtener más información.
@@ -68,14 +68,14 @@ Desde este panel, puede:
 * Escriba **temas personalizados** o subtemas de los que quiera realizar un seguimiento. Los temas pueden ser temas específicos vinculados a palabras clave sin marca de gran volumen asociadas con su dominio.
 * Cree **sus indicadores** para supervisar la visibilidad en consultas específicas. Los indicadores son consultas (con marca y sin marca) que proporcionan una visibilidad de línea de base. Solo se generará automáticamente un número limitado de mensajes en función de las categorías y los temas que haya proporcionado.
 * Defina la mención **alias** para asegurarse de que todas las menciones de una marca se capturan y se contabilizan.
-* Defina **alias de competidores** para rastrear a competidores con precisión.
+* Defina **otros alias** para rastrear otras marcas con precisión.
 
 >[!NOTE]
 >Los mensajes exactos que solicita a los LLM no están disponibles para el público porque no los revelan.
 
 >[!NOTE]
 >
-> Para obtener más información sobre cómo configurar categorías, temas, mensajes y competidores, consulte la página [Prácticas recomendadas para configurar categorías, temas, mensajes y competidores](/help/overview/best-practices-topics-prompts.md).
+> Para obtener más información sobre cómo configurar las categorías, temas y preguntas, consulte la página [Prácticas recomendadas para configurar categorías, temas y preguntas](/help/overview/best-practices-topics-prompts.md).
 
 ### Paso 3: Rellenado previo automático de Insights
 
@@ -96,7 +96,7 @@ Alternativamente, si no se ha agregado ningún proveedor de CDN de antemano simi
 
 Después de proporcionar información para el Reenvío de registros de CDN, puede:
 
-* Vea el tablero [Presencia de marca](/help/dashboards/brand-presence.md), vea su puntuación de visibilidad y realice un seguimiento de su rendimiento en relación con su competencia.
+* Vea el panel [Presencia de marca](/help/dashboards/brand-presence.md), vea su puntuación de visibilidad y realice un seguimiento de su rendimiento en relación con otras marcas.
 * Explore los paneles de [Agente](/help/dashboards/agentic-traffic.md) y [Tráfico de referencia](/help/dashboards/referral-traffic.md), si se ha configurado el reenvío de registros de CDN.
 * Use [Oportunidades](/help/dashboards/opportunities.md) para identificar contenido y mejoras técnicas.
 * Exporte datos y colabore con su equipo o invite a su compañero a utilizar el producto.

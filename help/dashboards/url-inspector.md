@@ -1,7 +1,7 @@
 ---
 title: Inspector de URL
 description: Aprenda a utilizar el Inspector de URL para analizar el rendimiento de páginas específicas del dominio en búsquedas de IA.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Las URL de tendencias que compiten por la vista de citas destacan las URL extern
 Se proporcionan las siguientes métricas:
 
 * **URL**: la URL analizada
-* **Tipo de contenido**: el tipo de contenido (propio, social, ganado, competidor).
+* **Tipo de contenido** - El tipo de contenido (propio, social, ganado, otro).
 * **Veces citada**: el número de veces que la dirección URL se ha citado en respuestas generadas por IA.
 * **Indicadores citados en**: el número de indicadores de IA únicos que citaron la dirección URL.
 * **Categorías**: las categorías de productos o temas asociados con la dirección URL.

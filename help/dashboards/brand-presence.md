@@ -1,9 +1,9 @@
 ---
 title: Presencia de marca
 description: Aprenda a utilizar el panel Presencia de la marca para comprender cómo se percibe su marca en el nivel de respuestas generadas por IA.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Presencia de marca {#brand-presence}
 
-El panel Presencia de la marca proporciona una descripción detallada sobre cómo se percibe su marca en el nivel de respuestas generadas por IA. Muestra dónde, con qué frecuencia y en qué contexto se menciona su marca. Puede utilizar el tablero para medir la visibilidad, rastrear las citas, comparar a los competidores y explorar las tendencias de opinión. El tablero se divide en varias secciones, cada una de las cuales proporciona diferentes perspectivas. También hay filtros personalizables para ayudarle a refinar los datos mostrados.
+El panel Presencia de la marca proporciona una descripción detallada sobre cómo se percibe su marca en el nivel de respuestas generadas por IA. Muestra dónde, con qué frecuencia y en qué contexto se menciona su marca. Puede utilizar el tablero para medir la visibilidad, rastrear las citas y explorar las tendencias de opinión. El tablero se divide en varias secciones, cada una de las cuales proporciona diferentes perspectivas. También hay filtros personalizables para ayudarle a refinar los datos mostrados.
 
-![Presencia de marca](/help/dashboards/assets/brand-main.png)
+![Presencia de marca](/help/dashboards/assets/brand-main1.png)
 
 Esta página detalla lo siguiente:
 
 * [Filtros](#filters)
 * [Métricas de información general](##key-metrics)
-* [Comparación de competidores](##competitor-comparison)
+* [Comparación de otros](##others-comparison)
 * [Tendencia de opinión](#sentiment-trend)
 * [Data Insights](#data-insights)
 
@@ -56,13 +56,13 @@ Esta métrica representa el número de veces que se hizo referencia al sitio com
 
 Los indicadores de tendencia de cada métrica clave muestran cómo cambian estos valores con el paso del tiempo en comparación con el periodo anterior.
 
-## Comparación de competidores {#competitor-comparison}
+## Comparación de otros {#others-comparison}
 
-En la sección de comparación de competidores puede seleccionar hasta cinco competidores y comparar sus menciones y citas con su marca. De este modo, puede ver y comparar su rendimiento en relación con la competencia.
+En la sección de comparación de otros puedes seleccionar hasta cinco marcas más y comparar sus menciones y citas con tu marca. De este modo, puede ver y comparar su rendimiento en relación con otras marcas.
 
-![Comparación de competidores](/help/dashboards/assets/competitor-comparison.png)
+![Comparación de otros](/help/dashboards/assets/competitor-comparison1.png)
 
-Los competidores se seleccionan de la lista desplegable y los gráficos se actualizan al hacer clic en **Aplicar filtros**. Los gráficos muestran las menciones semanales y las citas semanales en paralelo. También puede situar el ratón sobre el gráfico para ver la evolución de los datos a lo largo del lapso de tiempo semanal.
+Las otras marcas se seleccionan en la lista desplegable y los gráficos se actualizan al hacer clic en **Aplicar filtros**. Los gráficos muestran las menciones semanales y las citas semanales en paralelo. También puede situar el ratón sobre el gráfico para ver la evolución de los datos a lo largo del lapso de tiempo semanal.
 
 ## Análisis de tendencias de opinión {#sentiment-trend}
 
@@ -74,7 +74,7 @@ En la sección de análisis de tendencias de opinión puede realizar un seguimie
 
 Para redondear el tablero, tenemos dos tablas importantes: perspectivas de datos y cuota de voz. La información presentada en estas tablas le ayudará a identificar dónde es sólida su marca y dónde se necesita optimización.
 
-Con la tabla **data insights** puede explorar temas y preguntas de usuarios para evaluar y optimizar el impacto del contenido. Los resultados se detallan por temas y peticiones de datos. Mientras tanto, la tabla de **uso compartido de la voz** compara la voz de tu marca con la de otros competidores en todos los temas y te ayuda a identificar brechas y a priorizar temas futuros.
+Con la tabla **data insights** puede explorar temas y preguntas de usuarios para evaluar y optimizar el impacto del contenido. Los resultados se detallan por temas y peticiones de datos. Mientras tanto, la tabla **uso compartido de la voz** compara la voz de tu marca con otras marcas en todos los temas y te ayuda a identificar brechas y a priorizar temas futuros.
 
 ![Perspectivas de datos](/help/dashboards/assets/data-insights.png)
 
@@ -105,9 +105,9 @@ La tabla Uso compartido de voz proporciona una vista comparativa del rendimiento
 * **Tema**: el tema analizado.
 * **Popularidad**: el volumen de búsqueda del tema en relación con todos los demás temas del análisis.
 * **Menciones**: número de veces que se mencionó su marca en las respuestas de IA para el tema o la combinación de tema/solicitud.
-* **Clasificación**: la clasificación de la cuota de voz de su marca en relación con todos los competidores identificados.
+* **Clasificación**: la clasificación de la Cuota de voz de su marca en relación con todas las demás marcas identificadas.
 * **Cuota de voz**: el porcentaje del total de menciones que tu marca contiene en las respuestas generadas por IA.
-* **Principales 5 competidores**: las cinco marcas más mencionadas con mayor frecuencia para los mismos temas. Los competidores están organizados por su Cuota de Voz (de mayor a menor).
+* **Principales 5 otras**: las cinco marcas más mencionadas para los mismos temas. Las marcas están organizadas por su Cuota de voz (de mayor a menor).
 
 >[!ENDTABS]
 
@@ -119,5 +119,5 @@ Formas clave de utilizar la tabla:
 
 * Priorice los temas de alta popularidad con baja visibilidad: optimización del enfoque en los que la demanda de la audiencia es fuerte, pero la presencia de la marca es débil.
 * Rastree los cambios de opinión: localice los temas en los que las menciones son de tendencia negativa o neutra y coordine la respuesta.
-* Comparar citas con citas propias: identifique indicaciones en las que se menciona su marca pero se cita el contenido de la competencia, lo que indica una brecha de contenido.
+* Comparar citas con citas propias: identifique indicaciones en las que se mencione su marca, pero en las que se cite el contenido de otra marca, lo que indica una brecha de contenido.
 * Evaluar el rango de posiciones: monitorice si su marca aparece al principio de las respuestas de IA (posiciones 1-3) o más abajo (6-10).

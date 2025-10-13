@@ -1,9 +1,9 @@
 ---
 title: Configuración del cliente
 description: Utilice la configuración del cliente para definir cómo se supervisará y analizará su marca dentro de la plataforma del optimizador LLM.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -11,25 +11,25 @@ ht-degree: 0%
 
 # Configuración del cliente {#customer-configuration}
 
-El panel de configuración del cliente es una potente herramienta que proporciona perspectivas sobre la visibilidad de su marca en los LLM. Al configurar correctamente categorías, temas, indicadores y competidores, puede asegurarse de que su marca esté bien posicionada para aparecer en las respuestas generadas por LLM. Esta configuración garantiza que la plataforma adapte las perspectivas a su contexto empresarial, lo que permite una visibilidad precisa, el tráfico y el análisis de oportunidades.
+El panel de configuración del cliente es una potente herramienta que proporciona perspectivas sobre la visibilidad de su marca en los LLM. Al configurar correctamente categorías, temas y mensajes, puede asegurarse de que la marca esté bien posicionada para aparecer en las respuestas generadas por LLM. Esta configuración garantiza que la plataforma adapte las perspectivas a su contexto empresarial, lo que permite una visibilidad precisa, el tráfico y el análisis de oportunidades.
 
 ![Panel de configuración del cliente](/help/dashboards/assets/customer-config.png)
 
 Para configurar cómo LLM Optimizer monitoriza y analiza su presencia de marca en diferentes mercados y entornos competitivos, tiene acceso a las siguientes pestañas:
 
 * [Categorías](#categories)
-* [Seguimiento de competidores](#competitor-tracking)
+* [Seguimiento de otros](#others-tracking)
 * [Alias de marca](#brand-aliases)
 * [Data Insights](#data-insights)
 * [Configuración de la CDN](#agentic-cdn)
 
 >[!IMPORTANT]
 >
-> Para obtener más información sobre cómo configurar categorías, temas, mensajes y competidores, consulte la página [Prácticas recomendadas para configurar categorías, temas, mensajes y competidores](/help/overview/best-practices-topics-prompts.md).
+> Para obtener más información sobre cómo configurar las categorías, temas y preguntas, consulte la página [Prácticas recomendadas para configurar categorías, temas y preguntas](/help/overview/best-practices-topics-prompts.md).
 
 ## Categorías {#categories}
 
-Desde la pestaña Categorías, puede definir las categorías de negocio o las líneas de producto que desea rastrear y asociarlas a regiones específicas. En general, la pestaña Categorías está relacionada con casi todas las demás personalizaciones de esta página, ya que las categorías aparecen en el campo Categoría para las demás personalizaciones (seguimiento de competidores, alias, etc.). Para agregar una nueva categoría:
+Desde la pestaña Categorías, puede definir las categorías de negocio o las líneas de producto que desea rastrear y asociarlas a regiones específicas. En general, la pestaña Categorías está relacionada con casi todas las demás personalizaciones de esta página, ya que las categorías aparecen en el campo Categoría para las demás personalizaciones (seguimiento de otras, alias, etc.). Para agregar una nueva categoría:
 
 1. Haga clic en el botón **Agregar**.
 2. En la nueva ventana de configuración, agregue **Nombre de categoría**.
@@ -38,19 +38,19 @@ Desde la pestaña Categorías, puede definir las categorías de negocio o las l�
 
 Añadir nuevas categorías no generará automáticamente temas ni peticiones de datos, estos deberán añadirse manualmente desde la pestaña [Data Insights](#data-insights).
 
-Para eliminar una categoría, haga clic en el icono Eliminar de la lista de categorías. Tenga cuidado, ya que **al eliminar una categoría también se eliminarán los elementos asociados**, como competidores, que podría haber configurado o alias de marca vinculados a esa categoría específica.
+Para eliminar una categoría, haga clic en el icono Eliminar de la lista de categorías. Tenga cuidado, porque **al eliminar una categoría también se eliminarán los elementos asociados**, como alias de marca vinculados a esa categoría específica.
 
-## Seguimiento de competidores {#competitor-tracking}
+## Seguimiento de otros {#others-tracking}
 
-Mediante el seguimiento de competidores, puede rastrear cómo se mencionan sus competidores en relación con su marca en diferentes categorías y regiones. Monitorice su presencia y rendimiento en sus segmentos de mercado. Para personalizar el seguimiento de la competencia:
+Con esta pestaña, puede realizar un seguimiento de cómo se mencionan los demás en relación con su marca en diferentes categorías y regiones. Monitorice su presencia y rendimiento en sus segmentos de mercado. Para personalizar el seguimiento:
 
-1. Para agregar un nuevo competidor, haz clic en el botón **Agregar**.
+1. Haga clic en el botón **Agregar**.
 2. En la nueva ventana de configuración, seleccione **Categoría**. Las categorías creadas anteriormente aparecerán aquí.
-3. Añada el nombre del competidor.
-4. Personalice el Alias y los Dominios del competidor si es necesario.
-5. Haz clic en **Guardar** y el nuevo competidor aparecerá en la lista de la competencia.
+3. Añada el nombre del otro.
+4. Personalice los demás alias y dominios si es necesario.
+5. Haga clic en **Guardar**.
 
-Para eliminar un competidor, haga clic en el icono Eliminar de la lista de competidores.
+Para eliminar una entrada de la lista, haga clic en el icono Eliminar.
 
 ## Alias de marca {#brand-aliases}
 
