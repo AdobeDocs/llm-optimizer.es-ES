@@ -1,9 +1,9 @@
 ---
 title: Conceptos básicos de LLM Optimizer
 description: Obtenga información sobre cómo Adobe LLM Optimizer aumenta la visibilidad de la marca en la búsqueda impulsada por IA. Realice un seguimiento de menciones, citas y perspectivas. Empiece a optimizar hoy para mejorar la participación y la influencia.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe LLM Optimizer es una aplicación de IA generativa para la optimización de
 Adobe LLM Optimizer ofrece un conjunto de herramientas diseñadas para la optimización generativa del motor:
 
 * Medir la visibilidad de la marca: efectúe el seguimiento de cuándo, dónde y con qué frecuencia aparece su marca en los resultados de búsqueda con tecnología de IA, con una puntuación de visibilidad clara para las pruebas comparativas.
-* Competidores de referencia: Compare la cuota de voz y presencia de su marca con la de sus competidores en motores generativos.
+* Benchmark Otros: Compare la cuota de voz y presencia de su marca con la de sus competidores y con la de otros en motores generativos.
 * Descubra oportunidades procesables: identifique el contenido y las mejoras técnicas (como preguntas frecuentes, resúmenes, esquemas, rastreabilidad) para impulsar las menciones y citas.
 * Seguimiento del impacto en el tráfico: supervise el tráfico agéntico (asistente de IA) y de referencia a sus propiedades, lo que vincula la visibilidad con la participación.
 * Habilitar Team Collaboration: comparta paneles, asigne propietarios y alinee objetivos entre equipos de marketing, SEO y comunicaciones.
@@ -53,7 +53,7 @@ La optimización generativa del motor es interfuncional por naturaleza. LLM Opti
 Con Adobe LLM Optimizer, puede:
 
 **Medir la visibilidad de la marca**: realiza un seguimiento de cuándo, dónde y con qué frecuencia se menciona tu marca en los resultados de búsqueda con tecnología de IA. Supere las conjeturas con una puntuación de visibilidad clara que pueda comparar con el paso del tiempo.
-**Competidores de Benchmark** - Vea cómo su marca se enfrenta a la competencia en motores generativos. Identificar la cuota de huecos de voz y descubrir ventajas competitivas.
+**Otros de referencia** - Vea cómo su marca se apila contra otros en motores generativos. Identificar la cuota de huecos de voz y descubrir ventajas competitivas.
 **Descubre oportunidades procesables** - Encuentra oportunidades de contenido (por ejemplo, preguntas frecuentes, resúmenes, esquemas) y oportunidades técnicas (rastreabilidad, problemas de indexación) que aumentan directamente las menciones y citas.
 **Seguimiento del impacto del tráfico desde IA**: supervise el tráfico auténtico (de los asistentes de IA) y el tráfico de referencia (los clics de los usuarios en las citas) a sus propiedades. Vincule la visibilidad GEO con la participación real.
 **Habilitar Team Collaboration**: comparta paneles, asigne propietarios para preguntas o categorías y asegúrese de que se realiza un seguimiento de los objetivos de visibilidad en las funciones de marketing, SEO y comunicaciones.

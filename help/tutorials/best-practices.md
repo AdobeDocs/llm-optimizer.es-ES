@@ -1,9 +1,9 @@
 ---
 title: Prácticas recomendadas de LLM Optimizer
 description: Descubra las prácticas recomendadas para la optimización de LLM a fin de aumentar la visibilidad de la marca en la búsqueda de IA. Perspectivas de para la realización de pruebas comparativas y optimización de contenido.
-source-git-commit: a76d348a94495682d648ef0aad268e835e321017
+source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
-source-wordcount: '1659'
+source-wordcount: '1675'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Otras consideraciones para la optimización de LLM:
 La creación de una campaña de optimización de LLM exitosa implica:
 
 * Identifique los temas de alto valor alineados con la intención del cliente. Alinee la intención inmediata con los objetivos empresariales y las necesidades del cliente.
-* El competidor de Spot menciona para encontrar lagunas y oportunidades. Céntrese en los indicadores donde se citan los competidores, lo que indica una oportunidad para la inclusión de la marca.
+* Menciones puntuales a otros, incluidos los competidores, para encontrar lagunas y oportunidades. Céntrese en las indicaciones donde se citan otros, lo que indica una oportunidad para la inclusión de la marca.
 * Agrupar peticiones de datos por intención mediante clústeres de temas: utilice los temas y los campos de búsqueda para agrupar objetivos de usuario similares para comparar la visibilidad.
 * Evalúe la credibilidad de la marca utilizando los estándares EAT (experiencia, pericia, autoridad, confiabilidad) y YMYL (su dinero o su vida).
 
@@ -109,7 +109,7 @@ Estas son algunas prácticas recomendadas de optimización:
 
    * Use el [panel de oportunidades](/help/dashboards/opportunities.md) para identificar recomendaciones y actuar en consecuencia.
    * Rastree la puntuación de visibilidad, la opinión y la frecuencia de las citas.
-   * Ajuste en función de la actividad de la competencia y las tendencias inmediatas.
+   * Ajuste en función de la actividad de otros (incluidos los competidores) y las tendencias inmediatas.
 
 ## Optimización fuera del sitio: ampliación del espacio de marca
 
@@ -158,11 +158,11 @@ Estos son los pasos que puede seguir para monitorizar el progreso:
 1. Establezca como referencia su visibilidad actual.
    * Identifique con qué frecuencia y dónde se menciona y cita su marca, y cuál es la opinión en Adobe LLM Optimizer. Consulte el panel [Presencia de marca](/help/dashboards/brand-presence.md).
    * Analice las indicaciones donde aparece su marca y donde no.
-   * Compare la visibilidad con la de la competencia.
+   * Compare visibilidad con respecto a otros, incluidos los competidores (en **Seguimiento de otros** en el [panel de configuración del cliente](/help/dashboards/customer-configuration.md)).
    * Revise la visibilidad en plataformas generadas por los usuarios como Reddit, Quora y Wikipedia. Segmentar por plataforma (ChatGPT, modo Google AI, etc.)
    * Monitorice el tráfico auténtico para comprender qué páginas visitan los LLM. El tráfico de agente a menudo **no** va a la página de inicio, pero otras páginas inferiores en la jerarquía. Consulte el tablero [Tráfico agéntico](/help/assets/overview/agentic-traffic-card.png).
 1. Monitorice los cambios con el tiempo.
-   * Utilice filtros de tiempo para rastrear los turnos semanales y mensuales
+   * Utilice filtros de tiempo para rastrear los turnos semanales y mensuales.
    * Observe si hay picos o caídas en la puntuación de visibilidad.
    * Analice las tendencias de opinión para comprender la percepción de marca.
 1. Correlacione la visibilidad con el tráfico, la participación y las conversiones.
@@ -176,7 +176,7 @@ Estos son los pasos que puede seguir para monitorizar el progreso:
    * Asegúrese de que el contenido sea fácil de encontrar y leer para los LLM. Corrija cualquier problema, como páginas bloqueadas o problemas con el código del sitio web.
    * Asegúrese de que las contribuciones a plataformas como Wikipedia y Reddit sean imparciales, no comerciales y agreguen valor.
    * Utilice Adobe LLM Optimizer para realizar un seguimiento de cómo cambia la visibilidad con el paso del tiempo.
-   * Si observa que los competidores se mencionan más a menudo, ajuste su estrategia para mantenerse por delante.
+   * Si observa que otras personas, incluidos competidores, se mencionan con más frecuencia, ajuste su estrategia para mantenerse por delante.
    * Siga actualizando el contenido para que coincida con lo que la gente está buscando y preguntando.
 1. Ajustar las estrategias [fuera del sitio](#offsite-optimization---expanding-your-brand-footprint) y [dentro del sitio](#onsite-optimization---strengthening-your-owned-content) según las perspectivas.
 
@@ -226,7 +226,7 @@ Para optimizar el tráfico auténtico:
 * Asegúrese de la rastreabilidad revisando la configuración de robots.txt y CDN.
 * Use el [Inspector de URL](/help/dashboards/url-inspector.md) para analizar el rendimiento de las URL.
 * Rastree el comportamiento de bots accediendo a sus registros de CDN en el [tablero de tráfico de agente](/help/dashboards/agentic-traffic.md).
-* Segmente el tráfico para comprender los resultados empresariales. Vea [Prácticas recomendadas para categorías, temas, mensajes y competidores](/help/overview/best-practices-topics-prompts.md).
+* Segmente el tráfico para comprender los resultados empresariales. Vea [Prácticas recomendadas para categorías, temas y preguntas](/help/overview/best-practices-topics-prompts.md).
 
 Estas son las métricas que se deben monitorizar:
 
