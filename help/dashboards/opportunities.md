@@ -1,9 +1,9 @@
 ---
 title: Oportunidades de optimización
 description: Aprenda a utilizar el panel de oportunidades para detectar automáticamente cómo se puede mejorar el sitio con el fin de aumentar la visibilidad de la marca.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,9 @@ ht-degree: 0%
 
 # Oportunidades de optimización
 
-Las oportunidades de optimización se detectan automáticamente con perspectivas que muestran dónde se puede mejorar el sitio y la presencia externa para aumentar la visibilidad de la marca en la búsqueda de IA. Estas optimizaciones incluyen correcciones en la página (adición de contenido estructurado, canónicos o resúmenes), ajustes técnicos (desbloqueo de rastreadores de IA o resolución de errores) e influencia en el contenido en sitios autoritativos de terceros. Abordar estas oportunidades de optimización ayuda a que su marca se represente con precisión y tenga más probabilidades de citarse en respuestas generativas.
+Las oportunidades de optimización se detectan automáticamente con perspectivas que muestran dónde se puede mejorar el sitio y la presencia externa para aumentar la visibilidad de la marca en la búsqueda de IA.
+
+Estas optimizaciones incluyen correcciones en la página (adición de contenido estructurado, canónicos o resúmenes), ajustes técnicos (desbloqueo de rastreadores de IA o resolución de errores) e influencia en el contenido en sitios autoritativos de terceros. Abordar estas oportunidades de optimización ayuda a que su marca se represente con precisión y tenga más probabilidades de citarse en respuestas generativas.
 
 ![Oportunidades de optimización](/help/dashboards/assets/oport.png)
 
@@ -35,10 +37,11 @@ A continuación se muestra una tabla de las oportunidades que admite actualmente
 | Detectar encabezados duplicados | Contenido (in situ) | Analiza las etiquetas de encabezados de HTML y marca los encabezados repetidos. Muestra las direcciones URL afectadas y los fragmentos de texto duplicados. | Modificar encabezados para que sean únicos y mantener la jerarquía (H1 → H2 → H3). Combinar o cambiar el nombre de las secciones duplicadas. |
 | Detectar tráfico agéntico bloqueado | GEO técnico | Analiza los registros de CDN para las solicitudes bloqueadas de agentes de IA conocidos (por ejemplo, GPTBot, PerplexityBot). Informa de las direcciones URL y los agentes afectados. | Actualice robots.txt o las configuraciones del servidor para permitir el acceso a los rastreadores de IA admitidos cuando corresponda. |
 | Detectar problemas de 404s / 403s / 5xx | GEO técnico | Supervisa los registros de CDN para ver si hay respuestas de error. Frecuencia de informes, direcciones URL afectadas y visitas estimadas perdidas. | Corrija los vínculos rotos, actualice los permisos y resuelva los problemas del lado del servidor para que el contenido clave devuelva 200 respuestas. |
+| Recuperar visibilidad del contenido (acceso anticipado) | GEO técnico | Indica páginas donde se oculta contenido crítico a los agentes de inteligencia artificial. Muestra las direcciones URL afectadas y el contenido esperado que se puede recuperar. | Preprocese las páginas para que los agentes de IA puedan disponer de más contenido sin ejecutar JavaScript. |
 
 ### Recuperar oportunidad de visibilidad de contenido {#recover-contet}
 
-Como se ha indicado anteriormente, la oportunidad de visibilidad del contenido marca las páginas en las que los agentes de IA pierden contenido clave debido al procesamiento en el lado del cliente. Para cada página identificada, muestra exactamente qué contenido falta en la vista del agente de IA, lo que le ayuda a identificar lagunas de visibilidad. También es compatible con una capacidad de procesamiento previo basada en Edge que puede servir más contenido de HTML al tráfico real sin requerir cambios en el Sistema de administración de contenido (CMS). Esta funcionalidad se encuentra actualmente en Acceso anticipado y requiere la configuración del equipo de LLMO. Póngase en contacto con `llmo-at-edge@adobe.com` para activar la oportunidad de visibilidad del contenido.
+Como se ha indicado anteriormente, la oportunidad de visibilidad del contenido marca las páginas en las que los agentes de IA pierden contenido clave debido al procesamiento en el lado del cliente. Para cada página identificada, muestra exactamente qué contenido falta en la vista del agente de IA, lo que le ayuda a identificar lagunas de visibilidad. También es compatible con una capacidad de procesamiento previo basada en Edge que puede servir más contenido de HTML al tráfico real sin requerir cambios en el Sistema de administración de contenido (CMS). Actualmente, esta funcionalidad se encuentra en Acceso anticipado y requiere la configuración del equipo de LLM Optimizer. Póngase en contacto con `llmo-at-edge@adobe.com` para activar la oportunidad de visibilidad del contenido.
 
 ### Herramientas adicionales
 

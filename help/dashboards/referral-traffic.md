@@ -1,9 +1,9 @@
 ---
 title: Tráfico de referencia
 description: Aprenda a utilizar el panel Tráfico de referencia para ver cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia.
-source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Tráfico de referencia
 
-Tráfico de referencia muestra cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia. Rastrea y analiza fuentes de tráfico, patrones de referencia y métricas de conversión de sitios web y plataformas externas. Esto le ayudará a comprender qué fuentes, regiones y páginas generan el tráfico más atractivo. Los datos se obtienen de los registros de la CDN o de la telemetría operativa de AEM. Ambas fuentes preservan la privacidad y no capturan datos personales de los usuarios.
+Tráfico de referencia muestra cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia. Rastrea y analiza fuentes de tráfico, patrones de referencia y métricas de conversión de sitios web y plataformas externas. Esto le ayudará a comprender qué fuentes, regiones y páginas generan el tráfico más atractivo. Los datos provienen de los registros de la red de distribución de contenido (CDN) o de la [telemetría operativa de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service). Ambas fuentes preservan la privacidad y no capturan datos personales de los usuarios. También hay filtros personalizables para ayudarle a refinar los datos mostrados.
 
-También hay filtros personalizables para ayudarle a refinar los datos mostrados.
+![Página de referencia](/help/dashboards/assets/referral-traffic.png)
 
 Esta página detalla lo siguiente:
 

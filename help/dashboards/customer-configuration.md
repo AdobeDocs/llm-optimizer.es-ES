@@ -1,23 +1,19 @@
 ---
 title: Configuración del cliente
 description: Utilice la configuración del cliente para definir cómo se supervisará y analizará su marca dentro de la plataforma del optimizador LLM.
-source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
 
 
-# Configuración del cliente
+# Configuración del cliente {#customer-configuration}
 
-Configuración del cliente es donde se define cómo se supervisará y analizará la marca dentro de la plataforma del optimizador de LLM. Puede personalizar categorías (como unidades de negocio o líneas de productos), rastrear competidores y agregar alias de mención de marca para capturar todas las variaciones de su marca en los mensajes. Esta configuración garantiza que la plataforma adapte las perspectivas a su contexto empresarial, lo que permite una visibilidad precisa, el tráfico y el análisis de oportunidades.
+El panel de configuración del cliente es una potente herramienta que proporciona perspectivas sobre la visibilidad de su marca en los LLM. Al configurar correctamente categorías, temas, indicadores y competidores, puede asegurarse de que su marca esté bien posicionada para aparecer en las respuestas generadas por LLM. Esta configuración garantiza que la plataforma adapte las perspectivas a su contexto empresarial, lo que permite una visibilidad precisa, el tráfico y el análisis de oportunidades.
 
 ![Panel de configuración del cliente](/help/dashboards/assets/customer-config.png)
-
-## Panel de configuración del cliente
-
-El panel de configuración del cliente es una potente herramienta que proporciona perspectivas sobre la visibilidad de su marca en los LLM. Al configurar correctamente categorías, temas, indicadores y competidores, puede asegurarse de que su marca esté bien posicionada para aparecer en las respuestas generadas por LLM. Revisar regularmente perspectivas como la Cuota de voz, la visibilidad del contenido y las oportunidades le ayudará a adaptar su estrategia y a adelantarse a la competencia.
 
 Para configurar cómo LLM Optimizer monitoriza y analiza su presencia de marca en diferentes mercados y entornos competitivos, tiene acceso a las siguientes pestañas:
 
@@ -25,11 +21,15 @@ Para configurar cómo LLM Optimizer monitoriza y analiza su presencia de marca e
 * [Seguimiento de competidores](#competitor-tracking)
 * [Alias de marca](#brand-aliases)
 * [Data Insights](#data-insights)
-* [CDN agéntico](#agentic-cdn)
+* [Configuración de la CDN](#agentic-cdn)
+
+>[!IMPORTANT]
+>
+> Para obtener más información sobre cómo configurar categorías, temas, mensajes y competidores, consulte la página [Prácticas recomendadas para configurar categorías, temas, mensajes y competidores](/help/overview/best-practices-topics-prompts.md).
 
 ## Categorías {#categories}
 
-Desde la pestaña Categorías, puede definir las categorías empresariales o las líneas de producto que desea rastrear y asociarlas a regiones específicas. En general, la pestaña Categorías está relacionada con cualquier otra personalización de esta página, ya que las categorías aparecen en el campo Categoría para las demás personalizaciones (seguimiento de competidores, alias, etc.). Para agregar una nueva categoría:
+Desde la pestaña Categorías, puede definir las categorías de negocio o las líneas de producto que desea rastrear y asociarlas a regiones específicas. En general, la pestaña Categorías está relacionada con casi todas las demás personalizaciones de esta página, ya que las categorías aparecen en el campo Categoría para las demás personalizaciones (seguimiento de competidores, alias, etc.). Para agregar una nueva categoría:
 
 1. Haga clic en el botón **Agregar**.
 2. En la nueva ventana de configuración, agregue **Nombre de categoría**.
@@ -90,7 +90,15 @@ Además, también puede agregar temas/peticiones de datos a la lista independien
 
 En la lista, puede hacer clic en cada tema y aparecerán las peticiones de datos asociadas. Para eliminar el tema y sus peticiones de datos asociadas, haga clic en el icono Eliminar de la lista.
 
-<!--## Agentic CDN {#agentic-cdn}
+## Configuración de la CDN {#cdn-configuration}
 
-Not available (will it be available for release?).-->
+Desde esta pestaña, puede configurar los flujos de CDN para permitir que Adobe LLM Optimizer analice los datos de CDN. Estos datos se utilizarán para impulsar los paneles (como el tráfico de la Agencia), lo que proporcionará perspectivas sobre los patrones de tráfico, las métricas de rendimiento y las oportunidades de optimización. Para incorporar su proveedor de CDN, haga clic en **Incorporar CDN**.
 
+![CDN de configuración de cliente](/help/overview/assets/cc-cdn.png)
+
+En la ventana **Incorporar proveedor de CDN**:
+
+1. Seleccione su proveedor de CDN (por ejemplo, Akamai, Fastly administrado por Adobe, Fastly, AWS Cloudfront, CDN de Azure, Cloudflare u otro).
+2. Haga clic en **Incorporar** para habilitar el reenvío de registros.
+
+Si seleccionas **Otro**, tendrás que ponerte en contacto con Adobe para obtener ayuda.

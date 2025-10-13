@@ -1,9 +1,9 @@
 ---
 title: Presencia de marca
 description: Aprenda a utilizar el panel Presencia de la marca para comprender cómo se percibe su marca en el nivel de respuestas generadas por IA.
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Presencia de marca {#brand-presence}
 
-El panel Presencia de la marca proporciona una visión general de cómo se percibe su marca en el nivel de respuestas generadas por IA. Muestra dónde, con qué frecuencia y en qué contexto se menciona su marca. Puede utilizar el tablero para medir la visibilidad, rastrear las citas, comparar a los competidores y explorar las tendencias de opinión. El tablero se divide en varias secciones, cada una de las cuales proporciona diferentes perspectivas. También hay filtros personalizables para ayudarle a refinar los datos mostrados.
+El panel Presencia de la marca proporciona una descripción detallada sobre cómo se percibe su marca en el nivel de respuestas generadas por IA. Muestra dónde, con qué frecuencia y en qué contexto se menciona su marca. Puede utilizar el tablero para medir la visibilidad, rastrear las citas, comparar a los competidores y explorar las tendencias de opinión. El tablero se divide en varias secciones, cada una de las cuales proporciona diferentes perspectivas. También hay filtros personalizables para ayudarle a refinar los datos mostrados.
 
 ![Presencia de marca](/help/dashboards/assets/brand-main.png)
 
@@ -44,7 +44,7 @@ El panel destaca tres métricas muy importantes en la parte superior de la pági
 
 ### Puntuación de visibilidad {#visibility-score}
 
-La puntuación de visibilidad está compuesta por factores como: menciones, citas, opiniones y rango. Cada factor tiene un cierto &quot;peso&quot; adjunto que se suma a la puntuación final. Por ejemplo, menciona &quot;más peso&quot; porque la visibilidad solo importa si se cita su marca.
+La puntuación de visibilidad está compuesta por factores como: menciones, citas, opiniones y rango. Cada factor tiene un cierto &quot;peso&quot; adjunto que se suma a la puntuación final.
 
 ### Menciones {#mentions}
 
@@ -72,7 +72,9 @@ En la sección de análisis de tendencias de opinión puede realizar un seguimie
 
 ## Perspectivas de datos y uso compartido de la voz {#data-insights}
 
-Para redondear el tablero, tenemos dos tablas importantes: perspectivas de datos y cuota de voz. La información presentada en estas tablas le ayudará a identificar dónde es sólida su marca y dónde se necesita optimización.  Con la tabla **data insights** puede explorar temas y preguntas de usuarios para evaluar y optimizar el impacto del contenido. Los resultados se detallan por temas y peticiones de datos. Mientras tanto, la tabla de **uso compartido de la voz** compara la voz de tu marca con la de otros competidores en todos los temas y te ayuda a identificar brechas y a priorizar temas futuros.
+Para redondear el tablero, tenemos dos tablas importantes: perspectivas de datos y cuota de voz. La información presentada en estas tablas le ayudará a identificar dónde es sólida su marca y dónde se necesita optimización.
+
+Con la tabla **data insights** puede explorar temas y preguntas de usuarios para evaluar y optimizar el impacto del contenido. Los resultados se detallan por temas y peticiones de datos. Mientras tanto, la tabla de **uso compartido de la voz** compara la voz de tu marca con la de otros competidores en todos los temas y te ayuda a identificar brechas y a priorizar temas futuros.
 
 ![Perspectivas de datos](/help/dashboards/assets/data-insights.png)
 
@@ -86,12 +88,12 @@ Haga clic en las pestañas siguientes para obtener detalles sobre cada tabla y l
 
 La tabla de perspectivas de datos le ayuda a explorar temas y mensajes del usuario para evaluar y optimizar el impacto del contenido. Muestra las siguientes métricas:
 
-* **Tema**: la categoría del tema representa palabras clave de SEO y preguntas del usuario relacionadas con su marca. Puede hacer clic en para expandir cada tema y ver las solicitudes individuales analizadas para comprobar la presencia de la marca. Cada tema y botón tiene un botón **Detalles** cuando pasa el ratón sobre él. Al hacer clic en el botón, se muestra una ventana independiente con más detalles.
+* **Tema**: la categoría del tema representa palabras clave de SEO y preguntas del usuario relacionadas con su marca. Puede hacer clic en para expandir cada tema y ver las solicitudes individuales analizadas para comprobar la presencia de la marca. Cada tema tiene un botón **Detalles** cuando pasa el ratón sobre él. Al hacer clic en el botón, se muestra una ventana independiente con más detalles.
 * **Región** - muestra la región de las indicaciones.
 * **Popularidad**: la categoría de popularidad representa el volumen de búsqueda de este tema en relación con todos los demás temas del análisis. El valor puede ser Alto, Medium o Bajo.
 * **Puntuación de visibilidad**: la puntuación de visibilidad de ese tema. Refleja factores ponderados como menciones, citas, opiniones y rango.
 * **Menciones**: la cantidad de veces que se mencionó su marca en las respuestas de IA para este tema o esta combinación de tema/solicitud.
-* **Opinión**: la percepción de la marca en las respuestas de IA en relación con cada tema calculada como un promedio en todas las semanas. Solo se rellena cuando se menciona realmente su marca
+* **Opinión**: la percepción de la marca en las respuestas de IA en relación con cada tema calculada como un promedio en todas las semanas. Solo se rellena cuando se menciona realmente su marca.
 * **Posición**: la importancia relativa de su marca en las respuestas de IA, calculada como un promedio en todas las semanas.
 * **Todas las citas** - El número de fuentes únicas citadas en las respuestas de IA para este tema o esta combinación de tema/petición de datos (incluye citas propias).
 * **Citas en propiedad**: el número de veces que se citó su marca en las respuestas de IA para esta palabra clave o esta combinación de palabra clave y pregunta.

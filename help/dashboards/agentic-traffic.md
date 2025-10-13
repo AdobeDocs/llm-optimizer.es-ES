@@ -1,9 +1,9 @@
 ---
 title: Tráfico de agente
 description: Aprenda a utilizar el tablero Tráfico agéntico para ver cómo los agentes de IA interactúan con el sitio.
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1100'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,9 @@ ht-degree: 0%
 
 # Tráfico de agente {#agentic-traffic}
 
-El panel Tráfico agéntico le muestra cómo los agentes de IA (rastreadores y bots de chat) interactúan con su sitio. Con esta vista puede realizar un seguimiento de la cantidad total de solicitudes y de las métricas generales relacionadas con el rendimiento. También puede ver la distribución del tráfico entre mercados, categorías, páginas y agentes. Los datos que usa este panel proceden de los registros de CDN, por lo que debe configurar **el reenvío de registros de CDN** para poder mostrar las métricas. También hay filtros personalizables para ayudarle a refinar los datos mostrados.
+El panel Tráfico agéntico muestra cómo los agentes de IA (rastreadores y bots de chat) interactúan con el sitio. Con esta vista puede realizar un seguimiento de la cantidad total de solicitudes y de las métricas generales relacionadas con el rendimiento. También puede ver la distribución del tráfico entre mercados, categorías, páginas y agentes. Los datos que usa este panel proceden de los registros de CDN, por lo que debe configurar **el reenvío de registros de CDN** para poder mostrar las métricas. También hay filtros personalizables para ayudarle a refinar los datos mostrados.
+
+![Distribución de tráfico](/help/dashboards/assets/ag-main.png)
 
 Esta página detalla lo siguiente:
 
@@ -34,8 +36,7 @@ Seleccione **Ir a la configuración** y navegará automáticamente a la pestaña
 
 En esta pestaña, seleccione **CDN integrada**. Y se muestra la ventana del proveedor de CDN.
 
-![Proveedor de CDN](/help/dashboards/assets/ag-log-forward3.png)
-
+<!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
 En la ventana **Incorporar proveedor de CDN**:
 
 1. Seleccione su proveedor de CDN (por ejemplo, Akamai, Fastly administrado por Adobe, Fastly, AWS Cloudfront, CDN de Azure, Cloudflare u otro).
@@ -86,7 +87,7 @@ La vista Desplazamientos superiores e inferiores resalta las direcciones URL con
 
 ## Análisis del rendimiento del agente de usuario y la URL {#user-url-performance}
 
-Las vistas Agente de usuario y Análisis de rendimiento de URL proporcionan más desgloses de datos sobre cómo los rastreadores y bots de chat interactúan con el sitio. Haga clic en las pestañas a continuación para obtener descripciones detalladas.
+Las vistas Agente de usuario y Análisis de rendimiento de URL proporcionan más desgloses de datos sobre cómo los rastreadores y bots de chat interactúan con el sitio. Haga clic en las pestañas siguientes para obtener descripciones detalladas.
 
 ![Análisis de rendimiento del agente de usuario y la URL](/help/dashboards/assets/user-agent.png)
 
@@ -99,8 +100,6 @@ La tabla Análisis de agente de usuario proporciona un desglose del tráfico por
 * **Tipo de página** - El tipo de página.
 * **Tipo de agente**: el agente de IA está rastreando la página, ya sea un rastreador o un bot de chat.
 * **Visitas**: el número total de solicitudes realizadas por agentes de inteligencia artificial para ese tipo de página específico.
-
-También puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir el análisis del agente con su equipo o incluirlo en los informes ejecutivos.
 
 >[!TAB Análisis de rendimiento de URL]
 
@@ -122,4 +121,4 @@ La vista Detalles de la URL proporciona una comprensión integral del rendimient
 
 >[!ENDTABS]
 
-Para ambas tablas, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir las perspectivas con su equipo o incluir la tabla en los informes ejecutivos.
+En ambas tablas, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir las perspectivas con su equipo o incluir la tabla en los informes ejecutivos.
