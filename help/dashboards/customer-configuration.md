@@ -1,10 +1,10 @@
 ---
 title: Configuración del cliente
 description: Utilice la configuración del cliente para definir cómo se supervisará y analizará su marca dentro de la plataforma del optimizador LLM.
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 0%
+source-wordcount: '800'
+ht-degree: 1%
 
 ---
 
@@ -98,7 +98,7 @@ Desde esta pestaña, puede configurar los flujos de CDN para permitir que Adobe 
 
 En la ventana **Incorporar proveedor de CDN**:
 
-1. Seleccione su proveedor de CDN (por ejemplo, Akamai, Fastly administrado por Adobe, Fastly, AWS Cloudfront, CDN de Azure, Cloudflare u otro).
+1. Seleccione su proveedor de CDN.
 2. Haga clic en **Incorporar** para habilitar el reenvío de registros.
 
 Si seleccionas **Otro**, tendrás que ponerte en contacto con Adobe para obtener ayuda.

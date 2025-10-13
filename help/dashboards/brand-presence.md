@@ -1,7 +1,7 @@
 ---
 title: Presencia de marca
 description: Aprenda a utilizar el panel Presencia de la marca para comprender cómo se percibe su marca en el nivel de respuestas generadas por IA.
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 El panel Presencia de la marca proporciona una descripción detallada sobre cómo se percibe su marca en el nivel de respuestas generadas por IA. Muestra dónde, con qué frecuencia y en qué contexto se menciona su marca. Puede utilizar el tablero para medir la visibilidad, rastrear las citas y explorar las tendencias de opinión. El tablero se divide en varias secciones, cada una de las cuales proporciona diferentes perspectivas. También hay filtros personalizables para ayudarle a refinar los datos mostrados.
 
-![Presencia de marca](/help/dashboards/assets/brand-main1.png)
+![Presencia de marca](/help/dashboards/assets/brand-main.png)
 
 Esta página detalla lo siguiente:
 
@@ -60,7 +60,7 @@ Los indicadores de tendencia de cada métrica clave muestran cómo cambian estos
 
 En la sección de comparación de otros puedes seleccionar hasta cinco marcas más y comparar sus menciones y citas con tu marca. De este modo, puede ver y comparar su rendimiento en relación con otras marcas.
 
-![Comparación de otros](/help/dashboards/assets/competitor-comparison1.png)
+![Comparación de otros](/help/dashboards/assets/other-comparison.png)
 
 Las otras marcas se seleccionan en la lista desplegable y los gráficos se actualizan al hacer clic en **Aplicar filtros**. Los gráficos muestran las menciones semanales y las citas semanales en paralelo. También puede situar el ratón sobre el gráfico para ver la evolución de los datos a lo largo del lapso de tiempo semanal.
 
