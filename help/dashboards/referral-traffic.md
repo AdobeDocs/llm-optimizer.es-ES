@@ -1,7 +1,7 @@
 ---
 title: Tráfico de referencia
 description: Aprenda a utilizar el panel Tráfico de referencia para ver cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia.
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 0%
@@ -78,10 +78,10 @@ Las tablas Detalles de fuentes de referencia y Análisis de rendimiento de URL l
 
 La vista Detalles de fuentes de referencia desglosa el tráfico proveniente de diferentes plataformas, como OpenAI, Microsoft, Google y Perplexity. Muestra métricas clave como visitas, tasa de salida hacia otro sitio y tipo de canal, lo que le ayuda a comprender qué fuentes de IA y búsqueda dirigen el tráfico más comprometido a su sitio.
 
-**Source**: origen del tráfico de referencia.
-**Visitas**: número total de visitas para cada origen.
-**Tasa de salida hacia otro sitio** - El porcentaje de sesiones del origen de referencia que no tuvieron evento de participación.
-**Canal**: el canal del origen, ya sea ganado, pagado o ambos.
+* **Source**: origen del tráfico de referencia.
+* **Visitas**: número total de visitas para cada origen.
+* **Tasa de salida hacia otro sitio** - El porcentaje de sesiones del origen de referencia que no tuvieron evento de participación.
+* **Canal**: el canal del origen, ya sea ganado, pagado o ambos.
 
 >[!TAB Análisis de rendimiento de URL]
 

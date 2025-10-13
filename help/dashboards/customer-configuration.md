@@ -1,9 +1,9 @@
 ---
 title: Configuración del cliente
 description: Utilice la configuración del cliente para definir cómo se supervisará y analizará su marca dentro de la plataforma del optimizador LLM.
-source-git-commit: 099d4387b6a5efd25e142db13e309a181fe67941
+source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Además, también puede agregar temas/peticiones de datos a la lista independien
 
 En la lista, puede hacer clic en cada tema y aparecerán las peticiones de datos asociadas. Para eliminar el tema y sus peticiones de datos asociadas, haga clic en el icono Eliminar de la lista.
 
-## CDN agéntico {#agentic-cdn}
+<!--## Agentic CDN {#agentic-cdn}
 
-No disponible (¿estará disponible para el lanzamiento?).
+Not available (will it be available for release?).-->
 
