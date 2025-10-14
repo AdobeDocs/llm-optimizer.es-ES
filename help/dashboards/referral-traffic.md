@@ -1,9 +1,9 @@
 ---
 title: Tráfico de referencia
 description: Aprenda a utilizar el panel Tráfico de referencia para ver cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Tráfico de referencia
 
-Tráfico de referencia muestra cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia. Rastrea y analiza fuentes de tráfico, patrones de referencia y métricas de conversión de sitios web y plataformas externas. Esto le ayudará a comprender qué fuentes, regiones y páginas generan el tráfico más atractivo. Los datos provienen de los registros de la red de distribución de contenido (CDN) o de la [telemetría operativa de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service). Ambas fuentes preservan la privacidad y no capturan datos personales de los usuarios. También hay filtros personalizables para ayudarle a refinar los datos mostrados.
+Tráfico de referencia muestra cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia. Rastrea y analiza fuentes de tráfico, patrones de referencia y métricas de conversión de sitios web y plataformas externas. Esto le ayudará a comprender qué fuentes, regiones y páginas generan el tráfico más atractivo. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> También hay filtros personalizables que le ayudarán a refinar los datos mostrados.
 
 ![Página de referencia](/help/dashboards/assets/referral-traffic.png)
 
@@ -25,7 +25,7 @@ Esta página detalla lo siguiente:
 
 ## Configuración {#setup}
 
-Al iniciar sesión por primera vez, el panel Tráfico de referencia puede aparecer en blanco. Para ver los datos, debe configurar un proveedor de tráfico de referencia seleccionando **Ir a la configuración**.
+Al iniciar sesión por primera vez, el panel Tráfico de referencia puede aparecer en blanco. Para ver los datos, debe configurar el [reenvío de registros de CDN](/help/dashboards/customer-configuration.md#cdn-configuration), seleccionando **Ir a la configuración**.
 
 ![Configuración de referencia](/help/dashboards/assets/referral-setup1.png)
 
@@ -33,7 +33,7 @@ Al iniciar sesión por primera vez, el panel Tráfico de referencia puede aparec
 2. Enter a primary contact email.
 3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
 
-Una vez seleccionado un proveedor de tráfico de referencia, el tablero se rellenará con métricas de tráfico de referencia.
+Una vez activado, el tablero se rellenará con métricas de tráfico de referencia.
 
 ## Filtros {#filters}
 

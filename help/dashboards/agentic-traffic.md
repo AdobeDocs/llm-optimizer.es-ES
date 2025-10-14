@@ -1,7 +1,7 @@
 ---
 title: Tráfico de agente
 description: Aprenda a utilizar el tablero Tráfico agéntico para ver cómo los agentes de IA interactúan con el sitio.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 0%
@@ -42,7 +42,7 @@ En la ventana **Incorporar proveedor de CDN**:
 1. Seleccione su proveedor de CDN (por ejemplo, Akamai, Fastly administrado por Adobe, Fastly, AWS Cloudfront, CDN de Azure, Cloudflare u otro).
 2. Haga clic en **Incorporar** para habilitar el reenvío de registros.
 
-Si seleccionas **Otro**, tendrás que ponerte en contacto con Adobe para obtener ayuda.
+Si seleccionas **Otro**, tendrás que ponerte en contacto con llmo-now@adobe.com para obtener ayuda.
 
 Una vez activados, los registros se incorporan y el tablero se rellena con métricas como interacciones totales del agente, tasa de éxito, visitas por mercado, análisis de agentes de usuario y rendimiento a nivel de URL.
 
