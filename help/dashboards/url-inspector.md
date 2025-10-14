@@ -1,7 +1,8 @@
 ---
 title: Inspector de URL
 description: Aprenda a utilizar el Inspector de URL para analizar el rendimiento de páginas específicas del dominio en búsquedas de IA.
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+feature: URL Inspector
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%

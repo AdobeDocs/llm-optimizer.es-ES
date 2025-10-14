@@ -1,7 +1,8 @@
 ---
 title: Inicio rápido
 description: 'Empiece con Adobe LLM Optimizer: Incorpore su marca, desbloquee las perspectivas de visibilidad de la IA y explore los paneles para mejorar el rendimiento de la búsqueda.'
-source-git-commit: 7a945ab37c7f45742cff093ef8f3133cf5971991
+feature: Quickstart, Onboarding
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 0%
@@ -32,7 +33,7 @@ Consulte la sección siguiente para obtener detalles sobre cómo activar la vers
 
 ### Clientes de AEM Cloud
 
-Si eres cliente de AEM Cloud, tienes la opción de probar LLM Optimizer usando la tarjeta Anuncio del producto en [Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Si eres cliente de AEM Cloud, tienes la opción de probar LLM Optimizer usando la tarjeta Anuncio del producto en [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Las solicitudes agregadas recientemente no aparecerán en el [Tablero de presencia de marca](/help/dashboards/brand-presence.md) hasta que se complete el procesamiento. Los clientes de AEM Cloud pueden utilizar la versión de prueba gratuita de LLM Optimizer. El uso de más de 200 peticiones de datos requiere un contrato de licencia independiente. El acceso se proporciona &quot;tal cual&quot; y &quot;según esté disponible&quot;, y Adobe puede modificarlo, limitarlo o eliminarlo en cualquier momento. Póngase en contacto con el representante de su cuenta para obtener más información.

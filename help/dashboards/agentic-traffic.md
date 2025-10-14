@@ -1,7 +1,8 @@
 ---
 title: Tráfico de agente
 description: Aprenda a utilizar el tablero Tráfico agéntico para ver cómo los agentes de IA interactúan con el sitio.
-source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
+feature: Agentic Traffic
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 0%
@@ -117,7 +118,7 @@ La tabla de rendimiento de URL tiene un campo de búsqueda para acceder rápidam
 
 ![Detalles de URL](/help/dashboards/assets/details.png)
 
-La vista Detalles de la URL proporciona una comprensión integral del rendimiento de una página, que muestra la frecuencia con la que se cita, el sentimiento de las respuestas de IA donde se menciona, los temas y las indicaciones en los que aparece y las tendencias del tráfico auténtico y de referencia a lo largo del tiempo.
+La vista Detalles de URL proporciona una comprensión integral del rendimiento de una página, que muestra la frecuencia con la que se cita, la percepción de las respuestas de IA donde se menciona, los temas y las indicaciones en los que aparece y las tendencias del tráfico auténtico y de referencia a lo largo del tiempo.
 
 >[!ENDTABS]
 

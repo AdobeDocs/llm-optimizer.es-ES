@@ -1,7 +1,8 @@
 ---
 title: Configuración del cliente
 description: Utilice la configuración del cliente para definir cómo se supervisará y analizará su marca dentro de la plataforma del optimizador LLM.
-source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
+feature: Customer Configuration
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 0%
