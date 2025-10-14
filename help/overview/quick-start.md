@@ -1,9 +1,9 @@
 ---
 title: Inicio rápido
 description: 'Empiece con Adobe LLM Optimizer: Incorpore su marca, desbloquee las perspectivas de visibilidad de la IA y explore los paneles para mejorar el rendimiento de la búsqueda.'
-source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
+source-git-commit: 7a945ab37c7f45742cff093ef8f3133cf5971991
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Consulte la sección siguiente para obtener detalles sobre cómo activar la vers
 
 ### Clientes de AEM Cloud
 
-Si eres cliente de AEM Cloud, tienes la opción de probar LLM Optimizer usando la tarjeta Anuncio del producto en [Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Si eres cliente de AEM Cloud, tienes la opción de probar LLM Optimizer usando la tarjeta Anuncio del producto en [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Las solicitudes agregadas recientemente no aparecerán en el [Tablero de presencia de marca](/help/dashboards/brand-presence.md) hasta que se complete el procesamiento. Los clientes de AEM Cloud pueden utilizar la versión de prueba gratuita de LLM Optimizer. El uso de más de 200 peticiones de datos requiere un contrato de licencia independiente. El acceso se proporciona &quot;tal cual&quot; y &quot;según esté disponible&quot;, y Adobe puede modificarlo, limitarlo o eliminarlo en cualquier momento. Póngase en contacto con el representante de su cuenta para obtener más información.
@@ -54,7 +54,7 @@ Además, también debe configurar el [reenvío de registros de CDN](#step-4) par
 
 ### Clientes que no son de AEM Cloud
 
-Una vez finalizado el acuerdo comercial, se le incorporará mediante el comando slackbot con el dominio que desee incorporar en LLM Optimizer. Una vez completada esta incorporación, podrá iniciar sesión en LLM Optimizer a través de [https://llmo.now](https://llmo.now).
+Una vez finalizado el acuerdo empresarial, se incorporará al dominio que desee incorporar en LLM Optimizer. Una vez completada esta incorporación, podrá iniciar sesión en LLM Optimizer a través de [https://llmo.now](https://llmo.now).
 
 ### Paso 2: Personalizar categorías, temas e indicadores
 
