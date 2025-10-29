@@ -2,9 +2,9 @@
 title: Inspector de URL
 description: Aprenda a utilizar el Inspector de URL para analizar el rendimiento de páginas específicas del dominio en búsquedas de IA.
 feature: URL Inspector
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,14 @@ El Inspector de URL proporciona varias métricas de información general para qu
 * **Total de peticiones de datos únicas** - Número total de peticiones de datos únicos de IA.
 * **URL citadas únicas**: el número de URL de propiedad única que se han citado.
 * **Veces totales citadas**: Veces totales que se ha citado una dirección URL propia en respuestas generadas por IA.
-<!-- * **Total agentic hits** - The total number of hits from AI agents on your URLs.
-* **Referral hits from LLMs** - The total number of hits directed from AI-generated answers to your URLs.-->
+* **Total de visitas reales**: El número total de visitas de agentes de inteligencia artificial en sus direcciones URL.
+* **Visitas de referencia de LLM**: el número total de visitas dirigidas desde respuestas generadas por IA a sus direcciones URL.
 
 Los indicadores de tendencia de cada métrica de información general muestran cómo cambian estos valores con el paso del tiempo en comparación con el período anterior.
 
 ## Sus URL citadas
 
-La vista de direcciones URL citadas enumera todas las direcciones URL de su marca que se han citado en respuestas generadas por IA, con métricas de compatibilidad. La tabla de datos también tiene un campo de búsqueda para acceder rápidamente a direcciones URL específicas. Además, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir las perspectivas con su equipo o incluir la tabla en los informes ejecutivos.
+La vista de direcciones URL citadas enumera todas las direcciones URL de su marca que se han citado en respuestas generadas por IA, con métricas de compatibilidad. Ambas tablas tienen un campo de búsqueda para acceder rápidamente a los temas y puede personalizar qué métricas se muestran haciendo clic en el botón **Configurar columnas**. Además, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir las perspectivas con su equipo o incluir la tabla en los informes ejecutivos.
 
 ![URL citadas](/help/dashboards/assets/cited-urls.png)
 
@@ -74,6 +74,6 @@ Se proporcionan las siguientes métricas:
 
 ### Ventana de detalles
 
-Tanto para la vista de tendencias como para la vista citada, las direcciones URL tienen un botón **Detalles** cuando pasa el ratón sobre una dirección URL específica. Al hacer clic en el botón, se muestra una ventana independiente con detalles adicionales. La ventana de detalles muestra la frecuencia con la que se cita la dirección URL, la opinión de las respuestas de IA donde se menciona, los temas y las indicaciones en los que aparece y las tendencias del tráfico auténtico y de referencia a lo largo del tiempo (para las direcciones URL propias).
+Tanto para la vista de tendencias como para la vista citada, las direcciones URL tienen un botón **Detalles** al final de cada fila. Al hacer clic en el botón, se muestra una ventana independiente con detalles adicionales. La ventana de detalles muestra la frecuencia con la que se cita la dirección URL, <!--the sentiment of AI responses where it is mentioned,--> los temas y las indicaciones en los que aparece y las tendencias del tráfico de referencia y agéntico a lo largo del tiempo (para las direcciones URL propias).
 
 ![Ventana de detalles](/help/dashboards/assets/details-url.png)

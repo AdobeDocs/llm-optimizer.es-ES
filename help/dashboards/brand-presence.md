@@ -2,9 +2,9 @@
 title: Presencia de marca
 description: Aprenda a utilizar el panel Presencia de la marca para comprender cómo se percibe su marca en el nivel de respuestas generadas por IA.
 feature: Brand Presence
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,7 @@ En la parte superior de la página, puede aplicar filtros para restringir la vis
 
 * **Intervalo de fecha**: seleccione el lapso de tiempo para los datos mostrados. Por ejemplo, las últimas 4 semanas. También tiene la opción de personalizar el período de tiempo seleccionando la opción **Semanas personalizadas**.
 * **Categoría**: filtre los resultados mostrados por categorías predefinidas o por categorías personalizadas.
+* **Tema**: filtra por tema para analizar los temas de contenido y las áreas de asunto en las que tu marca aparece en las respuestas de IA.
 * **Plataforma**: elige qué motor de IA analizar.
 * **Origen de mensajes** - Elija el origen de los mensajes. El origen puede ser introducido por el usuario o generado por IA.
 * **Promoción de marca en el mensaje**: filtre los resultados mediante mensajes con marca o sin marca.
@@ -47,9 +48,9 @@ El panel destaca tres métricas muy importantes en la parte superior de la pági
 
 La puntuación de visibilidad está compuesta por factores como: menciones, citas, opiniones y rango. Cada factor tiene un cierto &quot;peso&quot; adjunto que se suma a la puntuación final.
 
-### Menciones {#mentions}
+### Menciones de marca {#mentions}
 
-Esta métrica representa el número total de veces que su marca o sus categorías se mencionaron en las preguntas de IA muestreadas. Por ejemplo, tiene la marca &quot;Café B&quot;, con las categorías &quot;Máquinas&quot; y &quot;Accesorios&quot; y esta métrica cuenta el número total de veces que aparecen en las respuestas de IA muestreadas.
+Esta métrica representa el número total de veces que su marca o sus categorías se mencionaron en las preguntas de IA muestreadas. Por ejemplo, si tiene la marca &quot;Café B&quot;, con las categorías &quot;Máquinas&quot; y &quot;Accesorios&quot;, esta métrica cuenta el número total de veces que aparecen en las respuestas de IA muestreadas.
 
 ### Citas {#citations}
 
@@ -63,11 +64,11 @@ En la sección de comparación de otros puedes seleccionar hasta cinco marcas m�
 
 ![Comparación de otros](/help/dashboards/assets/other-comparison.png)
 
-Las otras marcas se seleccionan en la lista desplegable y los gráficos se actualizan al hacer clic en **Aplicar filtros**. Los gráficos muestran las menciones semanales y las citas semanales en paralelo. También puede situar el ratón sobre el gráfico para ver la evolución de los datos a lo largo del lapso de tiempo semanal.
+Las otras marcas se seleccionan en la lista desplegable y los gráficos se actualizan al hacer clic en **Aplicar filtros**. Los gráficos muestran las menciones de marca semanales y las citas de marca semanales en paralelo. También puede situar el ratón sobre el gráfico para ver la evolución de los datos a lo largo del lapso de tiempo semanal.
 
 ## Análisis de tendencias de opinión {#sentiment-trend}
 
-En la sección de análisis de tendencias de opinión puede realizar un seguimiento de cómo se percibe su marca en las respuestas de IA muestreadas. La métrica de tendencia de opinión puede ser positiva, neutra o negativa. Por ejemplo, puede ser positivo si las respuestas resaltan la calidad del producto o negativo si mencionan un servicio deficiente. El gráfico de tendencias muestra los cambios en la percepción de la marca de una semana a otra. La sección solo se rellena después de mencionar su marca.
+En la sección de análisis de tendencias de opinión puede realizar un seguimiento de cómo se percibe su marca en las respuestas de IA muestreadas. La métrica de tendencia de opinión puede ser positiva, neutra o negativa. Por ejemplo, puede ser positivo si las respuestas resaltan la calidad del producto o negativo si mencionan un servicio deficiente. El gráfico de tendencias muestra los cambios en la percepción de la marca de una semana a otra. Esta sección se rellena solo después de mencionar su marca.
 
 ![Tendencia de opinión](/help/dashboards/assets/sentiment-trend.png)
 
@@ -79,7 +80,7 @@ Con la tabla **data insights** puede explorar temas y preguntas de usuarios para
 
 ![Perspectivas de datos](/help/dashboards/assets/data-insights.png)
 
-Ambas tablas tienen un campo de búsqueda para acceder rápidamente a los temas. Además, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir las perspectivas con su equipo o incluir la tabla en los informes ejecutivos.
+Ambas tablas tienen un campo de búsqueda para acceder rápidamente a los temas y puede personalizar qué métricas se muestran haciendo clic en el botón **Configurar columnas**. Además, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir la información con su equipo o incluir las tablas en los informes ejecutivos.
 
 Haga clic en las pestañas siguientes para obtener detalles sobre cada tabla y las métricas asociadas.
 
@@ -98,6 +99,9 @@ La tabla de perspectivas de datos le ayuda a explorar temas y mensajes del usuar
 * **Posición**: la importancia relativa de su marca en las respuestas de IA, calculada como un promedio en todas las semanas.
 * **Todas las citas** - El número de fuentes únicas citadas en las respuestas de IA para este tema o esta combinación de tema/petición de datos (incluye citas propias).
 * **Citas en propiedad**: el número de veces que se citó su marca en las respuestas de IA para esta palabra clave o esta combinación de palabra clave y pregunta.
+  <!--* **Executions**-->
+
+También puede ver detalles adicionales de cada tema si hace clic en el icono **Detalles** al final de cada fila.
 
 >[!TAB Uso compartido de voz]
 
@@ -119,6 +123,6 @@ La tabla de perspectivas de datos le ayuda a pasar de métricas a acciones al de
 Formas clave de utilizar la tabla:
 
 * Priorice los temas de alta popularidad con baja visibilidad: optimización del enfoque en los que la demanda de la audiencia es fuerte, pero la presencia de la marca es débil.
-* Rastree los cambios de opinión: localice los temas en los que las menciones son de tendencia negativa o neutra y coordine la respuesta.
+* Rastree los cambios de opinión: identifique los temas en los que las menciones son tendencias negativas o neutras y coordine la respuesta.
 * Comparar citas con citas propias: identifique indicaciones en las que se mencione su marca, pero en las que se cite el contenido de otra marca, lo que indica una brecha de contenido.
 * Evaluar el rango de posiciones: monitorice si su marca aparece al principio de las respuestas de IA (posiciones 1-3) o más abajo (6-10).

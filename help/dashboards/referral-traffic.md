@@ -2,9 +2,9 @@
 title: Tráfico de referencia
 description: Aprenda a utilizar el panel Tráfico de referencia para ver cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia.
 feature: Referral Traffic
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -54,12 +54,13 @@ Después de seleccionar el filtro deseado, haga clic en **Aplicar filtros** para
 El panel resalta el rendimiento general de la referencia al mostrar métricas clave, entre ellas:
 
 * **Tráfico total de referencia**: el tráfico total de referencia de todas las fuentes.
+* **Tráfico de referencia de LLM**: el tráfico de referencia total de LLM.
 * **Tasa de consentimiento**: porcentaje de visitantes que aceptan una solicitud de consentimiento.
 * **Tasa de salida hacia otro sitio** - El porcentaje de sesiones de orígenes de referencia que no tuvieron evento de participación.
 
 ![Página de referencia](/help/dashboards/assets/referral-traffic.png)
 
-Además de las métricas de rendimiento generales presentadas anteriormente, el panel **Regiones principales** desglosa el tráfico por ubicación geográfica. Mientras tanto, el panel **Principales fuentes de referencia** muestra las plataformas que generan la mayor cantidad de visitas. Los indicadores de tendencia de las métricas muestran cómo cambian estos valores con el paso del tiempo en comparación con el periodo anterior.
+Además de las métricas de rendimiento general presentadas anteriormente, hay tres paneles adicionales que muestran la distribución del tráfico en diferentes mercados, fuentes de referencia y categorías de intención de página <!-- the **Top Regions** panel breaks down traffic by geography. Meanwhile, the **Top Referral Sources** panel shows the platforms driving the most visits. Trend indicators for the metrics show how these values are changing over time compared to the previous period.-->
 
 <!--## Top Referral URLs {#top-referrals}
 
@@ -90,4 +91,4 @@ La vista Análisis de rendimiento de URL clasifica las páginas de mayor rendimi
 
 >[!ENDTABS]
 
-En ambas tablas, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir las perspectivas con su equipo o incluir la tabla de tráfico de referencia en los informes ejecutivos.
+En ambas tablas, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir la información con su equipo o incluir las tablas en los informes ejecutivos. Además, en ambas tablas, puede personalizar qué métricas se muestran haciendo clic en el botón **Configurar columnas**.

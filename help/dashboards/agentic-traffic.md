@@ -2,9 +2,9 @@
 title: Tráfico de agente
 description: Aprenda a utilizar el tablero Tráfico agéntico para ver cómo los agentes de IA interactúan con el sitio.
 feature: Agentic Traffic
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ En la parte superior de la página, hay tres métricas clave que debe tener en c
 
 * **Interacciones activas**: esta métrica representa el número total de solicitudes realizadas por los agentes de IA al sitio web. Esto incluye todo el tráfico de motores de búsqueda, bots de chat y otro tráfico que no sea humano.
 * **Tasa de éxito**: esta métrica representa el porcentaje de solicitudes HTTP correctas, incluidas las respuestas correctas directas y las redirecciones.
-* **Promedio de TTFB** - Tiempo hasta el primer byte (TTFB) mide el tiempo que tarda el primer byte de datos en recibirse del servidor. Los valores más bajos indican tiempos de respuesta del servidor más rápidos.
+* **Promedio de TTFB** - Tiempo hasta el primer byte (TTFB) mide el tiempo que tarda el primer byte de datos en recibirse del servidor. El valor promedio se pondera en función del número de solicitudes que devuelven cada código y excluye las solicitudes que resultaron en respuestas 5xx. Los valores más bajos indican tiempos de respuesta del servidor más rápidos.
 
 Los indicadores de tendencia de cada métrica clave muestran cómo cambian estos valores con el paso del tiempo en comparación con el periodo anterior.
 
@@ -82,7 +82,7 @@ Utilice el gráfico Tendencias de tráfico agente para realizar un seguimiento d
 
 ## Movimientos superior e inferior {#top-bottom-movers}
 
-La vista Desplazamientos superiores e inferiores resalta las direcciones URL con los mayores cambios de una semana a otra en el tráfico auténtico: visitas o visitas de sistemas de IA que acceden a su contenido. Los Visitantes principales muestran las páginas que ganan visibilidad o participación, mientras que los Visitantes inferiores muestran las URL con las caídas más pronunciadas. Esto le ayuda a identificar rápidamente qué contenido tiende al alza, qué contenido puede necesitar atención y dónde se están cambiando los patrones de detección impulsados por IA.
+La vista Desplazamientos superiores e inferiores resalta las direcciones URL con los mayores cambios de una semana a otra en el tráfico auténtico: visitas o visitas de sistemas de IA que acceden a su contenido. **Modificadores principales** muestra las páginas que ganan visibilidad o participación, mientras que **Modificadores inferiores** muestra las direcciones URL con las disminuciones más pronunciadas. Esto le ayuda a identificar rápidamente qué contenido tiende al alza, qué contenido puede necesitar atención y dónde se están cambiando los patrones de detección impulsados por IA.
 
 ![Movimientos superiores e inferiores](/help/dashboards/assets/movers.png)
 
@@ -102,6 +102,8 @@ La tabla Análisis de agente de usuario proporciona un desglose del tráfico por
 * **Tipo de agente**: el agente de IA está rastreando la página, ya sea un rastreador o un bot de chat.
 * **Visitas**: el número total de solicitudes realizadas por agentes de inteligencia artificial para ese tipo de página específico.
 
+Puede personalizar qué métricas se muestran haciendo clic en el botón **Configurar columnas**.
+
 >[!TAB Análisis de rendimiento de URL]
 
 La tabla Análisis de Rendimiento de URL muestra una vista detallada de las direcciones URL individuales. Esto incluye visitas, agentes únicos, agentes principales, tasas de éxito y categorías. De este modo, puede identificar páginas de alto valor, detectar huecos de rastreo y optimizar el contenido para los motores de IA. Las direcciones URL se clasifican por volumen de tráfico. La tabla contiene las siguientes categorías:
@@ -113,13 +115,15 @@ La tabla Análisis de Rendimiento de URL muestra una vista detallada de las dire
 * **Tipo de agente principal**: el tipo de agente de IA que generó la mayor cantidad de tráfico en esta dirección URL.
 * **Tasa de éxito**: porcentaje de solicitudes HTTP correctas, incluidas las respuestas correctas directas y las redirecciones.
 * **Categoría**: La categoría que más se asemeja al contenido de su página.
+* **Promedio de TTFB (ms)** - Tiempo hasta el primer byte (TTFB) mide el tiempo que tarda el primer byte de datos en recibirse del servidor (en milisegundos). El valor promedio se pondera en función del número de solicitudes que devuelven cada código y excluye las solicitudes que resultaron en respuestas 5xx. Los valores más bajos indican tiempos de respuesta del servidor más rápidos.
+* **Códigos de respuesta**: los códigos de estado HTTP observados para la dirección URL.
 
-La tabla de rendimiento de URL tiene un campo de búsqueda para acceder rápidamente a las URL. También puede ver detalles adicionales de cada URL haciendo clic en el icono de información al final de cada fila.
+La tabla de rendimiento de URL tiene un campo de búsqueda para acceder rápidamente a las direcciones URL y puede personalizar las métricas que se muestran haciendo clic en el botón **Configurar columnas**. También puedes ver detalles adicionales para cada URL haciendo clic en el icono **Detalles** al final de cada fila.
 
 ![Detalles de URL](/help/dashboards/assets/details.png)
 
-La vista Detalles de URL proporciona una comprensión integral del rendimiento de una página, que muestra la frecuencia con la que se cita, la percepción de las respuestas de IA donde se menciona, los temas y las indicaciones en los que aparece y las tendencias del tráfico auténtico y de referencia a lo largo del tiempo.
+La vista Detalles de URL proporciona una comprensión integral del rendimiento de una página, y muestra la frecuencia con la que se cita, la opinión de las respuestas de IA donde se menciona, los temas y las indicaciones en los que aparece y las tendencias del tráfico auténtico y de referencia a lo largo del tiempo.
 
 >[!ENDTABS]
 
-En ambas tablas, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir las perspectivas con su equipo o incluir la tabla en los informes ejecutivos.
+En ambas tablas, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir la información con su equipo o incluir las tablas en los informes ejecutivos.
