@@ -2,9 +2,9 @@
 title: Inicio rápido
 description: 'Empiece con Adobe LLM Optimizer: Incorpore su marca, desbloquee las perspectivas de visibilidad de la IA y explore los paneles para mejorar el rendimiento de la búsqueda.'
 feature: Quickstart, Onboarding
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 48f7f64cd68c442f4a6837c5f4b7b29c3b175d1b
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Consulte la sección siguiente para obtener detalles sobre cómo activar la vers
 
 ### Clientes de AEM Cloud
 
-Si eres cliente de AEM Cloud, tienes la opción de probar LLM Optimizer usando la tarjeta Anuncio del producto en [Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Si eres cliente de AEM Cloud, tienes la opción de probar LLM Optimizer usando la tarjeta Anuncio del producto en [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Las solicitudes agregadas recientemente no aparecerán en el [Tablero de presencia de marca](/help/dashboards/brand-presence.md) hasta que se complete el procesamiento. Los clientes de AEM Cloud pueden utilizar la versión de prueba gratuita de LLM Optimizer. El uso de más de 200 peticiones de datos requiere un contrato de licencia independiente. El acceso se proporciona &quot;tal cual&quot; y &quot;según esté disponible&quot;, y Adobe puede modificarlo, limitarlo o eliminarlo en cualquier momento. Póngase en contacto con el representante de su cuenta para obtener más información.
@@ -47,7 +47,7 @@ Una vez que hagas clic en el botón **Probar LLM Optimizer**, se te redirigirá 
 >[!NOTE]
 >El dominio que ha proporcionado será utilizado por todos los miembros de su organización y no se puede cambiar.
 
-Para almacenar en déclencheur el análisis de presencia de marca, deberá proporcionar categorías, temas y preguntas.
+Se generará un pequeño conjunto de categorías, temas y mensajes durante la fase de incorporación. El análisis de presencia de marca en esas indicaciones estará disponible poco después de que se haya incorporado el sitio.
 
 ![Análisis de presencia de marca](/help/overview/assets/bp-analysis.png)
 
@@ -59,7 +59,7 @@ Una vez finalizado el acuerdo empresarial, se incorporará al dominio que desee 
 
 ### Paso 2: Personalizar categorías, temas e indicadores
 
-Para almacenar en déclencheur el análisis de presencia de marca y rellenar el panel con información sobre la visibilidad de la marca, debe personalizar categorías, temas e indicadores. Esta configuración se creó en el [panel de configuración del cliente](/help/dashboards/customer-configuration.md).
+Una vez incorporado el sitio, puede ver el análisis de presencia de marca en función del pequeño conjunto de indicadores que se generaron automáticamente durante la fase de incorporación. Ahora puede personalizar las categorías, los temas y las peticiones de datos de su marca. Esta configuración se creó en el [panel de configuración del cliente](/help/dashboards/customer-configuration.md).
 
 ![Panel de configuración del cliente](/help/overview/assets/prompt-creation.png)
 
@@ -78,9 +78,9 @@ Desde este panel, puede:
 >
 > Para obtener más información sobre cómo configurar las categorías, temas y preguntas, consulte la página [Prácticas recomendadas para configurar categorías, temas y preguntas](/help/overview/best-practices-topics-prompts.md).
 
-### Paso 3: Rellenado previo automático de Insights
+### Paso 3: Perspectivas de presencia de marca
 
-Una vez que el dominio se haya incorporado y haya proporcionado las categorías y los temas, LLM Optimizer almacenará automáticamente en déclencheur el análisis de presencia de marca.
+Una vez incorporado el dominio, verá perspectivas iniciales en la vista Presencia de marca en función de los mensajes que se generaron automáticamente durante la incorporación. Una vez que haya personalizado sus propias categorías, temas y preguntas, LLM Optimizer almacenará automáticamente en déclencheur el análisis de presencia de marca en las preguntas que haya proporcionado y los resultados estarán disponibles en 24 horas.
 
 ### Paso 4: Proporcionar información para el reenvío de registros de CDN {#step-4}
 
