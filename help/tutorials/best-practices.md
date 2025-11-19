@@ -2,9 +2,9 @@
 title: Prácticas recomendadas de LLM Optimizer
 description: Descubra las prácticas recomendadas para la optimización de LLM a fin de aumentar la visibilidad de la marca en la búsqueda de IA. Perspectivas de para la realización de pruebas comparativas y optimización de contenido.
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 31c36f9959993171de4bec384a361d38e6e01dad
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ La optimización in situ mejora el contenido que posee para mejorar la visibilid
 
 >[!TIP]
 >
->LLM Optimizer sugiere oportunidades de optimización in situ y fuera del sitio en el panel [Oportunidades](/help/dashboards/opportunities.md). Estas oportunidades son específicas para el sitio. A menudo puede implementar optimizaciones directamente en el sitio.
+>LLM Optimizer sugiere oportunidades de optimización in situ y fuera del sitio en el panel [Oportunidades](/help/dashboards/opportunities.md). Estas oportunidades son específicas para el sitio. Muchas de estas sugerencias se pueden implementar directamente en el sitio mediante LLM Optimizer.
 
 Estas son algunas prácticas recomendadas de optimización:
 
@@ -118,7 +118,7 @@ La optimización fuera del sitio se centra en mejorar la visibilidad de su marca
 
 >[!TIP]
 >
->LLM Optimizer sugiere oportunidades de optimización in situ y fuera del sitio en el panel [Oportunidades](/help/dashboards/opportunities.md). Estas oportunidades son específicas para el sitio. A menudo puede implementar optimizaciones directamente en el sitio.
+>LLM Optimizer sugiere oportunidades de optimización in situ y fuera del sitio en el panel [Oportunidades](/help/dashboards/opportunities.md). Estas oportunidades son específicas para el sitio. Muchas de estas sugerencias se pueden implementar directamente en el sitio mediante LLM Optimizer.
 
 
 Canales clave fuera del sitio:
