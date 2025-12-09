@@ -2,9 +2,9 @@
 title: Inicio rápido
 description: 'Empiece con Adobe LLM Optimizer: Incorpore su marca, desbloquee las perspectivas de visibilidad de la IA y explore los paneles para mejorar el rendimiento de la búsqueda.'
 feature: Quickstart, Onboarding
-source-git-commit: 3068247d9d13d0c3cd22e2077daa06fd1680d6b3
+source-git-commit: 24183fbe2577bb9402f8b6aaaf1e46c75403383d
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Consulte la sección siguiente para obtener detalles sobre cómo activar la vers
 
 ### Clientes de AEM Cloud
 
-Si eres cliente de AEM Cloud, tienes la opción de probar LLM Optimizer usando la tarjeta Anuncio del producto en [Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Si eres cliente de AEM Cloud, tienes la opción de probar LLM Optimizer usando la tarjeta Anuncio del producto en [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Las solicitudes agregadas recientemente no aparecerán en el [Tablero de presencia de marca](/help/dashboards/brand-presence.md) hasta que se complete el procesamiento. Los clientes de AEM Cloud pueden utilizar la versión de prueba gratuita de LLM Optimizer. El uso de más de 200 peticiones de datos requiere un contrato de licencia independiente. El acceso se proporciona &quot;tal cual&quot; y &quot;según esté disponible&quot;, y Adobe puede modificarlo, limitarlo o eliminarlo en cualquier momento. Póngase en contacto con el representante de su cuenta para obtener más información.
@@ -60,7 +60,7 @@ Una vez que hagas clic en el botón **Probar LLM Optimizer**, se te redirigirá 
 
 Se generará un pequeño conjunto de categorías, temas y mensajes durante la fase de incorporación. El análisis de presencia de marca en esas indicaciones estará disponible poco después de que se haya incorporado el sitio.
 
-![Análisis de presencia de marca](/help/overview/assets/bp-analysis.png)
+<!--![Brand Presence Analysis](/help/overview/assets/bp-analysis.png)-->
 
 Además, también debe configurar el [reenvío de registros de CDN](#step-4) para el análisis del tráfico. LLM Optimizer requiere datos de presencia de marca y perspectivas del tráfico agéntico y de referencia para identificar oportunidades y proporcionar recomendaciones prescriptivas para impulsar la visibilidad de la IA.
 
