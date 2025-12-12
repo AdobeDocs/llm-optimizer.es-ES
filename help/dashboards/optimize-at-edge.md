@@ -457,7 +457,7 @@ Esta oportunidad marca páginas donde el contenido clave está oculto para los a
 
 #### Herramientas adicionales
 
-¿Es citable su página web? La [Adobe LLM Optimizer: ¿Es citable su página web?La extensión de Chrome ](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) le permite ver exactamente a qué parte del contenido de su página web pueden acceder los LLM y qué elementos permanecen ocultos. Diseñado como una herramienta de diagnóstico gratuita e independiente, no requiere licencia de producto ni configuración.
+¿Es citable su página web? La [Adobe LLM Optimizer: ¿Es citable su página web?La extensión de Chrome &#x200B;](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) le permite ver exactamente a qué parte del contenido de su página web pueden acceder los LLM y qué elementos permanecen ocultos. Diseñado como una herramienta de diagnóstico gratuita e independiente, no requiere licencia de producto ni configuración.
 
 Con un solo clic, puede evaluar la legibilidad automática de cualquier sitio, ver una comparación paralela de lo que ven los agentes de IA frente a lo que ven los usuarios humanos y estimar cuánto contenido se puede recuperar con LLM Optimizer. Ver [¿Puede AI leer su sitio web?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) para obtener más información.
 
