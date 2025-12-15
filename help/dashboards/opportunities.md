@@ -2,9 +2,9 @@
 title: Oportunidades de optimización
 description: Aprenda a utilizar el panel de oportunidades para detectar automáticamente cómo se puede mejorar el sitio con el fin de aumentar la visibilidad de la marca.
 feature: Opportunities
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 533565d089076d651bb633ea7e426b0a4282de97
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ A continuación se muestra una tabla de las oportunidades que admite actualmente
 | Detectar tráfico agéntico bloqueado | GEO técnico | Analiza los registros de CDN para las solicitudes bloqueadas de agentes de IA conocidos (por ejemplo, GPTBot, PerplexityBot). Informa de las direcciones URL y los agentes afectados. | Actualice robots.txt o las configuraciones del servidor para permitir el acceso a los rastreadores de IA admitidos cuando corresponda. |
 | Detectar problemas de 404s / 403s / 5xx | GEO técnico | Supervisa los registros de CDN para ver si hay respuestas de error. Frecuencia de informes, direcciones URL afectadas y visitas estimadas perdidas. | Corrija los vínculos rotos, actualice los permisos y resuelva los problemas del lado del servidor para que el contenido clave devuelva 200 respuestas. |
 | Recuperar visibilidad del contenido (acceso anticipado) | GEO técnico | Indica páginas donde se oculta contenido crítico a los agentes de inteligencia artificial. Muestra las direcciones URL afectadas y el contenido esperado que se puede recuperar. | Preprocese las páginas para que los agentes de IA puedan disponer de más contenido sin ejecutar JavaScript. |
+
+## Optimización automática {#auto-optimization}
+
+La optimización automática permite implementar con un solo clic las optimizaciones recomendadas, lo que reduce el esfuerzo manual y el tiempo de respuesta al valor. Las optimizaciones se pueden aplicar en el origen de contenido o en el perímetro de CDN. La optimización automática basada en Edge está disponible actualmente en Acceso anticipado para oportunidades seleccionadas. Para obtener más información, consulte la página [Optimizar en Edge](/help/dashboards/optimize-at-edge.md).
 
 ### Recuperar oportunidad de visibilidad de contenido {#recover-contet}
 
