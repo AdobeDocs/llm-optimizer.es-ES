@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-La configuración de enrutamiento se realiza mediante una regla de CDN [originSelector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Los requisitos previos son los siguientes:
+La configuración de enrutamiento se realiza mediante una regla de CDN [originSelector](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Los requisitos previos son los siguientes:
 
 * decidir el dominio que se va a distribuir
 * decida las rutas que desea enrutar
@@ -82,7 +82,7 @@ La configuración de enrutamiento se realiza mediante una regla de CDN [originSe
 
 Para implementar la regla, debe hacer lo siguiente:
 
-* crear una [canalización de configuración](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* crear una [canalización de configuración](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * confirmar el archivo de configuración `cdn.yaml` en su repositorio
 * ejecutar la canalización de configuración
 
