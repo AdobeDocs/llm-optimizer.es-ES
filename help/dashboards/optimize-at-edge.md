@@ -467,7 +467,7 @@ En la tabla siguiente se presentan las oportunidades que pueden mejorar la exper
 
 ### Herramientas adicionales
 
-La [Adobe LLM Optimizer: ¿Es citable su página web?La extensión de Chrome ](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) le permite ver exactamente a qué parte del contenido de su página web pueden acceder los LLM y qué elementos permanecen ocultos. Diseñado como una herramienta de diagnóstico gratuita e independiente, no requiere licencia de producto ni configuración.
+La [Adobe LLM Optimizer: ¿Es citable su página web?La extensión de Chrome &#x200B;](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) le permite ver exactamente a qué parte del contenido de su página web pueden acceder los LLM y qué elementos permanecen ocultos. Diseñado como una herramienta de diagnóstico gratuita e independiente, no requiere licencia de producto ni configuración.
 
 Con un solo clic, puede evaluar la legibilidad automática de cualquier sitio. Puede ver una comparación en paralelo de lo que ven los agentes de IA frente a lo que ven los usuarios humanos y estimar cuánto contenido se puede recuperar mediante LLM Optimizer. Ver [¿Puede AI leer su sitio web?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) página para obtener más información.
 
