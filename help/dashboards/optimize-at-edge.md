@@ -2,9 +2,9 @@
 title: Optimizar en Edge
 description: Obtenga información sobre cómo entregar optimizaciones en LLM Optimizer en el perímetro de la CDN sin necesidad de realizar cambios en la creación.
 feature: Opportunities
-source-git-commit: 3986fec2dcb9537f5b8f94ce9c72558845aba376
+source-git-commit: 2311bd2990c6ff7ecee22ca82b25987df10e7e1c
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2188'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 Esta página proporciona información general detallada sobre cómo entregar optimizaciones en el perímetro de CDN sin ningún cambio en la creación. Abarca el proceso de incorporación, las oportunidades de optimización disponibles y cómo optimizar automáticamente en Edge.
 
 >[!NOTE]
->Actualmente, esta funcionalidad se encuentra en Acceso anticipado. Puede obtener más información acerca de los programas de acceso anticipado [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
+>Actualmente, esta funcionalidad se encuentra en Acceso anticipado. Puede obtener más información acerca de los programas de acceso anticipado [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## ¿Qué es Optimizar en Edge?
 
@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-La configuración de enrutamiento se realiza mediante una regla de CDN [originSelector](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Los requisitos previos son los siguientes:
+La configuración de enrutamiento se realiza mediante una regla de CDN [originSelector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Los requisitos previos son los siguientes:
 
 * decidir el dominio que se va a distribuir
 * decida las rutas que desea enrutar
@@ -82,7 +82,7 @@ La configuración de enrutamiento se realiza mediante una regla de CDN [originSe
 
 Para implementar la regla, debe hacer lo siguiente:
 
-* crear una [canalización de configuración](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* crear una [canalización de configuración](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * confirmar el archivo de configuración `cdn.yaml` en su repositorio
 * ejecutar la canalización de configuración
 
@@ -467,7 +467,7 @@ En la tabla siguiente se presentan las oportunidades que pueden mejorar la exper
 
 ### Herramientas adicionales
 
-La [Adobe LLM Optimizer: ¿Es citable su página web?La extensión de Chrome &#x200B;](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) le permite ver exactamente a qué parte del contenido de su página web pueden acceder los LLM y qué elementos permanecen ocultos. Diseñado como una herramienta de diagnóstico gratuita e independiente, no requiere licencia de producto ni configuración.
+La [Adobe LLM Optimizer: ¿Es citable su página web?](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) La extensión de Chrome muestra la cantidad de contenido web al que pueden acceder los LLM y lo que permanece oculto. Diseñado como una herramienta de diagnóstico gratuita e independiente, no requiere licencia de producto ni configuración.
 
 Con un solo clic, puede evaluar la legibilidad automática de cualquier sitio. Puede ver una comparación en paralelo de lo que ven los agentes de IA frente a lo que ven los usuarios humanos y estimar cuánto contenido se puede recuperar mediante LLM Optimizer. Ver [¿Puede AI leer su sitio web?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) página para obtener más información.
 
@@ -503,7 +503,7 @@ Esta oportunidad encuentra páginas con párrafos largos y complejos que pueden 
 
 Para cada oportunidad, puede obtener una vista previa, editar, implementar, ver en directo y revertir las optimizaciones en el perímetro de.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477987/?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Vista previa
 
