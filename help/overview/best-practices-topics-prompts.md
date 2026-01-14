@@ -2,9 +2,9 @@
 title: Prácticas recomendadas para categorías, temas, indicadores y otros
 description: Optimice las perspectivas de LLM configurando categorías, temas, indicadores y otras marcas para rastrear, incluyendo a la competencia, para monitorizar marcas personalizadas y analizar contenido estratégico.
 feature: Best Practices, Customer Configuration
-source-git-commit: a4dd9b1aece2936fb95a2e831ec8b41946bc5f46
+source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -28,16 +28,18 @@ Para ayudarle a empezar a usar las indicaciones y los temas, Adobe ha creado una
 
 Para usar la Biblioteca de indicadores del sector:
 
-1. Descargue el archivo de la biblioteca Prompt de LLM Optimizer navegando hasta el panel **Configuración del cliente**.
-2. Revise los **temas** y **indicadores** sugeridos para el sector de su marca en la ficha correspondiente y elija las opciones que sean más relevantes.
-3. Revise la **columna Fase de Recorrido del cliente** para ver las opciones de solicitud en todo el ciclo de vida del cliente (por ejemplo, la detección para la conversión a retención). La fase inicial/parte superior de las solicitudes de funnel son de alta prioridad, pero también hay que tener en cuenta las opciones de fase posterior para fomentar la retención, habilitar la asistencia al cliente, etc.
-4. Modifique los temas o las indicaciones según sea necesario para lograr sus objetivos y metas antes de cargarlos en Adobe LLM Optimizer (por ejemplo, añada su nombre de marca/producto, agregue terminología propia de la marca). Los indicadores se pueden agregar a LLMO manualmente o cargados en lotes mediante la plantilla *.csv* proporcionada.
+1. Vaya al panel de **Configuración del cliente**.
+1. Seleccione **Descargar biblioteca de indicadores** para descargar el archivo de biblioteca de LLM Optimizer.
+   ![Descarga de biblioteca de mensajes del sector](/help/assets/best-practices/customer-configuration-prompts-library.png)
+1. Revise los **temas** y **indicadores** sugeridos para el sector de su marca en la pestaña correspondiente y elija las opciones que sean más relevantes.
+1. Revise la **columna Fase de Recorrido del cliente** para ver las opciones de solicitud en todo el ciclo de vida del cliente (por ejemplo, la detección para la conversión a retención). La fase inicial/parte superior de las solicitudes de funnel son de alta prioridad, pero también hay que tener en cuenta las opciones de fase posterior para fomentar la retención, habilitar la asistencia al cliente, etc.
+1. Modifique los temas o las indicaciones según sea necesario para lograr los objetivos y las metas antes de cargar los temas y las indicaciones en Adobe LLM Optimizer (por ejemplo, añada el nombre de su marca/producto o la terminología propia de la marca). Los indicadores se pueden agregar a LLM Optimizer manualmente o mediante carga masiva mediante la plantilla *.csv* proporcionada.
 
 >[!TIP]
 >
 > Utilice una combinación de indicadores específicos del dominio recomendados por LLM Optimizer durante la configuración inicial y la Biblioteca de indicadores del sector para depurar la estrategia de mensajes.
 
-### Prompt Library Research Foundation
+### Prompt Library research foundation
 
 La Industry Prompt Library se desarrolló a través de una iniciativa de investigación integral que combina lo siguiente:
 
