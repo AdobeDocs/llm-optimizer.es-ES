@@ -2,9 +2,9 @@
 title: Tráfico de agente
 description: Aprenda a utilizar el tablero Tráfico agéntico para ver cómo los agentes de IA interactúan con el sitio.
 feature: Agentic Traffic
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
+source-git-commit: 2993f840c7451adeccf4f11a0132b91a9bc81803
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1302'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,18 @@ En la ventana **Incorporar proveedor de CDN**:
 Si seleccionas **Otro**, tendrás que ponerte en contacto con llmo-now@adobe.com para obtener ayuda.
 
 Una vez activados, los registros se incorporan y el tablero se rellena con métricas como interacciones totales del agente, tasa de éxito, visitas por mercado, análisis de agentes de usuario y rendimiento a nivel de URL.
+
+LLM Optimizer solo ingiere y procesa un subconjunto de campos de los registros de CDN. Aunque los nombres de los campos de registro sin procesar varían según el proveedor de CDN, se normalizan y presentan de la siguiente manera:
+
+* URL (solo ruta)
+* user_agent
+* status
+* referer
+* host
+* Ttfb (tiempo hasta el primer byte)
+* cdn_provider
+
+Estos campos normalizados se exponen a través de la vista agéntica. En el panel [Tráfico de referencia](/help/dashboards/referral-traffic.md), los registros de CDN se utilizan para mostrar las métricas de visitas a la página. No se procesa ni almacena información de identificación personal (PII) en ninguna fase de la incorporación de registros de CDN ni en la posterior gestión de datos.
 
 ## Filtros {#filters}
 
