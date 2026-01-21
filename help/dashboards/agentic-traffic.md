@@ -2,9 +2,9 @@
 title: Tráfico de agente
 description: Aprenda a utilizar el tablero Tráfico agéntico para ver cómo los agentes de IA interactúan con el sitio.
 feature: Agentic Traffic
-source-git-commit: a75ce71dc0ab9ffe7956a3dbd09dca23ea5f7096
+source-git-commit: 26926f3ed4df3a408b74b0208f0d1eb064b97d28
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Utilice el gráfico Tendencias de tráfico agente para realizar un seguimiento d
 
 ## Movimientos superior e inferior {#top-bottom-movers}
 
-La vista Desplazamientos superiores e inferiores resalta las direcciones URL con los mayores cambios de una semana a otra en el tráfico auténtico: visitas o visitas de sistemas de IA que acceden a su contenido. **Modificadores principales** muestra las páginas que ganan visibilidad o participación, mientras que **Modificadores inferiores** muestra las direcciones URL con las disminuciones más pronunciadas. Esto le ayuda a identificar rápidamente qué contenido tiende al alza, qué contenido puede necesitar atención y dónde se están cambiando los patrones de detección impulsados por IA.
+La vista Desplazamientos superiores e inferiores resalta las direcciones URL con los mayores cambios de una semana a otra en el tráfico auténtico: visitas o visitas de sistemas de IA que acceden a su contenido. **Modificadores principales** muestra las páginas que ganan visibilidad o participación, mientras que **Modificadores inferiores** muestra las direcciones URL con las disminuciones más pronunciadas. Esto le ayuda a identificar rápidamente qué contenido tiende al alza, cuál puede necesitar atención y dónde se están cambiando los patrones de detección impulsados por IA.
 
 ![Movimientos superiores e inferiores](/help/dashboards/assets/movers.png)
 
@@ -140,4 +140,4 @@ La vista Detalles de URL proporciona una comprensión integral del rendimiento d
 
 >[!ENDTABS]
 
-En ambas tablas, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir la información con su equipo o incluir las tablas en los informes ejecutivos.
+En ambas tablas, puede usar la opción **Exportar** para descargar la tabla `.csv` y compartir las perspectivas con su equipo o incluir las tablas en los informes ejecutivos.
