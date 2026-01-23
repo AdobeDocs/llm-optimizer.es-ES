@@ -2,7 +2,7 @@
 title: Optimizar en Edge
 description: Obtenga información sobre cómo entregar optimizaciones en LLM Optimizer en el perímetro de la CDN sin necesidad de realizar cambios en la creación.
 feature: Opportunities
-source-git-commit: 0011199e68fe4f3d46013362729bfc9b6b2c9104
+source-git-commit: c1040edc78480f0df9ea3c29cc15009d0596941f
 workflow-type: tm+mt
 source-wordcount: '2149'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 Esta página proporciona información general detallada sobre cómo entregar optimizaciones en el perímetro de CDN sin ningún cambio en la creación. Abarca el proceso de incorporación, las oportunidades de optimización disponibles y cómo optimizar automáticamente en Edge.
 
 >[!NOTE]
->Actualmente, esta funcionalidad se encuentra en Acceso anticipado. Puede obtener más información acerca de los programas de acceso anticipado [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
+>Actualmente, esta funcionalidad se encuentra en Acceso anticipado. Puede obtener más información acerca de los programas de acceso anticipado [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## ¿Qué es Optimizar en Edge?
 
@@ -63,15 +63,15 @@ Para guiar el proceso de configuración, que se presenta a continuación, hay co
 
 **CDN administrado por Adobe**
 
-El propósito de esta configuración es configurar las solicitudes con agentes de usuario agénticos que se enrutarán al servicio Optimizer (`live.edgeoptimize.net` backend). Para probar la configuración, una vez completada la instalación, busque el encabezado `x-edgeoptimize-request-id` en la respuesta.
+El propósito de esta configuración es configurar las solicitudes con agentes de usuario agénticos que se enrutarán al servicio Optimizer (`live.edgeoptimize.net` backend). Para probar la configuración, una vez completada la instalación, busque el encabezado `x-edge-optimize-request-id` en la respuesta.
 
 ```
 curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatgpt-user"
 < HTTP/2 200
-< x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
+< x-edge-optimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-La configuración de enrutamiento se realiza mediante una regla de CDN [originSelector](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Los requisitos previos son los siguientes:
+La configuración de enrutamiento se realiza mediante una regla de CDN [originSelector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Los requisitos previos son los siguientes:
 
 * decidir el dominio que se va a distribuir
 * decida las rutas que desea enrutar
@@ -79,7 +79,7 @@ La configuración de enrutamiento se realiza mediante una regla de CDN [originSe
 
 Para implementar la regla, debe hacer lo siguiente:
 
-* crear una [canalización de configuración](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* crear una [canalización de configuración](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * confirmar el archivo de configuración `cdn.yaml` en su repositorio
 * ejecutar la canalización de configuración
 
@@ -94,7 +94,7 @@ data:
       - name: route-to-edge-optimize-backend
         when:
           allOf:
-            - reqHeader: x-edgeoptimize-request
+            - reqHeader: x-edge-optimize-request
               exists: false # avoid loops when requests comes from Edge Optimize
             - reqHeader: user-agent
               matches: "(?i)(AdobeEdgeOptimize-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)" # routed user agents
@@ -118,7 +118,7 @@ Para probar la configuración, ejecute un curl y espere lo siguiente:
 ```
 curl -svo page.html https://www.example.com/page.html --header "user-agent: chatgpt-user"
 < HTTP/2 200
-< x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
+< x-edge-optimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
 <!-- >>[!TAB Akamai (BYOCDN)]
@@ -408,16 +408,16 @@ Important considerations:
 **fragmento vcl_recv**
 
 ```
-unset req.http.x-edgeoptimize-url;
-unset req.http.x-edgeoptimize-config;
-unset req.http.x-edgeoptimize-api-key;
+unset req.http.x-edge-optimize-url;
+unset req.http.x-edge-optimize-config;
+unset req.http.x-edge-optimize-api-key;
 
-if (!req.http.x-edgeoptimize-request
+if (!req.http.x-edge-optimize-request
     && req.http.user-agent ~ "(?i)(AdobeEdgeOptimize-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)") {
   set req.http.x-fowarded-host = req.http.host; # required for identifying the original host
-  set req.http.x-edgeoptimize-url = req.url; # required for identifying the original url
-  set req.http.x-edgeoptimize-config = "LLMCLIENT=true"; # required for cache key
-  set req.http.x-edgeoptimize-api-key = "<YOUR API KEY>"; # required for identifying the client
+  set req.http.x-edge-optimize-url = req.url; # required for identifying the original url
+  set req.http.x-edge-optimize-config = "LLMCLIENT=true"; # required for cache key
+  set req.http.x-edge-optimize-api-key = "<YOUR API KEY>"; # required for identifying the client
   set req.backend = F_EDGE_OPTIMIZE;
 }
 ```
@@ -425,23 +425,23 @@ if (!req.http.x-edgeoptimize-request
 **fragmento vcl_hash**
 
 ```
-if (req.http.x-edgeoptimize-config) {
+if (req.http.x-edge-optimize-config) {
   set req.hash += "edge-optimize";
-  set req.hash += req.http.x-edgeoptimize-config;
+  set req.hash += req.http.x-edge-optimize-config;
 }
 ```
 
 **vcl_deliver_snippet**
 
 ```
-if (req.http.x-edgeoptimize-config && resp.status >= 400) {
-  set req.http.x-edgeoptimize-request = "failover";
+if (req.http.x-edge-optimize-config && resp.status >= 400) {
+  set req.http.x-edge-optimize-request = "failover";
   set req.backend = F_Default_Origin;
   restart;
 }
 
-if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failover") {
-  set resp.http.x-edgeoptimize-fo = "1";
+if (!req.http.x-edge-optimize-config && req.http.x-edge-optimize-request == "failover") {
+  set resp.http.x-edge-optimize-fo = "1";
 }
 ```
 
@@ -500,7 +500,7 @@ Esta oportunidad encuentra páginas con párrafos largos y complejos que pueden 
 
 Para cada oportunidad, puede obtener una vista previa, editar, implementar, ver en directo y revertir las optimizaciones en el perímetro de.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477987/?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Vista previa
 
