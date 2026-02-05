@@ -5,7 +5,7 @@ feature: Customer Configuration
 source-git-commit: 5d8b59ea4281c88bb42dc48096c07a3faaeb2e88
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ El panel de configuración del cliente es una potente herramienta que proporcion
 
 Para configurar cómo LLM Optimizer monitoriza y analiza su presencia de marca en diferentes mercados y entornos competitivos, tiene acceso a las siguientes pestañas:
 
-* [Indicadores](#prompts-brand)
+* [Indicaciones](#prompts-brand)
 * [Categorías](#categories)
 * [Otras marcas](#other-brands)
 * [Alias de marca](#brand-aliases)
@@ -28,11 +28,11 @@ Para configurar cómo LLM Optimizer monitoriza y analiza su presencia de marca e
 >
 > Para obtener más información sobre cómo configurar las categorías, temas y preguntas, consulte la página [Prácticas recomendadas para configurar categorías, temas y preguntas](/help/overview/best-practices-topics-prompts.md).
 
-## Indicadores {#prompts-brand}
+## Indicaciones {#prompts-brand}
 
-Desde esta pestaña, puede revisar, administrar y personalizar las solicitudes. Puede cargar un archivo .csv de [análisis de presencia de marca](/help/dashboards/brand-presence.md) y la lista se rellenará con mensajes y temas de ese análisis, o bien [descargar una biblioteca de mensajes](/help/overview/best-practices-topics-prompts.md) creada por Adobe. También puede eliminar, modificar y agregar temas y sus indicadores asociados según sea necesario.
+Desde esta pestaña, puede revisar, administrar y personalizar las solicitudes. Puede cargar un archivo .csv de [análisis de Presencia de marca](/help/dashboards/brand-presence.md), y la lista se rellenará con mensajes y temas de ese análisis, o [descargar una biblioteca de mensajes](/help/overview/best-practices-topics-prompts.md) creada por Adobe. También puede eliminar, modificar y agregar temas y sus indicadores asociados según sea necesario.
 
-Para importar un archivo .csv de perspectivas de datos, primero debe exportar un archivo desde el panel de presencia de marca. Consulte la sección [data insights](/help/dashboards/brand-presence.md#data-insights) para obtener información sobre cómo hacerlo. Una vez que tenga el archivo:
+Para importar un archivo .csv de Data Insights, primero debe exportar un archivo desde el panel de Presencia de marca. Consulte la sección [data insights](/help/dashboards/brand-presence.md#data-insights) para obtener información sobre cómo hacerlo. Una vez que tenga el archivo:
 
 1. En el panel, haga clic en **Cargar CSV**.
 2. En la ventana Importar datos de Insights, arrastre y suelte o elija manualmente el archivo.
@@ -52,7 +52,7 @@ Además, también puede agregar temas/peticiones de datos a la lista independien
 6. Haga clic en **Agregar solicitud** y el tema con la solicitud aparecerá en la lista.
 
 >[!NOTE]
->Los mensajes añadidos recientemente no aparecerán en la presencia de marca hasta que se complete el procesamiento.
+>Las indicaciones añadidas recientemente no aparecerán en la presencia de marca hasta que se complete el procesamiento.
 
 En la lista, puede hacer clic en cada tema y aparecerán las peticiones de datos asociadas. Para eliminar el tema y sus peticiones de datos asociadas, haga clic en el icono Eliminar de la lista.
 
@@ -83,7 +83,7 @@ Para eliminar una entrada de la lista, haga clic en el icono Eliminar.
 
 ## Alias de marca {#brand-aliases}
 
-Mediante alias de marca, puede configurar nombres alternativos y variaciones de su marca que deben rastrearse en diferentes categorías y regiones. Esto garantiza una monitorización completa de todas las menciones de marca. Para añadir un alias de marca:
+Mediante alias de marca, puede configurar nombres alternativos y variaciones de su marca que deben rastrearse en diferentes categorías y regiones. Esto garantiza una monitorización completa de todas las menciones de la marca. Para añadir un alias de marca:
 
 1. Haga clic en el botón **Agregar**.
 2. En la nueva ventana de configuración, seleccione **Categoría**. Las categorías creadas anteriormente aparecerán aquí.

@@ -24,16 +24,16 @@ Esta página describe todo lo que necesita saber sobre Adobe LLM Optimizer antes
 
 ## ¿Qué es Adobe LLM Optimizer?
 
-Adobe LLM Optimizer es una aplicación de IA generativa para la optimización del motor generativo (también denominada optimización del motor de respuesta), diseñada para ayudar a las marcas a mejorar su visibilidad, precisión e influencia en entornos de búsqueda impulsados por IA. Proporciona perspectivas sobre la presencia de la marca en respuestas generadas por IA, ofrece recomendaciones de contenido prescriptivo y automatiza las correcciones de optimización.
+Adobe LLM Optimizer es una aplicación de IA generativa para la optimización del motor generativo (también denominada optimización del motor de respuesta), diseñada para ayudar a las marcas a mejorar su visibilidad, precisión e influencia en entornos de búsqueda impulsados por IA. Proporciona perspectivas sobre la presencia de marca en respuestas generadas por IA, ofrece recomendaciones de contenido prescriptivo y automatiza las correcciones de optimización.
 
 ## ¿Qué son las capacidades de LLM Optimizer?
 
 Adobe LLM Optimizer ofrece un conjunto de herramientas diseñadas para la optimización generativa del motor:
 
-* **Medir la visibilidad de la marca**: realiza un seguimiento de cuándo, dónde y con qué frecuencia aparece tu marca en los resultados de búsqueda con tecnología de IA, con una puntuación de visibilidad clara para las pruebas comparativas.
+* **Visibilidad de la marca de medidas**: realiza un seguimiento de cuándo, dónde y con qué frecuencia aparece tu marca en los resultados de búsqueda con tecnología de IA, con una puntuación de visibilidad clara para las pruebas comparativas.
 * **Benchmark Otros**: Compare la cuota de voz y presencia de su marca con la de otros, incluidos sus competidores, en motores generativos.
 * **Descubra oportunidades procesables**: identifique el contenido y las mejoras técnicas (como preguntas frecuentes, resúmenes, esquemas, rastreabilidad) para mejorar las menciones y citas.
-* **Seguimiento del impacto del tráfico**: supervise el tráfico auténtico (asistente de IA) y el tráfico de referencia a sus propiedades, lo que vincula la visibilidad con la participación.
+* **Seguimiento del impacto del tráfico**: supervise tanto el contenido original (asistente de IA) como el tráfico de referencia en sus propiedades, lo que vincula la visibilidad con la participación.
 * **Habilitar Team Collaboration**: comparta paneles, asigne propietarios y alinee objetivos entre equipos de marketing, SEO y comunicaciones.
 
 ## Por qué la optimización LLM es importante para su marca
@@ -49,18 +49,18 @@ La optimización de LLM es cada vez más importante:
 
 La optimización generativa del motor es interfuncional por naturaleza. LLM Optimizer está diseñado con esta lente para las diferentes personas enumeradas:
 
-* **Administradores de mercadotecnia** miden la visibilidad de la marca y la efectividad de la campaña en la búsqueda de IA.
-* **Analistas de SEO** hacen un seguimiento de las menciones de marca, las citas y otras perspectivas para informar la estrategia de contenido.
-* **Directores de relaciones públicas y comunicaciones** hacen un seguimiento de la percepción de la marca en los LLM por parte de plataformas de terceros y abordan la información errónea, administran los sentimientos y protegen la confianza de la marca.
+* **Directores de mercadotecnia** miden la visibilidad de la marca y efectividad de campañas en Búsqueda por IA.
+* **Analistas de SEO** rastrean menciones de la marca, citas y otras perspectivas para informar la estrategia de contenido.
+* **Directores de relaciones públicas y comunicaciones** hacen un seguimiento de la percepción de la marca en los LLM por parte de plataformas de terceros y abordan la información errónea, administran las opiniones y protegen la confianza de la marca.
 
 ## ¿Qué puedo hacer con Adobe LLM Optimizer?
 
 Con Adobe LLM Optimizer, puede:
 
-**Medir la visibilidad de la marca**: realiza un seguimiento de cuándo, dónde y con qué frecuencia se menciona tu marca en los resultados de búsqueda con tecnología de IA. Supere las conjeturas con una puntuación de visibilidad clara que pueda comparar con el paso del tiempo. Consulte [Panel de presencia de marca](/help/dashboards/brand-presence.md).
-**Benchmark Otros** - Vea cómo su marca se apila contra otros, incluyendo a la competencia, en motores generativos. Identificar la cuota de huecos de voz y descubrir ventajas competitivas. Consulte [Panel de presencia de marca](/help/dashboards/brand-presence.md).
+**Visibilidad de la marca de medidas**: realiza un seguimiento de cuándo, dónde y con qué frecuencia se menciona tu marca en los resultados de búsqueda con tecnología de IA. Supere las conjeturas con una puntuación de visibilidad clara que pueda comparar con el paso del tiempo. Ver [tablero de Presencia de marca](/help/dashboards/brand-presence.md).
+**Benchmark Otros** - Vea cómo su marca se apila contra otros, incluyendo a la competencia, en motores generativos. Identifique las lagunas de cuota de voz y descubra las ventajas competitivas. Ver [tablero de Presencia de marca](/help/dashboards/brand-presence.md).
 **Descubre oportunidades procesables** - Encuentra oportunidades de contenido (por ejemplo, preguntas frecuentes, resúmenes, esquemas) y oportunidades técnicas (rastreabilidad, problemas de indexación) que aumentan directamente las menciones y citas. Ver [tablero de oportunidades](/help/dashboards/opportunities.md).
-**Seguimiento del impacto del tráfico desde IA**: supervise el tráfico auténtico (de los asistentes de IA) y el tráfico de referencia (los clics de los usuarios en las citas) a sus propiedades. Vincule la visibilidad GEO con la participación real. Ver [Tablero de tráfico de agente](/help/dashboards/agentic-traffic.md) y [Tablero de tráfico de referencia](/help/dashboards/referral-traffic.md).
+**Seguimiento del impacto del tráfico desde IA**: supervise el tráfico auténtico (de los asistentes de IA) y el tráfico de referencia (los clics de los usuarios en las citas) en sus propiedades. Vincule la visibilidad GEO con la participación real. Ver [Tablero de tráfico de agente](/help/dashboards/agentic-traffic.md) y [Tablero de Tráfico de referencia](/help/dashboards/referral-traffic.md).
 **Habilitar Team Collaboration**: comparta paneles, asigne propietarios para preguntas o categorías y asegúrese de que se realiza un seguimiento de los objetivos de visibilidad en las funciones de marketing, optimización de los motores de búsqueda (SEO) y comunicaciones. Ver [tablero de Collaboration](/help/dashboards/collaboration.md).
 
 ## Más información
@@ -70,7 +70,7 @@ Estos son los recursos que pueden ayudarle a sacar el máximo partido a LLM Opti
 * [Quickstart](/help/overview/quick-start.md) le permite ponerse en marcha rápidamente.
 * [Información general sobre paneles](/help/dashboards/dashboards-overview.md) describe todos los paneles disponibles en LLM Optimizer.
 * [Prácticas recomendadas para configurar categorías, temas, mensajes y otros](/help/overview/best-practices-topics-prompts.md) incluye información esencial para configurar LLM Optimizer.
-* [Prácticas recomendadas](/help/tutorials/best-practices.md) le permite descubrir prácticas recomendadas para la optimización de LLM a fin de aumentar la visibilidad de su marca en la búsqueda de IA.
+* [Prácticas recomendadas](/help/tutorials/best-practices.md) le permite descubrir prácticas recomendadas para la optimización de LLM a fin de aumentar la visibilidad de su marca en Búsqueda por IA.
 
 
 

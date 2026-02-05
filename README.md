@@ -2,16 +2,16 @@
 source-git-commit: 9a086ec3124af1bf234e42287c8b4ef08eae6bcd
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 36%
+ht-degree: 0%
 
 ---
 # Artículo de Contribute
 
-Agradecemos las contribuciones de nuestra comunidad, así como de los empleados de Adobe de fuera de los equipos de documentación.
+Agradecemos las contribuciones de nuestra comunidad, así como de los empleados de Adobe ajenos a los equipos de documentación.
 
-## Código de conducta de código abierto de Adobe
+## Código de conducta de Adobe Open Source
 
-Este proyecto ha adoptado el [Código de conducta de código abierto de Adobe](code-of-conduct.md) o el [Código de conducta de la Fundación .NET](https://dotnetfoundation.org/code-of-conduct). Para obtener más información, consulte el artículo [Colaboración](contributing.md).
+Este proyecto ha adoptado el [Código de conducta de Adobe Open Source](code-of-conduct.md) o el Código de conducta de [.NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obtener más información, consulte el artículo [Contribución](contributing.md).
 
 ## Cómo contribuir al contenido de Adobe
 
@@ -29,9 +29,9 @@ Si va a contribuir con una actualización menor:
 1. En la sección &quot;¿Fue útil este contenido?&quot; titular que aparece en la parte inferior de la ventana del explorador, haga clic en **Opciones de comentarios detalladas**.
 1. Haga clic en **Sugerir una edición** y envíe una solicitud de extracción (PR) con sus cambios en la interfaz de usuario de GitHub.
 
-   Consulte la [Guía de colaborador para la documentación de Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=es) para obtener más información.
+   Para obtener más información, consulte la [guía para colaboradores de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
-Las correcciones o aclaraciones menores que envíe para la documentación y los ejemplos de código de este repositorio están sujetos a las condiciones de uso del Adobe.
+Las correcciones o aclaraciones menores que envíe para la documentación y los ejemplos de código en este repositorio están sujetos a las condiciones de uso de Adobe.
 
 ### Cambios importantes o nuevos temas de la comunidad
 
@@ -41,9 +41,9 @@ Si forma parte de la comunidad de Adobe y desea crear un nuevo tema o enviar cam
 
 ### Herramientas
 
-Los colaboradores de la comunidad pueden utilizar la interfaz de usuario de GitHub para la edición básica o realizar importantes contribuciones.
+Los colaboradores de la comunidad pueden utilizar la interfaz de usuario de GitHub para la edición básica o bifurcar el repositorio para realizar contribuciones importantes.
 
-Consulte la [Guía de colaborador para la documentación de Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=es) para obtener más información.
+Consulte la [Guía para colaboradores de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obtener más información.
 
 ## Colaboradores internos
 
@@ -53,12 +53,12 @@ Si es redactor técnico, administrador de programa o desarrollador del equipo de
 
 Todos los artículos de este repositorio utilizan Markdown de GitHub. Si no está familiarizado con Markdown, consulte:
 
-* [Conceptos básicos de marcas](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Hoja de referencia de marcas imprimible](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Conceptos básicos de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [Hoja de trucos de markdown imprimible](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Etiquetas
 
-En el repositorio público, se asignan etiquetas automatizadas a las solicitudes de extracción para que nos ayuden a administrar el flujo de trabajo de la solicitud de extracción y para que sepan lo que sucede con la solicitud de extracción:
+En el repositorio público, las etiquetas automatizadas se asignan para extraer solicitudes que nos ayudan a administrar el flujo de trabajo de las solicitudes de extracción y para saber qué sucede con ellas:
 
-* **Cambio enviado al autor**: Se ha notificado al autor la solicitud de extracción pendiente.
-* **Listo para combinar**: Listo para que el equipo de revisión evalúe la solicitud.
+* **Cambio enviado al autor**: se ha notificado al autor la solicitud de extracción pendiente.
+* **listo para combinar**: listo para que el equipo de revisión de solicitudes de extracción lo revise.

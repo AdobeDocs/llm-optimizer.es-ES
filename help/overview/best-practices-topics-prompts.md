@@ -5,7 +5,7 @@ feature: Best Practices, Customer Configuration
 source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
 workflow-type: tm+mt
 source-wordcount: '1417'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -20,11 +20,11 @@ En el tablero de [[!UICONTROL Configuración del cliente]](/help/dashboards/cust
 
 ![Ventana de configuración del cliente](/help/assets/best-practices/customer-configuration-best-practices.png)
 
-En el panel [!UICONTROL Configuración del cliente], puede personalizar categorías (como unidades de negocio o líneas de productos), realizar un seguimiento de otras marcas y agregar alias de mención de marcas para capturar todas las variaciones de su marca en las distintas indicaciones. Esta configuración garantiza que la plataforma adapte las perspectivas a su contexto empresarial, lo que permite una visibilidad precisa, el tráfico y el análisis de oportunidades.
+En el panel [!UICONTROL Configuración del cliente], puede personalizar categorías (como unidades de negocio o líneas de productos), realizar un seguimiento de otras marcas y agregar alias de mención de la marca para capturar todas las variaciones de su marca en los mensajes. Esta configuración garantiza que la plataforma adapte las perspectivas a su contexto empresarial, lo que permite una visibilidad precisa, el tráfico y el análisis de oportunidades.
 
-## Biblioteca de indicadores del sector
+## Biblioteca de indicaciones del sector
 
-Para ayudarle a empezar a usar las indicaciones y los temas, Adobe ha creado una biblioteca de indicaciones del sector, que se ha desarrollado mediante una amplia investigación con expertos del sector y análisis del comportamiento de búsqueda de IA en más de 6000 clientes. Esta biblioteca identifica los temas y los indicadores más relevantes en función de las tendencias específicas del sector, los objetivos empresariales validados y los patrones de búsqueda de clientes en el mundo real.
+Para ayudarle a empezar a utilizar indicadores y temas, Adobe ha creado una biblioteca de indicadores del sector, que se ha desarrollado mediante una amplia investigación con expertos del sector y análisis del comportamiento de la Búsqueda por IA en más de 6000 clientes. Esta biblioteca identifica los temas y las indicaciones más relevantes en función de las tendencias específicas del sector, los objetivos comerciales validados y los patrones de búsqueda de clientes reales.
 
 Para usar la Biblioteca de indicadores del sector:
 
@@ -43,7 +43,7 @@ Para usar la Biblioteca de indicadores del sector:
 
 La Industry Prompt Library se desarrolló a través de una iniciativa de investigación integral que combina lo siguiente:
 
-* **Inteligencia de clientes:** análisis del comportamiento y las preferencias de búsqueda de IA entre más de 6000 clientes
+* **Customer Intelligence:** análisis del comportamiento y las preferencias de la Búsqueda por IA en más de 6000 clientes
 * **Experiencia en la industria:** Perspectivas de expertos en los sectores automotriz, servicios financieros, atención médica, telecomunicaciones y viajes.
 * **Perspectivas basadas en datos:** Identificación de temas de alto impacto y patrones de consulta que impulsan la participación y conversión de los clientes.
 
@@ -55,7 +55,7 @@ Temas principales buscados por clientes en todos los sectores:
 * **Telecomunicaciones:** Comparando planes, términos y promociones del contrato, comprobando el servicio en el área local
 * **Viajes:** Preparación para un viaje, Investigación y reserva de viajes
 
-Tendencias del cliente sobre la búsqueda de IA y el comportamiento del prompt en las herramientas LLM:
+Tendencias del cliente en Búsqueda por IA y prontitud en las herramientas LLM:
 
 * Los clientes prefieren hacer preguntas en lugar de utilizar palabras clave al utilizar las herramientas de búsqueda de LLM.
 * Utilizan principalmente herramientas de búsqueda LLM para la investigación y el descubrimiento en las primeras etapas.

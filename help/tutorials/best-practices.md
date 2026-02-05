@@ -1,6 +1,6 @@
 ---
 title: Prácticas recomendadas de LLM Optimizer
-description: Descubra las prácticas recomendadas para la optimización de LLM a fin de aumentar la visibilidad de la marca en la búsqueda de IA. Perspectivas de para la realización de pruebas comparativas y optimización de contenido.
+description: Descubra las prácticas recomendadas para la optimización de LLM con el fin de impulsar la visibilidad de la marca en Búsqueda por IA. Perspectivas de para la realización de pruebas comparativas y optimización de contenido.
 feature: Best Practices, Agentic Traffic, Brand Presence
 source-git-commit: 31c36f9959993171de4bec384a361d38e6e01dad
 workflow-type: tm+mt
@@ -37,13 +37,13 @@ Una base sólida de SEO admite la optimización de LLM, pero se necesitan nuevas
 | SEO | LLM |
 |---------|----------|
 | Basado en índices | *Basado en tokens (datos formados) |
-| Asuntos de autoridad de vínculo | **Las menciones de marca importan más |
+| Asuntos de autoridad de vínculo | **Las Menciones de la marca importan más |
 | Se admite el procesamiento JS | Renderización JS del lado del cliente muy limitada |
 | Indexación en tiempo real | ***Retrieval-Augmented Generation (RAG) para la actualización |
 
 *Aunque los resultados de LLM no utilizan páginas indexadas, los LLM sí utilizan motores de búsqueda para mejorar las respuestas rápidas a través de Retrieval-Augmented Generation (RAG).
 
-** LLM priorizan la relevancia del contenido y la presencia de la marca sobre los backlinks.
+** LLM priorizan la relevancia y presencia de marca del contenido sobre los backlinks.
 
 *** RAG reduce las alucinaciones
 
@@ -63,7 +63,7 @@ La creación de una campaña de optimización de LLM exitosa implica:
 
 Este enfoque estratégico garantiza mejoras específicas y basadas en datos en la visibilidad de LLM.
 
-### Desbloquear la visibilidad de marca LLM
+### Desbloquear visibilidad de la marca LLM
 
 La visibilidad de LLM se basa en la frecuencia y la importancia de la marca en las respuestas generadas por IA.
 
@@ -92,7 +92,7 @@ Estas son algunas prácticas recomendadas de optimización:
 
 1. Garantizar la accesibilidad técnica
 
-   * Revise la configuración de robots.txt y CDN para permitir que los agentes de IA rastreen el sitio.
+   * Revise la configuración de robots.txt y CDN para permitir que los agentes de IA rastreen por su sitio.
    * Utilice el Inspector de URL para identificar las páginas bloqueadas o inaccesibles. Consulte [inspector de URL](/help/dashboards/url-inspector.md).
 
 2. Actualizar y estructurar contenido
@@ -109,7 +109,7 @@ Estas son algunas prácticas recomendadas de optimización:
 4. Monitorización e iteración
 
    * Use el [panel de oportunidades](/help/dashboards/opportunities.md) para identificar recomendaciones y actuar en consecuencia.
-   * Rastree la puntuación de visibilidad, la opinión y la frecuencia de las citas.
+   * Rastree la puntuación de visibilidad, la opinión y la frecuencia de citas.
    * Ajuste en función de la actividad de otros (incluidos los competidores) y las tendencias inmediatas.
 
 ## Optimización fuera del sitio: ampliación del espacio de marca
@@ -124,7 +124,7 @@ La optimización fuera del sitio se centra en mejorar la visibilidad de su marca
 Canales clave fuera del sitio:
 
 * Wikipedia: Asegúrese de que las páginas estén actualizadas, tengan buenas fuentes y estén escritas de forma neutral.
-* Reddit y Quora: Participe en debates con contribuciones auténticas y útiles y menciones de marca.
+* Reddit y Quora: Participe en debates con menciones de la marca y aportaciones auténticas y útiles.
 * Artículos y revisiones de afiliados: Colabore con editores para obtener contenido de alta calidad.
 * YouTube y medios sociales: cree vídeos y publicaciones que respondan a preguntas comunes.
 * Noticias y relaciones públicas: Cobertura segura en medios de buena reputación.
@@ -132,7 +132,7 @@ Canales clave fuera del sitio:
 Prácticas recomendadas:
 
 * Diversifique su huella fuera del sitio.
-* Monitorice las citas con Adobe LLM Optimizer. Consulte [Panel de presencia de marca](/help/dashboards/brand-presence.md).
+* Monitorice las citas con Adobe LLM Optimizer. Ver [tablero de Presencia de marca](/help/dashboards/brand-presence.md).
 * Actualice contenido obsoleto y busque nuevas oportunidades de inclusión.
 * Coordinar con equipos de relaciones públicas y sociales.
 * Asegúrese de que las contribuciones sean imparciales e informativas.
@@ -147,7 +147,7 @@ Rastree estas métricas clave:
 
 * **Menciones:** Cuántas veces se menciona tu marca en las respuestas.
 * **Citas:** La frecuencia con la que los LLM usan tu contenido o fuentes para responder preguntas.
-* **Opinión:** Si la mención de tu marca es positiva, neutral o negativa.
+* **Opinión:** Si la mención de su marca es positiva, neutra o negativa.
 * **Posición:** Donde se menciona su marca en la respuesta (por ejemplo, primera, media o última).
 
 Estas métricas se combinan en una puntuación de **visibilidad**, lo que le indica la solidez de la presencia de su marca en las respuestas LLM. Ver el tablero [Presencia de marca](/help/dashboards/brand-presence.md).
@@ -157,7 +157,7 @@ Estas métricas se combinan en una puntuación de **visibilidad**, lo que le ind
 Estos son los pasos que puede seguir para monitorizar el progreso:
 
 1. Establezca como referencia su visibilidad actual.
-   * Identifique con qué frecuencia y dónde se menciona y cita su marca, y cuál es la opinión en Adobe LLM Optimizer. Consulte el panel [Presencia de marca](/help/dashboards/brand-presence.md).
+   * Identifique con qué frecuencia y dónde se menciona y cita su marca, y cuál es la opinión en Adobe LLM Optimizer. Ver el panel [Presencia de marca](/help/dashboards/brand-presence.md).
    * Analice las indicaciones donde aparece su marca y donde no.
    * Compare visibilidad con respecto a otros, incluidos los competidores (en **Seguimiento de otros** en el [panel de configuración del cliente](/help/dashboards/customer-configuration.md)).
    * Revise la visibilidad en plataformas generadas por los usuarios como Reddit, Quora y Wikipedia. Segmentar por plataforma (ChatGPT, modo Google AI, etc.)
@@ -165,10 +165,10 @@ Estos son los pasos que puede seguir para monitorizar el progreso:
 1. Monitorice los cambios con el tiempo.
    * Utilice filtros de tiempo para rastrear los turnos semanales y mensuales.
    * Observe si hay picos o caídas en la puntuación de visibilidad.
-   * Analice las tendencias de opinión para comprender la percepción de marca.
+   * Analice las tendencias de opinión para comprender la percepción de la marca.
 1. Correlacione la visibilidad con el tráfico, la participación y las conversiones.
-   * Utilice funciones de atribución para conectar las mejoras de visibilidad al tráfico, la participación y las conversiones. Las funciones de atribución de Adobe LLM Optimizer le ayudan a conectar las mejoras en las métricas de visibilidad (menciones, citas, opiniones) con resultados comerciales reales como el tráfico del sitio, la participación del usuario y las conversiones. Esto demuestra el retorno de la inversión en sus esfuerzos de optimización.
-   * Rastree los cambios en el tráfico agéntico y de referencia para validar el ROI de la optimización.
+   * Utilice funciones de atribución para conectar las mejoras de visibilidad al tráfico, la participación y las conversiones. Las funciones de atribución de Adobe LLM Optimizer le ayudan a conectar mejoras en las métricas de visibilidad (menciones, citas, opinión) con resultados comerciales reales como el tráfico del sitio, la participación del usuario y las conversiones. Esto demuestra el retorno de la inversión en sus esfuerzos de optimización.
+   * Realice un seguimiento de los cambios en el contenido y el tráfico de referencia para validar el ROI de la optimización.
 1. Mejore su contenido
    * Use el [panel de oportunidades](/help/dashboards/opportunities.md) de LLM Optimizer para identificar y realizar cambios inmediatos y recomendados específicamente en su sitio. Ver [Oportunidades](/help/dashboards/opportunities.md) (luego medir los resultados). Revise la sección de oportunidades regularmente y tome medidas sobre las recomendaciones proporcionadas.
    * Priorice las páginas con una visibilidad en declive.
@@ -234,7 +234,7 @@ Estas son las métricas que se deben monitorizar:
 * Visitas del agente por URL
 * Tasa de éxito de solicitudes de bots
 * Frecuencia de citas por página
-* Opinión y colocación de menciones de marca
+* Opinión y colocación de menciones de la marca
 * Tendencias de puntuación de visibilidad con el tiempo
 
 <!-- Add screenshot when available in demo environment>

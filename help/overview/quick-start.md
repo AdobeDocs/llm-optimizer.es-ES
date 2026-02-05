@@ -20,7 +20,7 @@ El proceso de incorporación comienza con la incorporación de su dominio. El pr
 
 ### Permitir que Adobe LLM Optimizer acceda a páginas públicas
 
-Para ofrecer contenido preciso y recomendaciones técnicas, Adobe LLM Optimizer requiere acceso a sus páginas públicas. Esto se logra a través de un rastreador interno seguro (agente de usuario de Spacecat/1.0).
+Para ofrecer contenido preciso y recomendaciones técnicas, Adobe LLM Optimizer requiere acceso a sus páginas públicas. Esto se logra mediante un rastreador interno seguro (agente de usuario de Spacecat/1.0).
 
 Requisitos de configuración:
 
@@ -44,10 +44,10 @@ Consulte la sección siguiente para obtener detalles sobre cómo activar la vers
 
 ### Clientes de AEM Cloud
 
-Si eres cliente de AEM Cloud, tienes la opción de probar LLM Optimizer usando la tarjeta Anuncio del producto en [Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Si eres cliente de AEM Cloud, tienes la opción de probar LLM Optimizer usando la tarjeta Anuncio del producto en [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
->Las solicitudes agregadas recientemente no aparecerán en el [Tablero de presencia de marca](/help/dashboards/brand-presence.md) hasta que se complete el procesamiento. Los clientes de AEM Cloud pueden utilizar la versión de prueba gratuita de LLM Optimizer. El uso de más de 200 peticiones de datos requiere un contrato de licencia independiente. El acceso se proporciona &quot;tal cual&quot; y &quot;según esté disponible&quot;, y Adobe puede modificarlo, limitarlo o eliminarlo en cualquier momento. Póngase en contacto con el representante de su cuenta para obtener más información.
+>Los mensajes agregados recientemente no aparecerán en el [panel de Presencia de marca](/help/dashboards/brand-presence.md) hasta que se complete el procesamiento. Los clientes de AEM Cloud pueden utilizar la versión de prueba gratuita de LLM Optimizer. El uso de más de 200 peticiones de datos requiere un contrato de licencia independiente. El acceso se proporciona &quot;tal cual&quot; y &quot;según esté disponible&quot;, y Adobe puede modificarlo, limitarlo o eliminarlo en cualquier momento. Póngase en contacto con el representante de su cuenta para obtener más información.
 
 ![Prueba de LLM Optimizer](/help/overview/assets/llm-trial.png)
 
@@ -58,11 +58,11 @@ Una vez que hagas clic en el botón **Probar LLM Optimizer**, se te redirigirá 
 >[!NOTE]
 >El dominio que ha proporcionado será utilizado por todos los miembros de su organización y no se puede cambiar.
 
-Se generará un pequeño conjunto de categorías, temas y mensajes durante la fase de incorporación. El análisis de presencia de marca en esas indicaciones estará disponible poco después de que se haya incorporado el sitio.
+Se generará un pequeño conjunto de categorías, temas y mensajes durante la fase de incorporación. El análisis de presencia de marca de esas indicaciones estará disponible poco después de que se haya incorporado el sitio.
 
 <!--![Brand Presence Analysis](/help/overview/assets/bp-analysis.png)-->
 
-Además, también debe configurar el [reenvío de registros de CDN](#step-4) para el análisis del tráfico. LLM Optimizer requiere datos de presencia de marca y perspectivas del tráfico agéntico y de referencia para identificar oportunidades y proporcionar recomendaciones prescriptivas para impulsar la visibilidad de la IA.
+Además, también debe configurar el [reenvío de registros de CDN](#step-4) para el análisis del tráfico. LLM Optimizer requiere datos de Presencia de marca y perspectivas de los agentes y el tráfico de referencia para identificar oportunidades y proporcionar recomendaciones prescriptivas para impulsar la visibilidad de la IA.
 
 ### Clientes que no son de AEM Cloud
 
@@ -70,7 +70,7 @@ Una vez finalizado el acuerdo empresarial, se incorporará al dominio que desee 
 
 ### Paso 2: Personalizar categorías, temas e indicadores
 
-Una vez incorporado el sitio, puede ver el análisis de presencia de marca en función del pequeño conjunto de indicadores que se generaron automáticamente durante la fase de incorporación. Ahora puede personalizar las categorías, los temas y las peticiones de datos de su marca. Esta configuración se creó en el [panel de configuración del cliente](/help/dashboards/customer-configuration.md).
+Una vez incorporado el sitio, puede ver el análisis de Presencia de marca en función del pequeño conjunto de indicadores que se generaron automáticamente durante la fase de incorporación. Ahora puede personalizar las categorías, los temas y las peticiones de datos de su marca. Esta configuración se creó en el [panel de configuración del cliente](/help/dashboards/customer-configuration.md).
 
 ![Panel de configuración del cliente](/help/overview/assets/prompt-creation.png)
 
@@ -89,27 +89,27 @@ Desde este panel, puede:
 >
 > Para obtener más información sobre cómo configurar las categorías, temas y preguntas, consulte la página [Prácticas recomendadas para configurar categorías, temas y preguntas](/help/overview/best-practices-topics-prompts.md).
 
-### Paso 3: Perspectivas de presencia de marca
+### Paso 3: Perspectivas de Presencia de marca
 
-Una vez incorporado el dominio, verá perspectivas iniciales en la vista Presencia de marca en función de los mensajes que se generaron automáticamente durante la incorporación. Una vez que haya personalizado sus propias categorías, temas y preguntas, LLM Optimizer almacenará automáticamente en déclencheur el análisis de presencia de marca en las preguntas que haya proporcionado y los resultados estarán disponibles en 24 horas.
+Una vez incorporado el dominio, verá perspectivas iniciales en la vista de Presencia de marca en función de los indicadores que se generaron automáticamente durante la incorporación. Una vez que haya personalizado sus propias categorías, temas y peticiones de datos, LLM Optimizer almacenará automáticamente en déclencheur el análisis de Presencia de marca en función de las peticiones de datos que haya proporcionado y los resultados estarán disponibles en 24 horas.
 
 ### Paso 4: Proporcionar información para el reenvío de registros de CDN {#step-4}
 
-Para desbloquear las perspectivas de tráfico agente y tráfico de referencia, debe proporcionar información para el reenvío de registros de CDN. Se puede agregar desde el [panel de configuración del cliente](/help/dashboards/customer-configuration.md#cdn-configuration) navegando a la pestaña **Configuración de CDN** y haciendo clic en **Incorporar CDN**.
+Para desbloquear el tráfico automático y las perspectivas de Tráfico de referencia, debe proporcionar información para el reenvío de registros de CDN. Se puede agregar desde el [panel de configuración del cliente](/help/dashboards/customer-configuration.md#cdn-configuration) navegando a la pestaña **Configuración de CDN** y haciendo clic en **Incorporar CDN**.
 
 ![CDN de configuración de cliente](/help/overview/assets/cc-cdn.png)
 
-Alternativamente, si no se ha agregado ningún proveedor de CDN previamente (como se ha descrito anteriormente), se le pedirá que agregue el reenvío de registros de CDN al acceder a los paneles de tráfico de agente y referencia por primera vez. Para obtener más información, consulte:
+Alternativamente, si no se ha agregado ningún proveedor de CDN previamente (como se ha descrito anteriormente), se le pedirá que agregue el reenvío de registros de CDN al acceder a los paneles de Tráfico de referencia y agente por primera vez. Para obtener más información, consulte:
 
-* [Tráfico de agente](/help/dashboards/agentic-traffic.md#cdn-setup)
+* [Tráfico agéntico](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [Tráfico de referencia](/help/dashboards/referral-traffic.md#setup#setup)
 
 ### Paso 5: Explorar paneles y realizar acciones
 
 Después de proporcionar información para el Reenvío de registros de CDN, puede:
 
-* Vea el panel [Presencia de marca](/help/dashboards/brand-presence.md), vea su puntuación de visibilidad y realice un seguimiento de su rendimiento en relación con otras marcas.
-* Explore los paneles de [Agente](/help/dashboards/agentic-traffic.md) y [Tráfico de referencia](/help/dashboards/referral-traffic.md), si se ha configurado el reenvío de registros de CDN.
+* Vea el tablero [Presencia de marca](/help/dashboards/brand-presence.md), vea su puntuación de visibilidad y realice un seguimiento de su rendimiento en relación con otras marcas.
+* Explore los paneles de [Agentic](/help/dashboards/agentic-traffic.md) y [Tráfico de referencia](/help/dashboards/referral-traffic.md), si se ha configurado el reenvío de registros de CDN.
 * Use [Oportunidades](/help/dashboards/opportunities.md) para identificar contenido y mejoras técnicas.
 * Exporte datos y colabore con su equipo o invite a su compañero a utilizar el producto.
 

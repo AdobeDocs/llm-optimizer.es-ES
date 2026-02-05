@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Colaboración
 
-Collaboration le permite invitar a miembros del equipo al espacio de trabajo de LLM Optimizer de su organización para que todos puedan acceder a las perspectivas y los análisis desde un solo lugar. Al agregar compañeros, se asegura de que los equipos técnicos, de marketing, de SEO y de relaciones públicas puedan trabajar juntos sin problemas en las mejoras de visibilidad de la marca, compartir conclusiones y tomar medidas coordinadas en las oportunidades.
+Collaboration le permite invitar a miembros del equipo al espacio de trabajo de LLM Optimizer de su organización para que todos puedan acceder a las perspectivas y los análisis desde un solo lugar. Al agregar compañeros, se asegura de que los equipos técnicos, de marketing, de SEO y de relaciones públicas puedan trabajar juntos sin problemas en las mejoras de la visibilidad de la marca, compartir conclusiones y tomar medidas coordinadas en las oportunidades.
 
 ## Cómo invitar a miembros del equipo
 

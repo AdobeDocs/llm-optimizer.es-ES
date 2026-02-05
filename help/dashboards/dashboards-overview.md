@@ -12,9 +12,9 @@ ht-degree: 5%
 
 # Información general de paneles
 
-Información general sobre los paneles. Los paneles de LLM-Optimizer ayudan a los especialistas en marketing a realizar un seguimiento de la visibilidad y el sentimiento de la marca en las plataformas de búsqueda de IA, identificar oportunidades de optimización e implementar cambios prescriptivos para mejorar las citas y el rendimiento.
+Información general sobre los paneles. Los paneles de LLM-Optimizer ayudan a los especialistas en marketing a realizar un seguimiento de la visibilidad de la marca y la opinión en las plataformas de Búsqueda por IA, identificar oportunidades de optimización e implementar cambios prescriptivos para mejorar las citas y el rendimiento.
 
-Las vistas clave incluyen Presencia de marca, Tráfico de agente y referencia, Inspector de URL, Identificación de oportunidad, Collaboration y Configuración del cliente.
+Las vistas clave incluyen Presencia de marca, Agente y Tráfico de referencia, Inspector de URL, Identificación de oportunidad, Collaboration y Configuración del cliente.
 
 <!-- CARDS
 
@@ -68,8 +68,8 @@ Las vistas clave incluyen Presencia de marca, Tráfico de agente y referencia, I
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./brand-presence.md" title="Panel de presencia de marca" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Panel de presencia de marca"
+                    <a href="./brand-presence.md" title="panel de presencia de marca" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="panel de presencia de marca"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -77,9 +77,9 @@ Las vistas clave incluyen Presencia de marca, Tráfico de agente y referencia, I
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="Panel de presencia de marca">Panel de presencia de marca</a>
+                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="panel de presencia de marca">tablero de Presencia de marca</a>
                     </p>
-                    <p class="is-size-6">Registra cómo aparece su marca en las plataformas de búsqueda de LLM, incluido el análisis de opiniones y la evaluación comparativa de otras marcas.</p>
+                    <p class="is-size-6">Registra cómo aparece su marca en las plataformas de búsqueda de LLM, incluido el análisis de opinión y la evaluación comparativa de otras marcas.</p>
                 </div>
                 <a href="./brand-presence.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
@@ -114,8 +114,8 @@ Las vistas clave incluyen Presencia de marca, Tráfico de agente y referencia, I
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./referral-traffic.md" title="Tablero de tráfico de referencia" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="Tablero de tráfico de referencia"
+                    <a href="./referral-traffic.md" title="panel de tráfico de referencia" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="panel de tráfico de referencia"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -123,7 +123,7 @@ Las vistas clave incluyen Presencia de marca, Tráfico de agente y referencia, I
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="Tablero de tráfico de referencia">Panel de tráfico de referencia</a>
+                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="panel de tráfico de referencia">tablero de Tráfico de referencia</a>
                     </p>
                     <p class="is-size-6">Mide las visitas humanas que se originan a partir de citas generadas por IA que le permiten descubrir la participación real del usuario de IA</p>
                 </div>
@@ -171,7 +171,7 @@ Las vistas clave incluyen Presencia de marca, Tráfico de agente y referencia, I
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./opportunities.md" target="_blank" rel="referrer" title="Panel de oportunidades">Panel de oportunidades</a>
                     </p>
-                    <p class="is-size-6">Muestra y prioriza perspectivas procesables que mejoran la visibilidad de la marca y el rendimiento de las citas en plataformas de búsqueda con tecnología de IA</p>
+                    <p class="is-size-6">Muestra y prioriza perspectivas procesables que mejoran el rendimiento de la visibilidad de la marca y las citas en plataformas de búsqueda con tecnología de IA</p>
                 </div>
                 <a href="./opportunities.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>

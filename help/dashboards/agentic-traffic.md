@@ -1,18 +1,18 @@
 ---
-title: Tráfico de agente
+title: Tráfico agéntico
 description: Aprenda a utilizar el tablero Tráfico agéntico para ver cómo los agentes de IA interactúan con el sitio.
 feature: Agentic Traffic
 source-git-commit: 26926f3ed4df3a408b74b0208f0d1eb064b97d28
 workflow-type: tm+mt
 source-wordcount: '1307'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Tráfico de agente {#agentic-traffic}
+# Tráfico agéntico {#agentic-traffic}
 
-El panel Tráfico agéntico muestra cómo los agentes de IA (rastreadores y bots de chat) interactúan con el sitio. Con esta vista puede realizar un seguimiento de la cantidad total de solicitudes y de las métricas generales relacionadas con el rendimiento. También puede ver la distribución del tráfico entre mercados, categorías, páginas y agentes. Los datos que usa este panel proceden de los registros de CDN, por lo que debe configurar **el reenvío de registros de CDN** para poder mostrar las métricas. También hay filtros personalizables para ayudarle a refinar los datos mostrados.
+El tablero Tráfico agéntico muestra cómo los agentes de IA (rastreadores y bots de chat) interactúan con el sitio. Con esta vista puede realizar un seguimiento de la cantidad total de solicitudes y de las métricas generales relacionadas con el rendimiento. También puede ver la distribución del tráfico entre mercados, categorías, páginas y agentes. Los datos que usa este panel proceden de los registros de CDN, por lo que debe configurar **el reenvío de registros de CDN** para poder mostrar las métricas. También hay filtros personalizables para ayudarle a refinar los datos mostrados.
 
 ![Distribución de tráfico](/help/dashboards/assets/ag-main.png)
 
@@ -21,7 +21,7 @@ Esta página detalla lo siguiente:
 * [Filtros](#filters)
 * [Configuración de CDN](#cdn-setup)
 * [Distribución del tráfico](#traffic-distribution)
-* [Tendencias del tráfico agéntico](#agentic-trends)
+* [Tendencias de tráfico agéntico](#agentic-trends)
 * [Movimientos superior e inferior](#top-bottom-movers)
 * [Análisis del rendimiento del agente de usuario y la URL](#user-url-performance)
 
@@ -59,7 +59,7 @@ LLM Optimizer procesa un subconjunto de campos de los registros de CDN. Aunque l
 * Marca de tiempo
 * Tipo de contenido
 
-Estos campos normalizados se exponen a través de la vista agéntica. En el panel [Tráfico de referencia](/help/dashboards/referral-traffic.md), los registros de CDN se utilizan para mostrar las métricas de visitas a la página. No se procesa ni almacena información de identificación personal (PII) en ninguna fase de la incorporación de registros de CDN ni en la posterior gestión de datos.
+Estos campos normalizados se exponen a través de la vista agéntica. En el tablero [Tráfico de referencia](/help/dashboards/referral-traffic.md), los registros de CDN se utilizan para mostrar las métricas de visitas a la página. No se procesa ni almacena información de identificación personal (PII) en ninguna fase de la incorporación de registros de CDN ni en la posterior gestión de datos.
 
 ## Filtros {#filters}
 
@@ -88,7 +88,7 @@ En la parte superior de la página, hay tres métricas clave que debe tener en c
 
 Los indicadores de tendencia de cada métrica clave muestran cómo cambian estos valores con el paso del tiempo en comparación con el periodo anterior.
 
-## Tendencias del tráfico agéntico {#agentic-trends}
+## Tendencias de tráfico agéntico {#agentic-trends}
 
 Utilice el gráfico Tendencias de tráfico agente para realizar un seguimiento de los totales semanales de visitas individuales correctas, fallidas y generales. Como tal, puede monitorizar los cambios en la actividad y el rendimiento del agente a lo largo del tiempo. También puede situar el ratón sobre el gráfico para ver la evolución de los datos a lo largo del lapso de tiempo semanal.
 
@@ -113,14 +113,14 @@ Las vistas Agente de usuario y Análisis de rendimiento de URL proporcionan más
 La tabla Análisis de agente de usuario proporciona un desglose del tráfico por tipo de página y tipo de agente (por ejemplo, rastreadores frente a bots de chat). De este modo, es fácil comprender qué agentes de IA rastrean qué partes del sitio. Contiene las siguientes categorías:
 
 * **Tipo de página** - El tipo de página.
-* **Tipo de agente**: el agente de IA está rastreando la página, ya sea un rastreador o un bot de chat.
+* **Tipo de agente**: el agente de IA que rastrea la página, ya sea un rastreador o un bot de chat.
 * **Visitas**: el número total de solicitudes realizadas por agentes de inteligencia artificial para ese tipo de página específico.
 
 Puede personalizar qué métricas se muestran haciendo clic en el botón **Configurar columnas**.
 
 >[!TAB Análisis de rendimiento de URL]
 
-La tabla Análisis de Rendimiento de URL muestra una vista detallada de las direcciones URL individuales. Esto incluye visitas, agentes únicos, agentes principales, tasas de éxito y categorías. De este modo, puede identificar páginas de alto valor, detectar huecos de rastreo y optimizar el contenido para los motores de IA. Las direcciones URL se clasifican por volumen de tráfico. La tabla contiene las siguientes categorías:
+La tabla Análisis de Rendimiento de URL muestra una vista detallada de las direcciones URL individuales. Esto incluye visitas, agentes únicos, agentes principales, tasas de éxito y categorías. De este modo, puede identificar páginas de alto valor, detectar lagunas de rastrea y optimizar el contenido para los motores de IA. Las direcciones URL se clasifican por volumen de tráfico. La tabla contiene las siguientes categorías:
 
 * **URL** - La URL examinada.
 * **Visitas totales**: número total de solicitudes realizadas por agentes de inteligencia artificial a la dirección URL.
@@ -136,7 +136,7 @@ La tabla de rendimiento de URL tiene un campo de búsqueda para acceder rápidam
 
 ![Detalles de URL](/help/dashboards/assets/details.png)
 
-La vista Detalles de URL proporciona una comprensión integral del rendimiento de una página, y muestra la frecuencia con la que se cita, la opinión de las respuestas de IA donde se menciona, los temas y las indicaciones en los que aparece y las tendencias del tráfico auténtico y de referencia a lo largo del tiempo.
+La vista Detalles de la URL proporciona una comprensión integral del rendimiento de una página, que muestra con qué frecuencia se cita, la opinión de las respuestas de IA donde se menciona, los temas y las indicaciones en los que aparece y las tendencias en los contenidos y el tráfico de referencia a lo largo del tiempo.
 
 >[!ENDTABS]
 

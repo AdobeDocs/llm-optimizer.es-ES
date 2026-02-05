@@ -1,20 +1,20 @@
 ---
 title: Oportunidades de optimización
-description: Aprenda a utilizar el panel de oportunidades para detectar automáticamente cómo se puede mejorar el sitio con el fin de aumentar la visibilidad de la marca.
+description: Aprenda a utilizar el panel de oportunidades para detectar automáticamente cómo se puede mejorar el sitio a fin de aumentar la visibilidad de la marca.
 feature: Opportunities
 source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Oportunidades de optimización
 
-Las oportunidades de optimización se detectan automáticamente con perspectivas que muestran dónde se puede mejorar el sitio y la presencia externa para aumentar la visibilidad de la marca en la búsqueda de IA.
+Las oportunidades de optimización se detectan automáticamente con perspectivas que muestran dónde se puede mejorar su sitio y su presencia externa para aumentar la visibilidad de la marca en Búsqueda por IA.
 
-Estas optimizaciones incluyen correcciones en la página (adición de contenido estructurado, canónicos o resúmenes), ajustes técnicos (desbloqueo de rastreadores de IA o resolución de errores) e influencia en el contenido en sitios autoritativos de terceros. Abordar estas oportunidades de optimización ayuda a que su marca se represente con precisión y tenga más probabilidades de citarse en respuestas generativas.
+Estas optimizaciones incluyen correcciones en la página (adición de contenido estructurado, canónicos o resúmenes), ajustes técnicos (desbloqueo de rastreadores de IA o resolución de errores) e influencia en el contenido en sitios con autoridad de terceros. Abordar estas oportunidades de optimización ayuda a que su marca se represente con precisión y tenga más probabilidades de citarse en respuestas generativas.
 
 ![Oportunidades de optimización](/help/dashboards/assets/oport.png)
 
@@ -36,9 +36,9 @@ A continuación se muestra una tabla de las oportunidades que admite actualmente
 | Detectar canónicos faltantes | Contenido (in situ) | Busca páginas sin etiquetas canónicas o con etiquetas en conflicto. Muestra las direcciones URL afectadas y los duplicados. | Agregue etiquetas canónicas que apunten a la versión preferida de cada página. Garantizar un uso coherente entre las variantes. |
 | Detectar encabezados vacíos | Contenido (in situ) | Indica las páginas donde existen etiquetas de encabezado pero que no contienen texto. Muestra la dirección URL y la ubicación de las etiquetas vacías. | Agregue texto descriptivo a los encabezados que reflejen el contenido debajo de ellos. |
 | Detectar encabezados duplicados | Contenido (in situ) | Analiza las etiquetas de encabezados de HTML y marca los encabezados repetidos. Muestra las direcciones URL afectadas y los fragmentos de texto duplicados. | Modificar encabezados para que sean únicos y mantener la jerarquía (H1 → H2 → H3). Combinar o cambiar el nombre de las secciones duplicadas. |
-| Detectar tráfico agéntico bloqueado | GEO técnico | Analiza los registros de CDN para las solicitudes bloqueadas de agentes de IA conocidos (por ejemplo, GPTBot, PerplexityBot). Informa de las direcciones URL y los agentes afectados. | Actualice robots.txt o las configuraciones del servidor para permitir el acceso a los rastreadores de IA admitidos cuando corresponda. |
-| Detectar problemas de 404s / 403s / 5xx | GEO técnico | Supervisa los registros de CDN para ver si hay respuestas de error. Frecuencia de informes, direcciones URL afectadas y visitas estimadas perdidas. | Corrija los vínculos rotos, actualice los permisos y resuelva los problemas del lado del servidor para que el contenido clave devuelva 200 respuestas. |
-| Recuperar visibilidad del contenido (acceso anticipado) | GEO técnico | Indica páginas donde se oculta contenido crítico a los agentes de inteligencia artificial. Muestra las direcciones URL afectadas y el contenido esperado que se puede recuperar. | Preprocese las páginas para que los agentes de IA puedan disponer de más contenido sin ejecutar JavaScript. |
+| Detectar tráfico agéntico bloqueado | Optimización técnica del motor generativo | Analiza los registros de CDN para las solicitudes bloqueadas de agentes de IA conocidos (por ejemplo, GPTBot, PerplexityBot). Informa de las direcciones URL y los agentes afectados. | Actualice robots.txt o las configuraciones del servidor para permitir el acceso a los rastreadores de IA admitidos, según corresponda. |
+| Detectar problemas de 404s / 403s / 5xx | Optimización técnica del motor generativo | Supervisa los registros de CDN para ver si hay respuestas de error. Frecuencia de informes, direcciones URL afectadas y visitas estimadas perdidas. | Corrija los vínculos rotos, actualice los permisos y resuelva los problemas del lado del servidor para que el contenido clave devuelva 200 respuestas. |
+| Recuperar Visibilidad del contenido (acceso anticipado) | Optimización técnica del motor generativo | Indica páginas donde se oculta contenido crítico a los agentes de inteligencia artificial. Muestra las direcciones URL afectadas y el contenido esperado que se puede recuperar. | Preprocese las páginas para que los agentes de IA puedan disponer de más contenido sin ejecutar JavaScript. |
 
 ## Optimización automática {#auto-optimization}
 

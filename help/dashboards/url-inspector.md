@@ -5,7 +5,7 @@ feature: URL Inspector
 source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
 source-wordcount: '681'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -57,7 +57,7 @@ Se proporcionan las siguientes métricas:
 * **Visitas de agente**: el número total de visitas de agentes de inteligencia artificial en las direcciones URL.
 * **Visitas de referencia**: el número de visitas dirigidas desde respuestas generadas por IA a las direcciones URL.
 
-## URL de tendencias que compiten por citas
+## URL en tendencias que compiten por citas
 
 Las URL de tendencias que compiten por la vista de citas destacan las URL externas que se citan actualmente en respuestas relevantes para su marca, midiendo quién gana citas en su espacio. La tabla de datos tiene un campo de búsqueda para acceder rápidamente a direcciones URL específicas. Además, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir las perspectivas con su equipo o incluir la tabla en los informes ejecutivos.
 
@@ -74,6 +74,6 @@ Se proporcionan las siguientes métricas:
 
 ### Ventana de detalles
 
-Tanto para la vista de tendencias como para la vista citada, las direcciones URL tienen un botón **Detalles** al final de cada fila. Al hacer clic en el botón, se muestra una ventana independiente con detalles adicionales. La ventana de detalles muestra la frecuencia con la que se cita la dirección URL, <!--the sentiment of AI responses where it is mentioned,--> los temas y las indicaciones en los que aparece y las tendencias del tráfico de referencia y agéntico a lo largo del tiempo (para las direcciones URL propias).
+Tanto para la vista de tendencias como para la vista citada, las direcciones URL tienen un botón **Detalles** al final de cada fila. Al hacer clic en el botón, se muestra una ventana independiente con detalles adicionales. La ventana de detalles muestra la frecuencia con la que se cita la dirección URL, <!--the sentiment of AI responses where it is mentioned,--> los temas y las indicaciones en los que aparece, y las tendencias en el contenido y los tráficos de referencia a lo largo del tiempo (para las direcciones URL propias).
 
 ![Ventana de detalles](/help/dashboards/assets/details-url.png)
