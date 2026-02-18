@@ -2,7 +2,7 @@
 title: Conceptos básicos de LLM Optimizer
 description: Obtenga información sobre cómo Adobe LLM Optimizer aumenta la visibilidad de la marca en la búsqueda basada en la IA. Realice un seguimiento de menciones, citas y datos. Empiece a optimizar hoy mismo para mejorar la participación y la influencia.
 source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
 ht-degree: 100%
 
