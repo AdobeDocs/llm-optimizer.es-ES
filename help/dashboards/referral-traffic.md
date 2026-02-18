@@ -1,18 +1,18 @@
 ---
 title: Tráfico de referencia
-description: Aprenda a utilizar el panel de Tráfico de referencia para ver cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia.
+description: Aprenda a utilizar el panel de control Tráfico de referencia para ver cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia.
 feature: Referral Traffic
 source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
-workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 2%
+workflow-type: ht
+source-wordcount: '605'
+ht-degree: 100%
 
 ---
 
 
 # Tráfico de referencia
 
-El tráfico de referencia muestra cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia. Rastrea y analiza fuentes de tráfico, patrones de referencia y métricas de conversión de sitios web y plataformas externas. Esto le ayudará a comprender qué fuentes, regiones y páginas generan el tráfico más atractivo. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> También hay filtros personalizables que le ayudarán a refinar los datos mostrados.
+El tráfico de referencia muestra cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia.Rastrea y analiza las fuentes de tráfico, los patrones de referencia y las métricas de conversión de sitios web y plataformas externas.Esto le ayudará a comprender qué fuentes, regiones y páginas generan el tráfico más interesado. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.-->También hay filtros personalizables para perfeccionar los datos mostrados.
 
 ![Página de referencia](/help/dashboards/assets/referral-traffic.png)
 
@@ -26,37 +26,37 @@ Esta página detalla lo siguiente:
 
 ## Configuración {#setup}
 
-Al iniciar sesión por primera vez, el panel de Tráfico de referencia puede aparecer en blanco. Para ver los datos, debe configurar el [reenvío de registros de CDN](/help/dashboards/customer-configuration.md#cdn-configuration), seleccionando **Ir a la configuración**.
+Al iniciar sesión por primera vez, el panel de control tráfico de referencia puede aparecer en blanco.Para ver los datos, debe configurar el [reenvío de registros de CDN](/help/dashboards/customer-configuration.md#cdn-configuration), seleccionando **Ir a la configuración**.
 
-![Configuración de referencia](/help/dashboards/assets/referral-setup1.png)
+![Configuración de la referencia](/help/dashboards/assets/referral-setup1.png)
 
 <!--- 1. Select your Source (either CDN logs or AEM Operational Telemetry).
 2. Enter a primary contact email.
 3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
 
-Una vez activado, el tablero se rellenará con métricas de tráfico de referencia.
+Una vez activado, el panel de control se rellena con las métricas del tráfico de referencia.
 
 ## Filtros {#filters}
 
-En la parte superior de la página, puede aplicar filtros para restringir la vista. Los filtros que elija afectarán **todas** las secciones presentes en el panel. Puede personalizar lo siguiente:
+En la parte superior de la página, puede aplicar filtros para restringir la vista.Los filtros que elija afectarán a **todas** las secciones presentes en el panel de control.Puede personalizar lo siguiente:
 
-* **Intervalo de fecha**: seleccione el lapso de tiempo para los datos mostrados. Por ejemplo, las últimas 4 semanas. También tiene la opción de personalizar el período de tiempo seleccionando la opción **Semanas personalizadas**.
-* **Plataforma**: elige una fuente de tráfico específica, como Google, OpenAI o medios sociales.
-* **Calidad de la página**: filtre el tráfico de referencia por la intención del usuario.
-* **Canal Source**: filtre por el origen del canal. Las opciones incluyen: LLM, canales de referencia ganados, pagados o mixtos.
-* **Tipo de dispositivo** - Analice el tráfico según el tipo de dispositivo del visitante, ya sea de escritorio, móvil o todos los dispositivos.
+* **Intervalo de fecha**: seleccione el lapso de tiempo para los datos mostrados.Por ejemplo, las últimas cuatro semanas.También tiene la opción de personalizar el período de tiempo seleccionando la opción **Semanas personalizadas**.
+* **Plataforma**: elija una fuente de tráfico específica, como Google, OpenAI o redes sociales.
+* **Intención de la página**: filtre el tráfico de referencia por la intención del usuario.
+* **Origen del canal**: filtre por el origen del canal.Las opciones incluyen: LLM, canales de referencia ganados, pagados o mixtos.
+* **Tipo de dispositivo**: analice el tráfico según el tipo de dispositivo del visitante, ya sea de escritorio, móvil o todos los dispositivos.
   **Región**: vea patrones de referencia en diferentes regiones geográficas.
 
-Después de seleccionar el filtro deseado, haga clic en **Aplicar filtros** para aplicar la selección al panel.
+Después de seleccionar el filtro deseado, haga clic en **Aplicar filtros** para aplicar la selección al panel de control.
 
 ## Rendimiento general de referencia {#overall-performance}
 
-El panel resalta el rendimiento general de la referencia al mostrar métricas clave, entre ellas:
+El panel de control resalta el rendimiento general de la referencia al mostrar métricas clave, entre ellas, las siguientes:
 
-* **Tráficos de referencia totales** - tráficos de referencia totales de todas las fuentes.
-* **Tráficos de referencia de LLM** - El tráfico de referencia total de LLM&#39;s.
-* **Tasa de consentimiento**: porcentaje de visitantes que aceptan una solicitud de consentimiento.
-* **Tasa de salida hacia otro sitio** - El porcentaje de sesiones de orígenes de referencia que no tuvieron evento de participación.
+* **Tráfico de referencia total**: el tráfico de referencia total procedente de todas las fuentes.
+* **Tráfico de referencia de LLM**: el tráfico de referencia total procedente de los LLM.
+* **Tasa de consentimiento**: porcentaje de visitantes que aceptan una indicación de consentimiento.
+* **Porcentaje de rechazo**: el porcentaje de sesiones de fuentes de referencia que no tuvieron evento de participación.
 
 ![Página de referencia](/help/dashboards/assets/referral-traffic.png)
 
@@ -72,23 +72,23 @@ The Top Referral URLs list surfaces your site's most visited pages from referral
 
 Las tablas Detalles de fuentes de referencia y Análisis de rendimiento de URL le ayudan a evaluar el volumen y la calidad del tráfico. Haga clic en cada pestaña a continuación para obtener más detalles:
 
-![Detalles de Tráfico de referencia](/help/dashboards/assets/traffic-details.png)
+![Detalles del tráfico de referencia](/help/dashboards/assets/traffic-details.png)
 
 >[!BEGINTABS]
 
->[!TAB Detalles de orígenes de referencia]
+>[!TAB Detalles de fuentes de referencia]
 
-La vista Detalles de fuentes de referencia desglosa el tráfico proveniente de diferentes plataformas, como OpenAI, Microsoft, Google y Perplexity. Muestra métricas clave como visitas, tasa de salida hacia otro sitio y tipo de canal, lo que le ayuda a comprender qué fuentes de IA y búsqueda dirigen el tráfico más comprometido a su sitio.
+La vista Detalles de fuentes de referencia desglosa el tráfico proveniente de diferentes plataformas, como OpenAI, Microsoft, Google y Perplexity.Muestra métricas clave como visitas, porcentaje de rechazo y tipo de canal, lo que le ayuda a comprender qué fuentes de IA y búsqueda dirigen el tráfico más implicado a su sitio.
 
-* **Source**: origen del tráfico de referencia.
-* **Visitas**: número total de visitas para cada origen.
-* **Tasa de salida hacia otro sitio** - El porcentaje de sesiones del origen de referencia que no tuvieron evento de participación.
-* **Canal**: el canal del origen, ya sea ganado, pagado o ambos.
+* **Fuente**: origen del tráfico de referencia.
+* **Visitas**: número total de visitas para cada fuente.
+* **Porcentaje de rechazo**: el porcentaje de sesiones de la fuente de referencia que no tuvieron ningún evento de participación.
+* **Canal**: el canal de la fuente, ya sea ganado, pagado o ambos.
 
 >[!TAB Análisis de rendimiento de URL]
 
-La vista Análisis de rendimiento de URL clasifica las páginas de mayor rendimiento según el volumen de tráfico de referencia de los LLM y otras fuentes. Resalta métricas como el tráfico, la tasa de salida hacia otro sitio, la tasa de consentimiento y la intención de página, lo que le ayuda a identificar qué páginas atraen y retienen a los visitantes más comprometidos a partir de referencias impulsadas por IA. La tabla tiene un campo de búsqueda para acceder rápidamente a los temas.
+La vista Análisis de rendimiento de URL clasifica las páginas de mayor rendimiento según el volumen de tráfico de referencia de los LLM y otras fuentes.Resalta métricas como el tráfico, el porcentaje de rechazo, la tasa de consentimiento y las intención de la página, lo que le ayuda a identificar qué páginas atraen y retienen a los visitantes más activos a partir de referencias basadas en la IA.La tabla contiene un campo de búsqueda para acceder rápidamente a los temas.
 
 >[!ENDTABS]
 
-En ambas tablas, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir la información con su equipo o incluir las tablas en los informes ejecutivos. Además, en ambas tablas, puede personalizar qué métricas se muestran haciendo clic en el botón **Configurar columnas**.
+En ambas tablas, puede usar la opción **Exportar** para descargar el archivo .CSV de la tabla y compartir la información con su equipo o incluir las tablas en los informes ejecutivos.Además, en ambas tablas, puede personalizar qué métricas se muestran haciendo clic en el botón **Configurar columnas**.

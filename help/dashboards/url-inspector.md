@@ -1,79 +1,79 @@
 ---
 title: Inspector de URL
-description: Aprenda a utilizar el Inspector de URL para analizar el rendimiento de páginas específicas del dominio en búsquedas de IA.
+description: Aprenda a utilizar el Inspector de URL para analizar el rendimiento de páginas específicas de su dominio en las búsquedas por IA.
 feature: URL Inspector
 source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
-workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 1%
+workflow-type: ht
+source-wordcount: '687'
+ht-degree: 100%
 
 ---
 
 
 # Inspector de URL
 
-El Inspector de URL le ayuda a analizar el rendimiento de páginas específicas del dominio en búsquedas de IA. Combina visibilidad, tráfico auténtico y datos de referencia en el nivel de URL para ofrecerle una vista granular de las direcciones URL que se citan y de la frecuencia con la que aparecen en las respuestas.
+El inspector de URL le ayuda a analizar el rendimiento de páginas específicas de su dominio en las búsquedas por IA.Combina visibilidad, tráfico agéntico y datos de referencia a nivel de la URL para ofrecerle una vista granular de las direcciones URL que se citan y de la frecuencia con la que aparecen en las respuestas.
 
 ![Inspector de URL](/help/dashboards/assets/url-insp.png)
 
 ## Filtros
 
-En la parte superior de la página, puede aplicar filtros para restringir la vista. Los filtros que elija afectarán **todas** las secciones presentes en el panel. Puede personalizar lo siguiente:
+En la parte superior de la página, puede aplicar filtros para restringir la vista.Los filtros que elija tendrán un impacto en **todas** las secciones presentes en el panel de control.Puede personalizar lo siguiente:
 
-* **Intervalo de fecha**: seleccione el lapso de tiempo para los datos mostrados. Por ejemplo, las últimas 4 semanas. También tiene la opción de personalizar el período de tiempo seleccionando la opción **Semanas personalizadas**.
+* **Intervalo de fecha**: seleccione el lapso de tiempo para los datos mostrados.Por ejemplo, las últimas cuatro semanas.También tiene la opción de personalizar el período de tiempo seleccionando la opción **Semanas personalizadas**.
 * **Categoría**: filtre los resultados mostrados por categorías.
-* **Plataforma**: elige qué motor de IA analizar.
-* **Tipo de contenido de página** - Filtre por tipo de contenido.
-* **Región**: filtre los resultados por ubicación geográfica. No todas las regiones estarán disponibles en el momento del lanzamiento.
+* **Plataforma**: elija qué motor de IA desea analizar.
+* **Tipo de contenido de página**: filtre por el tipo de contenido.
+* **Región**: filtre los resultados por la ubicación geográfica. No todas las regiones estarán disponibles en el momento del lanzamiento.
 
-Después de seleccionar el filtro deseado, haga clic en **Aplicar filtros** para aplicar la selección al panel.
+Después de seleccionar el filtro deseado, haga clic en **Aplicar filtros** para aplicar la selección al panel de control.
 
-## Métricas de información general
+## Métricas de resumen
 
-El Inspector de URL proporciona varias métricas de información general para que pueda evaluar rápidamente el rendimiento de sus páginas en las búsquedas de IA. Se proporcionan las siguientes métricas:
+El Inspector de URL proporciona varias métricas de resumen para que pueda evaluar rápidamente el rendimiento de sus páginas en las búsquedas por IA.Se proporcionan las siguientes métricas:
 
-* **Mensajes únicos con citas propias**: el número total de mensajes únicos de IA con citas propias.
-* **Total de peticiones de datos únicas** - Número total de peticiones de datos únicos de IA.
-* **URL citadas únicas**: el número de URL de propiedad única que se han citado.
-* **Veces totales citadas**: Veces totales que se ha citado una dirección URL propia en respuestas generadas por IA.
-* **Total de visitas reales**: El número total de visitas de agentes de inteligencia artificial en sus direcciones URL.
-* **Visitas de referencia de LLM**: el número total de visitas dirigidas desde respuestas generadas por IA a sus direcciones URL.
+* **Indicaciones únicas con citas propias**: el número total de indicaciones de IA con citas propias.
+* **Total de indicaciones únicas**: el número total de indicaciones de IA únicas.
+* **URL citadas únicas**: el número de URL propias únicas que se han citado.
+* **Total de veces que se ha citado**: el número total de veces que se ha citado una URL propia en las respuestas generadas por IA.
+* **Total de visitas agénticas**: el número total de visitas de los agentes de IA en las URL. 
+* **Visitas de referencia de los LLM**: el número total de visitas dirigidas desde las respuestas generadas por IA a las URL.
 
-Los indicadores de tendencia de cada métrica de información general muestran cómo cambian estos valores con el paso del tiempo en comparación con el período anterior.
+Los indicadores de tendencia de cada métrica de resumen muestran cómo cambian estos valores con el paso del tiempo en comparación con el período anterior.
 
 ## Sus URL citadas
 
-La vista de direcciones URL citadas enumera todas las direcciones URL de su marca que se han citado en respuestas generadas por IA, con métricas de compatibilidad. Ambas tablas tienen un campo de búsqueda para acceder rápidamente a los temas y puede personalizar qué métricas se muestran haciendo clic en el botón **Configurar columnas**. Además, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir las perspectivas con su equipo o incluir la tabla en los informes ejecutivos.
+La vista de URL citadas enumera todas las direcciones URL de su marca que se han citado en las respuestas generadas por IA, con las métricas de compatibilidad.Ambas tablas contienen un campo de búsqueda para acceder rápidamente a los temas y puede personalizar qué métricas se muestran haciendo clic en el botón **Configurar columnas**. Además, puede usar la opción **Exportar** para descargar el archivo .CSV de la tabla y compartir la información con su equipo o incluir la tabla en los informes ejecutivos.
 
 ![URL citadas](/help/dashboards/assets/cited-urls.png)
 
 Se proporcionan las siguientes métricas:
 
 * **URL**: la URL analizada.
-* **Veces citada**: el número de veces que la dirección URL se ha citado en respuestas generadas por IA.
-* **Indicadores citados en**: el número de indicadores de IA únicos que citaron la dirección URL.
-* **Categorías**: las categorías de productos o temas asociados con la dirección URL.
-* **Regiones**: La región geográfica donde se citó la dirección URL.
-* **Visitas de agente**: el número total de visitas de agentes de inteligencia artificial en las direcciones URL.
-* **Visitas de referencia**: el número de visitas dirigidas desde respuestas generadas por IA a las direcciones URL.
+* **Veces citado**: el número de veces que la dirección URL se ha citado en las respuestas generadas por IA.
+* **Indicaciones citadas en**: el número de indicaciones de IA únicas que han citado la dirección URL.
+* **Categorías**: las categorías de productos o los temas asociados con la URL.
+* **Regiones**: la región geográfica en las que se ha citado la URL.
+* **Visitas agénticas**: el número total de visitas de agentes de IA en las URL
+* **Visitas de referencia**: el número de visitas dirigidas desde las respuestas generadas por IA a las direcciones URL.
 
 ## URL en tendencias que compiten por citas
 
-Las URL de tendencias que compiten por la vista de citas destacan las URL externas que se citan actualmente en respuestas relevantes para su marca, midiendo quién gana citas en su espacio. La tabla de datos tiene un campo de búsqueda para acceder rápidamente a direcciones URL específicas. Además, puede usar la opción **Exportar** para descargar el archivo .csv de tabla y compartir las perspectivas con su equipo o incluir la tabla en los informes ejecutivos.
+Las URL en tendencia que compiten por la vista de citas destacan las URL externas que se citan actualmente en las respuestas relevantes para su marca, midiendo quién está ganando citas en su espacio.La tabla de datos contiene un campo de búsqueda para acceder rápidamente a direcciones URL específicas.Además, puede usar la opción **Exportar** para descargar el archivo .CSV de la tabla y compartir la información con su equipo o incluir la tabla en los informes ejecutivos.
 
-![URL de tendencias compitiendo por las citas](/help/dashboards/assets/trend-url.png)
+![URL en tendencia que compiten por citas](/help/dashboards/assets/trend-url.png)
 
 Se proporcionan las siguientes métricas:
 
 * **URL**: la URL analizada
-* **Tipo de contenido** - El tipo de contenido (propio, social, ganado, otro).
-* **Veces citada**: el número de veces que la dirección URL se ha citado en respuestas generadas por IA.
-* **Indicadores citados en**: el número de indicadores de IA únicos que citaron la dirección URL.
-* **Categorías**: las categorías de productos o temas asociados con la dirección URL.
-* **Regiones**: La región geográfica donde se citó la dirección URL.
+* **Tipo de contenido**: el tipo de contenido (propio, social, obtenido, otros).
+* **Veces citado**: el número de veces que la dirección URL se ha citado en respuestas generadas por IA.
+* **Indicaciones citadas en**: el número de indicaciones de IA únicas que han citado la dirección URL.
+* **Categorías**: categorías de productos o temas asociados con la URL.
+* **Regiones**: región geográfica en la que se citó la URL.
 
 ### Ventana de detalles
 
-Tanto para la vista de tendencias como para la vista citada, las direcciones URL tienen un botón **Detalles** al final de cada fila. Al hacer clic en el botón, se muestra una ventana independiente con detalles adicionales. La ventana de detalles muestra la frecuencia con la que se cita la dirección URL, <!--the sentiment of AI responses where it is mentioned,--> los temas y las indicaciones en los que aparece, y las tendencias en el contenido y los tráficos de referencia a lo largo del tiempo (para las direcciones URL propias).
+Tanto para la vista de tendencias como para la vista citada, las direcciones URL tienen un botón **Detalles** al final de cada fila.Al hacer clic en el botón, se muestra una ventana independiente con detalles adicionales.La ventana de detalles muestra la frecuencia con la que se cita la dirección URL, <!--the sentiment of AI responses where it is mentioned,--> los temas y las indicaciones en los que aparece, así como las tendencias en el contenido y el tráfico de referencia a lo largo del tiempo (para las direcciones URL propias).
 
 ![Ventana de detalles](/help/dashboards/assets/details-url.png)
