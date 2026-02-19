@@ -2,9 +2,9 @@
 title: Inicio rápido
 description: 'Empiece a utilizar Adobe LLM Optimizer: incorpore su marca, obtenga información sobre la visibilidad basada en la IA y explore los paneles de control para mejorar el rendimiento de las búsquedas.'
 feature: Quickstart, Onboarding
-source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
+source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1152'
 ht-degree: 93%
 
 ---
@@ -38,7 +38,7 @@ Los clientes de AEM Cloud (Cloud Service, Managed Services, Edge Delivery Servic
 Hay algunas funcionalidades del producto que no están disponibles en la versión gratuita:
 
 * La prueba está limitada a un dominio. No podrá cambiar el dominio que ha proporcionado después de completar la configuración.
-* La capacidad de implementar optimizaciones está disponible en Acceso anticipado. Más información en [Optimizar en las preguntas más frecuentes de Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge#frequently-asked-questions).
+* La capacidad de implementar optimizaciones está disponible en Acceso anticipado. Más información en [Optimizar en las preguntas más frecuentes de Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Consulte la sección siguiente para obtener información detallada sobre cómo activar la versión de prueba gratuita e incorporar su dominio.
 

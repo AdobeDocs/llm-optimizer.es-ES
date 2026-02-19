@@ -1,8 +1,8 @@
 ---
 title: Adobe LLM Optimizer
-description: 'Impulse su marca con Adobe LLM Optimizer.Realice un seguimiento de las menciones, descubra datos y domine la búsqueda basada en la IA.Tome el control de su visibilidad: empiece a optimizar ahora.'
-source-git-commit: 0714b6c83e384ff21ddceafa941e3fe8c7305467
-workflow-type: ht
+description: 'Impulse su marca con Adobe LLM Optimizer. Realice un seguimiento de las menciones, descubra datos y domine la búsqueda basada en la IA. Tome el control de su visibilidad: empiece a optimizar ahora.'
+source-git-commit: 5af79711014a44e34a43babd60a5a7e18e333b92
+workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
 
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Adobe LLM Optimizer
 
-Adobe LLM Optimizer es una aplicación basada en la IA generativa para la optimización de motores generativos, diseñada para ayudar a las marcas a mejorar su visibilidad, precisión e influencia en entornos de búsqueda basados en la IA.Proporciona datos sobre la presencia de marca en respuestas generadas por IA, ofrece recomendaciones de contenido prescriptivo y automatiza las correcciones de la optimización.
+Adobe LLM Optimizer es una aplicación basada en la IA generativa para la optimización de motores generativos, diseñada para ayudar a las marcas a mejorar su visibilidad, precisión e influencia en entornos de búsqueda basados en la IA. Proporciona datos sobre la presencia de marca en respuestas generadas por IA, ofrece recomendaciones de contenido prescriptivo y automatiza las correcciones de la optimización.
 
 ## Introducción a LLM Optimizer
 
@@ -126,7 +126,7 @@ Adobe LLM Optimizer es una aplicación basada en la IA generativa para la optimi
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
   {target=_blank}
   {cta=Learn more}
-* https://business.adobe.com/es/products/llm-optimizer.html
+* https://business.adobe.com/products/llm-optimizer.html
   {title = Explore the capabilities of the Adobe LLM Optimizer}
   {image = /help/assets/overview/business-adobe.png}
   {target=_blank}
@@ -185,7 +185,7 @@ Adobe LLM Optimizer es una aplicación basada en la IA generativa para la optimi
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://business.adobe.com/es/products/llm-optimizer.html?lang=es" title="Explorar las funcionalidades de Adobe LLM Optimizer" target="_blank" rel="referrer">
+                    <a href="https://business.adobe.com/products/llm-optimizer.html?lang=es" title="Explorar las funcionalidades de Adobe LLM Optimizer" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="/help/assets/overview/business-adobe.png" alt="Explorar las funcionalidades de Adobe LLM Optimizer"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -194,11 +194,11 @@ Adobe LLM Optimizer es una aplicación basada en la IA generativa para la optimi
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://business.adobe.com/es/products/llm-optimizer.html?lang=es" target="_blank" rel="referrer" title="Explorar las funcionalidades de Adobe LLM Optimizer">Explorar las funcionalidades de Adobe LLM Optimizer</a>
-              </p>
-                    <p class="is-size-6">De forma a la presencia de su marca en los resultados de la búsqueda por IA con Adobe LLM Optimizer.Obtenga información GEO, aumente la visibilidad en los LLM e impulse un crecimiento de tráfico cuantificable.</p>
+                        <a href="https://business.adobe.com/products/llm-optimizer.html?lang=es" target="_blank" rel="referrer" title="Explorar las funcionalidades de Adobe LLM Optimizer">Explorar las funcionalidades de Adobe LLM Optimizer</a>
+                    </p>
+                    <p class="is-size-6">De forma a la presencia de su marca en los resultados de la búsqueda por IA con Adobe LLM Optimizer. Obtenga información GEO, aumente la visibilidad en los LLM e impulse un crecimiento de tráfico cuantificable.</p>
                 </div>
-                <a href="https://business.adobe.com/es/products/llm-optimizer.html?lang=es" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://business.adobe.com/products/llm-optimizer.html?lang=es" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                 </a>
             </div>
@@ -211,7 +211,7 @@ Adobe LLM Optimizer es una aplicación basada en la IA generativa para la optimi
 
 <!-- CARDS
 
-* ./dashboards/optimize-at-edge.md
+* ./dashboards/optimize-at-edge/overview.md
   {title= Optimize at Edge}
   {image= /help/assets/overview/optimize-on-edge-card.png}
   {description= Learn how to deliver optimizations in LLM Optimizer without any authoring changes required.}
@@ -225,7 +225,7 @@ Adobe LLM Optimizer es una aplicación basada en la IA generativa para la optimi
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./dashboards/optimize-at-edge.md" title="Optimizar en Edge" target="_blank" rel="referrer">
+                    <a href="./dashboards/optimize-at-edge/overview.md" title="Optimizar en Edge" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="/help/assets/overview/optimize-on-edge-card.png" alt="Optimizar en Edge"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -234,11 +234,11 @@ Adobe LLM Optimizer es una aplicación basada en la IA generativa para la optimi
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./dashboards/optimize-at-edge.md" target="_blank" rel="referrer" title="Optimizar en Edge">Optimize at Edge</a>
+                        <a href="./dashboards/optimize-at-edge/overview.md" target="_blank" rel="referrer" title="Optimizar en Edge">Optimize at Edge</a>
                     </p>
                     <p class="is-size-6">Obtenga información sobre cómo ofrecer optimizaciones en LLM Optimizer sin necesidad de realizar cambios en la creación.</p>
                 </div>
-                <a href="./dashboards/optimize-at-edge.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="./dashboards/optimize-at-edge/overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                 </a>
             </div>

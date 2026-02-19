@@ -2,8 +2,8 @@
 title: Oportunidades de optimización
 description: Aprenda a utilizar el panel de control de oportunidades para detectar automáticamente cómo se puede mejorar el sitio a fin de aumentar la visibilidad de la marca.
 feature: Opportunities
-source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
-workflow-type: ht
+source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
+workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ A continuación se muestra una tabla de las oportunidades compatibles actualment
 
 ## Optimización automática {#auto-optimization}
 
-La optimización automática implementa las optimizaciones recomendadas con un solo clic, esto reduce el esfuerzo manual y el tiempo necesario para obtener los valores. Las optimizaciones se pueden aplicar en la fuente de contenido o en el perímetro de CDN. La optimización automática basada en Edge está disponible actualmente en Acceso anticipado para las oportunidades seleccionadas. Para obtener más información, consulte la página [Optimizar en Edge](/help/dashboards/optimize-at-edge.md).
+La optimización automática implementa las optimizaciones recomendadas con un solo clic, esto reduce el esfuerzo manual y el tiempo necesario para obtener los valores. Las optimizaciones se pueden aplicar en la fuente de contenido o en el perímetro de CDN. La optimización automática basada en Edge está disponible actualmente en Acceso anticipado para las oportunidades seleccionadas. Para obtener más información, consulte la página [Optimizar en Edge](/help/dashboards/optimize-at-edge/overview.md).
 
 <!--### Recover Content Visibility Opportunity {#recover-contet}
 
