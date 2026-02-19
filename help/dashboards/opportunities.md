@@ -2,10 +2,10 @@
 title: Oportunidades de optimización
 description: Aprenda a utilizar el panel de control de oportunidades para detectar automáticamente cómo se puede mejorar el sitio a fin de aumentar la visibilidad de la marca.
 feature: Opportunities
-source-git-commit: 33196139fef1cebd47b15aa964df2bac366ea12a
+source-git-commit: 3204d46106b4ae1645df19138cabd55bf153eb42
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 100%
+source-wordcount: '544'
+ht-degree: 97%
 
 ---
 
@@ -34,6 +34,7 @@ A continuación se muestra una tabla de las oportunidades compatibles actualment
 | Recomendar contenido estructurado (preguntas frecuentes) | Contenido (en el sitio) | Detecta indicaciones de alta popularidad sin entradas de preguntas frecuentes coincidentes. Muestra indicaciones relacionadas, categorías y direcciones URL afectadas. | Añada bloques de esquemas de preguntas frecuentes con respuestas concisas para que se ajusten a las consultas comunes. |
 | Detectar tráfico agéntico bloqueado | Optimización técnica del motor generativo | Analiza los registros de CDN en busca de solicitudes bloqueadas de agentes de IA conocidos (por ejemplo, GPTBot, PerplexityBot). Informa de las direcciones URL y los agentes afectados. | Actualice robots.txt o las configuraciones del servidor para permitir el acceso a los rastreadores de IA admitidos, según corresponda. |
 | Detectar problemas 404s / 403s / 5xx | Optimización técnica del motor generativo | Supervisa los registros de CDN para ver si hay respuestas de error. Frecuencia de informes, direcciones URL afectadas y visitas estimadas perdidas. | Corrija los vínculos rotos, actualice los permisos y resuelva los problemas del lado del servidor para que el contenido clave devuelva 200 respuestas. |
+| Simplificar contenido complejo | Contenido (en el sitio) | Identifica párrafos largos y complejos que superan los umbrales de legibilidad y que pueden reducir la comprensión de IA. | Preprocese las páginas para que los agentes de IA puedan disponer de más contenido sin ejecutar JavaScript. |
 | Recuperar visibilidad del contenido (acceso anticipado) | Optimización técnica del motor generativo | Indica las páginas donde se oculta contenido crítico para los agentes de IA. Muestra las direcciones URL afectadas y el contenido previsto que se puede recuperar. | Preprocese las páginas para que los agentes de IA puedan disponer de más contenido sin ejecutar JavaScript. |
 
 ## Optimización automática {#auto-optimization}
