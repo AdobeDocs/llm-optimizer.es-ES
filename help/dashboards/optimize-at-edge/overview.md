@@ -2,10 +2,10 @@
 title: Optimizar en Edge
 description: Obtenga información sobre cómo entregar optimizaciones en LLM Optimizer en el perímetro de la CDN sin necesidad de realizar cambios en la creación.
 feature: Opportunities
-source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
+source-git-commit: 547c38986da609a6cd42cb94402c811d6eb1f939
 workflow-type: tm+mt
-source-wordcount: '2172'
-ht-degree: 85%
+source-wordcount: '2181'
+ht-degree: 84%
 
 ---
 
@@ -62,6 +62,7 @@ Para guiar el proceso de configuración, seleccione su proveedor de CDN a contin
 | Rápido (BYOCDN) | Traer su propia CDN | [Ver guía de configuración](/help/dashboards/optimize-at-edge/fastly-byocdn.md) |
 | Akamai (BYOCDN) | Traer su propia CDN | [Ver guía de configuración](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
 | Cloudflare (BYOCDN) | Traer su propia CDN | [Ver guía de configuración](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
+| CloudFront (BYOCDN) | Traer su propia CDN | [Ver guía de configuración](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
 
 >[!NOTE]
 >Si su proveedor de CDN no aparece en la lista anterior o si no encuentra su dominio o correo electrónico en la interfaz de usuario de LLM Optimizer, póngase en contacto con `llmo-at-edge@adobe.com` para obtener ayuda sobre la incorporación. Una vez completadas las configuraciones, puede implementar sugerencias para las oportunidades de Optimizar en Edge en LLM Optimizer.
@@ -113,7 +114,7 @@ Esta oportunidad encuentra páginas con párrafos largos y complejos que pueden 
 
 Para cada oportunidad, puede obtener una vista previa, editar, implementar, ver en directo y restablecer las optimizaciones en el perímetro.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477987/?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Vista previa
 
