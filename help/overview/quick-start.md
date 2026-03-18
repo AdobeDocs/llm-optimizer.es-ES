@@ -2,10 +2,10 @@
 title: Inicio rápido
 description: 'Empiece a utilizar Adobe LLM Optimizer: incorpore su marca, obtenga información sobre la visibilidad basada en la IA y explore los paneles de control para mejorar el rendimiento de las búsquedas.'
 feature: Quickstart, Onboarding
-source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
+source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 93%
+source-wordcount: '1169'
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ Los clientes de AEM Cloud (Cloud Service, Managed Services, Edge Delivery Servic
 Hay algunas funcionalidades del producto que no están disponibles en la versión gratuita:
 
 * La prueba está limitada a un dominio. No podrá cambiar el dominio que ha proporcionado después de completar la configuración.
-* La capacidad de implementar optimizaciones está disponible en Acceso anticipado. Más información en [Optimizar en las preguntas más frecuentes de Edge](https://experienceleague.adobe.com/es/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+* La capacidad de implementar optimizaciones está disponible en Acceso anticipado. Más información en [Optimizar en las preguntas más frecuentes de Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Consulte la sección siguiente para obtener información detallada sobre cómo activar la versión de prueba gratuita e incorporar su dominio.
 
@@ -103,6 +103,9 @@ O bien, si no se ha añadido ningún proveedor de CDN previamente (tal como se h
 
 * [Tráfico agéntico](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [Tráfico de referencia](/help/dashboards/referral-traffic.md#setup#setup)
+
+>[!NOTE]
+>Para obtener más información sobre el reenvío de registros al usar una CDN administrada por el cliente (BYOCDN), consulte [Información general sobre el reenvío de registros BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 ## Paso 5: Explorar paneles de control y realizar acciones
 

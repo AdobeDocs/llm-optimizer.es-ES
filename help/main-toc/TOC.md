@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 'Impulse su marca con Adobe LLM Optimizer. Realice un seguimiento de las menciones, descubra datos y domine la búsqueda basada en la IA. Tome el control de su visibilidad: empiece a optimizar ahora.'
-source-git-commit: 547c38986da609a6cd42cb94402c811d6eb1f939
+source-git-commit: b590cd14ba7d64e56a6c972fd6090e2df9de58f6
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 83%
+source-wordcount: '98'
+ht-degree: 77%
 
 ---
 
@@ -27,6 +27,14 @@ ht-degree: 83%
    + [Oportunidades](/help/dashboards/opportunities.md)
    + [Configuración del cliente](/help/dashboards/customer-configuration.md)
    + [Colaboración](/help/dashboards/collaboration.md)
++ Reenvío de registro de BYOCDN{#log-forwarding}
+   + [Información general](/help/overview/log-forwarding/log-forwarding-overview.md)
+   + [Akamai](/help/overview/log-forwarding/akamai.md)
+   + [Cloudflare](/help/overview/log-forwarding/cloudflare.md)
+   + [CloudFront](/help/overview/log-forwarding/cloudfront.md)
+   + [Fastly](/help/overview/log-forwarding/fastly.md)
+   + [Imperva](/help/overview/log-forwarding/imperva.md)
+   + [Otro (carga manual)](/help/overview/log-forwarding/other.md)
 + Recursos adicionales{#resources}
    + Optimizar en Edge{#optimize-at-edge}
       + [Información general](/help/dashboards/optimize-at-edge/overview.md)

@@ -1,0 +1,130 @@
+---
+title: 'Reenvío de registros: Akamai'
+description: Aprenda a reenviar registros de CDN de Akamai al bloque S3 de Adobe para la recopilación de datos de tráfico auténtico en LLM Optimizer.
+feature: Agentic Traffic
+source-git-commit: b590cd14ba7d64e56a6c972fd6090e2df9de58f6
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 0%
+
+---
+
+
+# Reenvío de registros: Akamai {#log-forwarding-akamai}
+
+En esta página se explica cómo reenviar registros de CDN de Akamai al bloque S3 de Adobe para la recopilación de datos de tráfico auténtico. Utilizará la página de configuración de CDN de LLM Optimizer para incorporarse a LLM Optimizer. Una vez completado el proceso de incorporación, siga los pasos proporcionados en esta página para configurar el reenvío de registros en la Panel de control de Campaign de Akamai.
+
+## Paso 1: Incorporación en LLM Optimizer {#step-1}
+
+En la página de LLM Optimizer [https://llmo.now/](https://llmo.now/):
+
+1. Vaya a **Panel de configuración del cliente**.
+
+   ![Botón Configuración](/help/overview/assets/log-forwarding/common/config-button.png)
+
+1. Haga clic en la ficha **Configuración de CDN**.
+
+   ![Ficha Configuración de CDN](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
+
+1. Haga clic en **Comenzar**.
+
+   <!--![Onboard CDN button](/help/overview/assets/log-forwarding/common/onboard-cdn-button.png)-->
+
+1. Junto a **Activar perspectivas de tráfico de IA**, haga clic en **Configurar**.
+
+   ![Configuración](/help/overview/assets/log-forwarding/common/configure.png)
+
+1. Seleccione **Akamai (BYOCDN)**.
+
+   ![Seleccionar Akamai](/help/overview/assets/log-forwarding/akamai/akamai-select.png)
+
+1. Haga clic en **Incorporar**.
+
+   <!--![Onboard button](/help/overview/assets/log-forwarding/common/onboard-button.png)-->
+
+## Paso 2: Crear un flujo en Akamai {#step-2}
+
+En el panel de control de Akamai [https://control.akamai.com/](https://control.akamai.com/), siga los pasos de la documentación oficial de Akamai para [crear un flujo](https://techdocs.akamai.com/datastream2/docs/create-stream).
+
+## Paso 3: Selección de parámetros de datos {#step-3}
+
+Después de crear la secuencia, en el panel de control de Akamai, haga clic en Siguiente para continuar con la pestaña **Conjuntos de datos**. Siga los pasos de la documentación oficial de Akamai para elegir los [parámetros de datos](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters). Se necesitarán los siguientes campos de la configuración de LLM Optimizer:
+
+![Campos de configuración de LLMO](/help/overview/assets/log-forwarding/akamai/akamai-llmo-config-fields.png)
+
+La asignación debe ser la siguiente:
+
+* **Información de registro**
+reqTimeSec -> Tiempo de solicitud
+* **Datos geográficos**
+country -> Country/Region
+* **Datos de intercambio de mensajes**
+reqHost -> Solicitar host
+reqPath -> Solicitar ruta
+queryStr -> Cadena de consulta
+reqMethod -> Método de solicitud
+ua -> User-Agent
+statusCode -> código de estado HTTP
+rspContentType -> Tipo de contenido de respuesta
+* **Solicitar datos de encabezado**
+referer -> Referer
+* **Datos de rendimiento de red**
+timeToFirstByte -> Tiempo hasta el primer byte
+
+Los campos del conjunto de datos de Akamai (incluidos los ID) son los siguientes:
+
+1100, # reqTimeSec -> Hora de solicitud
+2012, # country -> País/Región
+1011, # reqHost -> Solicitar host
+1013, # reqPath -> Ruta de solicitud
+2009, # queryStr -> Cadena de consulta
+1012, # reqMethod -> Método de solicitud
+1017, # ua -> User-Agent
+1008, # código de estado -> código de estado HTTP
+1032, # referer -> Referer
+1016, # rspContentType -> Tipo de contenido de respuesta
+2025 # timeToFirstByte -> Tiempo hasta el primer byte
+
+## Paso 4: Configurar el destino {#step-4}
+
+Después de crear los flujos de datos y elegir los parámetros, debe configurar el destino. Para configurar el destino, siga estos pasos:
+
+1. En **Destino**, seleccione **S3**.
+2. En **Name**, escriba una descripción legible en lenguaje natural del destino.
+3. En **Bucket**, copie **Bucket Name** de la página de configuración de LLM Optimizer.
+
+   ![Nombre del contenedor](/help/overview/assets/log-forwarding/common/bucket-name.png)
+
+4. En **Ruta de la carpeta**, copie la **ruta** de la página de configuración de LLM Optimizer.
+
+   ![Configuración de ruta](/help/overview/assets/log-forwarding/akamai/akamai-path-config.png)
+
+5. En **Región**, copie la **Región** de la página de configuración de LLM Optimizer.
+
+   <!--![Region](/help/overview/assets/log-forwarding/common/region.png)-->
+
+6. En **Access key ID** y **Secret access key**, copie ambos valores de la página de configuración de LLM Optimizer.
+
+   ![Claves de acceso](/help/overview/assets/log-forwarding/common/access-keys.png)
+
+7. Haga clic en **Validar y guardar** para validar la conexión con el destino y guarde los detalles que ha proporcionado. Como parte de este proceso de validación, el sistema utiliza el identificador de clave de acceso y la clave de acceso secreta proporcionados para crear un archivo de verificación en la carpeta S3, con una marca de tiempo en el nombre de archivo en formato `Akamai_access_verification_[TimeStamp].txt`. Solo puede ver este archivo si el proceso de validación se ha realizado correctamente y tiene acceso al bloque y a la carpeta de Amazon S3 a los que está intentando enviar registros.
+
+8. En el menú **Opciones de envío**, edite el campo **Nombre de archivo** de la siguiente manera:
+
+   a. Cambiar el **prefijo**. Copie el valor de la página de configuración de LLM Optimizer bajo **Prefijo del archivo de registro**:
+
+   ```
+   {%Y}-{%m}-{%d}T{%H}:{%M}:{%S}.000
+   ```
+
+   b. Cambiar **sufijo**. Copie el valor de la página de configuración de LLM Optimizer en **Sufijo de archivo de registro**.
+
+9. Cambiar la **frecuencia de inserción**. Copie el valor de la página de configuración de LLM Optimizer en **Intervalo de registro**.
+
+   ![Intervalo de registro](/help/overview/assets/log-forwarding/akamai/akamai-log-interval.png)
+
+10. Haga clic en **Siguiente** para completar el proceso.
+
+Antes de la validación final, la configuración debería ser similar a la de este ejemplo:
+
+![Validación de configuración](/help/overview/assets/log-forwarding/akamai/akamai-validation.png)
