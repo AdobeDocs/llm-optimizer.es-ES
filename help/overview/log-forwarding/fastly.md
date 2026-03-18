@@ -50,7 +50,7 @@ Para crear un extremo S3, en el **Panel de control de Campaign de Fastly**:
 | **Formato de registro** | Utilice la cadena de formato de registro que se muestra en la sección **Cadena de formato de registro** a continuación. |
 | **Formato de marca de hora** | `%Y-%m-%dT%H:%M:%S.000` |
 | **Nombre del contenedor** | Copie el **Nombre del contenedor** de la página de configuración de LLM Optimizer. ![Nombre del contenedor](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
-| **Dominio** | Copie el **Nombre de dominio** de la página de configuración de LLM Optimizer. ![Nombre de dominio ](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
+| **Dominio** | Copie el **Nombre de dominio** de la página de configuración de LLM Optimizer. ![Nombre de dominio &#x200B;](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
 | **Método de acceso** | **Credenciales de usuario** |
 | **Credenciales de usuario** | Copie la **clave de acceso** y la **clave secreta** de la página de configuración de LLM Optimizer. ![Claves de acceso](/help/overview/assets/log-forwarding/common/access-keys.png) |
 | **Período** | `300` |
