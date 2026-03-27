@@ -1,8 +1,8 @@
 ---
 title: Conceptos básicos de LLM Optimizer
 description: Obtenga información sobre cómo Adobe LLM Optimizer aumenta la visibilidad de la marca en la búsqueda basada en la IA. Realice un seguimiento de menciones, citas y datos. Empiece a optimizar hoy mismo para mejorar la participación y la influencia.
-source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
-workflow-type: ht
+source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 
@@ -70,7 +70,8 @@ Añada más vínculos y detalles aquí.
 
 
 
-<!--## Understanding Brand Visibility and AI Search
+<!--
+## Understanding Brand Visibility and AI Search
 
 Use these as guidelines for creating tutorials - some may be covered already in docs
 
@@ -127,18 +128,5 @@ Use these as guidelines for creating tutorials - some may be covered already in 
 
 * Categories and Topics
 * Brand and Competitor Aliases
-* Domain Switching and Customization -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* Domain Switching and Customization
+-->

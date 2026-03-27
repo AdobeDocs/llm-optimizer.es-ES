@@ -1,9 +1,9 @@
 ---
 title: Prácticas recomendadas en LLM Optimizer
-description: Descubra las prácticas recomendadas para la optimización de LLM con el fin de impulsar la visibilidad de la marca en la búsqueda por IA.Información para comparar y optimizar el contenido
+description: Descubra las prácticas recomendadas para la optimización de LLM con el fin de impulsar la visibilidad de la marca en la búsqueda por IA. Información para comparar y optimizar el contenido
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: 31c36f9959993171de4bec384a361d38e6e01dad
-workflow-type: ht
+source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 La optimización de LLM, también llamada optimización del motor generativo (GEO), optimización del motor de respuesta (AEO) u optimización de la IA (AIO), es la forma en que la marca y el contenido se hacen visibles, fiables y recuperables dentro de las respuestas generadas por IA: en ChatGPT, Perplexity, Copilot, Gemini y otros asistentes basados en LLM.
 
-Si la SEO tradicional le ayudó a ganar posiciones en la primera página, la optimización de LLM le ayuda a ganar citas de IA y visibilidad dentro de los motores de respuesta.Adobe LLM Optimizer le permite medir y mejorar la visibilidad de su marca dentro de los motores de respuesta.
+Si la SEO tradicional le ayudó a ganar posiciones en la primera página, la optimización de LLM le ayuda a ganar citas de IA y visibilidad dentro de los motores de respuesta. Adobe LLM Optimizer le permite medir y mejorar la visibilidad de su marca dentro de los motores de respuesta.
 
 En este artículo se describen las prácticas recomendadas para medir y mejorar la visibilidad y la influencia de los usuarios en entornos de búsqueda basados en la IA que utilizan Adobe LLM Optimizer.
 
@@ -49,15 +49,15 @@ Una base sólida de SEO admite la optimización de LLM, pero se necesitan nuevas
 
 Otras consideraciones para la optimización de LLM son las siguientes:
 
-* La actualización del contenido es importante: los LLM priorizan el contenido actualizado recientemente.(Los motores de búsqueda también dan prioridad a esto en las consultas urgentes, pero se basan en mayor medida en otros valores).
+* La actualización del contenido es importante: los LLM priorizan el contenido actualizado recientemente. (Los motores de búsqueda también dan prioridad a esto en las consultas urgentes, pero se basan en mayor medida en otros valores).
 * Obtener reconocimiento (de terceros) en forma de menciones y citas es muy importante.
 
 ## Planificación estratégica de campañas
 
 Para crear una campaña de optimización de LLM que tenga éxito debe tener en cuenta lo siguiente:
 
-* Identificar los temas de alto valor alineados con la intención del cliente.Alinear la intención de la indicación con los objetivos de la empresa y las necesidades del cliente.
-* Identificar las menciones a otros, incluidos los competidores, para encontrar lagunas y oportunidades.Centrarse en las indicaciones donde se citan a otras personas, lo que indica una oportunidad para la inclusión de la marca.
+* Identificar los temas de alto valor alineados con la intención del cliente. Alinear la intención de la indicación con los objetivos de la empresa y las necesidades del cliente.
+* Identificar las menciones a otros, incluidos los competidores, para encontrar lagunas y oportunidades. Centrarse en las indicaciones donde se citan a otras personas, lo que indica una oportunidad para la inclusión de la marca.
 * Agrupar las indicaciones por la intención mediante la agrupación de temas: utilice los temas y los campos de búsqueda para agrupar objetivos similares de los usuarios para poder comparar la visibilidad.
 * Evaluar la credibilidad de la marca según los estándares de Experiencia, pericia, autoridad, confianza (Experience, Expertise, Authorativeness, Trustworthiness, EEAT) y Su dinero o su vida (Your Money or Your Life, YMYL).
 
@@ -86,18 +86,18 @@ La optimización in situ mejora el contenido que posee para mejorar la visibilid
 
 >[!TIP]
 >
->LLM Optimizer sugiere oportunidades de optimización en el sitio y fuera del sitio en el panel de control [Oportunidades](/help/dashboards/opportunities.md).Estas oportunidades son específicas para su sitio.Muchas de estas sugerencias se pueden implementar directamente en su sitio mediante LLM Optimizer.
+>LLM Optimizer sugiere oportunidades de optimización en el sitio y fuera del sitio en el panel de control [Oportunidades](/help/dashboards/opportunities.md). Estas oportunidades son específicas para su sitio. Muchas de estas sugerencias se pueden implementar directamente en su sitio mediante LLM Optimizer.
 
 Estas son algunas prácticas recomendadas de optimización:
 
 1. Garantizar la accesibilidad técnica
 
    * Revise la configuración de robots.txt y CDN para permitir que los agentes de IA rastreen su sitio.
-   * Utilice el Inspector de URL para identificar las páginas bloqueadas o inaccesibles.Consulte el [Inspector de URL](/help/dashboards/url-inspector.md).
+   * Utilice el Inspector de URL para identificar las páginas bloqueadas o inaccesibles. Consulte el [Inspector de URL](/help/dashboards/url-inspector.md).
 
 2. Actualizar y estructurar el contenido
 
-   * Actualice regularmente entre el 10 y el 15 % del contenido de la página.Los LLM priorizan el contenido nuevo.
+   * Actualice regularmente entre el 10 y el 15 % del contenido de la página. Los LLM priorizan el contenido nuevo.
    * Añada citas y referencias a fuentes autorizadas.
    * Utilice encabezados estructurados (H1, H2, H3) para un mejor análisis.
 
@@ -114,11 +114,11 @@ Estas son algunas prácticas recomendadas de optimización:
 
 ## Optimización fuera del sitio: ampliación del impacto de marca
 
-La optimización fuera del sitio se centra en mejorar la visibilidad de su marca en las respuestas generadas por IA influyendo en las fuentes de contenido de terceros que los LLM citan con frecuencia.Estas son acciones tomadas fuera de sus propiedades para influir en cómo los LLM encuentran y citan su marca.
+La optimización fuera del sitio se centra en mejorar la visibilidad de su marca en las respuestas generadas por IA influyendo en las fuentes de contenido de terceros que los LLM citan con frecuencia. Estas son acciones tomadas fuera de sus propiedades para influir en cómo los LLM encuentran y citan su marca.
 
 >[!TIP]
 >
->LLM Optimizer sugiere oportunidades de optimización en el sitio y fuera del sitio en el panel de control de [Oportunidades](/help/dashboards/opportunities.md).Estas oportunidades son específicas para su sitio.Muchas de estas sugerencias se pueden implementar directamente en su sitio mediante LLM Optimizer.
+>LLM Optimizer sugiere oportunidades de optimización en el sitio y fuera del sitio en el panel de control de [Oportunidades](/help/dashboards/opportunities.md). Estas oportunidades son específicas para su sitio. Muchas de estas sugerencias se pueden implementar directamente en su sitio mediante LLM Optimizer.
 
 
 Canales clave fuera del sitio:
@@ -132,7 +132,7 @@ Canales clave fuera del sitio:
 Prácticas recomendadas:
 
 * Diversifique su huella fuera del sitio.
-* Monitorice las citas con Adobe LLM Optimizer.Consulte el [panel de control Presencia de marca](/help/dashboards/brand-presence.md).
+* Monitorice las citas con Adobe LLM Optimizer. Consulte el [panel de control Presencia de marca](/help/dashboards/brand-presence.md).
 * Actualice el contenido obsoleto y busque nuevas oportunidades de inclusión.
 * Coordínese con equipos de relaciones públicas y sociales.
 * Asegúrese de que las contribuciones sean imparciales e informativas.
@@ -157,20 +157,20 @@ Estas métricas se combinan en una puntuación de **visibilidad**, lo que le ind
 Estos son los pasos que puede seguir para monitorizar el progreso:
 
 1. Establezca como referencia su visibilidad actual.
-   * Identifique con qué frecuencia y dónde se menciona y cita su marca, y cuál es la opinión de ella en Adobe LLM Optimizer.Consulte el panel de control [Presencia de marca](/help/dashboards/brand-presence.md).
+   * Identifique con qué frecuencia y dónde se menciona y cita su marca, y cuál es la opinión de ella en Adobe LLM Optimizer. Consulte el panel de control [Presencia de marca](/help/dashboards/brand-presence.md).
    * Analice las indicaciones en las que aparece su marca y en las que no.
    * Compare la visibilidad con respecto a otros, incluidos los competidores (en **Seguimiento de otros** en el [panel de control Configuración del cliente](/help/dashboards/customer-configuration.md)).
-   * Revise la visibilidad en plataformas generadas por los usuarios como Reddit, Quora y Wikipedia.Segmentar por plataforma (modos ChatGPT, Google AI, etc.)
+   * Revise la visibilidad en plataformas generadas por los usuarios como Reddit, Quora y Wikipedia. Segmentar por plataforma (modos ChatGPT, Google AI, etc.)
    * Monitorice el tráfico agéntico para comprender qué páginas visitan los LLM. El tráfico agéntico a menudo **no** va a la página de inicio, sino a otras páginas inferiores en la jerarquía. Consulte el panel de control [Tráfico agéntico](/help/assets/overview/agentic-traffic-card.png).
 1. Monitorice los cambios con el tiempo.
    * Utilice filtros de tiempo para rastrear los turnos semanales y mensuales.
    * Observe si hay picos o caídas en la puntuación de visibilidad.
    * Analice las tendencias de opinión para comprender la percepción de marca.
 1. Correlacione la visibilidad con el tráfico, la participación y las conversiones.
-   * Utilice funciones de atribución para conectar las mejoras de visibilidad al tráfico, la participación y las conversiones. Las funciones de atribución de Adobe LLM Optimizer le ayudan a conectar mejoras en las métricas de visibilidad (menciones, citas, opinión) con resultados comerciales reales como el tráfico del sitio, la participación del usuario y las conversiones.Esto demuestra el retorno de la inversión en sus esfuerzos de optimización.
+   * Utilice funciones de atribución para conectar las mejoras de visibilidad al tráfico, la participación y las conversiones. Las funciones de atribución de Adobe LLM Optimizer le ayudan a conectar mejoras en las métricas de visibilidad (menciones, citas, opinión) con resultados comerciales reales como el tráfico del sitio, la participación del usuario y las conversiones. Esto demuestra el retorno de la inversión en sus esfuerzos de optimización.
    * Realice un seguimiento de los cambios en el tráfico agéntico y de referencia para validar el ROI de la optimización.
 1. Mejore su contenido
-   * Use el [panel de control Oportunidades](/help/dashboards/opportunities.md) de LLM Optimizer para identificar y realizar cambios inmediatos y recomendados específicamente en su sitio.Consulte las [Oportunidades](/help/dashboards/opportunities.md) (luego mida los resultados).Revise la sección de oportunidades regularmente y tome medidas sobre las recomendaciones proporcionadas.
+   * Use el [panel de control Oportunidades](/help/dashboards/opportunities.md) de LLM Optimizer para identificar y realizar cambios inmediatos y recomendados específicamente en su sitio. Consulte las [Oportunidades](/help/dashboards/opportunities.md) (luego mida los resultados). Revise la sección de oportunidades regularmente y tome medidas sobre las recomendaciones proporcionadas.
    * Priorice las páginas con una visibilidad en declive.
    * Actualice el sitio web y otro contenido para que sea más relevante para las indicaciones que desea dirigir.
    * Añada una sección de preguntas más frecuentes a sus páginas que respondan a preguntas comunes que la gente pueda hacer.
@@ -183,7 +183,7 @@ Estos son los pasos que puede seguir para monitorizar el progreso:
 
 >[!NOTE]
 >
->Asegúrese de que el contenido sea visible y accesible para los LLM.Puede utilizar el complemento de Chrome para ver qué pueden ver los agentes de IA.
+>Asegúrese de que el contenido sea visible y accesible para los LLM. Puede utilizar el complemento de Chrome para ver qué pueden ver los agentes de IA.
 
 ## Explicación del tráfico agéntico
 
@@ -193,7 +193,7 @@ El tráfico agéntico se muestra de dos maneras: experiencias sin clics y visibi
 
 ### Experiencias sin clics
 
-En la búsqueda tradicional, los usuarios acceden a los sitios web para consumir contenido.Pero con los LLM los usuarios a menudo obtienen respuestas completas directamente en la interfaz del chat o en la página de resultados del motor de búsqueda sin tener que visitar su sitio.Esto se denomina experiencia sin clics.
+En la búsqueda tradicional, los usuarios acceden a los sitios web para consumir contenido. Pero con los LLM los usuarios a menudo obtienen respuestas completas directamente en la interfaz del chat o en la página de resultados del motor de búsqueda sin tener que visitar su sitio. Esto se denomina experiencia sin clics.
 
 Qué significa esto para su marca:
 
@@ -227,7 +227,7 @@ Para optimizar el tráfico agéntico, haga lo siguiente:
 * Asegúrese de la rastreabilidad revisando la configuración de robots.txt y CDN.
 * Utilice el [Inspector de URL](/help/dashboards/url-inspector.md) para analizar el rendimiento de la URL.
 * Para seguir el comportamiento de los bots acceda a sus registros de CDN en el [panel de control Tráfico agéntico](/help/dashboards/agentic-traffic.md).
-* Segmente el tráfico para comprender los resultados de la empresa.Consulte [Prácticas recomendadas para categorías, temas e indicaciones](/help/overview/best-practices-topics-prompts.md).
+* Segmente el tráfico para comprender los resultados de la empresa. Consulte [Prácticas recomendadas para categorías, temas e indicaciones](/help/overview/best-practices-topics-prompts.md).
 
 Estas son las métricas que se deben monitorizar:
 
@@ -237,12 +237,14 @@ Estas son las métricas que se deben monitorizar:
 * Opinión y ubicación de las menciones de la marca
 * Tendencias de la puntuación de visibilidad a lo largo del tiempo
 
-<!-- Add screenshot when available in demo environment>
-
+<!--
+Add screenshot when available in demo environment>
+-->
 
 <!-- Use the "Share of Voice" feature to see which competitors are dominating specific topics and adjust your strategy accordingly.-->
 
-<!-- Purpose: Measure how much of the conversation your brand owns compared to competitors.
+<!--
+Purpose: Measure how much of the conversation your brand owns compared to competitors.
 Insight:
 
 This feature shows the percentage of visibility your brand has for specific topics compared to competitors.
@@ -250,9 +252,11 @@ This feature shows the percentage of visibility your brand has for specific topi
 
 Best Practice:
 
-Use this insight to identify gaps in your visibility and focus on improving your presence in under-performing topics.-->
+Use this insight to identify gaps in your visibility and focus on improving your presence in under-performing topics.
+-->
 
-<!--6. Content Visibility
+<!--
+6. Content Visibility
 
 Purpose: Ensure LLMs can access and render your content.
 Insight:
@@ -264,7 +268,5 @@ It provides a percentage of content visibility, highlighting areas where LLMs ma
 Best Practice:
 
 Use nametbd feature to render static HTML versions of your pages for LLM bots, ensuring full content visibility.
-Address issues like blocked pages, robots.txt restrictions, and client-side rendering problems.-->
-
-
-
+Address issues like blocked pages, robots.txt restrictions, and client-side rendering problems.
+-->

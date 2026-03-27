@@ -2,7 +2,7 @@
 title: Información general sobre los paneles de control
 description: Es el resumen del artículo.
 feature: Onboarding
-source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
+source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 93%
@@ -16,7 +16,8 @@ Le damos la bienvenida a la información general sobre los paneles de control. L
 
 Las vistas clave incluyen Información general, Presencia de marca, Agente y Tráfico de referencia, Inspector de URL, Oportunidades, Collaboration y Configuración del cliente.
 
-<!-- CARDS
+<!--
+CARDS
 
 * ./brand-presence.md
   {title= Brand presence dashboard}
