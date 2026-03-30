@@ -2,10 +2,10 @@
 title: 'Optimizar en Edge: Akamai (BYOCDN)'
 description: Obtenga información sobre cómo configurar Akamai BYOCDN para optimizar en Edge en LLM Optimizer.
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
+source-git-commit: 16a1142cb70d9bcd70406a3779a43fc8568c77d0
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 14%
+source-wordcount: '745'
+ht-degree: 11%
 
 ---
 
@@ -47,6 +47,10 @@ Establecer enrutamiento para los siguientes user-agents:image.png
 **2. Establecer origen y comportamiento de SSL**
 
 Establecer origen como `live.edgeoptimize.net` y hacer coincidir SAN con `*.edgeoptimize.net`
+
+>[!NOTE]
+>
+>Si la activación de la propiedad falla después de agregar la regla Optimizar en Edge, compruebe si la regla utiliza un modo de verificación SSL del servidor de origen diferente al de la regla predeterminada. Si es así, actualice la regla Optimize at Edge para que coincida con la regla predeterminada. Por ejemplo, si la regla predeterminada usa **Configuración de plataforma**, use **Configuración de plataforma** aquí también. Si no puede utilizar la configuración requerida, póngase en contacto con el soporte de Akamai.
 
 ![Establecer origen y comportamiento de SSL](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -91,6 +95,10 @@ La configuración de la conmutación por error del sitio consta de dos partes: e
 
 Dentro de la regla de enrutamiento principal, configure el comportamiento de conmutación por error del sitio y el fragmento XML avanzado de la siguiente manera:
 
+>[!IMPORTANT]
+>
+>El fragmento XML de este paso requiere el comportamiento **Advanced**. En algunos entornos de Akamai, este comportamiento no está disponible para la edición de autoservicio. Si no ve la opción **Avanzada**, póngase en contacto con el equipo de su cuenta de Akamai o con el servicio de atención al cliente de Akamai para habilitar la configuración requerida.
+
 ![Conmutación por error del sitio](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
 Agregue el encabezado de solicitud `x-edgeoptimize-request` con el valor `fo` mediante XML avanzado:
@@ -120,6 +128,8 @@ Agregue el encabezado de solicitud `x-edgeoptimize-request` con el valor `fo` me
 >```
 >
 >Esto garantiza que la regla de encabezado de prueba de conmutación por error se evalúe para **todas** las reglas de enrutamiento, no solo una.
+>
+>Asegúrese también de que la regla **Optimizar en enrutamiento de Edge** no se anule con ninguna regla que coincida posteriormente y que cambie el origen, el comportamiento del almacenamiento en caché o el ID de caché para las mismas solicitudes. Si otra regla coincidente restablece estos comportamientos, es posible que el enrutamiento o el almacenamiento en caché de Optimize at Edge no funcione según lo esperado.
 
 Si el valor del encabezado de solicitud `x-edgeoptimize-request` es `fo`, establezca el encabezado de respuesta saliente `x-edgeoptimize-fo` en `true`.
 
