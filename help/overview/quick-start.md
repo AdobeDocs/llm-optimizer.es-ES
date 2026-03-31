@@ -1,22 +1,22 @@
 ---
 title: Inicio rápido
-description: 'Empiece a utilizar Adobe LLM Optimizer: incorpore su marca, obtenga información sobre la visibilidad basada en la IA y explore los paneles de control para mejorar el rendimiento de las búsquedas.'
+description: Aprenda a incorporar su nombre de marca y dominio, activar la versión de prueba desde Experience Hub o Experience Cloud y completar la configuración de Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
+source-git-commit: dcbeb1c61dd9dcefd83908f65f8303d36c0fb78e
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 92%
+source-wordcount: '1208'
+ht-degree: 47%
 
 ---
 
 
 # Inicio rápido
 
-Para comenzar con LLM Optimizer, debe completar el proceso de incorporación como se detalla en los pasos que se presentan a continuación. Una vez que complete el proceso, tendrá acceso completo a [los paneles de control de LLM Optimizer](/help/dashboards/dashboards-overview.md) y a otras funcionalidades.
+Para empezar a usar LLM Optimizer, debe completar el proceso de incorporación. Después de la incorporación, podrá personalizar categorías, temas, indicadores y configurar el reenvío de registros para obtener información más precisa y acceso completo a [los paneles de LLM Optimizer](/help/dashboards/dashboards-overview.md) y otras funcionalidades.
 
 ## Información general sobre la incorporación
 
-El proceso de incorporación comienza con la incorporación de su dominio. El proceso es diferente en función de si es cliente de AEM Cloud o no. Una vez completado el proceso, deberá proporcionar información para el reenvío de registros de CDN y, finalmente, personalizar categorías, temas e indicaciones. A continuación, se detalla cada parte del proceso junto con sugerencias útiles sobre cómo empezar a usar LLM Optimizer lo antes posible.
+El proceso de incorporación comienza con la incorporación de su dominio y su nombre de marca. A continuación se detalla cada parte del recorrido de incorporación, junto con sugerencias útiles sobre cómo empezar a usar LLM Optimizer lo antes posible.
 
 ### Permitir que Adobe LLM Optimizer acceda a las páginas públicas
 
@@ -24,49 +24,78 @@ Para ofrecer contenido preciso y recomendaciones técnicas, Adobe LLM Optimizer 
 
 Requisitos de configuración:
 
-* Añada el agente de usuario Spacecat/1.0 a la lista de permitidos en el archivo robots.txt del sitio o las reglas de administración de tráfico de bots
+* Añada el agente de usuario Spacecat/1.0 a la Lista de permitidos del archivo robots.txt del sitio o a las reglas de administración de tráfico de bots.
 * Asegúrese de que las páginas no estén bloqueadas en el nivel de dominio o de CDN. Las páginas bloqueadas no se pueden indexar, lo que significa que no se pueden generar tareas de optimización ni información sobre ellas.
 
 Si la visibilidad del contenido aparece baja en el panel de control, compruebe que el rastreador tenga acceso a sus dominios. El acceso restringido es una causa frecuente de una indexación incompleta.
 
-## Paso 1: Incorporar su dominio
+## Paso 1: Incorporar su nombre de marca y dominio {#step-1-onboard-your-domain}
 
-### Probar antes de comprar
+Para empezar a usar LLM Optimizer, primero active la versión de prueba (si cumple los requisitos) e incorpore su nombre de marca y dominio.
 
-Los clientes de AEM Cloud (Cloud Service, Managed Services, Edge Delivery Service) tienen la opción de usar la oferta **Probar antes de comprar**. Es una versión de prueba gratuita de LLM Optimizer con hasta 200 indicaciones gratuitas. El uso de más de 200 indicaciones requiere un contrato de licencia independiente. El acceso se proporciona “tal cual” y “según disponibilidad”, y Adobe puede modificarlo, limitarlo o eliminarlo en cualquier momento.
+### Activar la versión de prueba
 
-Hay algunas funcionalidades del producto que no están disponibles en la versión gratuita:
+El flujo de activación difiere según el producto de Adobe.
 
-* La prueba está limitada a un dominio. No podrá cambiar el dominio que ha proporcionado después de completar la configuración.
-* La capacidad de implementar optimizaciones está disponible en Acceso anticipado. Más información en [Optimizar en las preguntas más frecuentes de Edge](https://experienceleague.adobe.com/es/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+#### Clientes de AEM Cloud
 
-Consulte la sección siguiente para obtener información detallada sobre cómo activar la versión de prueba gratuita e incorporar su dominio.
+Para activar la versión de prueba, como cliente de AEM Cloud, puede:
 
-### Clientes de AEM Cloud
-
-Si es cliente de AEM Cloud, tiene la opción de probar LLM Optimizer usando la tarjeta de anuncio del producto en [Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
-
->[!NOTE]
->Las indicaciones añadidas recientemente no aparecerán en el [panel de control Presencia de marca](/help/dashboards/brand-presence.md) hasta que se complete el procesamiento. Los clientes de AEM Cloud pueden utilizar la versión de prueba gratuita de LLM Optimizer. El uso de más de 200 indicaciones requiere un contrato de licencia independiente. El acceso se proporciona “tal cual” y “según disponibilidad”, y Adobe puede modificarlo, limitarlo o eliminarlo en cualquier momento. Póngase en contacto con el representante de su cuenta para obtener más información.
+* Vaya a [Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) y use la tarjeta Anuncio del producto para activar LLM Optimizer. Después de seleccionar **Probar LLM Optimizer**, se le redirigirá a [https://llmo.now](https://llmo.now). Inicie sesión a través de IMS y, a continuación, introduzca un dominio y un nombre de marca para iniciar el proceso de incorporación.
+* O ve directamente a [https://llmo.now](https://llmo.now) e inicia sesión.
 
 ![Versión de prueba de LLM Optimizer](/help/overview/assets/llm-trial.png)
 
-Cuando haga clic en el botón **Probar LLM Optimizer**, se le redirigirá a [https://llmo.now](https://llmo.now). A continuación, se le solicitará que inicie sesión mediante IMS. Cuando haya iniciado la sesión, iniciará el proceso de incorporación proporcionando un dominio y el nombre de la marca.
+#### clientes de Adobe Analytics
+
+Si es cliente de Adobe Analytics, verá un banner en la página de inicio de Experience Cloud.
+
+![Página de inicio de Experience Cloud con el titular Iniciar la versión de prueba de Adobe LLM Optimizer](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
+
+Puede activar la versión de prueba de una de las siguientes maneras:
+
+* Seleccione **Iniciar la versión de prueba de Adobe LLM Optimizer** en el banner.
+* Vaya directamente a [https://llmo.now](https://llmo.now) e inicie sesión.
+
+Una vez que la versión de prueba esté activa, continúe con la incorporación del nombre de marca y el dominio.
+
+>[!NOTE]
+>
+> * **Prueba gratuita:** Los clientes de AEM Cloud y Adobe Analytics pueden usar la versión de prueba gratuita de LLM Optimizer.
+> * **Los clientes que activen la versión de prueba el 1 de abril de 2026 o posteriormente** pueden usar hasta 100 indicadores, un dominio y pueden implementar optimizaciones en hasta 10 direcciones URL para un solo tipo de oportunidad.
+> * **Los clientes que activaron la versión de prueba antes del 1 de abril de 2026** continúan teniendo acceso a hasta 200 mensajes según los términos existentes.
+>
+>El uso más allá de los límites incluidos requiere un acuerdo de licencia independiente. El acceso se proporciona &quot;tal cual&quot; y &quot;según esté disponible&quot;, y se puede modificar, limitar o eliminar en cualquier momento. Póngase en contacto con el representante de cuentas para obtener más información.
+
+#### Incorpore su nombre de marca y dominio
+
+Incorpore su nombre de marca y dominio para empezar a utilizar LLM Optimizer.
+
+1. Introduzca su nombre de marca y el dominio asociado.
+
+   * Este debe ser el dominio principal en el que desee analizar y optimizar el contenido.
+
+1. Integración completa.
+
+   * Una vez enviado, LLM Optimizer comienza a analizar su dominio y a generar perspectivas.
 
 ![Dominio de LLM Optimizer](/help/overview/assets/domain.png)
+
+>[!NOTE]
+>Las indicaciones añadidas recientemente no aparecerán en el [panel de control Presencia de marca](/help/dashboards/brand-presence.md) hasta que se complete el procesamiento.
 
 >[!NOTE]
 >El dominio que proporcionó será utilizado por todas las personas de su organización y no se podrá cambiar.
 
 Se generará un pequeño conjunto de categorías, temas e indicaciones durante la fase de incorporación. El análisis de la presencia de marca de esas indicaciones estará disponible poco después de que se haya incorporado el sitio.
 
-<!--![Brand Presence Analysis](/help/overview/assets/bp-analysis.png)-->
+También está disponible la capacidad de implementar optimizaciones en Edge. Obtenga más información en [Optimizar en Edge — Preguntas más frecuentes](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
-Además, deberá configurar el [reenvío de registros de CDN](#step-4) para el análisis del tráfico. LLM Optimizer requiere datos de presencia de marca e información del tráfico agéntico y el tráfico de referencia para identificar las oportunidades y ofrecer recomendaciones prescriptivas para mejorar la visibilidad basada en la IA.
+Además, configure [reenvío de registros de CDN](#step-4) para el análisis del tráfico. LLM Optimizer requiere datos de Presencia de marca y perspectivas de los agentes y el tráfico de referencia para identificar oportunidades y proporcionar recomendaciones prescriptivas que aumenten la visibilidad de la IA.
 
 ### Clientes que no son de AEM Cloud
 
-Una vez finalizado el acuerdo empresarial, se incorporará con el dominio que desee incorporar en LLM Optimizer. Una vez completada esta incorporación, podrá iniciar sesión en LLM Optimizer en [https://llmo.now](https://llmo.now).
+Una vez que la organización haya finalizado el acuerdo empresarial, se le incorporará a LLM Optimizer con el dominio seleccionado por la organización. Cuando finalice la incorporación, inicie sesión en [https://llmo.now](https://llmo.now).
 
 ## Paso 2: Personalizar categorías, temas e indicaciones
 
@@ -95,14 +124,14 @@ Una vez incorporado el dominio, obtendrá información inicial en la vista Prese
 
 ## Paso 4: Proporcionar información para el reenvío de registros de CDN {#step-4}
 
-Para obtener información sobre el tráfico agéntico y el tráfico de referencia, deberá proporcionar información para el reenvío de registros de CDN. La puede añadir desde el [panel de control Configuración del cliente](/help/dashboards/customer-configuration.md#cdn-configuration) navegando hasta la pestaña **Configuración de CDN** y haciendo clic en **Incorporar CDN**.
+Para desbloquear el tráfico y las perspectivas de Tráfico de referencia del agente, agregue información de reenvío de registro de CDN desde el [panel de configuración del cliente](/help/dashboards/customer-configuration.md#cdn-configuration). Abra la pestaña **Configuración de CDN** y seleccione **CDN integrada**.
 
 ![CDN de configuración del cliente](/help/overview/assets/cc-cdn.png)
 
 O bien, si no se ha añadido ningún proveedor de CDN previamente (tal como se ha descrito anteriormente), se le pedirá que añada el reenvío de registros de CDN al acceder a los paneles de control Tráfico de agéntico y Tráfico de referencia por primera vez. Para obtener más información, consulte lo siguiente:
 
 * [Tráfico agéntico](/help/dashboards/agentic-traffic.md#cdn-setup)
-* [Tráfico de referencia](/help/dashboards/referral-traffic.md#setup#setup)
+* [Tráfico de referencia](/help/dashboards/referral-traffic.md#setup)
 
 >[!NOTE]
 >Para obtener más información sobre el reenvío de registros al usar una CDN administrada por el cliente (BYOCDN), consulte [Información general sobre el reenvío de registros BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
@@ -112,7 +141,7 @@ O bien, si no se ha añadido ningún proveedor de CDN previamente (tal como se h
 Después de proporcionar información para el reenvío de registros de CDN, podrá hacer lo siguiente:
 
 * Ver el panel de control [Presencia de marca](/help/dashboards/brand-presence.md), ver su puntuación de visibilidad y realizar un seguimiento de su rendimiento en relación con otras marcas.
-* Explorar los paneles de control [Tráfico agéntico](/help/dashboards/agentic-traffic.md) y [Tráfico de referencia](/help/dashboards/referral-traffic.md), si se ha configurado el reenvío de registros de CDN.
+* Explore los paneles de [Agentic](/help/dashboards/agentic-traffic.md) y [Tráfico de referencia](/help/dashboards/referral-traffic.md), si se ha configurado el reenvío de registros de CDN.
 * Usar [Oportunidades](/help/dashboards/opportunities.md) para identificar contenido y mejoras técnicas.
 * Exportar datos y colaborar con su equipo o invitar a su compañero de trabajo para que utilice el producto.
 
