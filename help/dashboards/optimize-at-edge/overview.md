@@ -2,10 +2,10 @@
 title: Optimizar en Edge
 description: Obtenga información sobre cómo entregar optimizaciones en LLM Optimizer en el perímetro de la CDN sin necesidad de realizar cambios en la creación.
 feature: Opportunities
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+source-git-commit: 23a4b06e2492d9692d37eb0e52208bdc49328b2a
 workflow-type: tm+mt
-source-wordcount: '2181'
-ht-degree: 84%
+source-wordcount: '2240'
+ht-degree: 77%
 
 ---
 
@@ -13,10 +13,6 @@ ht-degree: 84%
 # Optimizar en Edge
 
 Esta página proporciona información general detallada sobre cómo entregar optimizaciones en el perímetro de CDN sin ningún cambio en la creación. Abarca el proceso de incorporación, las oportunidades de optimización disponibles y cómo optimizar automáticamente en Edge.
-
->[!NOTE]
->
->Actualmente, esta funcionalidad se encuentra en Acceso anticipado. Puede obtener más información acerca de los programas de Acceso anticipado [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## ¿Qué es Optimizar en Edge?
 
@@ -40,7 +36,17 @@ Las oportunidades que pueden mejorar la experiencia web auténtica se admiten co
 
 ## Incorporación
 
-Póngase en contacto con el equipo de cuentas de Adobe o con el equipo de FDE para iniciar el proceso de incorporación. Su equipo de TI o CDN también tiene que completar los requisitos previos y el proceso de configuración. Además, también puede ponerse en contacto con `llmo-at-edge@adobe.com` para obtener más ayuda para la incorporación.
+<!--You should reach out to either your Adobe account team or the FDE team to start the onboarding process. Your IT or CDN team is also required to complete the pre-requisites and setup process. Additionally, you can also contact `llmo-at-edge@adobe.com` for further onboarding assistance.-->
+
+Inicie el proceso de incorporación en su cuenta de LLM Optimizer:
+
+1. En el panel **Configuración de cliente** n, seleccione la pestaña **Configuración de CDN**.
+1. Haga clic en **CDN integrada**.
+   ![Ficha Configuración de CDN](/help/overview/assets/cc-cdn.png)
+1. Para los clientes de AEM Fastly, Adobe puede ayudar a completar el proceso de incorporación. Para los clientes que utilizan otros proveedores de CDN, su equipo de TI/CDN debe completar la configuración y los requisitos previos necesarios. También puede consultar las guías de CDN de ejemplo que se proporcionan a continuación para obtener más instrucciones.
+
+>[!NOTE]
+>Consulte las guías paso a paso a continuación que abarcan todo el flujo de incorporación. Para problemas no resueltos por las guías, puede comunicarse con `llmo-at-edge@adobe.com`.
 
 Requisitos previos para la incorporación a Optimizar en Edge:
 
@@ -85,7 +91,7 @@ En la tabla siguiente se presentan las oportunidades que pueden mejorar la exper
 
 ### Herramientas adicionales
 
-[Adobe LLM Optimizer: ¿su página web se puede citar?](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) La extensión de Chrome muestra la cantidad de contenido web al que pueden acceder los LLM y lo que permanece oculto. Diseñado como una herramienta de diagnóstico gratuita e independiente, no requiere licencia de producto ni configuración.
+La extensión del explorador [Comprobador de Visibilidades del contenido de IA](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) muestra la cantidad de contenido de la página web a la que pueden acceder los LLM y lo que permanece oculto. Diseñado como una herramienta de diagnóstico gratuita e independiente, no requiere licencia de producto ni configuración.
 
 Con un solo clic, puede evaluar la legibilidad automática de cualquier sitio. Puede ver una comparación en paralelo de lo que ven los agentes de IA frente a lo que ven las personas y realizar un cálculo estimado de cuánto contenido se puede recuperar mediante LLM Optimizer. Consulte la página [¿Puede la IA leer su sitio web?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) para obtener más información.
 
@@ -117,7 +123,7 @@ Esta oportunidad encuentra páginas con párrafos largos y complejos que pueden 
 
 Para cada oportunidad, puede obtener una vista previa, editar, implementar, ver en directo y restablecer las optimizaciones en el perímetro.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477987/?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Vista previa
 
@@ -150,6 +156,10 @@ Una reversión de forma segura revierte una optimización implementada anteriorm
 ![Reversión](/help/assets/optimize-at-edge/rollback.png)
 
 ## Preguntas frecuentes
+
+P: ¿Pueden los clientes de prueba probar Optimize en Edge?
+
+Sí, los clientes de prueba pueden acceder a una oportunidad de optimización e implementarla para un máximo de 10 páginas. De forma predeterminada, la oportunidad es Recuperar Visibilidad del contenido, que permite a los agentes de IA acceder a la versión completa del contenido de la página.
 
 P. ¿A qué tipos de LLM se dirige con Optimizar en Edge?
 
