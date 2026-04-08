@@ -2,9 +2,9 @@
 title: 'Optimizar en Edge: CloudFront (BYOCDN)'
 description: Obtenga información sobre cómo configurar CloudFront BYOCDN para optimizar en Edge en LLM Optimizer.
 feature: Opportunities
-source-git-commit: 1253d0f0a58f6523699c52fbfab23028dc469c82
+source-git-commit: da789100d814004687de2f46e18a295671dec4b8
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2265'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,11 @@ Antes de establecer la configuración de CloudFront, asegúrese de lo siguiente:
 * Se ha completado el proceso de incorporación de LLM Optimizer.
 * Reenvío de registro de CDN completado a LLM Optimizer.
 * Una clave de API de Edge Optimize recuperada de la interfaz de usuario de LLM Optimizer.
+* (Opcional) Una clave de API de optimización de Edge de ensayo si prueba primero el enrutamiento en un nombre de host de ensayo.
 
 {{retrieve-byocdn-api-key}}
+
+{{retrieve-staging-edge-optimize-api-key}}
 
 **Paso 1: Crear origen de optimización de Edge**
 
@@ -296,11 +299,20 @@ La respuesta **no** debe contener el encabezado `x-edgeoptimize-request-id`. El 
 | `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único. | Ausente |
 | `x-edgeoptimize-fo` | Solo está presente si se produjo la conmutación por error (valor: `1`) | Ausente |
 
-El estado del enrutamiento de tráfico también se puede comprobar en la interfaz de usuario de LLM Optimizer. Vaya a **Configuración del cliente** y seleccione la pestaña **Configuración de CDN**.
+**4. Dominio de ensayo (opcional)**
 
-![Estado de enrutamiento de tráfico AI con enrutamiento habilitado](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+Si usa un nombre de host de ensayo y una clave de API de ensayo de LLM Optimizer, implemente la misma configuración de CloudFront en su distribución **staging** mediante la clave de API **staging**. A continuación, compruebe el tráfico de bots en el host de ensayo:
 
-**4. Verificar que los registros fluyan correctamente**
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+Reemplace `https://staging.example.com/page.html` por su dirección URL y ruta de ensayo real. Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`.
+
+{{verify-routing-status-in-ui}}
+
+**5. Verificar que los registros fluyan correctamente**
 
 Después de ejecutar las solicitudes de prueba anteriores, compruebe que se escriben registros tanto para la función CloudFront como para la función Lambda@Edge.
 

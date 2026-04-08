@@ -2,10 +2,10 @@
 title: 'Optimizar en Edge: Akamai (BYOCDN)'
 description: Obtenga información sobre cómo configurar Akamai BYOCDN para optimizar en Edge en LLM Optimizer.
 feature: Opportunities
-source-git-commit: 16a1142cb70d9bcd70406a3779a43fc8568c77d0
+source-git-commit: f2a652761acbea7ca5b8e8740c1dbd0132e42f7f
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 11%
+source-wordcount: '849'
+ht-degree: 9%
 
 ---
 
@@ -22,25 +22,32 @@ Antes de configurar las reglas del Administrador de propiedades de Akamai, aseg�
 * Se ha completado el proceso de incorporación de LLM Optimizer.
 * Reenvío de registro de CDN completado a LLM Optimizer.
 * Una clave de API de Edge Optimize recuperada de la interfaz de usuario de LLM Optimizer.
+* (Opcional) Una clave de API de optimización de Edge de ensayo si prueba primero el enrutamiento en un nombre de host de ensayo.
 
 {{retrieve-byocdn-api-key}}
 
+{{retrieve-staging-edge-optimize-api-key}}
+
 **Configuración**
 
-La siguiente regla del Administrador de propiedades de Akamai enruta los agentes de usuario LLM a Edge Optimize. La configuración incluye los pasos siguientes:
+La siguiente regla del Administrador de propiedades de Akamai enruta el tráfico auténtico de la página de HTML a Edge Optimize. La configuración incluye los pasos siguientes:
 
-**1. Establecer criterios de enrutamiento (coincidencia de usuario y agente)**
+**1. Establecer criterios de enrutamiento (coincidencia de tráfico de agente de usuario y HTML)**
 
-Establecer enrutamiento para los siguientes user-agents:image.png
+Establezca el enrutamiento para los siguientes agentes de usuario:
 
 ```
- *AdobeEdgeOptimize-AI*,
- *ChatGPT-User*,
- *GPTBot*,
- *OAI-SearchBot*,
- *PerplexityBot*,
+ *AdobeEdgeOptimize-AI*
+ *ChatGPT-User*
+ *GPTBot*
+ *OAI-SearchBot*
+ *PerplexityBot*
  *Perplexity-User*
 ```
+
+>[!NOTE]
+>
+>Aplique la regla de enrutamiento Optimizar en Edge solo al tráfico auténtico de la página de HTML. Una configuración común es usar criterios del lado de la solicitud como **Extensión de archivo** para que coincida con `html` y `EMPTY_STRING` para direcciones URL de páginas sin extensión. Si su sitio proporciona HTML desde otros patrones de URL o incluye rutas sin extensión que no sean de página, como puntos finales de API, perfeccione la regla con criterios adicionales basados en rutas.
 
 ![Establecer criterios de enrutamiento](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
@@ -180,8 +187,17 @@ La respuesta **no** debe contener el encabezado `x-edgeoptimize-request-id`. El 
 | `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único. | Ausente |
 | `x-edgeoptimize-fo` | Solo está presente si se produjo la conmutación por error (valor: `1`) | Ausente |
 
-El estado del enrutamiento de tráfico también se puede comprobar en la interfaz de usuario de LLM Optimizer. Vaya a **Configuración del cliente** y seleccione la pestaña **Configuración de CDN**.
+**4. Dominio de ensayo (opcional)**
 
-![Estado de enrutamiento de tráfico AI con enrutamiento habilitado](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+Si usa un nombre de host de ensayo y una clave de API de ensayo de LLM Optimizer, implemente el mismo patrón de enrutamiento en su propiedad de Akamai **staging** con la clave **staging** en sus reglas. A continuación, compruebe el tráfico de bots en el host de ensayo:
+
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+Reemplace `https://staging.example.com/page.html` por su dirección URL y ruta de ensayo real. Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`.
+
+{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}

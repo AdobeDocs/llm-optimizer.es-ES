@@ -2,7 +2,7 @@
 title: 'Optimizar en Edge: CDN administrada por AEM Cloud Service (rápidamente)'
 description: Aprenda a configurar la CDN administrada de AEM Cloud Service (Fastly) para optimizar en Edge en LLM Optimizer.
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
+source-git-commit: 0c7ccadbb40c8c119cb2a57cf8118708c33c4236
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 12%
@@ -18,19 +18,21 @@ Esta configuración enruta el tráfico auténtico (solicitudes de bots de IA y a
 
 Para empezar a enrutar el tráfico auténtico a Edge Optimize:
 
-1. Vaya a **Configuración del cliente** y seleccione la pestaña **Configuración de CDN**.
+1. En LLM Optimizer, abra **Configuración del cliente** y seleccione la pestaña **Configuración de CDN**.
 
    ![Ir a la configuración del cliente](/help/assets/optimize-at-edge/prereq-customer-config-nav.png)
 
-2. En **Enrutamiento del tráfico de IA para implementar optimizaciones**, marque la casilla de verificación **Implementar optimizaciones en agentes de IA**. El equipo de Adobe se encargará de la configuración de enrutamiento en su nombre.
+2. Busque la sección **Implementar optimizaciones en agentes de IA**. Marque la casilla de verificación **Activar motor de optimización**.
 
-   ![Marque Implementar optimizaciones en agentes de IA](/help/assets/optimize-at-edge/prereq-deploy-checkbox.png)
+   ![Implementar optimizaciones en agentes de IA — pendientes](/help/assets/optimize-at-edge/byocdn-deploy-optimizations-pending.png)
 
-3. Después de activar la casilla de verificación, el estado mostrará que la configuración está en curso. El equipo de Adobe completará la configuración de enrutamiento por usted.
+3. En el cuadro de diálogo de confirmación, seleccione **Habilitar**. El equipo de Adobe se encargará de la configuración de enrutamiento en su nombre.
 
-   ![Configuración de enrutamiento de tráfico de IA en curso](/help/assets/optimize-at-edge/prereq-traffic-routing-progress.png)
+   ![Activar diálogo de confirmación del motor de optimización](/help/assets/optimize-at-edge/byocdn-enable-optimization-engine-dialog.png)
 
-   Una vez configurado y activo el enrutamiento, el estado se actualizará para mostrar una marca de verificación verde que indique que el enrutamiento se ha habilitado correctamente. No se requiere ninguna otra acción por su parte.
+   Una vez que el enrutamiento esté configurado y activo, el estado se actualiza a **Completado** con una marca de verificación verde que confirma que el enrutamiento está habilitado. No se requiere ninguna otra acción por su parte.
+
+   ![Implementar optimizaciones en agentes de IA — completado](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
 Además, si necesita ayuda con los pasos anteriores, póngase en contacto con el equipo de la cuenta de Adobe o con `llmo-at-edge@adobe.com`.
 
@@ -115,8 +117,10 @@ La respuesta **no** debe contener el encabezado `x-edgeoptimize-request-id`. El 
 | `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único. | Ausente |
 | `x-edgeoptimize-fo` | Solo está presente si se produjo la conmutación por error (valor: `1`) | Ausente |
 
-El estado del enrutamiento de tráfico también se puede comprobar en la interfaz de usuario de LLM Optimizer. Vaya a **Configuración del cliente** y seleccione la pestaña **Configuración de CDN**.
+**4. Comprobar el estado de enrutamiento en LLM Optimizer**
 
-![Estado de enrutamiento de tráfico AI con enrutamiento habilitado](/help/assets/optimize-at-edge/adobe-CDN-traffic-routed-tick.png)
+También puede confirmar el enrutamiento en la interfaz de usuario de LLM Optimizer. Abra **Configuración del cliente** y seleccione la pestaña **Configuración de CDN**. Cuando el enrutamiento está activo, la sección **Implementar optimizaciones en agentes de IA** muestra **Completado**.
+
+![Implementar optimizaciones en agentes de IA — completado](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
 {{return-to-overview}}

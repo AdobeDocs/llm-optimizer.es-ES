@@ -2,9 +2,9 @@
 title: 'Optimizar en Edge: Fastly (BYOCDN)'
 description: Aprenda a configurar Fastly BYOCDN para optimizar en Edge en LLM Optimizer.
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
+source-git-commit: da789100d814004687de2f46e18a295671dec4b8
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '407'
 ht-degree: 5%
 
 ---
@@ -22,8 +22,11 @@ Antes de configurar las reglas de VCL de Fastly, asegúrese de lo siguiente:
 * Se ha completado el proceso de incorporación de LLM Optimizer.
 * Reenvío de registro de CDN completado a LLM Optimizer.
 * Una clave de API de Edge Optimize recuperada de la interfaz de usuario de LLM Optimizer.
+* (Opcional) Una clave de API de optimización de Edge de ensayo si prueba primero el enrutamiento en un nombre de host de ensayo.
 
 {{retrieve-byocdn-api-key}}
+
+{{retrieve-staging-edge-optimize-api-key}}
 
 **Configuración**
 
@@ -121,8 +124,17 @@ La respuesta **no** debe contener el encabezado `x-edgeoptimize-request-id`. El 
 | `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único. | Ausente |
 | `x-edgeoptimize-fo` | Solo está presente si se produjo la conmutación por error (valor: `1`) | Ausente |
 
-El estado del enrutamiento de tráfico también se puede comprobar en la interfaz de usuario de LLM Optimizer. Vaya a **Configuración del cliente** y seleccione la pestaña **Configuración de CDN**.
+**4. Dominio de ensayo (opcional)**
 
-![Estado de enrutamiento de tráfico AI con enrutamiento habilitado](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+Si usa un nombre de host de ensayo y una clave de API de ensayo de LLM Optimizer, agregue los mismos fragmentos de VCL al servicio **staging** de Fastly mediante la clave de API **staging**. A continuación, compruebe el tráfico de bots en el host de ensayo:
+
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+Reemplace `https://staging.example.com/page.html` por su dirección URL y ruta de ensayo real. Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`.
+
+{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}
