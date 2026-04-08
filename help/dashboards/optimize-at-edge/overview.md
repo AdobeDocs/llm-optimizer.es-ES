@@ -2,10 +2,10 @@
 title: Optimizar en Edge
 description: Obtenga información sobre cómo entregar optimizaciones en LLM Optimizer en el perímetro de la CDN sin necesidad de realizar cambios en la creación.
 feature: Opportunities
-source-git-commit: 23a4b06e2492d9692d37eb0e52208bdc49328b2a
+source-git-commit: b56c2a355c794c8461dda15bf7c733983fd95740
 workflow-type: tm+mt
-source-wordcount: '2240'
-ht-degree: 77%
+source-wordcount: '2348'
+ht-degree: 73%
 
 ---
 
@@ -40,7 +40,7 @@ Las oportunidades que pueden mejorar la experiencia web auténtica se admiten co
 
 Inicie el proceso de incorporación en su cuenta de LLM Optimizer:
 
-1. En el panel **Configuración de cliente** n, seleccione la pestaña **Configuración de CDN**.
+1. En el panel **Configuración del cliente**, seleccione la pestaña **Configuración de CDN**.
 1. Haga clic en **CDN integrada**.
    ![Ficha Configuración de CDN](/help/overview/assets/cc-cdn.png)
 1. Para los clientes de AEM Fastly, Adobe puede ayudar a completar el proceso de incorporación. Para los clientes que utilizan otros proveedores de CDN, su equipo de TI/CDN debe completar la configuración y los requisitos previos necesarios. También puede consultar las guías de CDN de ejemplo que se proporcionan a continuación para obtener más instrucciones.
@@ -60,7 +60,14 @@ Requisitos para su equipo de TI/CDN:
 * Añadir las reglas de enrutamiento de Optimizar en Edge en la CDN.
 * Confirmar Optimizar en Edge en la interfaz de LLM Optimizer.
 
+>[!IMPORTANT]
+>El enrutamiento debe configurarse en la CDN externa (la CDN más cercana al cliente). Si tiene varias CDN, el enrutamiento solo se puede realizar en la CDN externa.
+
 Para guiar el proceso de configuración, seleccione su proveedor de CDN a continuación y siga la guía de configuración correspondiente. Tenga en cuenta que estos ejemplos deben adaptarse a la configuración real en directo. Se recomienda aplicar primero los cambios en los entornos inferiores.
+
+### Claves de API del dominio de ensayo (opcional)
+
+Si realiza pruebas en un nombre de host de ensayo antes de la producción, utilice LLM Optimizer para registrar **un** dominio de ensayo y copiar su clave de API **staging** Edge Optimize de **Customer configuration** → **CDN configuration** → **Implementar optimizaciones a agentes de IA** → **Agregar dominio de ensayo** (o **dominio de ensayo**). El nombre de host de ensayo debe compartir el mismo dominio registrable que el sitio de producción. Las guías de **Traer tu propia CDN** incluyen los pasos completos para recuperar la clave de ensayo y verificar el enrutamiento en la URL de ensayo.
 
 ### Guías de configuración de CDN
 
@@ -123,7 +130,7 @@ Esta oportunidad encuentra páginas con párrafos largos y complejos que pueden 
 
 Para cada oportunidad, puede obtener una vista previa, editar, implementar, ver en directo y restablecer las optimizaciones en el perímetro.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477987/?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Vista previa
 
