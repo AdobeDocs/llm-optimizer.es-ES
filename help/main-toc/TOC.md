@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 'Impulse su marca con Adobe LLM Optimizer. Realice un seguimiento de las menciones, descubra datos y domine la búsqueda basada en la IA. Tome el control de su visibilidad: empiece a optimizar ahora.'
-source-git-commit: 2170a6a0d2e693401269be998108300cbc8878fa
+source-git-commit: b6e74e8706c4074a47cc355cb5f3a69a817f8a49
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 75%
+source-wordcount: '104'
+ht-degree: 73%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 75%
    + [Akamai](/help/overview/log-forwarding/akamai.md)
    + [Cloudflare](/help/overview/log-forwarding/cloudflare.md)
    + [CloudFront](/help/overview/log-forwarding/cloudfront.md)
+   + [CloudFront (CLI de AWS)](/help/overview/log-forwarding/cloudfront-cli.md)
    + [Fastly](/help/overview/log-forwarding/fastly.md)
    + [Imperva](/help/overview/log-forwarding/imperva.md)
    + [Otro (carga manual)](/help/overview/log-forwarding/other.md)
