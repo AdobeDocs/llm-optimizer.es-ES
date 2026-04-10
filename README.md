@@ -1,7 +1,7 @@
 ---
 source-git-commit: 9a086ec3124af1bf234e42287c8b4ef08eae6bcd
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Si es redactor técnico, administrador de programa o desarrollador del equipo de
 
 Todos los artículos de este repositorio utilizan Markdown de GitHub. Si no está familiarizado con Markdown, consulte:
 
-* [Conceptos básicos de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [Fundamentos de marcado](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [Hoja de trucos de markdown imprimible](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Etiquetas
