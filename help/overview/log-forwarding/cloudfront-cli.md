@@ -2,9 +2,9 @@
 title: 'Reenvío de registros: CloudFront (CLI de AWS)'
 description: Reenvíe los registros de CDN de CloudFront al bloque S3 de Adobe mediante la CLI de AWS para la configuración y las operaciones de entrega.
 feature: Agentic Traffic
-source-git-commit: 0d51bbde954c399dc6595522fa70b576461f458a
+source-git-commit: 3277e7f7f2e0c5e4693e40473d595b12d9e5f2e8
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ En la página de LLM Optimizer [https://llmo.now/](https://llmo.now/):
 
 1. Escriba su **ID de cuenta de AWS**.
 
-   ![ID de cuenta de AWS](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)
+<!--  ![AWS Account ID](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)-->
 
 1. Seleccione **CloudFront (BYOCDN)**.
 
@@ -48,7 +48,7 @@ En la página de LLM Optimizer [https://llmo.now/](https://llmo.now/):
 
 1. Haga clic en **Incorporar**.
 
-   ![Botón de incorporación](/help/overview/assets/log-forwarding/common/onboard-button.png)
+<!-- ![Onboard button](/help/overview/assets/log-forwarding/common/onboard-button.png)-->
 
 ## Paso 2: Configurar el reenvío de registros de CDN con AWS CLI {#step-2-cli}
 
