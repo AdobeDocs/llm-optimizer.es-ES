@@ -1,7 +1,7 @@
 ---
 source-git-commit: 9a086ec3124af1bf234e42287c8b4ef08eae6bcd
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Si va a contribuir con una actualización menor:
 1. En la sección &quot;¿Fue útil este contenido?&quot; titular que aparece en la parte inferior de la ventana del explorador, haga clic en **Opciones de comentarios detalladas**.
 1. Haga clic en **Sugerir una edición** y envíe una solicitud de extracción (PR) con sus cambios en la interfaz de usuario de GitHub.
 
-   Para obtener más información, consulte la [guía para colaboradores de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=es).
+   Para obtener más información, consulte la [guía para colaboradores de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Las correcciones o aclaraciones menores que envíe para la documentación y los ejemplos de código en este repositorio están sujetos a las condiciones de uso de Adobe.
 
@@ -43,7 +43,7 @@ Si forma parte de la comunidad de Adobe y desea crear un nuevo tema o enviar cam
 
 Los colaboradores de la comunidad pueden utilizar la interfaz de usuario de GitHub para la edición básica o bifurcar el repositorio para realizar contribuciones importantes.
 
-Consulte la [Guía para colaboradores de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=es) para obtener más información.
+Consulte la [Guía para colaboradores de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obtener más información.
 
 ## Colaboradores internos
 
@@ -53,7 +53,7 @@ Si es redactor técnico, administrador de programa o desarrollador del equipo de
 
 Todos los artículos de este repositorio utilizan Markdown de GitHub. Si no está familiarizado con Markdown, consulte:
 
-* [Conceptos básicos de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [Fundamentos de marcado](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [Hoja de trucos de markdown imprimible](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Etiquetas
