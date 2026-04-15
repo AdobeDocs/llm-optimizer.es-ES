@@ -2,9 +2,9 @@
 title: 'Optimizar en Edge: Cloud Flare (BYOCDN)'
 description: Obtenga información sobre cómo configurar CloudFlare para Optimizar en Edge en LLM Optimizer.
 feature: Opportunities
-source-git-commit: 66b058734597c378040e77a23a4023bed9273427
+source-git-commit: 38ea32e27b1c5c129b019155cb7b717c7ca4f179
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1922'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Se deben configurar los siguientes encabezados en las solicitudes al back-end de
 Existen dos formas de configurar el trabajo de Cloudflare para optimizar Edge:
 
 * [**Opción 1: implementar en Cloudflare (recomendado)**](#option-1-deploy-to-cloudflare): crea automáticamente un nuevo trabajador y le solicita las variables de entorno y los secretos necesarios. Utilice esta opción si no tiene un Cloudflare Worker existente para este dominio.
-* [**Opción 2: configuración manual**](#option-2-manual-setup): instrucciones paso a paso para crear y configurar el trabajador. Utilice esta opción si ya tiene un Cloudflare Worker existente que desea ampliar o si prefiere un control total sobre la implementación.
+* [**Opción 2: configuración manual**](#option-2-manual-setup): instrucciones paso a paso para crear y configurar el trabajador. Utilice esta opción si ya tiene un Cloudflare Worker configurado en el dominio; deberá combinar el código de Edge Optimize en el trabajador existente (consulte [Paso 2: Agregar el código de Worker](#option-2-manual-setup)) o si prefiere tener el control total sobre la implementación.
 
 Independientemente de la opción que elija, debe vincular manualmente el trabajador a su dominio (consulte [Paso: agregar una ruta a su dominio](#add-a-route-to-your-domain)).
 
@@ -113,7 +113,7 @@ Siga estos pasos para crear y configurar el trabajador manualmente.
 
 **Paso 2: Agregar el código de trabajador**
 
-Después de crear el trabajador, haga clic en **Editar código** y reemplace el código predeterminado por el siguiente:
+Después de crear el trabajador, haga clic en **Editar código** y reemplace el código predeterminado por el siguiente. Si ya tiene un Cloudflare Worker, combine el código siguiente con el código de trabajador existente en lugar de reemplazarlo por completo.
 
 ```javascript
 /**
