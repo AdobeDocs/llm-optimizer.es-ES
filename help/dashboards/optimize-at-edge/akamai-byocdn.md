@@ -2,9 +2,9 @@
 title: 'Optimizar en Edge: Akamai (BYOCDN)'
 description: Obtenga información sobre cómo configurar Akamai BYOCDN para optimizar en Edge en LLM Optimizer.
 feature: Opportunities
-source-git-commit: f2a652761acbea7ca5b8e8740c1dbd0132e42f7f
+source-git-commit: 66b058734597c378040e77a23a4023bed9273427
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '825'
 ht-degree: 9%
 
 ---
@@ -22,11 +22,9 @@ Antes de configurar las reglas del Administrador de propiedades de Akamai, aseg�
 * Se ha completado el proceso de incorporación de LLM Optimizer.
 * Reenvío de registro de CDN completado a LLM Optimizer.
 * Una clave de API de Edge Optimize recuperada de la interfaz de usuario de LLM Optimizer.
-* (Opcional) Una clave de API de optimización de Edge de ensayo si prueba primero el enrutamiento en un nombre de host de ensayo.
+* (Opcional) Para probar el enrutamiento de ensayo, consulte **Opcional: Prueba del enrutamiento en un nombre de host de ensayo** al final de esta página.
 
 {{retrieve-byocdn-api-key}}
-
-{{retrieve-staging-edge-optimize-api-key}}
 
 **Configuración**
 
@@ -79,6 +77,16 @@ Establezca los siguientes encabezados de solicitud entrantes:
 `x-edgeoptimize-url` a `{{builtin.AK_URL}}`
 
 ![Modificar encabezados de solicitud entrantes](/help/assets/optimize-at-edge/akamai-step5-request.png)
+
+**Permitir la optimización en Edge mediante reglas de firewall (opcional)**
+
+{{waf-allowlist-setup}}
+
+![Establecer el encabezado x-edgeoptimize-fetcher-key en el Administrador de propiedades](/help/assets/optimize-at-edge/akamai-step10-fetcher-key.png)
+
+>[!NOTE]
+>
+>También realice la lista de permitidos del agente de usuario `*AdobeEdgeOptimize/1.0*` y el encabezado `x-edgeoptimize-fetcher-key` en el administrador de bots de Akamai.
 
 **6. Modificar encabezados de respuesta entrantes**
 
@@ -187,17 +195,13 @@ La respuesta **no** debe contener el encabezado `x-edgeoptimize-request-id`. El 
 | `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único. | Ausente |
 | `x-edgeoptimize-fo` | Solo está presente si se produjo la conmutación por error (valor: `1`) | Ausente |
 
-**4. Dominio de ensayo (opcional)**
+{{verify-routing-status-in-ui}}
 
-Si usa un nombre de host de ensayo y una clave de API de ensayo de LLM Optimizer, implemente el mismo patrón de enrutamiento en su propiedad de Akamai **staging** con la clave **staging** en sus reglas. A continuación, compruebe el tráfico de bots en el host de ensayo:
+{{retrieve-staging-edge-optimize-api-key}}
 
 ```
 curl -svo /dev/null https://staging.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
-
-Reemplace `https://staging.example.com/page.html` por su dirección URL y ruta de ensayo real. Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`.
-
-{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}

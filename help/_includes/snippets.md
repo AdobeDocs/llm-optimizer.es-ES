@@ -1,7 +1,7 @@
 ---
-source-git-commit: da789100d814004687de2f46e18a295671dec4b8
+source-git-commit: e9309dc8f8d1d81b953483f17dcb424e46d5cd3b
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -32,28 +32,31 @@ ht-degree: 0%
 
 Además, si necesita ayuda con los pasos anteriores, póngase en contacto con el equipo de la cuenta de Adobe o con `llmo-at-edge@adobe.com`.
 
-## Clave de API del dominio de ensayo (opcional) {#retrieve-staging-edge-optimize-api-key}
+## Opcional: Pruebe el enrutamiento en un nombre de host de ensayo {#retrieve-staging-edge-optimize-api-key}
 
-Utilice un nombre de host de ensayo cuando desee probar Optimizar en Edge en un entorno inferior antes de que el tráfico de producción utilice las reglas de enrutamiento.
+**Opcional: probar enrutamiento en un nombre de host provisional**
 
-**Requisitos previos**
+Si desea validar el enrutamiento en un entorno inferior antes de habilitar el enrutamiento de producción, puede configurar un nombre de host de ensayo.
 
-* El nombre de host de ensayo debe pertenecer al **mismo dominio registrable** que el sitio de producción (por ejemplo, `https://staging.example.com` cuando la producción es `https://www.example.com`).
-* Solo se puede configurar **un** dominio de ensayo para el sitio. Una vez guardado, no se puede cambiar sin ayuda.
+**Requisitos**
 
-**Pasos**
+* El nombre de host de ensayo debe estar en el **mismo dominio registrable** que el de producción (por ejemplo, `https://staging.example.com` cuando la producción es `https://www.example.com`).
+* Solo **un** dominio de ensayo por sitio. Una vez guardado, no se puede cambiar sin ponerse en contacto con Adobe.
 
-1. En LLM Optimizer, abra **Configuración del cliente** y seleccione la pestaña **Configuración de CDN**.
+**Obtenga su clave de API de ensayo**
 
-2. En la sección **Implementar optimizaciones en agentes de IA**, seleccione **Agregar dominio de ensayo** (o **Dominio de ensayo** si ya se ha configurado un dominio de ensayo).
+1. Abra **Configuración del cliente** y seleccione **Configuración de CDN**.
+2. En **Implementar optimizaciones en agentes de IA**, seleccione **Agregar dominio de ensayo** (o **Dominio de ensayo** si ya se ha configurado un dominio de ensayo).
+3. Escriba la dirección URL de ensayo completa (incluido `https://`) y seleccione **Establecer dominio**.
+4. Copie la clave de API **staging** del cuadro de diálogo de confirmación.
 
-3. En el cuadro de diálogo **Dominio de ensayo**, escriba la dirección URL de ensayo completa incluyendo `https://` y seleccione **Establecer dominio**.
+![Clave de API de dominio de ensayo](/help/assets/optimize-at-edge/byocdn-staging-domain-api-key.png)
 
-   ![Cuadro de diálogo de entrada del dominio de ensayo](/help/assets/optimize-at-edge/byocdn-staging-domain-input.png)
+Implemente las mismas reglas de enrutamiento en el entorno de ensayo mediante la clave de API de ensayo.
 
-4. Confirme el dominio en la siguiente solicitud. Cuando finaliza el flujo de trabajo, el cuadro de diálogo **Dominios de ensayo** muestra el dominio configurado y su **clave de API**. Seleccione **Copiar** para copiar la clave de API de ensayo.
+**Probar tráfico de bots de ensayo**
 
-   ![Clave de API de dominio de ensayo](/help/assets/optimize-at-edge/byocdn-staging-domain-api-key.png)
+Reemplace `https://staging.example.com/page.html` por su dirección URL y ruta de ensayo real. **Éxito:** La respuesta incluye el encabezado `x-edgeoptimize-request-id`.
 
 Si necesita ayuda, comuníquese con `llmo-at-edge@adobe.com`.
 
@@ -62,6 +65,16 @@ Si necesita ayuda, comuníquese con `llmo-at-edge@adobe.com`.
 El estado del enrutamiento de tráfico también se puede comprobar en la interfaz de usuario de LLM Optimizer. Vaya a **Configuración del cliente** y seleccione la pestaña **Configuración de CDN**.
 
 ![Implementar optimizaciones en agentes de IA — completado](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+
+## Permitir la optimización en Edge mediante reglas de cortafuegos (opcional) {#waf-allowlist-setup}
+
+Si su CDN utiliza un WAF o un Bot Manager:
+
+* Lista de permitidos el agente de usuario `*AdobeEdgeOptimize/1.0*` en su WAF o Administrador de bots para que el servicio Optimizar en Edge pueda recuperar el contenido de origen.
+* Si el firewall requiere una verificación adicional más allá del agente de usuario, genere un secreto (por ejemplo, `openssl rand -hex 32`) y:
+   * Agregue `x-edgeoptimize-fetcher-key` con el secreto en sus reglas de enrutamiento junto con los otros `x-edgeoptimize-*` encabezados.
+   * Agregue una regla de WAF o Bot Manager para permitir solicitudes en las que `x-edgeoptimize-fetcher-key` coincida con el mismo secreto.
+* Optimizar en Edge reenvía este encabezado tal cual: usted es el propietario del ciclo de vida completo de la clave.
 
 ## Volver a la descripción general {#return-to-overview}
 
