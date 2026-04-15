@@ -2,10 +2,10 @@
 title: Optimizar en Edge
 description: Obtenga información sobre cómo entregar optimizaciones en LLM Optimizer en el perímetro de la CDN sin necesidad de realizar cambios en la creación.
 feature: Opportunities
-source-git-commit: b56c2a355c794c8461dda15bf7c733983fd95740
+source-git-commit: 338baae83b63d2e09450bf508c65c6f97240a7dc
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 73%
+source-wordcount: '2312'
+ht-degree: 75%
 
 ---
 
@@ -58,16 +58,13 @@ Requisitos para su equipo de TI/CDN:
 * Agregue `*AdobeEdgeOptimize/1.0*` user-agent a la Lista de permitidos del archivo robots.txt del sitio o a las reglas de administración del tráfico de bots.
 * Asegúrese de que las páginas no estén bloqueadas en el nivel de dominio o de CDN.
 * Añadir las reglas de enrutamiento de Optimizar en Edge en la CDN.
+* Si su CDN tiene reglas de WAF o Bot Manager, lista de permitidos el agente de usuario `*AdobeEdgeOptimize/1.0*`. Si se requiere una verificación adicional, configure el encabezado `x-edgeoptimize-fetcher-key`. Cada guía de BYOCDN a continuación incluye los pasos.
 * Confirmar Optimizar en Edge en la interfaz de LLM Optimizer.
 
 >[!IMPORTANT]
 >El enrutamiento debe configurarse en la CDN externa (la CDN más cercana al cliente). Si tiene varias CDN, el enrutamiento solo se puede realizar en la CDN externa.
 
-Para guiar el proceso de configuración, seleccione su proveedor de CDN a continuación y siga la guía de configuración correspondiente. Tenga en cuenta que estos ejemplos deben adaptarse a la configuración real en directo. Se recomienda aplicar primero los cambios en los entornos inferiores.
-
-### Claves de API del dominio de ensayo (opcional)
-
-Si realiza pruebas en un nombre de host de ensayo antes de la producción, utilice LLM Optimizer para registrar **un** dominio de ensayo y copiar su clave de API **staging** Edge Optimize de **Customer configuration** → **CDN configuration** → **Implementar optimizaciones a agentes de IA** → **Agregar dominio de ensayo** (o **dominio de ensayo**). El nombre de host de ensayo debe compartir el mismo dominio registrable que el sitio de producción. Las guías de **Traer tu propia CDN** incluyen los pasos completos para recuperar la clave de ensayo y verificar el enrutamiento en la URL de ensayo.
+Para guiar el proceso de configuración, seleccione su proveedor de CDN a continuación y siga la guía de configuración correspondiente. Tenga en cuenta que estos ejemplos deben adaptarse a la configuración real en directo. Se recomienda aplicar primero los cambios en los entornos inferiores. **Traer su propia CDN** guías incluyen pruebas opcionales de nombres de host de ensayo al final de cada página.
 
 ### Guías de configuración de CDN
 
