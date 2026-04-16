@@ -2,10 +2,10 @@
 title: Optimizar en Edge
 description: Obtenga información sobre cómo entregar optimizaciones en LLM Optimizer en el perímetro de la CDN sin necesidad de realizar cambios en la creación.
 feature: Opportunities
-source-git-commit: 338baae83b63d2e09450bf508c65c6f97240a7dc
+source-git-commit: 050a4eaa510df7195c5208978ba56d4413916808
 workflow-type: tm+mt
-source-wordcount: '2312'
-ht-degree: 75%
+source-wordcount: '2323'
+ht-degree: 74%
 
 ---
 
@@ -43,7 +43,7 @@ Inicie el proceso de incorporación en su cuenta de LLM Optimizer:
 1. En el panel **Configuración del cliente**, seleccione la pestaña **Configuración de CDN**.
 1. Haga clic en **CDN integrada**.
    ![Ficha Configuración de CDN](/help/overview/assets/cc-cdn.png)
-1. Para los clientes de AEM Fastly, Adobe puede ayudar a completar el proceso de incorporación. Para los clientes que utilizan otros proveedores de CDN, su equipo de TI/CDN debe completar la configuración y los requisitos previos necesarios. También puede consultar las guías de CDN de ejemplo que se proporcionan a continuación para obtener más instrucciones.
+1. Para los clientes de Fastly administrados por AEM Cloud Service, la configuración de enrutamiento es de autoservicio y se puede completar directamente en la interfaz de usuario de LLM Optimizer. Para los clientes que utilizan otros proveedores de CDN, su equipo de TI/CDN debe completar la configuración y los requisitos previos necesarios. También puede consultar las guías de CDN de ejemplo que se proporcionan a continuación para obtener más instrucciones.
 
 >[!NOTE]
 >Consulte las guías paso a paso a continuación que abarcan todo el flujo de incorporación. Para problemas no resueltos por las guías, puede comunicarse con `llmo-at-edge@adobe.com`.
