@@ -2,9 +2,9 @@
 title: 'Optimizar en Edge: Cloud Flare (BYOCDN)'
 description: Obtenga información sobre cómo configurar CloudFlare para Optimizar en Edge en LLM Optimizer.
 feature: Opportunities
-source-git-commit: 38ea32e27b1c5c129b019155cb7b717c7ca4f179
+source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1906'
 ht-degree: 1%
 
 ---
@@ -20,12 +20,8 @@ Antes de configurar las reglas de enrutamiento de Cloud Flare Worker, asegúrese
 
 * Cuenta de Cloudflare con trabajadores habilitados en su dominio.
 * Acceso a la configuración DNS de su dominio en Cloudflare.
-* Se ha completado el proceso de incorporación de LLM Optimizer.
-* Reenvío de registro de CDN completado a LLM Optimizer.
-* Una clave de API de Edge Optimize recuperada de la interfaz de usuario de LLM Optimizer.
-* (Opcional) Para probar el enrutamiento de ensayo, consulte **Opcional: Prueba del enrutamiento en un nombre de host de ensayo** al final de esta página.
-
-{{retrieve-byocdn-api-key}}
+* Una clave de API de Edge Optimize recuperada de la interfaz de usuario de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Opcional) Para probar el enrutamiento de ensayo, consulte [Clave de API de ensayo](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Funcionamiento del enrutamiento**
 
@@ -478,12 +474,5 @@ La respuesta **no** debe contener el encabezado `x-edgeoptimize-request-id`. El 
 | `x-edgeoptimize-fo` | Solo está presente si se produjo la conmutación por error (valor: `1`) | Ausente |
 
 {{verify-routing-status-in-ui}}
-
-{{retrieve-staging-edge-optimize-api-key}}
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
 
 {{return-to-overview}}

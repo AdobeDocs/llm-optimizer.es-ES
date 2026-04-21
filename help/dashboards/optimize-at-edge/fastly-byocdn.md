@@ -2,10 +2,10 @@
 title: 'Optimizar en Edge: Fastly (BYOCDN)'
 description: Aprenda a configurar Fastly BYOCDN para optimizar en Edge en LLM Optimizer.
 feature: Opportunities
-source-git-commit: 412500d2a95d66a5c9bf6fa88efc62c6244834c8
+source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 5%
+source-wordcount: '348'
+ht-degree: 6%
 
 ---
 
@@ -19,12 +19,8 @@ Esta configuración enruta el tráfico auténtico (solicitudes de bots de IA y a
 Antes de configurar las reglas de VCL de Fastly, asegúrese de lo siguiente:
 
 * Acceso a Fastly para su dominio.
-* Se ha completado el proceso de incorporación de LLM Optimizer.
-* Reenvío de registro de CDN completado a LLM Optimizer.
-* Una clave de API de Edge Optimize recuperada de la interfaz de usuario de LLM Optimizer.
-* (Opcional) Para probar el enrutamiento de ensayo, consulte **Opcional: Prueba del enrutamiento en un nombre de host de ensayo** al final de esta página.
-
-{{retrieve-byocdn-api-key}}
+* Una clave de API de Edge Optimize recuperada de la interfaz de usuario de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Opcional) Para probar el enrutamiento de ensayo, consulte [Clave de API de ensayo](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Configuración**
 
@@ -129,12 +125,5 @@ La respuesta **no** debe contener el encabezado `x-edgeoptimize-request-id`. El 
 | `x-edgeoptimize-fo` | Solo está presente si se produjo la conmutación por error (valor: `1`) | Ausente |
 
 {{verify-routing-status-in-ui}}
-
-{{retrieve-staging-edge-optimize-api-key}}
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
 
 {{return-to-overview}}

@@ -2,9 +2,9 @@
 title: 'Optimizar en Edge: CloudFront (BYOCDN)'
 description: Obtenga información sobre cómo configurar CloudFront BYOCDN para optimizar en Edge en LLM Optimizer.
 feature: Opportunities
-source-git-commit: 001ed59e25975c718367f543b2e35fedbce686f5
+source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
-source-wordcount: '2223'
+source-wordcount: '2207'
 ht-degree: 1%
 
 ---
@@ -20,12 +20,8 @@ Antes de establecer la configuración de CloudFront, asegúrese de lo siguiente:
 
 * Una distribución existente de CloudFront que sirve a su sitio web.
 * Permisos de AWS IAM para crear funciones de Lambda, funciones de IAM, distribuciones de CloudFront y directivas de caché.
-* Se ha completado el proceso de incorporación de LLM Optimizer.
-* Reenvío de registro de CDN completado a LLM Optimizer.
-* Una clave de API de Edge Optimize recuperada de la interfaz de usuario de LLM Optimizer.
-* (Opcional) Para probar el enrutamiento de ensayo, consulte **Opcional: Prueba del enrutamiento en un nombre de host de ensayo** al final de esta página.
-
-{{retrieve-byocdn-api-key}}
+* Una clave de API de Edge Optimize recuperada de la interfaz de usuario de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Opcional) Para probar el enrutamiento de ensayo, consulte [Clave de API de ensayo](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Paso 1: Crear origen de optimización de Edge**
 
@@ -403,12 +399,5 @@ Una vez implementado, todas las rutas de tráfico se dirigen directamente al ori
 4. Haga clic en **Guardar cambios**.
 
 5. Espere a que la distribución termine de implementarse y, a continuación, compruebe que las solicitudes agénticas devuelven el encabezado `x-edgeoptimize-request-id` como se describe en el paso 6.
-
-{{retrieve-staging-edge-optimize-api-key}}
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
 
 {{return-to-overview}}
