@@ -2,10 +2,10 @@
 title: Optimizar en Edge
 description: Obtenga información sobre cómo entregar optimizaciones en LLM Optimizer en el perímetro de la CDN sin necesidad de realizar cambios en la creación.
 feature: Opportunities
-source-git-commit: 050a4eaa510df7195c5208978ba56d4413916808
+source-git-commit: e9eab92835e555f7267f58eea7faa0302c2f1cd0
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 74%
+source-wordcount: '2283'
+ht-degree: 75%
 
 ---
 
@@ -48,11 +48,6 @@ Inicie el proceso de incorporación en su cuenta de LLM Optimizer:
 >[!NOTE]
 >Consulte las guías paso a paso a continuación que abarcan todo el flujo de incorporación. Para problemas no resueltos por las guías, puede comunicarse con `llmo-at-edge@adobe.com`.
 
-Requisitos previos para la incorporación a Optimizar en Edge:
-
-* Complete el proceso de incorporación a LLM Optimizer.
-* Complete el proceso de reenvío de registros para los registros de CDN.
-
 Requisitos para su equipo de TI/CDN:
 
 * Agregue `*AdobeEdgeOptimize/1.0*` user-agent a la Lista de permitidos del archivo robots.txt del sitio o a las reglas de administración del tráfico de bots.
@@ -64,7 +59,7 @@ Requisitos para su equipo de TI/CDN:
 >[!IMPORTANT]
 >El enrutamiento debe configurarse en la CDN externa (la CDN más cercana al cliente). Si tiene varias CDN, el enrutamiento solo se puede realizar en la CDN externa.
 
-Para guiar el proceso de configuración, seleccione su proveedor de CDN a continuación y siga la guía de configuración correspondiente. Tenga en cuenta que estos ejemplos deben adaptarse a la configuración real en directo. Se recomienda aplicar primero los cambios en los entornos inferiores. **Traer su propia CDN** guías incluyen pruebas opcionales de nombres de host de ensayo al final de cada página.
+Para guiar el proceso de configuración, seleccione su proveedor de CDN a continuación y siga la guía de configuración correspondiente. Tenga en cuenta que estos ejemplos deben adaptarse a la configuración real en directo. Se recomienda aplicar primero los cambios en los entornos inferiores.
 
 ### Guías de configuración de CDN
 
