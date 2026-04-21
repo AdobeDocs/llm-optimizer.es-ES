@@ -2,10 +2,10 @@
 title: Tráfico agéntico
 description: Aprenda a utilizar el panel de control Tráfico agéntico para ver cómo los agentes de IA interactúan con el sitio.
 feature: Agentic Traffic
-source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
+source-git-commit: 21c14895ea9c1978332af3d742baacbe53079e88
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 98%
+source-wordcount: '1335'
+ht-degree: 94%
 
 ---
 
@@ -52,7 +52,7 @@ Una vez activados, los registros se incorporan y el panel de control se rellena 
 
 LLM Optimizer procesa un subconjunto de campos de los registros de CDN. Aunque los nombres de los campos de registro sin procesar varían según el proveedor de CDN, se normalizan y presentan de la siguiente manera:
 
-* URL (solo ruta)
+* URL (parámetros de ruta y consulta)
 * Agente de usuario
 * Código de estado
 * Encabezado de referente
@@ -99,7 +99,7 @@ Utilice el gráfico Tendencias de tráfico agéntico para realizar un seguimient
 
 ## Mayores y menores variaciones {#top-bottom-movers}
 
-La vista Mayores y menores variaciones resalta las direcciones URL con los mayores cambios de una semana a otra en el tráfico agéntico: visitas o visitas de sistemas de IA que acceden a su contenido. **Mayores variaciones** muestra las páginas que ganan visibilidad o participación, mientras que **Menores variaciones** muestra las direcciones URL con las disminuciones más pronunciadas. Esto le ayuda a identificar rápidamente qué contenido tiende al alza, cuál puede necesitar atención y dónde están cambiando los patrones de detección basados en la IA.
+La vista Desplazamientos superiores e inferiores resalta las direcciones URL con los mayores cambios de una semana a otra en el tráfico auténtico: visitas o visitas de sistemas de IA que acceden a su contenido. **Modificadores principales** muestra las páginas que ganan visibilidad o participación, mientras que **Modificadores inferiores** muestra las direcciones URL con las disminuciones más pronunciadas. Esto le ayuda a identificar rápidamente qué contenido tiende al alza, cuál puede necesitar atención y dónde están cambiando los patrones de detección basados en la IA.
 
 ![Mayores y menores variaciones](/help/dashboards/assets/movers.png)
 
