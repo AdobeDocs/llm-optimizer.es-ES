@@ -2,10 +2,10 @@
 title: Optimizar en Edge
 description: Obtenga información sobre cómo entregar optimizaciones en LLM Optimizer en el perímetro de la CDN sin necesidad de realizar cambios en la creación.
 feature: Opportunities
-source-git-commit: e9eab92835e555f7267f58eea7faa0302c2f1cd0
+source-git-commit: 6395ea8bdaae419d931ecd67f719a524caa66d0f
 workflow-type: tm+mt
-source-wordcount: '2283'
-ht-degree: 75%
+source-wordcount: '2301'
+ht-degree: 74%
 
 ---
 
@@ -55,6 +55,10 @@ Requisitos para su equipo de TI/CDN:
 * Añadir las reglas de enrutamiento de Optimizar en Edge en la CDN.
 * Si su CDN tiene reglas de WAF o Bot Manager, lista de permitidos el agente de usuario `*AdobeEdgeOptimize/1.0*`. Si se requiere una verificación adicional, configure el encabezado `x-edgeoptimize-fetcher-key`. Cada guía de BYOCDN a continuación incluye los pasos.
 * Confirmar Optimizar en Edge en la interfaz de LLM Optimizer.
+
+El diagrama siguiente ilustra cómo fluyen las solicitudes a través de una configuración de BYOCDN con Optimizar en Edge:
+
+![Flujo de solicitud BYOCDN](/help/assets/optimize-at-edge/byocdn-request-flow.png)
 
 >[!IMPORTANT]
 >El enrutamiento debe configurarse en la CDN externa (la CDN más cercana al cliente). Si tiene varias CDN, el enrutamiento solo se puede realizar en la CDN externa.
