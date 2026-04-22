@@ -126,7 +126,7 @@ Esta oportunidad encuentra páginas con párrafos largos y complejos que pueden 
 
 Para cada oportunidad, puede obtener una vista previa, editar, implementar, ver en directo y restablecer las optimizaciones en el perímetro.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477987/?captions=spa&learn=on&enablevpops)
 
 ### Vista previa
 
