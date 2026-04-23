@@ -2,10 +2,10 @@
 title: Tráfico de referencia
 description: Aprenda a utilizar el panel de control Tráfico de referencia para ver cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia.
 feature: Referral Traffic
-source-git-commit: ea4cf80dc5f789f7938c800354bc8d8d3246704c
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 79%
+source-wordcount: '734'
+ht-degree: 80%
 
 ---
 
@@ -27,7 +27,7 @@ Esta página detalla lo siguiente:
 * [Direcciones URL de referencia principales](#top-referrals)
 * [Detalles del tráfico de referencia](#traffic-details)
 
-Si está en la experiencia centrada en la marca, vaya al **Tráfico de referencia** y seleccione el sitio para el cual desea ver las perspectivas del Tráfico de referencia LLM.
+Si está en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya al **Tráfico de referencia** y seleccione el sitio para el cual desea ver las perspectivas del Tráfico de referencia LLM.
 
 ![Tráfico de referencia — selector de sitio (experiencia centrada en la marca)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
 
@@ -35,7 +35,7 @@ Si está en la experiencia centrada en la marca, vaya al **Tráfico de referenci
 
 Al iniciar sesión por primera vez, el panel de control tráfico de referencia puede aparecer en blanco. Para ver los datos, debe configurar el reenvío de registros de CDN.
 
-Para los clientes que se encuentran en la experiencia centrada en la marca, así es como puede agregar información de reenvío de registros de CDN. Vaya a **Brands Management** y haga clic en la etiqueta **CDN**. Consulte también [Tráfico de agente — Configuración de CDN](/help/dashboards/agentic-traffic.md#cdn-setup).
+Para los clientes que están en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), puede agregar información de reenvío de registro de CDN navegando a **Administración de marcas** y haciendo clic en la etiqueta **CDN**.
 
 **Configuración del cliente (experiencia clásica):** Configure el [reenvío de registros de CDN](/help/dashboards/customer-configuration.md#cdn-configuration) seleccionando **Ir a la configuración**.
 
