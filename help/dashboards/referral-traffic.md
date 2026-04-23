@@ -2,10 +2,10 @@
 title: Tráfico de referencia
 description: Aprenda a utilizar el panel de control Tráfico de referencia para ver cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia.
 feature: Referral Traffic
-source-git-commit: c0ef7710411a01410fddf87b0c4344eb782c264f
+source-git-commit: ea4cf80dc5f789f7938c800354bc8d8d3246704c
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 90%
+source-wordcount: '741'
+ht-degree: 79%
 
 ---
 
@@ -27,9 +27,17 @@ Esta página detalla lo siguiente:
 * [Direcciones URL de referencia principales](#top-referrals)
 * [Detalles del tráfico de referencia](#traffic-details)
 
+Si está en la experiencia centrada en la marca, vaya al **Tráfico de referencia** y seleccione el sitio para el cual desea ver las perspectivas del Tráfico de referencia LLM.
+
+![Tráfico de referencia — selector de sitio (experiencia centrada en la marca)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
+
 ## Configuración {#setup}
 
-Al iniciar sesión por primera vez, el panel de control tráfico de referencia puede aparecer en blanco. Para ver los datos, debe configurar el [reenvío de registros de CDN](/help/dashboards/customer-configuration.md#cdn-configuration), seleccionando **Ir a la configuración**.
+Al iniciar sesión por primera vez, el panel de control tráfico de referencia puede aparecer en blanco. Para ver los datos, debe configurar el reenvío de registros de CDN.
+
+Para los clientes que se encuentran en la experiencia centrada en la marca, así es como puede agregar información de reenvío de registros de CDN. Vaya a **Brands Management** y haga clic en la etiqueta **CDN**. Consulte también [Tráfico de agente — Configuración de CDN](/help/dashboards/agentic-traffic.md#cdn-setup).
+
+**Configuración del cliente (experiencia clásica):** Configure el [reenvío de registros de CDN](/help/dashboards/customer-configuration.md#cdn-configuration) seleccionando **Ir a la configuración**.
 
 ![Configuración de la referencia](/help/dashboards/assets/referral-setup1.png)
 

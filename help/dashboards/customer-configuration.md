@@ -2,10 +2,10 @@
 title: Configuración del cliente
 description: Utilice la configuración del cliente para definir cómo se monitorizará y analizará su marca dentro de la plataforma del optimizador de LLM.
 feature: Customer Configuration
-source-git-commit: 3fab5f21311a741e51e7a31cd3a26de79fcbff95
+source-git-commit: ef6b4ec9dcb3b5234add6e82cbc54ab29d363509
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 40%
+source-wordcount: '2249'
+ht-degree: 37%
 
 ---
 
@@ -13,6 +13,8 @@ ht-degree: 40%
 # Configuración del cliente {#customer-configuration}
 
 El panel de control Configuración del cliente es una potente herramienta que proporciona perspectivas sobre la visibilidad de su marca en los LLM. Al configurar correctamente categorías, temas e indicaciones, puede asegurarse de que la marca esté bien posicionada para aparecer en las respuestas generadas por LLM. Esta configuración garantiza que la plataforma adapte las perspectivas a su contexto empresarial, lo que permite una visibilidad precisa, el tráfico y el análisis de oportunidades.
+
+El panel de configuración del cliente (que se muestra a continuación) se aplica cuando su organización sigue utilizando este sistema de navegación.
 
 ![Panel de control Configuración del cliente](/help/dashboards/assets/customer-config.png)
 
@@ -25,13 +27,19 @@ Para configurar cómo LLM Optimizer monitoriza y analiza su presencia de marca e
 * [Configuración de la CDN](#agentic-cdn)
 * [Consola de búsqueda de Google](#google-console)
 
+Si está en la experiencia centrada en la marca, vaya a **Administración de marcas** para configurar marcas, alias de marcas y definir competidores con los cuales realizar el seguimiento. **Brands Management** también se usa para configurar integraciones como la consola de búsqueda de Google, Adobe Analytics y el reenvío de registros de CDN en relación con las direcciones URL asociadas con las marcas. Para ello, haga clic en las pestañas correspondientes: GSC, CDN, etc.
+
+![Gestión de marcas — Navegación de aplicaciones (experiencia centrada en las marcas)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+
+![Administración de marcas — información general sobre la configuración (experiencia centrada en las marcas)](/help/assets/brand-centric-experience/brands-management-configuration.png)
+
 >[!IMPORTANT]
 >
 > Para obtener información detallada sobre cómo configurar las categorías, temas e indicaciones, consulte la página [Prácticas recomendadas para configurar categorías, temas e indicaciones](/help/overview/best-practices-topics-prompts.md).
 
 ## Indicaciones {#prompts-brand}
 
-Desde esta pestaña, puede revisar, administrar y personalizar las indicaciones. Puede cargar un archivo .csv de [análisis de Presencia de marca](/help/dashboards/brand-presence.md), y la lista se rellenará con indicaciones y temas de ese análisis, o [descargar una biblioteca de indicaciones](/help/overview/best-practices-topics-prompts.md) creada por Adobe. También puede eliminar, modificar y añadir temas y sus indicaciones asociadas según sea necesario.
+Desde la ficha **Indicadores**, puede revisar, administrar y personalizar los mensajes. Puede cargar un archivo .csv de [análisis de Presencia de marca](/help/dashboards/brand-presence.md), y la lista se rellenará con indicaciones y temas de ese análisis, o [descargar una biblioteca de indicaciones](/help/overview/best-practices-topics-prompts.md) creada por Adobe. También puede eliminar, modificar y añadir temas y sus indicaciones asociadas según sea necesario.
 
 Para importar un archivo .csv de data insights, primero debe exportar un archivo desde el panel de control Presencia de marca. Consulte la sección [data insights](/help/dashboards/brand-presence.md#data-insights) para obtener información sobre cómo hacerlo. Una vez que tenga el archivo, haga lo siguiente:
 
@@ -51,6 +59,10 @@ Además, también puede añadir temas/indicaciones a la lista independientemente
 4. Añada el texto de la indicación.
 5. Seleccione la región.
 6. Haga clic en **Añadir indicación** y el tema con la indicación aparece en la lista.
+
+Para que los clientes que están en la experiencia centrada en la marca agreguen temas e indicadores, vaya a **Administración de indicadores**.
+
+![Administración de indicadores (experiencia centrada en la marca)](/help/assets/brand-centric-experience/prompts-management.png)
 
 >[!NOTE]
 >Las indicaciones añadidas recientemente no aparecen en la presencia de marca hasta que se complete el procesamiento.
@@ -177,7 +189,7 @@ Siga los pasos presentados a continuación para integrar y utilizar las consulta
 
 Antes de utilizar esta función, debe integrar su cuenta de Google Search Console con el optimizador LLM.
 
-1. Abra el panel de configuración del cliente.
+1. Abra el panel **Configuración del cliente** (navegación clásica) o **Administración de marcas** (experiencia de Brand Centric) y, a continuación, vaya a la integración de Google Search Console (etiqueta GSC en la experiencia de Brand Centric).
 1. Vaya a la pestaña Google Search Console y haga clic en **Conectar cuenta**.
    ![Consola de búsqueda de Google](/help/dashboards/assets/google-console.png)
 1. Inicie sesión con una cuenta de Google que tenga acceso a la propiedad de Search Console deseada.
@@ -200,38 +212,38 @@ Después de integrar la cuenta de Google Search Console con el optimizador LLM, 
 
 #### Ver consultas agregadas en la lista de indicadores {#prompts-list}
 
-Después de agregar una consulta, esta aparece en la ficha [Indicadores](#prompts-brand) del panel Configuración del cliente. Las solicitudes procedentes de la consola de búsqueda de Google se marcan con un icono de consola de búsqueda de Google en la columna **Origen**. El icono le ayuda a distinguir entre los indicadores basados en el comportamiento de búsqueda real del usuario y los agregados manualmente o desde otras fuentes.
+After a query is added, it appears in the [Prompts](#prompts-brand) tab within the Customer Configuration dashboard (classic experience) or in **Prompts Management** (Brand Centric experience). Prompts sourced from the Google Search Console are marked with a Google Search Console icon in the **Origin** column. The icon helps you distinguish between prompts that are grounded in actual user search behavior from those added manually or from other sources.
 
 ### Preguntas frecuentes {#gsc-faq}
 
-P: ¿Con qué frecuencia se actualizan las preguntas en el panel de la consola de búsqueda de Google?
+Q: How often are prompts updated in the Google Search Console dashboard?
 
-Las solicitudes procedentes de la consola de búsqueda de Google generalmente se actualizan una vez al mes. Cada actualización extrae los datos de consulta de búsqueda más recientes de la consola de búsqueda de Google, vuelve a ejecutar la canalización de generación y actualiza el conjunto de mensajes. Esto garantiza que los indicadores permanezcan alineados con las tendencias de búsqueda actuales y los cambios estacionales en el comportamiento del usuario.
+Prompts sourced from the Google Search Console are usually refreshed once per month. Each refresh pulls the latest search query data from your Google Search Console, re-runs the generation pipeline, and updates your prompt set. This ensures your prompts stay aligned with current search trends and seasonal shifts in user behavior.
 
-P: ¿Cuántas peticiones de datos suelen proceder de la consola de búsqueda de Google?
+Q: How many prompts are typically sourced from the Google Search Console?
 
-El número depende del tamaño de la implementación y de la cantidad de categorías rastreadas. Por ejemplo:
+The number depends on the size of your deployment and the amount of categories tracked. Por ejemplo:
 
-| Categorías | Total de temas | Indicadores entregados |
+| Categorías | Total Topics | Prompts Delivered |
 |---------|----------|----------|
-| 1-2 | 3-8 | ~65-180 |
-| 4-5 | 12-20 | ~270-450 |
-| 10 | 30-40 | ~675-900 |
+| 1–2 | 3–8 | ~65–180 |
+| 4–5 | 12–20 | ~270–450 |
+| 10 | 30–40 | ~675–900 |
 
-Nuestro objetivo es ofrecer conjuntos de mensajes rápidos que cumplan los objetivos de calidad comunicados durante la prueba e incorporación: al menos 20 mensajes por tema, con 3-4 temas por categoría y un equilibrio entre marca y marca saludable.
+We aim to deliver prompt sets that meet the quality targets communicated during trial and onboarding: at least 20 prompts per topic, with 3–4 topics per category, and a healthy branded/unbranded balance.
 
-P: ¿Con qué frecuencia veré las solicitudes procedentes de la consola de búsqueda de Google después de conectarme a la consola de búsqueda de Google?
+Q: How soon will I see prompts sourced from the Google Search Console after I connect to the Google Search Console?
 
-Los indicadores suelen estar disponibles **en un plazo de pocas horas** después de que se haya establecido la conexión a la consola de búsqueda de Google. La canalización extrae automáticamente los datos de búsqueda, los procesa a través de los pasos de generación y garantía de calidad y envía el mensaje final definido a LLM Optimizer.
+Prompts are typically available **within a few hours** after your Google Search Console connection is established. The pipeline automatically pulls your search data, processes it through the generation and quality assurance steps and delivers the final prompt set to LLM Optimizer.
 
-P: ¿Quién puede conectarse a la consola de búsqueda de Google?
+Q: Who can connect to the Google Search Console?
 
-Cualquier persona con **Propietario** o **Permiso completo** en la propiedad de la consola de búsqueda de Google puede autorizar la conexión. Niveles de permisos que conceden acceso de lectura a los datos de consulta de búsqueda. Si no está seguro del nivel de permisos, puede comprobarlo en **Configuración>Usuarios** y en los permisos de la consola de búsqueda de Google.
+Anyone with **Owner** or **Full Permission** on the Google Search Console property can authorize the connection. These are the permission levels that grant read access to search query data. If you are unsure about your permission level, you can check it under **Settings>Users** and permissions in your Google Search Console.
 
-P: ¿Puedo marcar los mensajes como ignorados u omitidos para que no los vea en la lista de mensajes de la consola de búsqueda de Google?
+Q: Can I mark prompts as ignored or skipped so that I do not see them in the Google Search Console prompts list?
 
-Sí, puede eliminar cualquier mensaje que no desee supervisar. Los mensajes eliminados se eliminan de la lista de mensajes activa y no aparecerán en los informes futuros. Si una solicitud eliminada se vuelve a generar en una actualización mensual posterior, puede eliminarla de nuevo.
+Yes, you can delete any prompt you do not want to monitor. Deleted prompts are removed from your active prompt list and will not appear in future reporting. If a deleted prompt is regenerated in a subsequent monthly refresh, you can remove it again.
 
-P: Una vez que añada peticiones de datos de la consola de búsqueda de Google a mi lista de peticiones de datos, ¿con qué frecuencia veo datos de Presencia de marca para ellas?
+Q: Once I add prompts from Google Search Console to my prompts list, how soon will I see Brand Presence data for those prompts?
 
-Los datos de presencia de marca de los mensajes recién añadidos aparecerán durante la siguiente actualización de datos programada, que generalmente se ejecuta al principio de cada semana. Según el momento en el que agregue los indicadores, es posible que vea los resultados en unos días.
+Brand Presence data for newly added prompts will appear during the next scheduled data refresh, which typically runs at the beginning of each week. Depending on when you add the prompts, you may see results within a few days.

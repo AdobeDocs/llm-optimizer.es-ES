@@ -2,17 +2,21 @@
 title: Inicio rápido
 description: Aprenda a incorporar su nombre de marca y dominio, activar la versión de prueba desde Experience Hub o Experience Cloud y completar la configuración de Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: dcbeb1c61dd9dcefd83908f65f8303d36c0fb78e
+source-git-commit: d38cf066ca1e3785032b7beca1c257e3a42f532b
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 47%
+source-wordcount: '1454'
+ht-degree: 37%
 
 ---
 
 
 # Inicio rápido
 
-Para empezar a usar LLM Optimizer, debe completar el proceso de incorporación. Después de la incorporación, podrá personalizar categorías, temas, indicadores y configurar el reenvío de registros para obtener información más precisa y acceso completo a [los paneles de LLM Optimizer](/help/dashboards/dashboards-overview.md) y otras funcionalidades.
+Para empezar a usar LLM Optimizer, complete la incorporación. A continuación, personalice las categorías, los temas y las indicaciones, configure el reenvío de registros de CDN y abra los [paneles](/help/dashboards/dashboards-overview.md) para obtener información más detallada.
+
+**Experiencia centrada en la marca:** De manera predeterminada, los nuevos clientes comienzan en una interfaz enfocada y de primera categoría con una configuración basada en la incorporación. En esta nueva interfaz, cada organización comienza con una marca activa y marcas sugeridas adicionales para elegir. Los clientes existentes de LLM Optimizer cambiarán gradualmente a esta experiencia centrada en la marca.
+
+<!--Where steps differ by layout, use **Customer Configuration (classic experience)** or **Brands Management** / **Prompts Management**, whichever matches your current interface.-->
 
 ## Información general sobre la incorporación
 
@@ -54,30 +58,30 @@ Si es cliente de Adobe Analytics, verá un banner en la página de inicio de Exp
 
 Puede activar la versión de prueba de una de las siguientes maneras:
 
-* Seleccione **Iniciar la versión de prueba de Adobe LLM Optimizer** en el banner.
-* Vaya directamente a [https://llmo.now](https://llmo.now) e inicie sesión.
+* Select **Start your Adobe LLM Optimizer Trial** in the banner.
+* Go directly to [https://llmo.now](https://llmo.now) and sign in.
 
-Una vez que la versión de prueba esté activa, continúe con la incorporación del nombre de marca y el dominio.
+Once the trial is active, proceed with onboarding your brand name and domain.
 
 >[!NOTE]
 >
-> * **Prueba gratuita:** Los clientes de AEM Cloud y Adobe Analytics pueden usar la versión de prueba gratuita de LLM Optimizer.
-> * **Los clientes que activen la versión de prueba el 1 de abril de 2026 o posteriormente** pueden usar hasta 100 indicadores, un dominio y pueden implementar optimizaciones en hasta 10 direcciones URL para un solo tipo de oportunidad.
-> * **Los clientes que activaron la versión de prueba antes del 1 de abril de 2026** continúan teniendo acceso a hasta 200 mensajes según los términos existentes.
+> * **Free trial:** AEM Cloud and Adobe Analytics customers can use the free trial version of LLM Optimizer.
+> * **Customers who activate the trial on or after April 1, 2026** can use up to 100 prompts, one domain, and can deploy optimizations across up to 10 URLs for a single opportunity type.
+> * **Customers who activated the trial before April 1, 2026** continue to have access to up to 200 prompts under their existing terms.
 >
->El uso más allá de los límites incluidos requiere un acuerdo de licencia independiente. El acceso se proporciona &quot;tal cual&quot; y &quot;según esté disponible&quot;, y se puede modificar, limitar o eliminar en cualquier momento. Póngase en contacto con el representante de cuentas para obtener más información.
+>Use beyond the included limits requires a separate license agreement. Access is provided on an &quot;as-is&quot; and &quot;as-available&quot; basis, and may be modified, limited or removed at any time. Contact your account representative for more information.
 
-#### Incorpore su nombre de marca y dominio
+#### Onboard your brand name and domain
 
-Incorpore su nombre de marca y dominio para empezar a utilizar LLM Optimizer.
+Onboard your brand name and domain to begin using LLM Optimizer.
 
-1. Introduzca su nombre de marca y el dominio asociado.
+1. Enter your brand name and the associated domain.
 
-   * Este debe ser el dominio principal en el que desee analizar y optimizar el contenido.
+   * This should be the main domain where you want to analyze and optimize content.
 
-1. Integración completa.
+1. Complete onboarding.
 
-   * Una vez enviado, LLM Optimizer comienza a analizar su dominio y a generar perspectivas.
+   * Once submitted, LLM Optimizer begins analyzing your domain and generating insights.
 
 ![Dominio de LLM Optimizer](/help/overview/assets/domain.png)
 
@@ -89,21 +93,25 @@ Incorpore su nombre de marca y dominio para empezar a utilizar LLM Optimizer.
 
 Se generará un pequeño conjunto de categorías, temas e indicaciones durante la fase de incorporación. El análisis de la presencia de marca de esas indicaciones estará disponible poco después de que se haya incorporado el sitio.
 
-También está disponible la capacidad de implementar optimizaciones en Edge. Obtenga más información en [Optimizar en Edge — Preguntas más frecuentes](https://experienceleague.adobe.com/es/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+The ability to deploy optimizations at edge is also available. Learn more in [Optimize at Edge — Frequently asked questions](https://experienceleague.adobe.com/es/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
-Además, configure [reenvío de registros de CDN](#step-4) para el análisis del tráfico. LLM Optimizer requiere datos de Presencia de marca y perspectivas de los agentes y el tráfico de referencia para identificar oportunidades y proporcionar recomendaciones prescriptivas que aumenten la visibilidad de la IA.
+Additionally, configure [CDN log forwarding](#step-4) for traffic analysis. LLM Optimizer requires Brand Presence data and insights from agentic and referral traffic to identify opportunities and provide prescriptive recommendations that boost AI visibility.
 
-### Clientes que no son de AEM Cloud
+### Non-AEM Cloud customers
 
-Una vez que la organización haya finalizado el acuerdo empresarial, se le incorporará a LLM Optimizer con el dominio seleccionado por la organización. Cuando finalice la incorporación, inicie sesión en [https://llmo.now](https://llmo.now).
+After your organization finalizes the business agreement, you are onboarded to LLM Optimizer with the domain your organization selected. When onboarding finishes, sign in at [https://llmo.now](https://llmo.now).
 
-## Paso 2: Personalizar categorías, temas e indicaciones
+## Paso 2: Personalizar categorías, temas e indicaciones {#step-2-customize-categories-topics-and-prompts}
 
-Una vez incorporado el sitio, podrá ver el análisis de Presencia de marca en función del pequeño conjunto de indicaciones que se generaron automáticamente durante la fase de incorporación. A partir de ahora, podrá personalizar las categorías, los temas y las indicaciones de su marca. Esta configuración se crea en el [panel de control Configuración del cliente](/help/dashboards/customer-configuration.md).
+Una vez incorporado el sitio, podrá ver el análisis de Presencia de marca en función del pequeño conjunto de indicaciones que se generaron automáticamente durante la fase de incorporación. Moving forward, you can customize categories, topics, and prompts for your brand.
+
+### Customer Configuration (classic navigation)
+
+If you are using classic navigation (not the Brand Centric experience), you can customize categories, topics, and prompts for your brand from the [customer configuration dashboard](/help/dashboards/customer-configuration.md).
 
 ![Panel de control Configuración del cliente](/help/overview/assets/prompt-creation.png)
 
-Desde este panel de control, puede realizar lo siguiente:
+En el panel de configuración del cliente, puede:
 
 * Añadir **nuevas categorías** que se ajusten a las prioridades de su empresa Las categorías pueden ser amplias áreas de contenido relevantes para su dominio.
 * Escribir **temas personalizados** o subtemas de los que quiera realizar un seguimiento. Los temas pueden ser temas específicos vinculados a palabras clave sin marca de gran volumen asociadas con su dominio.
@@ -118,13 +126,33 @@ Desde este panel de control, puede realizar lo siguiente:
 >
 > Para obtener información detallada sobre cómo configurar las categorías, temas e indicaciones, consulte la página [Prácticas recomendadas para configurar categorías, temas e indicaciones](/help/overview/best-practices-topics-prompts.md).
 
+### Experiencia centrada en la marca
+
+Para los clientes que se encuentran en la experiencia centrada en la marca, puede agregar categorías, temas y preguntas de la siguiente manera:
+
+* **Categorías** — Vaya a **Administración de marcas** y haga clic en **Categorías**. Las categorías se definen a nivel global y se aplican a todas las marcas en Administración de marcas.
+
+  ![Administración de marcas con categorías en la navegación](/help/assets/brand-centric-experience/llmo-app-shell.png)
+
+* **Temas e indicadores** — Vaya a **Administración de indicadores** para crear temas e indicadores, incluidos indicadores para una marca específica.
+
+  ![Administración de indicadores](/help/assets/brand-centric-experience/prompts-management.png)
+
 ## Paso 3: Información sobre la Presencia de marca
 
 Una vez incorporado el dominio, obtendrá información inicial en la vista Presencia de marca en función de las indicaciones que se generaron automáticamente durante la incorporación. Una vez que haya personalizado sus propias categorías, temas e indicaciones, LLM Optimizer activará automáticamente el análisis de Presencia de marca en función de las indicaciones que haya proporcionado, y los resultados estarán disponibles al cabo de 24 horas.
 
+>[!NOTE]
+>
+> Para los clientes que están en la experiencia centrada en la marca, vaya a **Presencia de marca** y seleccione la marca para la que desee ver la Presencia de marca mediante el menú desplegable de marca. También puedes ver la visibilidad de la marca a un nivel de **Todas las marcas** con esta experiencia.
+
 ## Paso 4: Proporcionar información para el reenvío de registros de CDN {#step-4}
 
-Para desbloquear el tráfico y las perspectivas de Tráfico de referencia del agente, agregue información de reenvío de registro de CDN desde el [panel de configuración del cliente](/help/dashboards/customer-configuration.md#cdn-configuration). Abra la pestaña **Configuración de CDN** y seleccione **CDN integrada**.
+Para desbloquear las perspectivas de tráfico y Tráfico de referencia del agente, registre el reenvío de registros de CDN para que LLM Optimizer pueda leer sus registros de acceso.
+
+### Configuración del cliente (navegación clásica)
+
+Si utiliza la navegación clásica, puede agregar información de reenvío de registros de CDN desde el [panel de configuración del cliente](/help/dashboards/customer-configuration.md#cdn-configuration). Abra la pestaña **Configuración de CDN** y seleccione **CDN integrada**.
 
 ![CDN de configuración del cliente](/help/overview/assets/cc-cdn.png)
 
@@ -136,6 +164,12 @@ O bien, si no se ha añadido ningún proveedor de CDN previamente (tal como se h
 >[!NOTE]
 >Para obtener más información sobre el reenvío de registros al usar una CDN administrada por el cliente (BYOCDN), consulte [Información general sobre el reenvío de registros BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
+### Experiencia centrada en la marca
+
+Para los clientes que están en la experiencia centrada en la marca, puede agregar la información de reenvío de registro de CDN de **Brands Management** de la siguiente manera: abra **Brands Management** y haga clic en la etiqueta **CDN**.
+
+![Gestión de marcas — Reenvío de registros de CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
+
 ## Paso 5: Explorar paneles de control y realizar acciones
 
 Después de proporcionar información para el reenvío de registros de CDN, podrá hacer lo siguiente:
@@ -144,5 +178,8 @@ Después de proporcionar información para el reenvío de registros de CDN, podr
 * Explore los paneles de [Agentic](/help/dashboards/agentic-traffic.md) y [Tráfico de referencia](/help/dashboards/referral-traffic.md), si se ha configurado el reenvío de registros de CDN.
 * Usar [Oportunidades](/help/dashboards/opportunities.md) para identificar contenido y mejoras técnicas.
 * Exportar datos y colaborar con su equipo o invitar a su compañero de trabajo para que utilice el producto.
+
+>[!NOTE]
+> En la experiencia de Brand Centric, acceda a la vista deseada desde la sección de navegación a la izquierda.
 
 Por último, para comprender completamente las capacidades de LLM Optimizer, debería explorar todos los [paneles de control](/help/dashboards/dashboards-overview.md) disponibles.
