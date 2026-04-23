@@ -2,7 +2,7 @@
 title: Prácticas recomendadas para categorías, temas, indicaciones y otros
 description: Optimice las perspectivas de LLM al configurar las categorías, los temas, las indicaciones y otras marcas para rastrear, incluyendo a la competencia, para la monitorización de marcas personalizadas y el análisis de contenido estratégico.
 feature: Best Practices, Customer Configuration
-source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 93%
@@ -26,7 +26,7 @@ En el panel de control [!UICONTROL Configuración del cliente], puede personaliz
 
 De forma predeterminada, los nuevos clientes empiezan en una interfaz centrada y de marca con una configuración basada en la incorporación. En esta nueva interfaz, cada organización comienza con una marca activa y marcas sugeridas adicionales para elegir. Los clientes existentes de LLM Optimizer cambiarán gradualmente a esta experiencia centrada en la marca.
 
-Si está en la experiencia centrada en la marca, **Administración de marcas** es donde define cómo se supervisa y analiza la marca.
+Si se encuentra en la experiencia de Brand Centric, **Brands Management** es donde define cómo se supervisa y analiza su marca.
 
 ![Gestión de marcas — Navegación de aplicaciones (experiencia centrada en las marcas)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
