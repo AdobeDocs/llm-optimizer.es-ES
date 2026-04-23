@@ -2,10 +2,10 @@
 title: Tráfico agéntico
 description: Aprenda a utilizar el panel de control Tráfico agéntico para ver cómo los agentes de IA interactúan con el sitio.
 feature: Agentic Traffic
-source-git-commit: 21c14895ea9c1978332af3d742baacbe53079e88
+source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 94%
+source-wordcount: '1404'
+ht-degree: 89%
 
 ---
 
@@ -25,9 +25,19 @@ Esta página detalla lo siguiente:
 * [Mayores y menores variaciones](#top-bottom-movers)
 * [Análisis de agente de usuario y de rendimiento de URL](#user-url-performance)
 
+If you are on the brand centric experience, navigate to **Agentic Traffic** and select the site for which you want to view the agentic traffic insights.
+
+![Agentic Traffic — site selector (Brand Centric experience)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+
 ## Reenvío de registros de CDN {#cdn-setup}
 
-Sin **reenvío de registros de CDN**, el panel de control Tráfico agéntico está en blanco. Para ver interacciones reales, debe configurar **Reenvío de registros de CDN**.  Al iniciar sesión por primera vez, verá un mensaje tal como se muestra en la siguiente imagen.
+Sin **reenvío de registros de CDN**, el panel de control Tráfico agéntico está en blanco. Para ver interacciones reales, debe configurar **Reenvío de registros de CDN**.
+
+If you are are on the brand centric experience, you can add CDN log forwarding information by navigating to **Brands Management** and clicking on the **CDN** label.
+
+![Brands Management — CDN log forwarding](/help/assets/brand-centric-experience/brands-management-cdn.png)
+
+**Customer Configuration (classic navigation):** On first login, you will see a message as shown in the image below.
 
 ![Configuración de CDN](/help/dashboards/assets/ag-log-forward1.png)
 
@@ -46,13 +56,13 @@ En la ventana **Incorporar proveedor de CDN**:
 Si selecciona **Otro**, tendrá que ponerse en contacto con llmo-now@adobe.com para obtener ayuda.
 
 >[!NOTE]
->Para obtener más información sobre el reenvío de registros al usar una CDN administrada por el cliente (BYOCDN), consulte [Información general sobre el reenvío de registros BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
+>For details regarding log forwarding when using a customer managed CDN (BYOCDN) see [BYOCDN Log Forwarding Overview](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 Una vez activados, los registros se incorporan y el panel de control se rellena con métricas como interacciones totales del agente, tasa de éxito, visitas por mercado, análisis de agente de usuario y rendimiento a nivel de URL.
 
 LLM Optimizer procesa un subconjunto de campos de los registros de CDN. Aunque los nombres de los campos de registro sin procesar varían según el proveedor de CDN, se normalizan y presentan de la siguiente manera:
 
-* URL (parámetros de ruta y consulta)
+* URL (Path and query parameters)
 * Agente de usuario
 * Código de estado
 * Encabezado de referente
@@ -99,7 +109,7 @@ Utilice el gráfico Tendencias de tráfico agéntico para realizar un seguimient
 
 ## Mayores y menores variaciones {#top-bottom-movers}
 
-La vista Desplazamientos superiores e inferiores resalta las direcciones URL con los mayores cambios de una semana a otra en el tráfico auténtico: visitas o visitas de sistemas de IA que acceden a su contenido. **Modificadores principales** muestra las páginas que ganan visibilidad o participación, mientras que **Modificadores inferiores** muestra las direcciones URL con las disminuciones más pronunciadas. Esto le ayuda a identificar rápidamente qué contenido tiende al alza, cuál puede necesitar atención y dónde están cambiando los patrones de detección basados en la IA.
+The Top and Bottom Movers view highlights URLs with the largest week-over-week changes in agentic traffic — visits or hits from AI systems accessing your content. **Top Movers** shows pages gaining visibility or engagement, while **Bottom Movers** reveals the URLs with the steepest declines. Esto le ayuda a identificar rápidamente qué contenido tiende al alza, cuál puede necesitar atención y dónde están cambiando los patrones de detección basados en la IA.
 
 ![Mayores y menores variaciones](/help/dashboards/assets/movers.png)
 

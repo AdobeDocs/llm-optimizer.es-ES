@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 'Impulse su marca con Adobe LLM Optimizer. Realice un seguimiento de las menciones, descubra datos y domine la búsqueda basada en la IA. Tome el control de su visibilidad: empiece a optimizar ahora.'
-source-git-commit: e9eab92835e555f7267f58eea7faa0302c2f1cd0
+source-git-commit: 5e033e9cef05efaf96a6c71ebeae71c533ddd605
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 70%
+source-wordcount: '113'
+ht-degree: 68%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 70%
    + [Otro (carga manual)](/help/overview/log-forwarding/other.md)
 + Recursos adicionales{#resources}
    + Optimizar en Edge{#optimize-at-edge}
-      + [Información general](/help/dashboards/optimize-at-edge/overview.md)
+      + [Información general sobre Optimizar en Edge](/help/dashboards/optimize-at-edge/overview.md)
       + [Recuperación de las claves API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md)
       + [CDN administrada por AEM Cloud Service (rápidamente)](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md)
       + [Rápido (BYOCDN)](/help/dashboards/optimize-at-edge/fastly-byocdn.md)
