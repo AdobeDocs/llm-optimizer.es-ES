@@ -93,7 +93,7 @@ Onboard your brand name and domain to begin using LLM Optimizer.
 
 Se generará un pequeño conjunto de categorías, temas e indicaciones durante la fase de incorporación. El análisis de la presencia de marca de esas indicaciones estará disponible poco después de que se haya incorporado el sitio.
 
-The ability to deploy optimizations at edge is also available. Learn more in [Optimize at Edge — Frequently asked questions](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+The ability to deploy optimizations at edge is also available. Learn more in [Optimize at Edge — Frequently asked questions](https://experienceleague.adobe.com/es/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Additionally, configure [CDN log forwarding](#step-4) for traffic analysis. LLM Optimizer requires Brand Presence data and insights from agentic and referral traffic to identify opportunities and provide prescriptive recommendations that boost AI visibility.
 
