@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 'Impulse su marca con Adobe LLM Optimizer. Realice un seguimiento de las menciones, descubra datos y domine la búsqueda basada en la IA. Tome el control de su visibilidad: empiece a optimizar ahora.'
-source-git-commit: 5e033e9cef05efaf96a6c71ebeae71c533ddd605
+source-git-commit: 34e90bc95aa1d2ffabe8fd06c2c548491dd5c5b7
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 68%
+source-wordcount: '135'
+ht-degree: 61%
 
 ---
 
@@ -24,7 +24,15 @@ ht-degree: 68%
    + [Tráfico agéntico](/help/dashboards/agentic-traffic.md)
    + [Tráfico de referencia](/help/dashboards/referral-traffic.md)
    + [Inspector de URL](/help/dashboards/url-inspector.md)
-   + [Oportunidades](/help/dashboards/opportunities.md)
+   + Oportunidades{#opportunities}
+      + [Oportunidades](/help/dashboards/opportunities-overview.md)
+      + [Errores de tráfico de agente](/help/dashboards/opportunities/agentic-traffic-errors.md)
+      + [Tráfico bloqueado por robots.txt](/help/dashboards/opportunities/traffic-blocked-by-robots.md)
+      + [Recuperar visibilidad del contenido](/help/dashboards/opportunities/recover-content-visibility.md)
+      + [Análisis de Wikipedia](/help/dashboards/opportunities/wikipedia-analysis.md)
+      + [Análisis de Opinión de YouTube](/help/dashboards/opportunities/youtube-sentiment-analysis.md)
+      + [Análisis de Opinión de Reddit](/help/dashboards/opportunities/reddit-sentiment-analysis.md)
+      + [Análisis de Opinión citado](/help/dashboards/opportunities/cited-sentiment-analysis.md)
    + [Configuración del cliente](/help/dashboards/customer-configuration.md)
    + [Colaboración](/help/dashboards/collaboration.md)
 + Reenvío de registro de BYOCDN{#log-forwarding}
