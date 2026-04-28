@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 'Impulse su marca con Adobe LLM Optimizer. Realice un seguimiento de las menciones, descubra datos y domine la búsqueda basada en la IA. Tome el control de su visibilidad: empiece a optimizar ahora.'
-source-git-commit: 34e90bc95aa1d2ffabe8fd06c2c548491dd5c5b7
+source-git-commit: 5504c3b7fe6880a4ea2d8334137d949f87f4e1cf
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 61%
+source-wordcount: '136'
+ht-degree: 60%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 61%
    + [Tráfico de referencia](/help/dashboards/referral-traffic.md)
    + [Inspector de URL](/help/dashboards/url-inspector.md)
    + Oportunidades{#opportunities}
-      + [Oportunidades](/help/dashboards/opportunities-overview.md)
+      + [Resumen de oportunidades](/help/dashboards/opportunities-overview.md)
       + [Errores de tráfico de agente](/help/dashboards/opportunities/agentic-traffic-errors.md)
       + [Tráfico bloqueado por robots.txt](/help/dashboards/opportunities/traffic-blocked-by-robots.md)
       + [Recuperar visibilidad del contenido](/help/dashboards/opportunities/recover-content-visibility.md)
