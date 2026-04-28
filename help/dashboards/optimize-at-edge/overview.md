@@ -2,10 +2,10 @@
 title: Optimizar en Edge
 description: Obtenga información sobre cómo entregar optimizaciones en LLM Optimizer en el perímetro de la CDN sin necesidad de realizar cambios en la creación.
 feature: Opportunities
-source-git-commit: 6395ea8bdaae419d931ecd67f719a524caa66d0f
+source-git-commit: 34e90bc95aa1d2ffabe8fd06c2c548491dd5c5b7
 workflow-type: tm+mt
-source-wordcount: '2301'
-ht-degree: 74%
+source-wordcount: '2315'
+ht-degree: 73%
 
 ---
 
@@ -32,7 +32,7 @@ Optimizar en Edge está concebido para usuarios empresariales en equipos de mark
 
 ### ¿Qué oportunidades se admiten con Optimizar en Edge?
 
-Las oportunidades que pueden mejorar la experiencia web auténtica se admiten con Optimizar en Edge. Obtenga más información acerca de cada oportunidad en la página [Panel de control de oportunidades](/help/dashboards/opportunities.md) y en la sección de oportunidades de la página actual.
+Las oportunidades que pueden mejorar la experiencia web auténtica se admiten con Optimizar en Edge. Obtenga más información acerca de cada oportunidad en la página [Panel de control de oportunidades](/help/dashboards/opportunities-overview.md) y en la sección de oportunidades de la página actual.
 
 ## Incorporación
 
@@ -87,7 +87,7 @@ En la tabla siguiente se presentan las oportunidades que pueden mejorar la exper
 
 | Oportunidad | Tipo | Identificación automática | Sugerencia automática | Optimización automática |
 |---------|----------|----------|----------|----------|
-| Recuperar visibilidad del contenido | Optimización técnica del motor generativo | Detecta páginas donde se oculta contenido crítico a los agentes de IA. Muestra las direcciones URL afectadas y el contenido previsto que se puede recuperar. | Resalta el contenido que puede estar disponible para los agentes de IA y recomienda habilitar el procesamiento previo para esas páginas. | Proporciona una instantánea de HTML totalmente procesada y compatible con IA al tráfico agéntico que recupera el contenido oculto anteriormente. |
+| [Recuperar Visibilidad del contenido](/help/dashboards/opportunities/recover-content-visibility.md) | Optimización técnica del motor generativo | Detecta páginas donde se oculta contenido crítico a los agentes de IA. Muestra las direcciones URL afectadas y el contenido previsto que se puede recuperar. | Resalta el contenido que puede estar disponible para los agentes de IA y recomienda habilitar el procesamiento previo para esas páginas. | Proporciona una instantánea de HTML totalmente procesada y compatible con IA al tráfico agéntico que recupera el contenido oculto anteriormente. |
 | Añadir resúmenes compatibles con LLM | Optimización de contenido | Identifica páginas largas o complejas que carecen de resúmenes concisos a nivel de página o sección, lo que dificulta que la inteligencia artificial las escanee y comprenda rápidamente. | Recomienda resúmenes cortos generados por IA a nivel de página y sección que capturan contenido clave. | Inserta los resúmenes en las secciones relevantes de HTML, lo que mejora la forma en que los modelos interpretan y describen el contenido de la página. |
 | Añadir preguntas frecuentes relevantes | Optimización de contenido | Detecta lagunas de intención en el contenido de la página existente que podrían beneficiarse de las preguntas frecuentes. | Sugiere contenido de preguntas frecuentes generado por IA alineado con la intención del usuario y los temas existentes. | Inserta contenido de preguntas frecuentes en el HTML, lo que hace que las páginas sean más detectables y relevantes en las respuestas basadas en IA. |
 | Simplificar contenido complejo | Optimización de contenido | Indica las páginas con texto complejo que puede dificultar la comprensión de la IA. | Proporciona versiones simplificadas de texto complejo generadas por IA preservando al mismo tiempo el significado original. | Reescribe secciones complejas en la página, lo que mejora la legibilidad de la IA. |
@@ -109,6 +109,8 @@ Esto garantiza que la página sea primero totalmente visible para los agentes de
 
 >[!IMPORTANT]
 >Esta funcionalidad de procesamiento previo se aplica automáticamente a todas las oportunidades que se presentan a continuación cuando se implementa con Optimizar en Edge para garantizar que la página sea totalmente visible para los agentes de IA.
+
+Consulte [Recuperar Visibilidad del contenido](/help/dashboards/opportunities/recover-content-visibility.md) para ver una guía de panel, los pasos de implementación y las preguntas más frecuentes.
 
 ### Añadir resúmenes compatibles con LLM
 

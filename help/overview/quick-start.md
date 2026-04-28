@@ -2,7 +2,7 @@
 title: Inicio rápido
 description: Aprenda a incorporar su nombre de marca y dominio, activar la versión de prueba desde Experience Hub o Experience Cloud y completar la configuración de Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 37%
@@ -178,7 +178,7 @@ Después de proporcionar información para el reenvío de registros de CDN, podr
 
 * Ver el panel de control [Presencia de marca](/help/dashboards/brand-presence.md), ver su puntuación de visibilidad y realizar un seguimiento de su rendimiento en relación con otras marcas.
 * Explore los paneles de [Agentic](/help/dashboards/agentic-traffic.md) y [Tráfico de referencia](/help/dashboards/referral-traffic.md), si se ha configurado el reenvío de registros de CDN.
-* Usar [Oportunidades](/help/dashboards/opportunities.md) para identificar contenido y mejoras técnicas.
+* Usar [Oportunidades](/help/dashboards/opportunities-overview.md) para identificar contenido y mejoras técnicas.
 * Exportar datos y colaborar con su equipo o invitar a su compañero de trabajo para que utilice el producto.
 
 >[!NOTE]

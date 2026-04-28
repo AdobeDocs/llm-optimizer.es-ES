@@ -2,7 +2,7 @@
 title: Prácticas recomendadas en LLM Optimizer
 description: Descubra las prácticas recomendadas para la optimización de LLM con el fin de impulsar la visibilidad de la marca en la búsqueda por IA. Información para comparar y optimizar el contenido
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 100%
@@ -86,7 +86,7 @@ La optimización in situ mejora el contenido que posee para mejorar la visibilid
 
 >[!TIP]
 >
->LLM Optimizer sugiere oportunidades de optimización en el sitio y fuera del sitio en el panel de control [Oportunidades](/help/dashboards/opportunities.md). Estas oportunidades son específicas para su sitio. Muchas de estas sugerencias se pueden implementar directamente en su sitio mediante LLM Optimizer.
+>LLM Optimizer sugiere oportunidades de optimización en el sitio y fuera del sitio en el panel de control de [Oportunidades](/help/dashboards/opportunities-overview.md). Estas oportunidades son específicas para su sitio. Muchas de estas sugerencias se pueden implementar directamente en su sitio mediante LLM Optimizer.
 
 Estas son algunas prácticas recomendadas de optimización:
 
@@ -108,7 +108,7 @@ Estas son algunas prácticas recomendadas de optimización:
 
 4. Monitorización e iteración
 
-   * Use el [panel de control de oportunidades](/help/dashboards/opportunities.md) para identificar recomendaciones y seguirlas.
+   * Use el [panel de control de oportunidades](/help/dashboards/opportunities-overview.md) para identificar recomendaciones y seguirlas.
    * Rastree la puntuación de visibilidad, la opinión y la frecuencia de citas.
    * Ajuste en función de la actividad de otros (incluidos los competidores) y las tendencias de indicaciones.
 
@@ -118,7 +118,7 @@ La optimización fuera del sitio se centra en mejorar la visibilidad de su marca
 
 >[!TIP]
 >
->LLM Optimizer sugiere oportunidades de optimización en el sitio y fuera del sitio en el panel de control de [Oportunidades](/help/dashboards/opportunities.md). Estas oportunidades son específicas para su sitio. Muchas de estas sugerencias se pueden implementar directamente en su sitio mediante LLM Optimizer.
+>LLM Optimizer sugiere oportunidades de optimización en el sitio y fuera del sitio en el panel de control de [Oportunidades](/help/dashboards/opportunities-overview.md). Estas oportunidades son específicas para su sitio. Muchas de estas sugerencias se pueden implementar directamente en su sitio mediante LLM Optimizer.
 
 
 Canales clave fuera del sitio:
@@ -170,7 +170,7 @@ Estos son los pasos que puede seguir para monitorizar el progreso:
    * Utilice funciones de atribución para conectar las mejoras de visibilidad al tráfico, la participación y las conversiones. Las funciones de atribución de Adobe LLM Optimizer le ayudan a conectar mejoras en las métricas de visibilidad (menciones, citas, opinión) con resultados comerciales reales como el tráfico del sitio, la participación del usuario y las conversiones. Esto demuestra el retorno de la inversión en sus esfuerzos de optimización.
    * Realice un seguimiento de los cambios en el tráfico agéntico y de referencia para validar el ROI de la optimización.
 1. Mejore su contenido
-   * Use el [panel de control Oportunidades](/help/dashboards/opportunities.md) de LLM Optimizer para identificar y realizar cambios inmediatos y recomendados específicamente en su sitio. Consulte las [Oportunidades](/help/dashboards/opportunities.md) (luego mida los resultados). Revise la sección de oportunidades regularmente y tome medidas sobre las recomendaciones proporcionadas.
+   * Use el [panel de control Oportunidades](/help/dashboards/opportunities-overview.md) de LLM Optimizer para identificar y realizar cambios inmediatos y recomendados específicamente en su sitio. Consulte las [Oportunidades](/help/dashboards/opportunities-overview.md) (luego mida los resultados). Revise la sección de oportunidades regularmente y tome medidas sobre las recomendaciones proporcionadas.
    * Priorice las páginas con una visibilidad en declive.
    * Actualice el sitio web y otro contenido para que sea más relevante para las indicaciones que desea dirigir.
    * Añada una sección de preguntas más frecuentes a sus páginas que respondan a preguntas comunes que la gente pueda hacer.
