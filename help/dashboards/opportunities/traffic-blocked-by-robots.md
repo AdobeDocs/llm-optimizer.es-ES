@@ -1,0 +1,105 @@
+---
+title: Tráfico bloqueado por robots.txt
+description: Descubra cómo LLM Optimizer detecta cuándo el archivo robots.txt bloquea a los agentes de IA el acceso al contenido y cómo solucionarlo.
+feature: Opportunities
+source-git-commit: fa8b994aa55869cf7f2607e792acc4e8abc213e7
+workflow-type: tm+mt
+source-wordcount: '817'
+ht-degree: 1%
+
+---
+
+
+# Tráfico bloqueado por robots.txt
+
+El archivo `robots.txt` controla qué rastreadores pueden acceder al sitio. Cuando los agentes de IA están bloqueados selectivamente de contenido que de otra manera es accesible para los rastreadores generales, esos agentes no pueden indexar ni citar ese contenido reduciendo directamente la visibilidad de su marca en las respuestas generadas por IA.
+
+La oportunidad Tráfico bloqueado por robots.txt analiza el archivo `robots.txt` en relación con las páginas principales e identifica las reglas que impiden que los agentes de IA accedan al contenido al que deberían poder acceder. Muestra los resultados en el nivel de línea individual `robots.txt` para que pueda revisar y actualizar directivas específicas en lugar de auditar todo el archivo manualmente.
+
+De un vistazo, muestra dos métricas clave:
+
+- **Direcciones URL totales**: número de direcciones URL afectadas por reglas de bloqueo en su `robots.txt`.
+- **Agentes bloqueados**: número de agentes de inteligencia artificial bloqueados para acceder a esas direcciones URL.
+
+![Tráfico bloqueado por robots.txt en el panel](/help/dashboards/opportunities/assets/traffic-blocked-by-robots-overview.png)
+
+## Funcionamiento
+
+LLM Optimizer recupera el archivo `robots.txt` y comprueba las páginas principales con seis agentes de usuario principales del agente de IA:
+
+- ClaudeBot
+- GPTBot
+- OAI-SearchBot
+- OAI-User
+- PerplexityBot
+- Perplejidad-Usuario
+
+Una dirección URL solo se marca cuando **se permite para el agente de usuario comodín (`*`), pero no se permite para un agente de IA específico**. No se informa del bloqueo de mantas, donde todos los rastreadores están igualmente restringidos. La auditoría se dirige específicamente a la exclusión selectiva de agentes de IA, que representa la conclusión más procesable para GEO.
+
+>[!NOTE]
+>Esta oportunidad no utiliza IA para desarrollar o entregar sugerencias. Los resultados se basan por completo en el análisis directo del archivo `robots.txt`.
+
+Los resultados se muestran en dos fichas: **robots.txt** y **Detalles de tráfico bloqueados por el agente**.
+
+## robots.txt
+
+Esta ficha muestra el archivo `robots.txt` completo con directivas de bloqueo resaltadas en rojo. Cada línea resaltada representa una regla que bloquea selectivamente a uno o más agentes de IA el acceso a una URL a la que, de lo contrario, se puede acceder públicamente.
+
+Vista de ![robots.txt con directivas de bloqueo resaltadas](/help/dashboards/opportunities/assets/traffic-blocked-by-robots-robotstxt.png)
+
+Al hacer clic en una directiva resaltada, se muestra más información sobre su impacto y la corrección sugerida.
+
+## Detalles de tráfico bloqueado por agente
+
+Esta pestaña proporciona un desglose del tráfico bloqueado organizado por el agente de IA. Para cada agente bloqueado, se muestra:
+
+- **Descripción del problema**: Una explicación de qué agente se está bloqueando y por qué importa.
+- **Resolución**: instrucciones para abrir el archivo `robots.txt` y revisar el número de línea específico que aparece junto a cada dirección URL afectada.
+- Una tabla de direcciones URL afectadas con **Line**, **Rank** y **URL** para cada página bloqueada.
+
+Cada agente (por ejemplo, OAI-User, GPTBot, OAI-SearchBot) tiene su propia subpestaña para que pueda dirigir bloques por agente.
+
+## Cómo solucionarlo
+
+Para resolver un hallazgo de agente bloqueado, abra el archivo `robots.txt` y busque el número de línea que aparece junto a cada dirección URL afectada en la pestaña Detalles de tráfico bloqueado por agente. Actualice o elimine la directiva de no permitir para el agente de IA correspondiente para permitir el acceso a la URL afectada.
+
+Por ejemplo, para desbloquear GPTBot de una página específica, quite o actualice la directiva:
+
+```
+User-agent: GPTBot
+Disallow: /blog/cold-brewing-101
+```
+
+Una vez que el archivo `robots.txt` se haya actualizado y vuelto a publicar, LLM Optimizer detectará el cambio en la siguiente ejecución de auditoría y marcará la sugerencia como resuelta.
+
+## Probar en la demostración
+
+Vea la oportunidad Traffic Blocked by robots.txt en acción utilizando el entorno de demostración de Frescopa.
+
+[Ver Tráfico Bloqueado por robots.txt en la demostración de Frescopa](https://play.llmo.now/org/demo-org/opportunities/blocked-urls-llm-agents)
+
+## Preguntas frecuentes
+
+**¿Por qué el bloqueo de agentes de IA es importante para GEO?**
+
+La optimización generativa del motor requiere que los rastreadores de IA puedan acceder al contenido del sitio e indexarlo. Bloquear agentes de IA evita directamente que sus páginas aparezcan en respuestas generadas por IA, lo que reduce las citas, las menciones de la marca y la visibilidad general de la IA. Incluso una sola página de alto tráfico bloqueada puede representar una pérdida significativa de exposición de marca impulsada por IA.
+
+**¿Cuál es la diferencia entre el bloqueo general y el bloqueo selectivo?**
+
+El bloqueo de la manta significa que todos los rastreadores, incluidos los rastreadores web generales, están restringidos desde una página. El bloqueo selectivo significa que los rastreadores generales pueden acceder a la página, pero los agentes de IA específicos no. Esta oportunidad solo indica el bloqueo selectivo porque representa una exclusión intencionada o accidental de los agentes de IA del contenido que, de lo contrario, es público, y es el hallazgo más procesable.
+
+**¿Qué agentes de IA comprueba LLM Optimizer?**
+
+LLM Optimizer comprueba ClaudeBot, GPTBot, OAI-SearchBot, OAI-User, PerplexityBot y Perplexity-User.
+
+**¿Qué sucede si quiero bloquear intencionalmente a ciertos agentes de IA?**
+
+Puede revisar cada directiva marcada y elegir mantener el bloque intencionadamente. Las sugerencias omitidas se conservan en las ejecuciones de auditoría y no se volverán a mostrar a menos que el archivo `robots.txt` cambie y vuelva a aparecer la regla.
+
+**¿Cómo realiza LLM Optimizer el seguimiento de los cambios en mi archivo robots.txt a lo largo del tiempo?**
+
+LLM Optimizer usa el hash para hacer un seguimiento del contenido de `robots.txt` entre ejecuciones. Si vuelve a aparecer una regla de bloqueo resuelta anteriormente (por ejemplo, después de una actualización de `robots.txt`), se volverá a mostrar como una nueva sugerencia.
+
+**¿Cómo se determinan las páginas principales?**
+
+Las páginas provienen de una combinación de sus páginas de SEO de mayor tráfico, las principales URL visitadas por el agente de IA de los registros de CDN y cualquier URL personalizada especificada en la configuración del sitio.
