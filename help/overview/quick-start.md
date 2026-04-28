@@ -95,7 +95,7 @@ Incorpore su nombre de marca y dominio para empezar a utilizar LLM Optimizer.
 
 Se generará un pequeño conjunto de categorías, temas e indicaciones durante la fase de incorporación. El análisis de la presencia de marca de esas indicaciones estará disponible poco después de que se haya incorporado el sitio.
 
-También está disponible la capacidad de implementar optimizaciones en Edge. Obtenga más información en [Optimizar en Edge — Preguntas más frecuentes](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+También está disponible la capacidad de implementar optimizaciones en Edge. Obtenga más información en [Optimizar en Edge — Preguntas más frecuentes](https://experienceleague.adobe.com/es/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Además, configure [reenvío de registros de CDN](#step-4) para el análisis del tráfico. LLM Optimizer requiere datos de Presencia de marca y perspectivas de los agentes y el tráfico de referencia para identificar oportunidades y proporcionar recomendaciones prescriptivas que aumenten la visibilidad de la IA.
 
