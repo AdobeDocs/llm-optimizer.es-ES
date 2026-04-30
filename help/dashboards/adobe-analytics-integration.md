@@ -99,7 +99,7 @@ Durante la configuración, puede definir qué grupo de informes y qué dimensió
 
 ### Cómo se identifica el tráfico LLM
 
-El tráfico originado en LLM se identifica mediante el tipo de referente de Adobe Analytics [Herramientas de inteligencia artificial aplicada a la conversación](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/referrer-type#conversational-ai-tools).
+El tráfico originado en LLM se identifica mediante el tipo de referente de Adobe Analytics [Herramientas de inteligencia artificial aplicada a la conversación](https://experienceleague.adobe.com/es/docs/analytics/components/dimensions/referrer-type#conversational-ai-tools).
 
 ### Datos introducidos {#data-ingested}
 
