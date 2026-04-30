@@ -2,17 +2,17 @@
 title: 'Optimizar en Edge: CloudFront (BYOCDN)'
 description: Obtenga información sobre cómo configurar CloudFront BYOCDN para optimizar en Edge en LLM Optimizer.
 feature: Opportunities
-source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
+source-git-commit: 6cf66563c0ea043ab7f67e44be29b1e8d29d83d9
 workflow-type: tm+mt
-source-wordcount: '2207'
-ht-degree: 1%
+source-wordcount: '2217'
+ht-degree: 8%
 
 ---
 
 
 # CloudFront (BYOCDN)
 
-Esta configuración enruta el tráfico auténtico (solicitudes de bots de IA y agentes de usuario LLM) al servicio back-end de Edge Optimize (`live.edgeoptimize.net`). Los visitantes humanos y los bots de SEO se siguen sirviendo desde su origen como de costumbre. Para probar la configuración, una vez completada la instalación, busque el encabezado `x-edgeoptimize-request-id` en la respuesta.
+Esta configuración enruta el tráfico agéntico (solicitudes de bots de IA y agentes de usuario LLM) al servicio de back-end de Edge Optimize (`live.edgeoptimize.net`). Los visitantes humanos y los bots de SEO se siguen sirviendo desde su origen como de costumbre. Para probar la configuración, una vez completados los ajustes, busque el encabezado `x-edgeoptimize-request-id` en la respuesta.
 
 **Requisitos previos**
 
@@ -20,7 +20,7 @@ Antes de establecer la configuración de CloudFront, asegúrese de lo siguiente:
 
 * Una distribución existente de CloudFront que sirve a su sitio web.
 * Permisos de AWS IAM para crear funciones de Lambda, funciones de IAM, distribuciones de CloudFront y directivas de caché.
-* Una clave de API de Edge Optimize recuperada de la interfaz de usuario de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* Haber recuperado una clave de API de Edge Optimize de la IU de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Opcional) Para probar el enrutamiento de ensayo, consulte [Clave de API de ensayo](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Paso 1: Crear origen de optimización de Edge**
@@ -41,6 +41,7 @@ Antes de establecer la configuración de CloudFront, asegúrese de lo siguiente:
    |--------|-------|
    | `x-edgeoptimize-api-key` | Su clave de API |
    | `x-forwarded-host` | `www.example.com` |
+   | `x-edgeoptimize-fetcher-key` | Su clave de recuperación (solo en el caso de la inclusión en la lista de permitidos de WAF) |
 
    Reemplace `www.example.com` por su dominio real del sitio web y `Your API key` por la clave de API de Edge Optimize proporcionada por su representante de Adobe.
 
@@ -265,14 +266,14 @@ La función creada automáticamente viene con una directiva `AWSLambdaBasicExecu
 
 Envíe una solicitud con un agente de usuario de bots auténtico. En la **primera solicitud**, Edge Optimize puede devolver una respuesta proxy (no optimizada) mientras procesa y almacena en caché la página. Esto se puede identificar mediante el encabezado `x-edgeoptimize-proxy: 1` de la respuesta.
 
-Simule una solicitud de bot de IA con un user-agent auténtico:
+Simule una solicitud de bot de IA con un agente de usuario agéntico:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
 
-Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`, que confirma que la solicitud se enrutó a través de Edge Optimize:
+Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`, que confirma que la solicitud se enrutó mediante Edge Optimize:
 
 ```
 < HTTP/2 200
@@ -281,7 +282,7 @@ Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`, que co
 
 **2. Probar el tráfico humano (NO debería verse afectado)**
 
-Simule una solicitud normal de explorador humano:
+Simule una solicitud normal de un explorador:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
@@ -290,11 +291,11 @@ curl -svo /dev/null https://www.example.com/page.html \
 
 La respuesta **no** debe contener el encabezado `x-edgeoptimize-request-id`. El contenido de la página y el tiempo de respuesta deben ser idénticos al de antes de habilitar Optimizar en Edge.
 
-**3. Cómo diferenciar los dos escenarios**
+**3. Cómo diferenciar entre dos escenarios**
 
 | Encabezado | Tráfico de bots (optimizado) | Tráfico humano (no afectado) |
 |---|---|---|
-| `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único. | Ausente |
+| `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único | Ausente |
 | `x-edgeoptimize-fo` | Solo está presente si se produjo la conmutación por error (valor: `1`) | Ausente |
 
 {{verify-routing-status-in-ui}}
