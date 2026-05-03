@@ -1,25 +1,25 @@
 ---
 title: 'Optimizar en Edge: Akamai (BYOCDN)'
-description: Obtenga información sobre cómo configurar Akamai BYOCDN para optimizar en Edge en LLM Optimizer.
+description: Obtenga información sobre cómo configurar Akamai BYOCDN para Optimizar en Edge en LLM Optimizer.
 feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 10%
+ht-degree: 62%
 
 ---
 
 
 # Akamai (BYOCDN)
 
-Esta configuración enruta el tráfico auténtico (solicitudes de bots de IA y agentes de usuario LLM) al servicio back-end de Edge Optimize (`live.edgeoptimize.net`). Los visitantes humanos y los bots de SEO se siguen sirviendo desde su origen como de costumbre. Para probar la configuración, una vez completada la instalación, busque el encabezado `x-edgeoptimize-request-id` en la respuesta.
+Esta configuración enruta el tráfico agéntico (solicitudes de bots de IA y agentes de usuario LLM) al servicio de back-end de Edge Optimize (`live.edgeoptimize.net`). Los visitantes humanos y los bots de SEO se siguen sirviendo desde su origen como de costumbre. Para probar la configuración, una vez completados los ajustes, busque el encabezado `x-edgeoptimize-request-id` en la respuesta.
 
 **Requisitos previos**
 
-Antes de configurar las reglas del Administrador de propiedades de Akamai, asegúrese de lo siguiente:
+Antes de configurar las reglas del Administrador de propiedades de Akamai, asegúrese de tener:
 
 * Acceso al Administrador de propiedades de Akamai para su dominio.
-* Una clave de API de Edge Optimize recuperada de la interfaz de usuario de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* Haber recuperado una clave de API de Edge Optimize de la IU de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Opcional) Para probar el enrutamiento de ensayo, consulte [Clave de API de ensayo](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Configuración**
@@ -57,7 +57,7 @@ Establecer origen como `live.edgeoptimize.net` y hacer coincidir SAN con `*.edge
 
 **3. Establecer variable de clave de caché**
 
-Establecer la variable de clave de caché `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` en `LLMCLIENT=TRUE;X_FORWARDED_HOST={{builtin.AK_HOST}}`
+Establecer la variable de la clave de caché `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` en `LLMCLIENT=TRUE;X_FORWARDED_HOST={{builtin.AK_HOST}}`
 
 ![Establecer variable de clave de caché](/help/assets/optimize-at-edge/akamai-step3-cachekey.png)
 
@@ -92,17 +92,17 @@ Establezca los siguientes encabezados de solicitud entrantes:
 
 ![Modificación de ID de caché](/help/assets/optimize-at-edge/akamai-step7-cacheid.png)
 
-**8. Modificar encabezados de solicitud salientes**
+**8. Modificar los encabezados de solicitud salientes**
 
 Establecer el encabezado `x-forwarded-host` en `{{builtin.AK_HOST}}`
 
-![Modificar encabezados de solicitud de salida](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
+![Modificar encabezados de solicitudes salientes](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
 
 **9. Conmutación por error del sitio**
 
-La configuración de la conmutación por error del sitio consta de dos partes: el comportamiento de la conmutación por error (configurado dentro de la regla de enrutamiento principal de optimización en el perímetro) y una regla de encabezado de prueba de conmutación por error independiente.
+La configuración de la conmutación por error del sitio consta de dos partes: el comportamiento de la conmutación por error (configurado dentro de la regla de enrutamiento principal de Optimizar en Edge) y una regla de encabezado de prueba de conmutación por error independiente.
 
-**9a. Comportamiento de conmutación por error del sitio (dentro de la regla de enrutamiento principal de optimización en el perímetro)**
+**9a. Comportamiento de conmutación por error del sitio (dentro de la regla de enrutamiento principal de Optimizar en Edge)**
 
 Dentro de la regla de enrutamiento principal, configure el comportamiento de conmutación por error del sitio y el fragmento XML avanzado de la siguiente manera:
 
@@ -112,7 +112,7 @@ Dentro de la regla de enrutamiento principal, configure el comportamiento de con
 
 ![Conmutación por error del sitio](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
-Agregue el encabezado de solicitud `x-edgeoptimize-request` con el valor `fo` mediante XML avanzado:
+Añada el encabezado de la solicitud `x-edgeoptimize-request` con el valor `fo` mediante XML avanzado:
 
 ```
 <forward:availability.fail-action2>
@@ -126,11 +126,11 @@ Agregue el encabezado de solicitud `x-edgeoptimize-request` con el valor `fo` me
 
 ![Comportamientos de conmutación por error](/help/assets/optimize-at-edge/akamai-step9-failover-behaviors.png)
 
-**9b. Regla de encabezado de prueba de conmutación por error (regla del mismo nivel)**
+**9b. Regla del encabezado de la prueba de conmutación por error (regla del mismo nivel)**
 
 >[!IMPORTANT]
 >
->Cree la regla **EdgeOptimize Failover - Test Header** como **hermano** (en el mismo nivel) de las reglas de enrutamiento: **no** anidadas en ellas. En el árbol de reglas del Administrador de propiedades de Akamai, la jerarquía debe tener un aspecto similar al siguiente:
+>Cree la regla **Conmutación por error de Edge Optimize: encabezado de la prueba** como **similar** (en el mismo nivel) de las reglas de enrutamiento: **no** anidadas en ellas. En el árbol de reglas del Administrador de propiedades de Akamai, la jerarquía debe tener un aspecto similar al siguiente:
 >
 >```
 >▼ Parent Rule
@@ -138,19 +138,19 @@ Agregue el encabezado de solicitud `x-edgeoptimize-request` con el valor `fo` me
 >       EdgeOptimize Failover - Test Header       ← sibling, same level
 >```
 >
->Esto garantiza que la regla de encabezado de prueba de conmutación por error se evalúe para **todas** las reglas de enrutamiento, no solo una.
+>Esto garantiza que la regla del encabezado de la prueba de conmutación por error se evalúe para **todas** las reglas de enrutamiento, no solo una.
 >
 >Asegúrese también de que la regla **Optimizar en enrutamiento de Edge** no se anule con ninguna regla que coincida posteriormente y que cambie el origen, el comportamiento del almacenamiento en caché o el ID de caché para las mismas solicitudes. Si otra regla coincidente restablece estos comportamientos, es posible que el enrutamiento o el almacenamiento en caché de Optimize at Edge no funcione según lo esperado.
 
-Si el valor del encabezado de solicitud `x-edgeoptimize-request` es `fo`, establezca el encabezado de respuesta saliente `x-edgeoptimize-fo` en `true`.
+Si el valor del encabezado de la solicitud `x-edgeoptimize-request` es `fo`, establezca el encabezado de la respuesta saliente `x-edgeoptimize-fo` en `true`.
 
 ![Reglas de conmutación por error](/help/assets/optimize-at-edge/akamai-step9-failover-rules.png)
 
-La conmutación por error del sitio garantiza que si Edge Optimize devuelve un error `4XX` o `5XX`, la solicitud se redirigirá automáticamente a su origen predeterminado para que el usuario final siga recibiendo una respuesta.
+La conmutación por error del sitio garantiza que si Edge Optimize devuelve un error `4XX` o `5XX`, la solicitud se redirigirá de nuevo automáticamente a su origen predeterminado para que el usuario final siga recibiendo una respuesta.
 
 | Escenario | Comportamiento |
 | --- | --- |
-| Edge Optimize devuelve `2XX` | La respuesta optimizada se sirve al cliente. |
+| Edge Optimize devuelve `2XX` | Se sirve una respuesta optimizada al cliente. |
 | Edge Optimize devuelve `4XX` o `5XX` | La solicitud se redirige de nuevo al origen predeterminado. |
 
 **Verificar la configuración**
@@ -159,14 +159,14 @@ Una vez completada la configuración, compruebe que el tráfico de bots se enrut
 
 **1. Probar el tráfico de bots (debe optimizarse)**
 
-Simule una solicitud de bot de IA con un user-agent auténtico:
+Simule una solicitud de bot de IA con un agente de usuario agéntico:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
 
-Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`, que confirma que la solicitud se enrutó a través de Edge Optimize:
+Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`, que confirma que la solicitud se enrutó mediante Edge Optimize:
 
 ```
 < HTTP/2 200
@@ -175,7 +175,7 @@ Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`, que co
 
 **2. Probar el tráfico humano (NO debería verse afectado)**
 
-Simule una solicitud normal de explorador humano:
+Simule una solicitud normal de un explorador:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
@@ -184,11 +184,11 @@ curl -svo /dev/null https://www.example.com/page.html \
 
 La respuesta **no** debe contener el encabezado `x-edgeoptimize-request-id`. El contenido de la página y el tiempo de respuesta deben ser idénticos al de antes de habilitar Optimizar en Edge.
 
-**3. Cómo diferenciar los dos escenarios**
+**3. Cómo diferenciar entre dos escenarios**
 
 | Encabezado | Tráfico de bots (optimizado) | Tráfico humano (no afectado) |
 |---|---|---|
-| `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único. | Ausente |
+| `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único | Ausente |
 | `x-edgeoptimize-fo` | Solo está presente si se produjo la conmutación por error (valor: `1`) | Ausente |
 
 {{verify-routing-status-in-ui}}

@@ -1,18 +1,18 @@
 ---
-title: 'Optimizar en Edge: CDN administrada por AEM Cloud Service (rápidamente)'
-description: Aprenda a configurar la CDN administrada de AEM Cloud Service (Fastly) para optimizar en Edge en LLM Optimizer.
+title: 'Optimizar en Edge: CDN administrada por AEM Cloud Service (Fastly)'
+description: Obtenga información sobre cómo configurar la CDN administrada de AEM Cloud Service (Fastly) para Optimizar en Edge en LLM Optimizer.
 feature: Opportunities
 source-git-commit: 184d6008c2579014c6ff453e8bfff4bb898f4b82
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
 
-# CDN administrada por AEM Cloud Service (rápidamente)
+# CDN administrada por AEM Cloud Service (Fastly)
 
-Esta configuración enruta el tráfico auténtico (solicitudes de bots de IA y agentes de usuario LLM) al servicio back-end de Edge Optimize (`live.edgeoptimize.net`). Los visitantes humanos y los bots de SEO se siguen sirviendo desde su origen como de costumbre. Para probar la configuración, una vez completada la instalación, compruebe el encabezado `x-edgeoptimize-request-id` en la respuesta.
+Esta configuración enruta el tráfico agéntico (solicitudes de bots de IA y agentes de usuario LLM) al servicio de back-end de Edge Optimize (`live.edgeoptimize.net`). Los visitantes humanos y los bots de SEO se siguen sirviendo desde su origen como de costumbre. Para probar la configuración, una vez completada la instalación, compruebe el encabezado `x-edgeoptimize-request-id` en la respuesta.
 
 ## Requisitos previos
 
@@ -28,11 +28,11 @@ Para acceder a esta función:
 
 ## Pasos para activar el enrutamiento
 
-Para empezar a enrutar el tráfico auténtico a Edge Optimize:
+Para empezar a enrutar el tráfico agéntico a Edge Optimize:
 
 1. En LLM Optimizer, abra **Configuración del cliente** y seleccione la pestaña **Configuración de CDN**.
 
-   ![Ir a la configuración del cliente](/help/assets/optimize-at-edge/cs-fastly-prereq-customer-config-nav.png)
+   ![Vaya a Configuración del cliente](/help/assets/optimize-at-edge/cs-fastly-prereq-customer-config-nav.png)
 
 2. Busque la sección **Implementar optimizaciones en agentes de IA**. Haga clic en el botón **Habilitar**.
 
@@ -52,7 +52,7 @@ Para empezar a enrutar el tráfico auténtico a Edge Optimize:
 
    Para deshabilitar el enrutamiento en cualquier momento, vuelva a la sección **Implementar optimizaciones en los agentes de IA** en la pestaña **Configuración de CDN** y haga clic en **Deshabilitar**.
 
-Además, si necesita ayuda con los pasos anteriores, póngase en contacto con el equipo de la cuenta de Adobe o con `llmo-at-edge@adobe.com`.
+Además, si necesita ayuda con los pasos anteriores, póngase en contacto con el equipo de cuentas de Adobe o con `llmo-at-edge@adobe.com`.
 
 ## Resolución de problemas
 
@@ -106,14 +106,14 @@ Una vez completada la configuración de enrutamiento, puede verificar de forma o
 
 1. **Probar tráfico de bots (debe optimizarse)**
 
-   Simule una solicitud de bot de IA con un user-agent auténtico:
+   Simule una solicitud de bot de IA con un agente de usuario agéntico:
 
    ```
    curl -svo /dev/null https://www.example.com/page.html \
      --header "user-agent: chatgpt-user"
    ```
 
-   Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`, que confirma que la solicitud se enrutó a través de Edge Optimize:
+   Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`, que confirma que la solicitud se enrutó mediante Edge Optimize:
 
    ```
    < HTTP/2 200
@@ -122,7 +122,7 @@ Una vez completada la configuración de enrutamiento, puede verificar de forma o
 
 2. **Probar el tráfico humano (NO debería verse afectado)**
 
-   Simule una solicitud normal de explorador humano:
+   Simule una solicitud normal de un explorador:
 
    ```
    curl -svo /dev/null https://www.example.com/page.html \
@@ -135,7 +135,7 @@ Una vez completada la configuración de enrutamiento, puede verificar de forma o
 
    | Encabezado | Tráfico de bots (optimizado) | Tráfico humano (no afectado) |
    |---|---|---|
-   | `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único. | Ausente |
+   | `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único | Ausente |
    | `x-edgeoptimize-fo` | Solo está presente si se produjo la conmutación por error (valor: `1`) | Ausente |
 
 4. **Comprobar el estado de enrutamiento en LLM Optimizer**
