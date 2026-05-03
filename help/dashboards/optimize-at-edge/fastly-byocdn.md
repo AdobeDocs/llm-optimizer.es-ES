@@ -1,30 +1,30 @@
 ---
 title: 'Optimizar en Edge: Fastly (BYOCDN)'
-description: Aprenda a configurar Fastly BYOCDN para optimizar en Edge en LLM Optimizer.
+description: Obtenga información sobre cómo configurar Fastly BYOCDN para Optimizar en Edge en LLM Optimizer.
 feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 6%
+ht-degree: 93%
 
 ---
 
 
-# Rápido (BYOCDN)
+# Fastly (BYOCDN)
 
-Esta configuración enruta el tráfico auténtico (solicitudes de bots de IA y agentes de usuario LLM) al servicio back-end de Edge Optimize (`live.edgeoptimize.net`). Los visitantes humanos y los bots de SEO se siguen sirviendo desde su origen como de costumbre. Para probar la configuración, una vez completada la instalación, busque el encabezado `x-edgeoptimize-request-id` en la respuesta.
+Esta configuración enruta el tráfico agéntico (solicitudes de bots de IA y agentes de usuario LLM) al servicio de back-end de Edge Optimize (`live.edgeoptimize.net`). Los visitantes humanos y los bots de SEO se siguen sirviendo desde su origen como de costumbre. Para probar la configuración, una vez completados los ajustes, busque el encabezado `x-edgeoptimize-request-id` en la respuesta.
 
 **Requisitos previos**
 
-Antes de configurar las reglas de VCL de Fastly, asegúrese de lo siguiente:
+Antes de configurar las reglas de VCL de Fastly, asegúrese de:
 
-* Acceso a Fastly para su dominio.
-* Una clave de API de Edge Optimize recuperada de la interfaz de usuario de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* Tener acceso a Fastly para su dominio.
+* Haber recuperado una clave de API de Edge Optimize de la IU de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Opcional) Para probar el enrutamiento de ensayo, consulte [Clave de API de ensayo](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Configuración**
 
-Agregue los tres fragmentos de VCL siguientes al servicio Fastly. Estos fragmentos administran el enrutamiento de solicitudes auténticas a Edge Optimize, la separación de claves de caché y la conmutación por error al origen predeterminado.
+Añada los tres fragmentos de VCL siguientes a su servicio de Fastly. Estos fragmentos administran las solicitudes del enrutamiento de las solicitudes agénticas a Edge Optimize, la separación de claves de caché y la conmutación por error a su origen predeterminado.
 
 ![VCL de Fastly](/help/assets/optimize-at-edge/fastly-vcl.png)
 
@@ -78,7 +78,7 @@ El fragmento `vcl_deliver` administra la conmutación por error automáticamente
 
 | Escenario | Comportamiento |
 | --- | --- |
-| Edge Optimize devuelve `2XX` | La respuesta optimizada se sirve al cliente. |
+| Edge Optimize devuelve `2XX` | Se sirve una respuesta optimizada al cliente. |
 | Edge Optimize devuelve `4XX` o `5XX` | La solicitud se reinicia y se sirve desde el origen predeterminado. |
 | Respuesta de conmutación por error | Incluye el encabezado `x-edgeoptimize-fo: 1`. |
 
@@ -92,14 +92,14 @@ Una vez completada la configuración, compruebe que el tráfico de bots se enrut
 
 **1. Probar el tráfico de bots (debe optimizarse)**
 
-Simule una solicitud de bot de IA con un user-agent auténtico:
+Simule una solicitud de bot de IA con un agente de usuario agéntico:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
 
-Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`, que confirma que la solicitud se enrutó a través de Edge Optimize:
+Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`, que confirma que la solicitud se enrutó mediante Edge Optimize:
 
 ```
 < HTTP/2 200
@@ -108,7 +108,7 @@ Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`, que co
 
 **2. Probar el tráfico humano (NO debería verse afectado)**
 
-Simule una solicitud normal de explorador humano:
+Simule una solicitud normal de un explorador:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
@@ -117,11 +117,11 @@ curl -svo /dev/null https://www.example.com/page.html \
 
 La respuesta **no** debe contener el encabezado `x-edgeoptimize-request-id`. El contenido de la página y el tiempo de respuesta deben ser idénticos al de antes de habilitar Optimizar en Edge.
 
-**3. Cómo diferenciar los dos escenarios**
+**3. Cómo diferenciar entre dos escenarios**
 
 | Encabezado | Tráfico de bots (optimizado) | Tráfico humano (no afectado) |
 |---|---|---|
-| `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único. | Ausente |
+| `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único | Ausente |
 | `x-edgeoptimize-fo` | Solo está presente si se produjo la conmutación por error (valor: `1`) | Ausente |
 
 {{verify-routing-status-in-ui}}

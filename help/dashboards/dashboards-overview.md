@@ -5,7 +5,7 @@ feature: Onboarding
 source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 87%
+ht-degree: 94%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 87%
 
 Le damos la bienvenida a la información general sobre los paneles de control. Los paneles de control de LLM Optimizer ayudan a los expertos en marketing a realizar un seguimiento de la visibilidad y la opinión de la marca en las plataformas de búsqueda por IA, a identificar las oportunidades de optimización y a implementar cambios prescriptivos para mejorar las citas y el rendimiento.
 
-Las vistas clave incluyen Información general, Presencia de marca, Agente y Tráfico de referencia, Inspector de URL, Oportunidades, Collaboration y Configuración del cliente.
+Las vistas clave incluyen información general, presencia de marca, tráfico agéntico y de referencia, inspector de URL, oportunidades, colaboración y configuración del cliente.
 
 <!--
 CARDS

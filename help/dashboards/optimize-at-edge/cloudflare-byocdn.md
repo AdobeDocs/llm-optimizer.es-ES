@@ -1,33 +1,33 @@
 ---
-title: 'Optimizar en Edge: Cloud Flare (BYOCDN)'
-description: Obtenga información sobre cómo configurar CloudFlare para Optimizar en Edge en LLM Optimizer.
+title: 'Optimizar en Edge: Cloudflare (BYOCDN)'
+description: Obtenga información sobre cómo configurar Cloudflare BYOCDN para Optimizar en Edge en LLM Optimizer.
 feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '1906'
-ht-degree: 1%
+ht-degree: 68%
 
 ---
 
 
 # Cloudflare (BYOCDN)
 
-Esta configuración enruta el tráfico auténtico (solicitudes de bots de IA y agentes de usuario LLM) al servicio back-end de Edge Optimize (`live.edgeoptimize.net`). Los visitantes humanos y los bots de SEO se siguen sirviendo desde su origen como de costumbre. Para probar la configuración, una vez completada la instalación, busque el encabezado `x-edgeoptimize-request-id` en la respuesta.
+Esta configuración enruta el tráfico agéntico (solicitudes de bots de IA y agentes de usuario LLM) al servicio de back-end de Edge Optimize (`live.edgeoptimize.net`). Los visitantes humanos y los bots de SEO se siguen sirviendo desde su origen como de costumbre. Para probar la configuración, una vez completados los ajustes, busque el encabezado `x-edgeoptimize-request-id` en la respuesta.
 
 **Requisitos previos**
 
-Antes de configurar las reglas de enrutamiento de Cloud Flare Worker, asegúrese de lo siguiente:
+Antes de configurar las reglas de enrutamiento de Cloudflare Worker, asegúrese de:
 
-* Cuenta de Cloudflare con trabajadores habilitados en su dominio.
-* Acceso a la configuración DNS de su dominio en Cloudflare.
-* Una clave de API de Edge Optimize recuperada de la interfaz de usuario de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* Tener una cuenta de Cloudflare con trabajadores habilitados en su dominio.
+* Tener acceso a la configuración DNS de su dominio en Cloudflare.
+* Haber recuperado una clave de API de Edge Optimize de la IU de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Opcional) Para probar el enrutamiento de ensayo, consulte [Clave de API de ensayo](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
-**Funcionamiento del enrutamiento**
+**Cómo funciona el enrutamiento**
 
-Cuando se configura correctamente, una solicitud a su dominio (por ejemplo, `www.example.com/page.html`) desde un agente de usuario auténtico es interceptada por el trabajador de Cloudflare y enrutada al servidor de Edge Optimize. La solicitud de back-end incluye los encabezados necesarios.
+Cuando se configura correctamente, Cloudflare Worker intercepta una solicitud a su dominio (por ejemplo, `www.example.com/page.html`) desde un agente de usuario agéntico y la enruta al back-end de Edge Optimize. La solicitud de back-end incluye los encabezados necesarios.
 
-**Probando la solicitud de servidor**
+**Prueba de la solicitud de back-end**
 
 Puede verificar el enrutamiento realizando una solicitud directa al back-end de Edge Optimize.
 
@@ -41,14 +41,14 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 
 **Encabezados obligatorios**
 
-Se deben configurar los siguientes encabezados en las solicitudes al back-end de Edge Optimize:
+Se deben configurar los siguientes encabezados en las solicitudes dirigidas al back-end de Edge Optimize:
 
 | Encabezado | Descripción | Ejemplos |
 |--------|-------------|---------|
-| `x-forwarded-host` | El host original de la solicitud. Necesario para identificar el dominio del sitio. | `www.example.com` |
-| `x-edgeoptimize-url` | Ruta de URL y cadena de consulta originales de la solicitud. | `/page.html` o `/products?id=123` |
+| `x-forwarded-host` | El host original de la solicitud. Es necesario para identificar el dominio del sitio. | `www.example.com` |
+| `x-edgeoptimize-url` | La ruta de URL y la cadena de consulta originales de la solicitud. | `/page.html` o `/products?id=123` |
 | `x-edgeoptimize-api-key` | La clave de API proporcionada por Adobe para su dominio. | `your-api-key-here` |
-| `x-edgeoptimize-config` | Cadena de configuración para diferenciación de clave de caché. | `LLMCLIENT=TRUE;` |
+| `x-edgeoptimize-config` | Cadena de configuración para la diferenciación de la clave de caché. | `LLMCLIENT=TRUE;` |
 
 ## Opciones de configuración
 
@@ -97,17 +97,17 @@ Una vez implementado el trabajador, continúe con [Agregue una ruta a su dominio
 
 Siga estos pasos para crear y configurar el trabajador manualmente.
 
-**Paso 1: Crear el trabajo de Cloudflare**
+**Paso 1: crear Cloudflare Worker**
 
-1. Inicie sesión en su tablero de Cloudflare.
+1. Inicie sesión en su panel de control de Cloudflare.
 2. Vaya a **Trabajadores y páginas** en la barra lateral.
 3. Haga clic en **Crear aplicación** y luego en **Crear trabajador**.
 4. Asigne un nombre al trabajador (por ejemplo, `edge-optimize-router`).
 5. Haga clic en **Implementar** para crear el trabajador con el código predeterminado.
 
-![Panel de trabajadores de Cloudflare](/help/assets/optimize-at-edge/cloudflare-workers-dashboard.png)
+![Panel control de Cloudflare Workers](/help/assets/optimize-at-edge/cloudflare-workers-dashboard.png)
 
-**Paso 2: Agregar el código de trabajador**
+**Paso 2: añadir el código de trabajador**
 
 Después de crear el trabajador, haga clic en **Editar código** y reemplace el código predeterminado por el siguiente. Si ya tiene un Cloudflare Worker, combine el código siguiente con el código de trabajador existente en lugar de reemplazarlo por completo.
 
@@ -281,84 +281,84 @@ async function failoverToOrigin(request, env, url) {
 
 Haga clic en **Guardar e implementar** para publicar el trabajador.
 
-![Editor de código de trabajo de Cloudflare](/help/assets/optimize-at-edge/cloudflare-worker-editor.png)
+![Editor de código de Cloudflare Worker](/help/assets/optimize-at-edge/cloudflare-worker-editor.png)
 
 **Paso 3: Configurar variables y secretos de entorno**
 
-Las variables de entorno almacenan la configuración confidencial como la clave de API de forma segura.
+Las variables del entorno almacenan la configuración confidencial como su clave de API de forma segura.
 
 1. En la configuración del trabajador, vaya a **Configuración** > **Variables**.
-2. En **Variables de entorno**, haga clic en **Agregar variable**.
+2. En **Variables del entorno**, haga clic en **Añadir variable**.
 3. Añada las siguientes variables:
 
    | Nombre de la variable | Descripción | Necesario |
    |---------------|-------------|----------|
-   | `EDGE_OPTIMIZE_API_KEY` | La clave de API de optimización de Edge proporcionada por Adobe. | Sí |
-   | `EDGE_OPTIMIZE_TARGET_HOST` | Host de destino para solicitudes de Edge Optimize (enviadas como encabezado `x-forwarded-host`) y dominio de origen para conmutación por error. Debe ser el dominio solamente sin protocolo (por ejemplo, `www.example.com`, no `https://www.example.com`). | Sí |
+   | `EDGE_OPTIMIZE_API_KEY` | Su clave de API de Edge Optimize proporcionada por Adobe. | Sí |
+   | `EDGE_OPTIMIZE_TARGET_HOST` | El host de destino para solicitudes de Edge Optimize (enviadas como encabezado `x-forwarded-host`) y el dominio de origen para conmutación por error. Debe ser solamente el dominio sin protocolo (por ejemplo, `www.example.com`, no `https://www.example.com`). | Sí |
 
-4. Para la clave de API, haz clic en **Cifrar** para almacenarla de forma segura.
+4. Para la clave de API, haga clic en **Cifrar** para almacenarla de forma segura.
 5. Haga clic en **Guardar e implementar**.
 
-![Variables de entorno de Cloudflare](/help/assets/optimize-at-edge/cloudflare-env-variables.png)
+![Variables del entorno de Cloudflare](/help/assets/optimize-at-edge/cloudflare-env-variables.png)
 
 ## Agregar una ruta al dominio {#add-a-route-to-your-domain}
 
 Independientemente de la opción de configuración utilizada, debe vincular manualmente el trabajador al dominio. Este paso activa el trabajador en su tráfico.
 
-1. Vaya a **Configuración** > **Déclencheur** del trabajador.
-2. En **Rutas**, haga clic en **Agregar ruta**.
-3. Escriba el patrón de dominio (por ejemplo, `www.example.com/*` o `example.com/*`).
-4. Seleccione la zona en la lista desplegable.
+1. Vaya a la **Configuración** del trabajador > **Activadores**.
+2. En **Rutas**, haga clic en **Añadir ruta**.
+3. Escriba el patrón de su dominio (por ejemplo, `www.example.com/*` o `example.com/*`).
+4. Seleccione una zona de la lista desplegable.
 5. Haga clic en **Guardar**.
 
 También puede configurar rutas en el nivel de zona:
 
 1. Vaya a su dominio en Cloudflare.
-2. Vaya a **Rutas de trabajadores**.
-3. Haga clic en **Agregar ruta** y especifique el patrón y el trabajador.
+2. Vaya a **Rutas de los trabajadores**.
+3. Haga clic en **Añadir ruta** y especifique el patrón y el trabajador.
 
-![Rutas de trabajo de Cloudflare](/help/assets/optimize-at-edge/cloudflare-worker-routes.png)
+![Rutas de Cloudflare Worker](/help/assets/optimize-at-edge/cloudflare-worker-routes.png)
 
-**Comprobando comportamiento de conmutación por error**
+**Comprobación del comportamiento de la conmutación por error**
 
-Si Edge Optimize no está disponible o devuelve un error, el trabajador conmuta automáticamente por error al origen. Las respuestas de conmutación por error incluyen el encabezado `x-edgeoptimize-fo`:
+Si Edge Optimize no está disponible o devuelve un error, el trabajador conmuta automáticamente por error a su origen. Las respuestas de la conmutación por error incluyen el encabezado `x-edgeoptimize-fo`:
 
 ```
 < HTTP/2 200
 < x-edgeoptimize-fo: 1
 ```
 
-Puede supervisar los eventos de conmutación por error en los registros de los trabajadores de Cloudflare para solucionar problemas.
+Puede supervisar los eventos de conmutación por error en los registros de Cloudflare Workers para solucionar problemas.
 
-**Explicación de la lógica de trabajo**
+**Explicación de la lógica de Worker**
 
 Cloudflare Worker implementa la siguiente lógica:
 
-1. **Detección de agente de usuario:** Comprueba si el agente de usuario de la solicitud entrante coincide con alguno de los bots agénticos definidos (sin distinción de mayúsculas y minúsculas).
+1. **Detección de agente de usuario:** comprueba si el agente de usuario de la solicitud entrante coincide con alguno de los bots agénticos definidos (no distingue entre mayúsculas y minúsculas).
 
-2. **Destino de ruta:** filtra de forma opcional las solicitudes basadas en rutas de destino. De manera predeterminada, todas las páginas de HTML (direcciones URL que terminan con `/`, sin extensión o `.html`) se enrutan. Puede especificar rutas de acceso específicas utilizando la matriz `TARGETED_PATHS`.
+2. **Destino de ruta:** filtra de forma opcional las solicitudes basadas en rutas de destino. De manera predeterminada, todas las páginas HTML (URL que terminan con `/`, sin extensión o `.html`) se enrutan. Puede especificar rutas de acceso específicas utilizando la matriz `TARGETED_PATHS`.
 
-3. **Protección de bucle:** El encabezado `x-edgeoptimize-request` evita bucles infinitos. Cuando Edge Optimize devuelve las solicitudes al origen, este encabezado se establece en `"1"` y el trabajador pasa la solicitud sin devolverla al servidor de Edge Optimize.
+3. **Protección de bucle:** el encabezado `x-edgeoptimize-request` evita bucles infinitos. Cuando Edge Optimize devuelve las solicitudes a su origen, este encabezado se establece en `"1"` y el trabajador deja pasar la solicitud sin redirigirla a Edge Optimize.
 
-4. **Seguridad del encabezado:** Antes de establecer encabezados de Edge Optimize, el trabajador quita los encabezados `x-edgeoptimize-*` existentes de la solicitud entrante para evitar ataques de inyección de encabezado.
+4. **Seguridad del encabezado:** antes de establecer encabezados de Edge Optimize, el trabajador quita todos los encabezados `x-edgeoptimize-*` de la solicitud entrante para evitar ataques de inyección de encabezado.
 
-5. **Asignación de encabezados:** El trabajador establece los encabezados necesarios para Optimizar Edge:
-   * `x-forwarded-host` - Identifica el dominio del sitio original.
-   * `x-edgeoptimize-url` - Conserva la ruta de acceso de la solicitud y la cadena de consulta originales.
+5. **Asignación de encabezados:** el trabajador establece los encabezados necesarios de Edge Optimize:
+   * `x-forwarded-host`: identifica el dominio del sitio original.
+   * `x-edgeoptimize-url`: conserva la ruta de acceso de la solicitud y la cadena de consulta originales.
    * `x-edgeoptimize-api-key`: autentica la solicitud con Edge Optimize.
    * `x-edgeoptimize-config`: proporciona la configuración de clave de caché.
 
-6. **Lógica de conmutación por error:** Si Edge Optimize devuelve código de estado de error (errores de cliente 4XX o errores de servidor 5XX) o la solicitud falla debido a un error de red, el trabajador conmuta automáticamente por error al origen mediante `EDGE_OPTIMIZE_TARGET_HOST`. La respuesta de conmutación por error incluye el encabezado `x-edgeoptimize-fo: 1` para indicar que se produjo la conmutación por error.
+6. **Lógica de conmutación por error:** si Edge Optimize devuelve código de estado de error (errores de cliente 4XX o errores de servidor 5XX) o se produce un error en la solicitud debido a un fallo de red, el trabajador conmuta automáticamente por error a su origen mediante `EDGE_OPTIMIZE_TARGET_HOST`. La respuesta de conmutación por error incluye el encabezado `x-edgeoptimize-fo: 1` para indicar que se ha producido la conmutación por error.
 
-7. **Administración de redireccionamiento:** La opción `redirect: "manual"` garantiza que las respuestas de redireccionamiento de Edge Optimize se pasen al cliente sin que el trabajador las siga.
+7. **Administración de redireccionamiento:** la opción `redirect: "manual"` garantiza que las respuestas de redireccionamiento de Edge Optimize se pasen al cliente sin que el trabajador las siga.
 
-**Personalizando la configuración**
+**Personalización de la configuración**
 
 Puede personalizar el comportamiento del trabajador modificando las constantes de configuración en la parte superior del código:
 
-**Lista de bots agente**
+**Lista de bots agénticos**
 
-Modifique la matriz `AGENTIC_BOTS` para agregar o quitar agentes de usuario:
+Modifique la matriz `AGENTIC_BOTS` para añadir o quitar agentes de usuario:
 
 ```javascript
 const AGENTIC_BOTS = [
@@ -376,7 +376,7 @@ const AGENTIC_BOTS = [
 
 **Rutas de destino**
 
-De forma predeterminada, todas las páginas de HTML se dirigen a Edge Optimize. Para limitar el enrutamiento a rutas de acceso específicas, modifique la matriz `TARGETED_PATHS`:
+De forma predeterminada, todas las páginas HTML se enrutan a Edge Optimize. Para limitar el enrutamiento a rutas de acceso específicas, modifique la matriz `TARGETED_PATHS`:
 
 ```javascript
 // Route all HTML pages (default)
@@ -406,30 +406,30 @@ const FAILOVER_ON_5XX = false;
 
 **Consideraciones importantes**
 
-* **Comportamiento de conmutación por error:** El trabajador conmuta automáticamente por error al origen si Edge Optimize devuelve algún error (códigos de estado 4XX o 5XX) o si la solicitud falla debido a un error de red. La conmutación por error usa `EDGE_OPTIMIZE_TARGET_HOST` como dominio de origen (similar a `F_Default_Origin` de Fastly o `Default_Origin` de CloudFront). Las respuestas de conmutación por error incluyen el encabezado `x-edgeoptimize-fo: 1`, que puede utilizar para la supervisión y la depuración.
+* **Comportamiento de conmutación por error:** el trabajador conmuta automáticamente por error a su origen si Edge Optimize devuelve algún error (códigos de estado 4XX o 5XX) o si la solicitud falla debido a un error de red. La conmutación por error usa `EDGE_OPTIMIZE_TARGET_HOST` como dominio de origen (similar a `F_Default_Origin` de Fastly o `Default_Origin` de CloudFront). Las respuestas de conmutación por error incluyen el encabezado `x-edgeoptimize-fo: 1`, que puede utilizar para la supervisión y la depuración.
 
-* **Almacenamiento en caché:** Cloudflare almacena en caché las respuestas según la dirección URL de forma predeterminada. Dado que el tráfico real recibe un contenido diferente al tráfico humano, asegúrese de que la configuración de la caché se corresponde con esto. Considere utilizar la API de caché o los encabezados de caché para diferenciar el contenido almacenado en caché. El encabezado `x-edgeoptimize-config` debe incluirse en la clave de caché.
+* **Almacenamiento en caché:** Cloudflare almacena en caché las respuestas según la URL de forma predeterminada. Dado que el tráfico agéntico recibe un contenido diferente al tráfico humano, asegúrese de que la configuración de la caché se corresponde con esto. Considere utilizar la API de caché o los encabezados de caché para diferenciar el contenido almacenado en caché. El encabezado `x-edgeoptimize-config` debe incluirse en la clave de caché.
 
-* **Limitación de velocidad:** Monitorice su uso de Edge Optimize y considere implementar una limitación de velocidad para el tráfico real si es necesario.
+* **Limitación de volumen:** monitorice su uso de Edge Optimize y considere implementar una limitación de volumen para el tráfico agéntico si fuese necesario.
 
-* **Pruebas:** Pruebe siempre la configuración en un entorno de ensayo antes de implementarla en producción. Compruebe que el tráfico humano y el tráfico agéntico se comportan según lo esperado. Pruebe el comportamiento de la conmutación por error simulando los errores de Edge Optimize.
+* **Pruebas:** pruebe siempre la configuración en un entorno de ensayo antes de implementarla en producción. Compruebe que el tráfico humano y el agéntico se comportan según lo esperado. Pruebe el comportamiento de la conmutación por error simulando los errores de Edge Optimize.
 
-* **Registro:** Habilite el registro de trabajadores de Cloudflare para supervisar solicitudes y solucionar problemas. Vaya a **Trabajadores** > **su trabajador** > **Registros** para ver los registros en tiempo real. El trabajador registra eventos de conmutación por error para la depuración.
+* **Registro:** habilite el registro de Cloudflare Workers para supervisar solicitudes y solucionar problemas. Vaya a **Trabajadores** > **su trabajador** > **Registros** para ver los registros en tiempo real. El trabajador registra eventos de conmutación por error para la depuración.
 
 **Solución de problemas**
 
 | Problema | Causa posible | Solución |
 |-------|----------------|----------|
-| No hay ningún encabezado `x-edgeoptimize-request-id` en respuesta | La ruta de trabajo no coincide o el agente de usuario no está en la lista de bots agénticos. | Compruebe que el patrón de ruta coincida con la dirección URL de la solicitud. Compruebe que el agente de usuario se encuentra en la matriz `AGENTIC_BOTS`. |
+| No hay ningún encabezado `x-edgeoptimize-request-id` en la respuesta | La ruta del trabajador no coincide o el agente de usuario no está en la lista de bots agénticos. | Compruebe que el patrón de la ruta coincida con la URL de la solicitud. Compruebe que el agente de usuario se encuentra en la matriz `AGENTIC_BOTS`. |
 | Errores 401 o 403 de Edge Optimize | Falta la clave API o no es válida. | Compruebe que `EDGE_OPTIMIZE_API_KEY` esté configurado correctamente en las variables y los secretos del entorno. Póngase en contacto con Adobe para confirmar que su clave de API está activa. |
-| Redirecciones o bucles infinitos | El encabezado de protección de bucle no está configurado o comprobado correctamente. | Asegúrese de que la comprobación del encabezado `x-edgeoptimize-request` esté completada. |
-| Tráfico humano afectado | La lógica de enrutamiento de trabajo es demasiado amplia. | Compruebe que la lógica de coincidencia del agente de usuario sea correcta y que no distingue entre mayúsculas y minúsculas. Compruebe que `TARGETED_PATHS` esté configurado correctamente. |
-| Tiempos de respuesta bajos | Latencia de red para optimizar el servidor de Edge. | Esto es lo que se espera para la primera solicitud; las solicitudes posteriores se almacenan en la caché en Edge Optimize. |
-| `x-edgeoptimize-fo: 1` encabezado en respuesta | Edge Optimize devolvió un error y se produjo una conmutación por error al origen. | Consulte los registros de Cloud Flare Workers para ver el código de error específico. Verifique el estado del servicio Optimizar de Edge con Adobe. |
-| La conmutación por error no funciona | Indicadores de conmutación por error deshabilitados o error en la lógica de conmutación por error. | Compruebe que `FAILOVER_ON_4XX` y `FAILOVER_ON_5XX` estén establecidos en `true`. Compruebe los registros de trabajo para ver si hay mensajes de error. |
-| Algunas rutas no se optimizan | Ruta que no coincide con las rutas de destino o el patrón de página de HTML. | Compruebe que la ruta de acceso esté en `TARGETED_PATHS` (si se especifica) y que coincida con el patrón regex de la página de HTML. |
-| Solicitudes que fallan con un host no válido | `EDGE_OPTIMIZE_TARGET_HOST` incluye el protocolo (por ejemplo, `https://`). | Use solamente el nombre de dominio sin protocolo (por ejemplo, `example.com`, no `https://example.com`). |
-| Error 530 durante la conmutación por error | Cloudflare no se puede conectar al origen o la solicitud de conmutación por error tiene encabezados no válidos. | Asegúrese de que la función de conmutación por error elimine los encabezados de Edge Optimize. Compruebe que el origen es accesible y que DNS está configurado correctamente. |
+| Redirecciones o bucles infinitos | El encabezado de protección de bucle no está configurado o no se ha comprobado correctamente. | Asegúrese de que la comprobación del encabezado `x-edgeoptimize-request` esté activa. |
+| Tráfico humano afectado | La lógica de enrutamiento del trabajador es demasiado amplia. | Compruebe que la lógica de coincidencia del agente de usuario sea correcta y que no distingue entre mayúsculas y minúsculas. Compruebe que la configuración de `TARGETED_PATHS` sea correcta. |
+| Tiempos de respuesta largos | Latencia de la red del back-end de Edge Optimize. | Esto es lo que se espera para la primera solicitud; las solicitudes posteriores se almacenan en la caché en Edge Optimize. |
+| Encabezado `x-edgeoptimize-fo: 1` en respuesta | Edge Optimize devolvió un error y se produjo una conmutación por error al origen. | Consulte los registros de Cloudflare Workers para ver el código de error específico. Verifique el estado del servicio de Edge Optimize con Adobe. |
+| La conmutación por error no funciona | Se han deshabilitado los indicadores de conmutación por error o se ha producido un error en su lógica. | Compruebe que `FAILOVER_ON_4XX` y `FAILOVER_ON_5XX` estén establecidos en `true`. Compruebe los registros de los trabajadores para ver si hay mensajes de error. |
+| Algunas rutas no se optimizan | La ruta no coincide con las rutas de destino o el patrón de la página HTML. | Compruebe que la ruta de acceso esté en `TARGETED_PATHS` (si se especifica) y que coincida con el patrón regex de la página HTML. |
+| Las solicitudes fallan con un host no válido | `EDGE_OPTIMIZE_TARGET_HOST` incluye un protocolo (por ejemplo, `https://`). | Use solamente el nombre del dominio sin protocolo (por ejemplo, `example.com`, no `https://example.com`). |
+| Error 530 durante la conmutación por error | Cloudflare no se puede conectar al origen o la solicitud de conmutación por error tiene encabezados no válidos. | Asegúrese de que la función de conmutación por error elimine los encabezados de Edge Optimize. Compruebe que su origen sea accesible y que el DNS esté configurado correctamente. |
 
 **Permitir la optimización en Edge mediante reglas de firewall (opcional)**
 
@@ -441,14 +441,14 @@ Una vez completada la configuración, compruebe que el tráfico de bots se enrut
 
 **1. Probar el tráfico de bots (debe optimizarse)**
 
-Simule una solicitud de bot de IA con un user-agent auténtico:
+Simule una solicitud de bot de IA con un agente de usuario agéntico:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
 
-Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`, que confirma que la solicitud se enrutó a través de Edge Optimize:
+Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`, que confirma que la solicitud se enrutó mediante Edge Optimize:
 
 ```
 < HTTP/2 200
@@ -457,7 +457,7 @@ Una respuesta correcta incluye el encabezado `x-edgeoptimize-request-id`, que co
 
 **2. Probar el tráfico humano (NO debería verse afectado)**
 
-Simule una solicitud normal de explorador humano:
+Simule una solicitud normal de un explorador:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
@@ -466,11 +466,11 @@ curl -svo /dev/null https://www.example.com/page.html \
 
 La respuesta **no** debe contener el encabezado `x-edgeoptimize-request-id`. El contenido de la página y el tiempo de respuesta deben ser idénticos al de antes de habilitar Optimizar en Edge.
 
-**3. Cómo diferenciar los dos escenarios**
+**3. Cómo diferenciar entre dos escenarios**
 
 | Encabezado | Tráfico de bots (optimizado) | Tráfico humano (no afectado) |
 |---|---|---|
-| `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único. | Ausente |
+| `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único | Ausente |
 | `x-edgeoptimize-fo` | Solo está presente si se produjo la conmutación por error (valor: `1`) | Ausente |
 
 {{verify-routing-status-in-ui}}
