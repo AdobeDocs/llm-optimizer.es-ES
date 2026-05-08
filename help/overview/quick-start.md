@@ -2,19 +2,14 @@
 title: Inicio rápido
 description: Aprenda a incorporar su nombre de marca y dominio, activar la versión de prueba desde Experience Hub o Experience Cloud y completar la configuración de Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2: id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 autotag-review: '2026-04-30T18:12:24.085Z'
-source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
+source-git-commit: 9c8e5750410f0746d1777d2637d84561d15a7a64
 workflow-type: tm+mt
-source-wordcount: 1463
+source-wordcount: 1472
 ht-degree: 38%
 
 ---
@@ -62,9 +57,9 @@ Para activar la versión de prueba, como cliente de AEM Cloud, puede:
 
 ![Versión de prueba de LLM Optimizer](/help/overview/assets/llm-trial.png)
 
-#### clientes de Adobe Analytics
+#### ADOBE ANALYTICS y ADOBE CUSTOMER JOURNEY ANALYTICS
 
-Si es cliente de Adobe Analytics, verá un banner en la página de inicio de Experience Cloud.
+Para los clientes de Adobe Analytics y Adobe Customer Journey Analytics, verá un banner en la página de inicio de Experience Cloud.
 
 ![Página de inicio de Experience Cloud con el titular Iniciar la versión de prueba de Adobe LLM Optimizer](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
 
@@ -77,7 +72,7 @@ Una vez que la versión de prueba esté activa, continúe con la incorporación 
 
 >[!NOTE]
 >
-> * **Prueba gratuita:** Los clientes de AEM Cloud y Adobe Analytics pueden usar la versión de prueba gratuita de LLM Optimizer.
+> * **Prueba gratuita:** Los clientes de AEM Cloud y Adobe Analytics/Customer Journey Analytics pueden usar la versión de prueba gratuita de LLM Optimizer.
 > * **Los clientes que activen la versión de prueba el 1 de abril de 2026 o posteriormente** pueden usar hasta 100 indicadores, un dominio y pueden implementar optimizaciones en hasta 10 direcciones URL para un solo tipo de oportunidad.
 > * **Los clientes que activaron la versión de prueba antes del 1 de abril de 2026** continúan teniendo acceso a hasta 200 mensajes según los términos existentes.
 >
