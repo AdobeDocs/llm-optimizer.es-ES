@@ -2,9 +2,9 @@
 title: Integración de Google Analytics
 description: Aprenda a conectar Google Analytics 4 con LLM Optimizer para medir la detección basada en IA, la participación en el sitio y los resultados empresariales en el panel de Tráficos de referencia.
 feature: Referral Traffic
-source-git-commit: abf88fc3e141e12d6b5c826e35d4590ae6407c9b
+source-git-commit: 368b3c1ee79660ede0c4bf9824f299d2e801c8b2
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1169'
 ht-degree: 1%
 
 ---
@@ -13,8 +13,6 @@ ht-degree: 1%
 # Integración de Google Analytics
 
 La integración de Google Analytics 4 (GA4) conecta LLM Optimizer con los datos de GA4 de su organización para que pueda medir cómo el descubrimiento impulsado por IA en plataformas como ChatGPT, Gemini, Copilot, Claude y Perplexity se traduce en participación real en el sitio web y resultados comerciales. Después de conectar una propiedad de GA4, LLM Optimizer extrae las métricas de tráficos de referencia, participación y conversión que GA4 atribuye a esas fuentes y las muestra en el panel **Tráficos de referencia** en la pestaña **Impacto en la empresa**.
-
-## Disponibilidad {#availability}
 
 >[!IMPORTANT]
 >
@@ -40,11 +38,11 @@ El flujo de conexión se inicia desde el panel [Tráfico de referencia](/help/da
 
    ![Tablero de Tráfico de referencia, ficha Impacto empresarial](/help/dashboards/assets/ga4-integration-01-business-impact-tab.png)
 
-1. Seleccione **Conectarse a Analytics**. LLM Optimizer lo enruta a **Configuración del cliente > Analytics**. En el selector de proveedores de Analytics, seleccione **Google Analytics 4**.
+1. Seleccione **Conectarse a Analytics**. LLM Optimizer lo enruta a **Configuración del cliente > Analytics**. En el selector de proveedores de Analytics, seleccione **Conectar Google Analytics 4**.
 
    ![Configuración del cliente, ficha Analytics con GA4 seleccionado](/help/dashboards/assets/ga4-integration-02-analytics-ga4-picker.png)
 
-1. Seleccione **Conectar**. Se abre una nueva pestaña del explorador en la pantalla de inicio de sesión de Google.
+1. Seleccione **Conectar cuenta**. Se abre una nueva pestaña del explorador en la pantalla de inicio de sesión de Google.
 
    ![Inicio de sesión de Google para la conexión GA4](/help/dashboards/assets/ga4-integration-03-google-sign-in.png)
 
