@@ -2,10 +2,10 @@
 title: Tráfico de referencia
 description: Aprenda a utilizar el panel de control Tráfico de referencia para ver cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia.
 feature: Referral Traffic
-source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
+source-git-commit: ef3ef2c8f353047925c4fc99c73d9cf0399f24ca
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 80%
+source-wordcount: '750'
+ht-degree: 78%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 80%
 El tráfico de referencia muestra cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia. Rastrea y analiza las fuentes de tráfico, los patrones de referencia y las métricas de conversión de sitios web y plataformas externas. Esto le ayudará a comprender qué fuentes, regiones y páginas generan el tráfico más interesado. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> También hay filtros personalizables para perfeccionar los datos mostrados.
 
 >[!NOTE]
->De manera predeterminada, este tablero genera perspectivas de tráfico a partir de **registros de CDN**. Si su organización está en una oferta de pago, puede conectar **Adobe Analytics** para agregar datos que midan el descubrimiento impulsado por IA y la participación en el sitio. Estos datos están disponibles en la ficha **Impacto en la empresa**. Sin la integración con Adobe Analytics, la pestaña no se rellena. Consulte [Integración de Adobe Analytics](/help/dashboards/adobe-analytics-integration.md) para obtener más información.
+>De manera predeterminada, este tablero genera perspectivas de tráfico a partir de **registros de CDN**. Si su organización está en una oferta de pago, puede conectar **Adobe Analytics** o **Google Analytics 4**(GA4) para agregar datos que midan la detección impulsada por IA y la participación en el sitio. Estos datos están disponibles en la ficha **Impacto en la empresa**. Tenga en cuenta que sin la integración con Adobe Analytics o GA4, la pestaña no se rellena. Para obtener más información, consulte [Integración de Adobe Analytics](/help/dashboards/adobe-analytics-integration.md) o [Integración de Google Analytics](/help/dashboards/google-analytics-integration.md).
 
 ![Página de referencia](/help/dashboards/assets/referral-traffic.png)
 
