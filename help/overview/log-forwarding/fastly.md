@@ -2,9 +2,20 @@
 title: 'Reenvío de registros: Fastly'
 description: Aprenda a reenviar registros de CDN de Fastly al bloque S3 de Adobe para la recopilación de datos de tráfico auténtico en LLM Optimizer.
 feature: Agentic Traffic
-source-git-commit: d1f98770b39f550c36d93ece9b89933c0e90f189
+autotag-review: '2026-05-15T17:51:51.808Z'
+TQID: 'https://experienceleague.adobe.com/9SH1I6ajHKLFeEWXy-NpvPm-Ylk2xBKhQro3qobVEX8'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: 381
 ht-degree: 4%
 
 ---
@@ -50,7 +61,7 @@ Para crear un extremo S3, en el **Panel de control de Campaign de Fastly**:
 | **Formato de registro** | Utilice la cadena de formato de registro que se muestra en la sección **Cadena de formato de registro** a continuación. |
 | **Formato de marca de hora** | `%Y-%m-%dT%H:%M:%S.000` |
 | **Nombre del contenedor** | Copie el **Nombre del contenedor** de la página de configuración de LLM Optimizer. ![Nombre del contenedor](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
-| **Dominio** | Copie el **Nombre de dominio** de la página de configuración de LLM Optimizer. ![Nombre de dominio &#x200B;](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
+| **Dominio** | Copie el **Nombre de dominio** de la página de configuración de LLM Optimizer. ![Nombre de dominio](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
 | **Método de acceso** | **Credenciales de usuario** |
 | **Credenciales de usuario** | Copie la **clave de acceso** y la **clave secreta** de la página de configuración de LLM Optimizer. ![Claves de acceso](/help/overview/assets/log-forwarding/common/access-keys.png) |
 | **Período** | `300` |

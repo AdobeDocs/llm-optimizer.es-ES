@@ -2,9 +2,20 @@
 title: 'Reenvío de registros: Imperva'
 description: Aprenda a reenviar registros de CDN de Imperva al bloque S3 de Adobe para la recopilación de datos de tráfico auténtico en LLM Optimizer.
 feature: Agentic Traffic
-source-git-commit: b590cd14ba7d64e56a6c972fd6090e2df9de58f6
+autotag-review: '2026-05-15T17:52:22.260Z'
+TQID: 'https://experienceleague.adobe.com/y2ticpRCNZjPYJ6wHg-V3QWxBnGF--mQfqGBYjVjKXY'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: 352
 ht-degree: 4%
 
 ---
@@ -53,7 +64,7 @@ En la [consola Imperva](https://my.imperva.com):
    | Campo | Descripción | Nota |
    |---|---|---|
    | **Nombre de conexión** | Un nombre descriptivo para la conexión (por ejemplo, registros de Production S3). Puede cambiar el nombre del valor predeterminado. | |
-   | **Ruta** | Ubicación de la carpeta donde se almacenarán los archivos de registro. Usar el formato `<Amazon S3 bucket name>/<log folder>`. Por ejemplo: `MyBucket/MyImpervaLogFolder`. | `Amazon S3 bucket name` es el **nombre del contenedor** de la página de configuración de LLM Optimizer. ![Nombre de contenedor](/help/overview/assets/log-forwarding/imperva/imperva-bucket-name.png) La carpeta de registro es **Ruta** de la página de configuración de LLM Optimizer. ![Ruta](/help/overview/assets/log-forwarding/imperva/imperva-path.png) |
+   | **Ruta** | Ubicación de la carpeta donde se almacenarán los archivos de registro. Usar el formato `<Amazon S3 bucket name>/<log folder>`. Por ejemplo: `MyBucket/MyImpervaLogFolder`. | `Amazon S3 bucket name` es el **nombre del contenedor** de la página de configuración de LLM Optimizer. ![Nombre del contenedor](/help/overview/assets/log-forwarding/imperva/imperva-bucket-name.png) La carpeta de registro es **Ruta** de la página de configuración de LLM Optimizer. ![Ruta](/help/overview/assets/log-forwarding/imperva/imperva-path.png) |
 
 5. Haga clic en **Probar conexión**. Imperva ejecuta una prueba completa en la que un archivo de prueba (sin datos reales) se envía a la carpeta designada y luego se elimina cuando se completa la transferencia.
 
