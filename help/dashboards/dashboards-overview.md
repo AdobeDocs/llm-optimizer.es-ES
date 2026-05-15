@@ -2,10 +2,15 @@
 title: Información general sobre los paneles de control
 description: Es el resumen del artículo.
 feature: Onboarding
-source-git-commit: c449e2eb728648285413390ce7dce973380597cc
+autotag-review: '2026-05-15T17:45:28.871Z'
+TQID: 'https://experienceleague.adobe.com/a4jqbgyeEOywNZDdjdceKGaqwZ5LjFQabrottqS7jVs'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 94%
+source-wordcount: 262
+ht-degree: 100%
 
 ---
 
@@ -83,7 +88,7 @@ CARDS
                     <p class="is-size-6">Realiza un seguimiento de cómo aparece su marca en las plataformas de búsqueda LLM, incluido el análisis de opinión y la comparación con otras marcas.</p>
                 </div>
                 <a href="./brand-presence.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                 </a>
             </div>
         </div>
@@ -106,7 +111,7 @@ CARDS
                     <p class="is-size-6">Cubre el tráfico de los LLM que el análisis tradicional pasa por alto, lo que le ayuda a conectar el descubrimiento asistido por IA con la participación y los ingresos.</p>
                 </div>
                 <a href="./agentic-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                 </a>
             </div>
         </div>
@@ -129,7 +134,7 @@ CARDS
                     <p class="is-size-6">Mide las visitas humanas que se originan a partir de citas generadas por IA que le permiten descubrir la participación real de los usuarios de IA</p>
                 </div>
                 <a href="./referral-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                 </a>
             </div>
         </div>
@@ -152,7 +157,7 @@ CARDS
                     <p class="is-size-6">Permite habilitar el trabajo en equipo interfuncional, ya que permite invitar a compañeros a un espacio de trabajo compartido.</p>
                 </div>
                 <a href="./collaboration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                 </a>
             </div>
         </div>
@@ -175,7 +180,7 @@ CARDS
                     <p class="is-size-6">Identifica y prioriza datos procesables que mejoran la visibilidad de la marca y el rendimiento de las citas en plataformas de búsqueda con tecnología de IA</p>
                 </div>
                 <a href="./opportunities-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                 </a>
             </div>
         </div>
@@ -198,7 +203,7 @@ CARDS
                     <p class="is-size-6">Le ofrece visibilidad sobre el rendimiento de sus direcciones URL propias en entornos de búsqueda basados en IA.</p>
                 </div>
                 <a href="./url-inspector.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                 </a>
             </div>
         </div>
@@ -221,7 +226,7 @@ CARDS
                     <p class="is-size-6">Permite a las organizaciones controlar cómo funciona Adobe LLM Optimizer para sus necesidades específicas.</p>
                 </div>
                 <a href="./customer-configuration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                 </a>
             </div>
         </div>

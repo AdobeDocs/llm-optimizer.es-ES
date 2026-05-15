@@ -2,9 +2,15 @@
 title: Control de acceso
 description: Descubra cómo difieren los usuarios asignados al producto y los usuarios de la organización en Adobe LLM Optimizer, lo que ven los usuarios de solo lectura en la interfaz de usuario y cómo los administradores asignan el acceso en Adobe Admin Console.
 feature: Customer Configuration
-source-git-commit: 3b792a8ca7efd4b6d6764d2e83f9b0c103a56558
+autotag-review: '2026-05-15T17:26:43.837Z'
+TQID: 'https://experienceleague.adobe.com/hJpQQpuHBRMdKT5oKA9z0Y8H3d3p6To-n2hWKrXgZsQ'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: b704f6a0-b2fb-4df0-9177-9753751004f5
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: 618
 ht-degree: 4%
 
 ---
@@ -106,7 +112,7 @@ Un **administrador del sistema** de su organización puede usar [Adobe Admin Con
 1. Inicie sesión en [Adobe Admin Console](https://adminconsole.adobe.com/) con una cuenta que tenga derechos administrativos para su organización.
 1. Asigne el perfil de producto de Adobe LLM Optimizer (o el derecho de producto equivalente de su organización) al usuario o grupo que debe recibir las funciones asignadas al producto.
 
-Para ver los pasos detallados, consulte [Administrar productos en Admin Console](https://helpx.adobe.com/es/enterprise/using/manage-products.html) y [Administrar grupos de usuarios](https://helpx.adobe.com/es/enterprise/using/user-groups.html).
+Para ver los pasos detallados, consulte [Administrar productos en Admin Console](https://helpx.adobe.com/enterprise/using/manage-products.html) y [Administrar grupos de usuarios](https://helpx.adobe.com/es/enterprise/using/user-groups.html).
 
 >[!NOTE]
 >
