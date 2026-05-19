@@ -16,7 +16,7 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 718
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ El inspector de URL le ayuda a analizar el rendimiento de páginas específicas 
 
 ![Inspector de URL](/help/dashboards/assets/url-insp.png)
 
-Si está en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya a **Inspector de URL** y seleccione el sitio para el cual desea ver las perspectivas.
+Si se encuentra en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya a **Inspector de URL** y seleccione el sitio para el cual desea ver las perspectivas.
 
-![Inspector de URL: selector de sitio (experiencia centrada en la marca)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
+![Inspector de URL: selector del sitio (experiencia centrada en la marca)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
 
 ## Filtros
 

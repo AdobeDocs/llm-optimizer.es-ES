@@ -1,6 +1,6 @@
 ---
-title: Análisis de Opinión de YouTube
-description: Descubra cómo LLM Optimizer analiza los vídeos y comentarios de YouTube para mostrar recomendaciones que mejoran la percepción y visibilidad de su marca en los resultados de Búsqueda por IA.
+title: Análisis de opinión de YouTube
+description: Descubra cómo LLM Optimizer analiza los vídeos y comentarios de YouTube para mostrar recomendaciones que mejoran la percepción y visibilidad de su marca en los resultados de la búsqueda por IA.
 feature: Opportunities
 autotag-review: '2026-05-15T18:12:18.358Z'
 TQID: 'https://experienceleague.adobe.com/XevtwbOrmn6QTjMxnErSTI91WUv9m6GYWJ7LeLXdXXg'
@@ -15,137 +15,137 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 1255
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Análisis de Opinión de YouTube
+# Análisis de opinión de YouTube
 
-YouTube es una de las plataformas más influyentes que modela la percepción del consumidor y la reputación de la marca. Cuando los sistemas de IA responden a preguntas sobre su marca, cada vez más citan los vídeos de YouTube como fuentes, lo que hace que la forma en que se habla de su marca en ese contenido sea una entrada directa en las respuestas generadas por IA.
+YouTube es una de las plataformas más influyentes a la hora de moldear la percepción de los consumidores y la reputación de las marcas. Cuando los sistemas de IA responden a preguntas sobre su marca, citan cada vez más los vídeos de YouTube como fuentes, lo que hace que la forma en que se habla de su marca en ese contenido sea una entrada directa en las respuestas generadas por IA.
 
-La oportunidad de análisis de Opinión de YouTube aparece cuando los vídeos de YouTube se detectan como citas para mensajes en el conjunto de mensajes del panel de Presencia de marca. Se analizan los videos citados y sus comentarios para opinión, cuota de voz y temas recurrentes. A continuación, aparecen recomendaciones priorizadas para mejorar la forma en que se percibe y representa su marca en las respuestas generadas por IA.
+La oportunidad de Análisis de opinión de YouTube aparece cuando los vídeos de YouTube se detectan como citas para las indicaciones del conjunto de indicaciones del panel Presencia de marca. Analiza esos videos mencionados y sus comentarios para determinar la opinión general, la cuota de voz y los temas recurrentes. A continuación, muestra las recomendaciones priorizadas para mejorar la forma en que se percibe y representa su marca en las respuestas generadas por IA.
 
 Analiza su marca en seis dimensiones:
 
-- **Vídeos analizados**: número de vídeos de YouTube examinados para detectar menciones de la marca y opinión.
+- **Vídeos analizados**: número de vídeos de YouTube examinados para detectar menciones y opiniones de la marca.
 - **Comentarios analizados**: número de comentarios examinados en todos los vídeos analizados.
-- **Menciones de la marca (vídeos)**: la frecuencia con la que se menciona su marca en el contenido de vídeo.
-- **Menciones de la marca (comentarios)**: la frecuencia con la que se menciona su marca en los comentarios.
-- **opinión general (vídeos)**: opinión agregada hacia su marca en el contenido de vídeo.
-- **opinión general (comentarios)**: opinión agregada hacia su marca en los comentarios.
+- **Menciones de marca (vídeos)**: la frecuencia con la que se menciona su marca en el contenido de vídeo.
+- **Menciones de marca (comentarios)**: la frecuencia con la que se menciona su marca en los comentarios.
+- **Opinión general (vídeos)**: opinión añadida sobre su marca en el contenido del vídeo.
+- **Opinión general (comentarios)**: opinión agregada sobre su marca en los comentarios.
 
 >[!NOTE]
->El análisis de Opinión de YouTube está actualmente en fase beta. Las funciones y la disponibilidad pueden cambiar a medida que la capacidad sigue desarrollándose.
+>El análisis de opinión de YouTube está actualmente en fase Beta. Las funciones y la disponibilidad pueden cambiar a medida que la funcionalidad sigue desarrollándose.
 
-![Panel de análisis de Opinión de YouTube](/help/dashboards/opportunities/assets/youtube-sentiment-overview.png)
+![Panel de control Análisis de opinión de YouTube](/help/dashboards/opportunities/assets/youtube-sentiment-overview.png)
 
 ## Funcionamiento
 
-LLM Optimizer supervisa los vídeos de YouTube citados por los sistemas de IA para buscar indicadores en el conjunto de mensajes del panel de Presencia de marca. Cuando se detectan vídeos citados, se analizan esos vídeos y sus comentarios en busca de menciones de la marca, opinión, cuota de voz y citas de IA. Compara el rendimiento de su marca con los competidores del mercado y las marcas asociadas, identifica los temas recurrentes que impulsan la opinión y genera recomendaciones para abordar las brechas de percepción.
+LLM Optimizer supervisa los vídeos de YouTube citados por los sistemas de IA para buscar indicaciones en el conjunto de indicaciones del panel de control Presencia de marca. Cuando se detectan vídeos citados, analiza esos vídeos y sus comentarios en busca de menciones a la marca, opiniones, la cuota de voz y las citas de IA. Compara el rendimiento de su marca con el de la competencia del mercado y las marcas asociadas, identifica los temas recurrentes que influyen en la opinión y ofrece recomendaciones para subsanar las diferencias de percepción.
 
-Si no se citan vídeos de YouTube para las indicaciones del conjunto de indicaciones, esta oportunidad no aparecerá en el tablero.
+Si no se citan vídeos de YouTube para las indicaciones del conjunto de indicaciones, esta oportunidad no aparecerá en el panel de control.
 
-Los resultados se muestran en dos fichas: **Sugerencias** y **Rendimiento**.
+Los resultados se muestran en dos pestañas: **Sugerencias** y **Rendimiento**.
 
 ## Sugerencias
 
 Esta pestaña muestra recomendaciones para mejorar la percepción de su marca en YouTube. Las sugerencias están organizadas en tres subpestañas: **Sugerencias actuales**, **Sugerencias fijas** y **Sugerencias ignoradas**.
 
-![Ficha Sugerencias](/help/dashboards/opportunities/assets/youtube-sentiment-suggestions.png)
+![Pestaña Sugerencias](/help/dashboards/opportunities/assets/youtube-sentiment-suggestions.png)
 
 La tabla de sugerencias incluye las siguientes columnas:
 
-- **Sugerencia**: La mejora recomendada para resolver una brecha de percepción.
-- **Prioridad**: nivel de urgencia (crítico, alto, Medium, bajo).
-- **Elementos de acción**: abre un panel con pasos específicos para implementar la recomendación, incluidos los equipos responsables (por ejemplo, Estrategia de contenido, Marketing influenciador, Marketing de productos).
-- **Evidencia**: abre una tabla de orígenes que muestra los vídeos detrás de la sugerencia.
+- **Sugerencia**: la mejora recomendada para subsanar una diferencia de percepción.
+- **Prioridad**: nivel de urgencia (crítica, alta, media, baja).
+- **Elementos de acción**: abre un panel con pasos específicos para implementar la recomendación, incluidos los equipos responsables (por ejemplo, Estrategia de contenido, Marketing de influencers, Marketing de producto).
+- **Evidencia**: abre una tabla de Fuentes que muestra los vídeos que respaldan la sugerencia.
 
-Al expandir una sugerencia, se muestra una sección **Análisis de IA** con:
+Al expandir una sugerencia, aparece una sección **Análisis de IA** con los siguientes elementos:
 
-- **Por qué esto necesita mejorarse**: Una explicación de la brecha de percepción identificada, que incluye el contexto competitivo y cómo se está formando el problema en el contenido de YouTube.
-- **Cómo mejorar**: instrucciones específicas sobre qué contenido o acciones solucionarían la brecha.
-- **Resultado esperado**: El resultado esperado de implementar la recomendación.
+- **Por qué esto necesita una mejora**: una explicación de la diferencia de percepción identificada, incluyendo el contexto competitivo y cómo se está manifestando el problema en los contenidos de YouTube.
+- **Cómo mejorar**: directrices específicas sobre qué contenido o acciones permitirían subsanar esta carencia.
+- **Resultado esperado**: el resultado esperado de la implementación de la recomendación.
 
-La tabla **Sources** muestra los vídeos de YouTube que dirigen la sugerencia, con las siguientes columnas:
+La tabla **Fuentes** muestra los vídeos de YouTube que generan la sugerencia, con las siguientes columnas:
 
 - **Vídeo**: título y vínculo al vídeo de YouTube.
-- **Canal**: El canal de YouTube que publicó el vídeo.
-- **Participación** — Nivel de participación (baja, Medium, alta).
-- **Menciones de la marca**: recuento de menciones de la marca frente al total de menciones del vídeo.
-- **Cuota de voz**: la cuota de menciones de tu marca en relación con todas las marcas mencionadas.
-- **Principales 5 marcas**: Las marcas más mencionadas en el vídeo.
-- **Opinión**: opinión general hacia su marca en el vídeo.
-- **Citas de IA** — Cantidad de respuestas de IA que citaron este video.
+- **Canal**: el canal de YouTube que publicó el video.
+- **Participación**: el nivel de participación (bajo, medio, alto).
+- **Menciones de marca**: número de menciones de su marca en comparación con el total de menciones en el video.
+- **Cuota de voz**: la proporción de menciones de su marca en comparación con todas las marcas mencionadas.
+- **Cinco marcas principales**: las marcas más mencionadas en el vídeo.
+- **Opinión**: opinión general sobre su marca en el vídeo.
+- **Citas de IA**: número de respuestas de IA que citaron este vídeo.
 
 ## Rendimiento
 
-La ficha **Rendimiento** proporciona un desglose detallado del rendimiento de su marca en el contenido de YouTube. Está organizado en cuatro secciones.
+La pestaña **Rendimiento** ofrece un desglose detallado del rendimiento de su marca en los contenidos de YouTube. Se organiza en cuatro secciones.
 
 ### Panorama del mercado
 
-Compara el rendimiento de su marca con las marcas asociadas y con los competidores del mercado en función de las menciones.
+Compare el rendimiento de su marca con las marcas asociadas y la competencia del mercado en función de las menciones.
 
-![Mercado horizontal](/help/dashboards/opportunities/assets/youtube-sentiment-market-landscape.png)
+![Panorama del mercado](/help/dashboards/opportunities/assets/youtube-sentiment-market-landscape.png)
 
-Muestra lo siguiente:
+Incluye lo siguiente:
 
-- **Menciones de la marca en vídeos**: su cuota de voz frente a marcas asociadas y competidores del mercado.
-- **Menciones de la marca en comentarios**: la misma comparación entre el contenido de los comentarios.
-- **Seguimiento del mercado**: Un gráfico filtrable donde puedes seleccionar hasta cinco marcas de la competencia para comparar la cuota de voz entre vídeos y comentarios.
+- **Menciones de marca en vídeos**: su cuota de voz frente a las marcas asociadas y la competencia del mercado.
+- **Menciones de marca en comentarios**: la misma comparación aplicada al contenido de los comentarios.
+- **Seguimiento del mercado**: un gráfico filtrable donde puede seleccionar hasta cinco marcas competidoras para comparar la cuota de voz en vídeos y comentarios.
 
 ### Análisis de opinión
 
-Registra la percepción de la marca en el contenido analizado con un gráfico de **Distribución de Opinión** que muestra el desglose porcentual de la opinión favorable, neutral y desfavorable tanto para vídeos como para comentarios.
+Realiza un seguimiento de la percepción de la marca en todo el contenido analizado con un gráfico **Distribución de opiniones** que muestra el desglose porcentual de la opinión favorable, neutral y desfavorable tanto para videos como para comentarios.
 
-![Análisis de Opinión](/help/dashboards/opportunities/assets/youtube-sentiment-distribution.png)
+![Análisis de opinión](/help/dashboards/opportunities/assets/youtube-sentiment-distribution.png)
 
 ### Vídeos
 
 Una tabla detallada de los vídeos de YouTube analizados con las siguientes columnas:
 
 - **Vídeo**: título y vínculo al vídeo de YouTube.
-- **Canal**: El canal de YouTube que publicó el vídeo.
-- **Participación** — Nivel de participación (baja, Medium, alta).
-- **Menciones de la marca**: recuento de menciones de la marca frente al total de menciones del vídeo.
-- **Cuota de voz**: la cuota de menciones de tu marca en relación con todas las marcas mencionadas.
-- **Principales 5 marcas**: Las marcas más mencionadas en el vídeo.
-- **Opinión**: opinión general hacia su marca en el vídeo.
-- **Citas de IA**: número de señales de citas de IA asociadas con el vídeo.
+- **Canal**: el canal de YouTube que publicó el video.
+- **Participación**: el nivel de participación (bajo, medio, alto).
+- **Menciones de marca**: número de menciones de su marca en comparación con el total de menciones en el video.
+- **Cuota de voz**: la proporción de menciones de su marca en comparación con todas las marcas mencionadas.
+- **Cinco marcas principales**: las marcas más mencionadas en el vídeo.
+- **Opinión**: opinión general sobre su marca en el vídeo.
+- **Citas de IA**: número de señales de citas de IA asociadas al vídeo.
 
-La ficha Rendimiento muestra los paneles **Vídeos** y **Temas** en una vista (con **Vídeos** seleccionados). La siguiente figura incluye la tabla de nivel de vídeo y, debajo, el resumen de **Temas**.
+La pestaña Rendimiento muestra los paneles **Vídeos** y **Temas** en una vista (con la opción **Vídeos** seleccionada). En la siguiente figura se incluye la tabla a nivel de vídeo y, debajo, el resumen de **Temas**.
 
-![Tablas de vídeos y temas en la ficha Rendimiento](/help/dashboards/opportunities/assets/youtube-sentiment-videos.png)
+![Tablas Vídeos y Temas en la pestaña Rendimiento](/help/dashboards/opportunities/assets/youtube-sentiment-videos.png)
 
 ### Comentarios
 
-Una tabla detallada de comentarios de YouTube analizados con las mismas columnas que la tabla Vídeos, filtrados a datos de nivel de comentario.
+Una tabla detallada de comentarios de YouTube analizados con las mismas columnas que la tabla Vídeos, filtrada para mostrar los datos a nivel de comentario.
 
 ### Temas
 
 Una tabla de temas recurrentes identificados en el contenido analizado que muestra lo siguiente:
 
 - **Tema**: tema o asunto recurrente identificado.
-- **Menciones de la marca**: número de menciones de la marca asociadas con el tema.
+- **Menciones de marca**: número de menciones de la marca asociadas a tema.
 - **Opinión**: opinión general asociada al tema.
 
 La tabla **Temas** aparece en la misma vista Rendimiento que la tabla Vídeos; consulte la figura en la sección [Vídeos](#videos) anterior.
 
 ## Probar en la demostración
 
-Vea la oportunidad de análisis de Opinión de YouTube en acción usando el entorno de demostración de Frescopa.
+Vea la oportunidad de Análisis de opinión de YouTube en acción usando el entorno de demostración de Frescopa.
 
-[Ver análisis de Opinión de YouTube en la demostración de Frescopa](https://play.llmo.now/org/demo-org/opportunities/youtube-analysis/971280f5-6a07-4506-85bf-d7419dca9803?siteId=frescopa-demo)
+[Ver Análisis de opinión de YouTube en la demostración de Frescopa](https://play.llmo.now/org/demo-org/opportunities/youtube-analysis/971280f5-6a07-4506-85bf-d7419dca9803?siteId=frescopa-demo)
 
 ## Preguntas frecuentes
 
-**¿Por qué YouTube es importante para la Búsqueda por IA?**
+**¿Por qué YouTube es importante para la búsqueda por IA?**
 
-Los sistemas de IA citan cada vez más vídeos de YouTube al generar respuestas sobre marcas, productos y temas. Cuando los vídeos citados analizan su marca de forma desfavorable o inexacta, esa opinión se incorpora directamente en la forma en que los sistemas de IA representan su marca. La mejora de la forma en que se analiza su marca en el contenido de YouTube que los sistemas de IA ya citan es una de las formas más directas de influir en la percepción de la marca generada por IA.
+Los sistemas de IA citan cada vez más vídeos de YouTube a la hora de generar respuestas sobre marcas, productos y temas. Cuando esos vídeos citados hablan de su marca de forma desfavorable o inexacta, esa opinión se incorpora directamente en la forma en que los sistemas de IA representan su marca. Mejorar la forma en que se habla de su marca en el contenido de YouTube que los sistemas de IA ya citan es una de las formas más directas de influir en la percepción de la marca generada por IA.
 
-**¿Por qué no se muestra esta oportunidad en mi panel?**
+**¿Por qué no aparece esta oportunidad en mi panel de control?**
 
-Esta oportunidad solo aparece cuando los vídeos de YouTube se detectan como citas para mensajes en el conjunto de mensajes del panel de Presencia de marca. Si no se cita ningún vídeo de YouTube para esas indicaciones, no se mostrará la oportunidad. A medida que su marca obtenga más cobertura de YouTube y que los sistemas de IA citen esos vídeos para su conjunto de mensajes, la oportunidad estará disponible.
+Esta oportunidad solo aparece cuando los vídeos de YouTube se detectan como citas para las indicaciones de conjunto de indicaciones del panel de control Presencia de marca. Si no se cita ningún vídeo de YouTube para esas indicaciones, no se mostrará la oportunidad. A medida que su marca obtenga más cobertura de YouTube y que los sistemas de IA citen esos vídeos para su conjunto de indicaciones, la oportunidad estará disponible.
 
 **¿Qué significa Opinión general?**
 
@@ -153,16 +153,16 @@ La opinión general refleja el tono agregado del contenido donde se menciona su 
 
 **¿Qué es la Cuota de voz?**
 
-La cuota de voz es el porcentaje de menciones de la marca totales de su marca dentro de un fragmento de contenido determinado o en todo el contenido analizado, en relación con todas las demás marcas mencionadas.
+La cuota de voz es el porcentaje que representa su marca respecto al total de menciones de marcas en un fragmento de contenido determinado o en todo el contenido analizado, en comparación con todas las demás marcas mencionadas.
 
 **¿Qué son las citas de IA?**
 
-Las citas de IA muestran cuántas respuestas de IA citaron un vídeo determinado. Los recuentos más altos de citas de IA indican que los sistemas de IA están utilizando activamente el vídeo al generar respuestas sobre temas relacionados, lo que hace que la opinión en esos vídeos sea especialmente importante para la representación de IA de su marca.
+Las citas de IA muestran cuántas respuestas de IA citaron un vídeo determinado. Un mayor número de citas de IA indica que los sistemas de IA utilizan activamente el vídeo a la hora de generar respuestas sobre temas relacionados, lo que hace que la opinión de esos vídeos sea especialmente importante para la representación de IA de su marca.
 
-**¿Cómo se identifican los competidores del mercado?**
+**¿Cómo se identifican a los competidores del mercado?**
 
-Los competidores se identifican automáticamente en función del sector de su marca y de las marcas que se mencionan conjuntamente con más frecuencia en el contenido analizado. También puede seleccionar manualmente hasta cinco marcas para comparar en el gráfico de seguimiento de mercado.
+Los competidores se identifican automáticamente en función del sector de su marca y de las marcas que se mencionan conjuntamente con más frecuencia en el contenido analizado. También puede seleccionar manualmente hasta cinco marcas para comparar en el gráfico Seguimiento del mercado.
 
 **¿Con qué frecuencia se actualiza el análisis?**
 
-El análisis de YouTube refleja el contenido analizado hasta la fecha que se muestra en el encabezado del panel. Vuelva a visitar la oportunidad, después de implementar las recomendaciones, para rastrear los cambios en la opinión y la cuota de voz.
+El análisis de YouTube refleja el contenido analizado hasta la fecha que se muestra en el encabezado del panel de control. Vuelva a visitar la oportunidad, después de implementar las recomendaciones, para efectuar el seguimiento de los cambios en la opinión y la cuota de voz.

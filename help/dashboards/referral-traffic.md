@@ -17,7 +17,7 @@ topic_v2:
 source-git-commit: 09e228275cf84316ee2e8990636bb3b8865ac263
 workflow-type: tm+mt
 source-wordcount: 750
-ht-degree: 78%
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 78%
 El tráfico de referencia muestra cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia. Rastrea y analiza las fuentes de tráfico, los patrones de referencia y las métricas de conversión de sitios web y plataformas externas. Esto le ayudará a comprender qué fuentes, regiones y páginas generan el tráfico más interesado. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> También hay filtros personalizables para perfeccionar los datos mostrados.
 
 >[!NOTE]
->De manera predeterminada, este tablero genera perspectivas de tráfico a partir de **registros de CDN**. Si su organización está en una oferta de pago, puede conectar **Adobe Analytics** o **Google Analytics 4**(GA4) para agregar datos que midan la detección impulsada por IA y la participación en el sitio. Estos datos están disponibles en la ficha **Impacto en la empresa**. Tenga en cuenta que sin la integración con Adobe Analytics o GA4, la pestaña no se rellena. Para obtener más información, consulte [Integración de Adobe Analytics](/help/dashboards/adobe-analytics-integration.md) o [Integración de Google Analytics](/help/dashboards/google-analytics-integration.md).
+>De manera predeterminada, esta tabla de control genera perspectivas de tráfico a partir de los **registros de CDN**. Si su organización está en una oferta de pago, puede conectar **Adobe Analytics** o **Google Analytics 4**(GA4) para agregar datos que midan la detección impulsada por IA y la participación en el sitio. Estos datos están disponibles en la pestaña **Impacto en la empresa**. Tenga en cuenta que sin la integración con Adobe Analytics o GA4, la pestaña no se rellena. Para obtener más información, consulte [Integración de Adobe Analytics](/help/dashboards/adobe-analytics-integration.md) o [Integración de Google Analytics](/help/dashboards/google-analytics-integration.md).
 
 ![Página de referencia](/help/dashboards/assets/referral-traffic.png)
 
@@ -39,17 +39,17 @@ Esta página detalla lo siguiente:
 * [Direcciones URL de referencia principales](#top-referrals)
 * [Detalles del tráfico de referencia](#traffic-details)
 
-Si está en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya al **Tráfico de referencia** y seleccione el sitio para el cual desea ver las perspectivas del Tráfico de referencia LLM.
+Si se encuentra en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya al **Tráfico de referencia** y seleccione el sitio cuyas perspectivas del Tráfico de referencia de los LLM desea ver.
 
-![Tráfico de referencia — selector de sitio (experiencia centrada en la marca)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
+![Tráfico de referencia: selector del sitio (experiencia centrada en la marca)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
 
 ## Configuración {#setup}
 
 Al iniciar sesión por primera vez, el panel de control tráfico de referencia puede aparecer en blanco. Para ver los datos, debe configurar el reenvío de registros de CDN.
 
-Para los clientes que están en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), puede agregar información de reenvío de registro de CDN navegando a **Administración de marcas** y haciendo clic en la etiqueta **CDN**.
+Para los clientes que se encuentran en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), puede añadir información de reenvío de registros de CDN accediendo a **Administración de marcas** y haciendo clic en la etiqueta **CDN**.
 
-**Configuración del cliente (experiencia clásica):** Configure el [reenvío de registros de CDN](/help/dashboards/customer-configuration.md#cdn-configuration) seleccionando **Ir a la configuración**.
+**Configuración del cliente (experiencia clásica):** configure el [reenvío de registros de CDN](/help/dashboards/customer-configuration.md#cdn-configuration) seleccionando **Ir a configuración**.
 
 ![Configuración de la referencia](/help/dashboards/assets/referral-setup1.png)
 

@@ -1,6 +1,6 @@
 ---
 title: 'Reenvío de registros: Fastly'
-description: Aprenda a reenviar registros de CDN de Fastly al bloque S3 de Adobe para la recopilación de datos de tráfico auténtico en LLM Optimizer.
+description: Aprenda a reenviar registros de CDN de Fastly al bloque S3 de Adobe para la recopilación de datos de tráfico agéntico en LLM Optimizer.
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:51:51.808Z'
 TQID: 'https://experienceleague.adobe.com/9SH1I6ajHKLFeEWXy-NpvPm-Ylk2xBKhQro3qobVEX8'
@@ -16,54 +16,54 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 381
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
-# Reenvío de registros: Rápido {#log-forwarding-fastly}
+# Reenvío de registros: Fastly {#log-forwarding-fastly}
 
-En esta página se explica cómo reenviar registros de CDN de Fastly al bloque S3 de Adobe para la recopilación de datos de tráfico auténtico. Utilizará la página de configuración de CDN de LLM Optimizer para incorporarse a LLM Optimizer. Una vez completado el proceso de incorporación, siga los pasos proporcionados en esta página para configurar el reenvío de registros en la consola web de Fastly.
+En esta página se explica cómo reenviar registros CDN de Fastly al bloque S3 de Adobe para la recopilación de datos de tráfico agéntico. Utilizará la página de configuración de CDN de LLM Optimizer para incorporarse a LLM Optimizer. Una vez completado el proceso de incorporación, siga los pasos que se indican en esta página para configurar el reenvío de registros en la consola web de Fastly.
 
 ## Paso 1: Incorporación en LLM Optimizer {#step-1}
 
 En la página de LLM Optimizer [https://llmo.now/](https://llmo.now/):
 
-1. Vaya a **Configuración**.
+1. Vaya a **Configuración**
 
    ![Botón Configuración](/help/overview/assets/log-forwarding/common/config-button.png)
 
-1. Haga clic en la ficha **Configuración de CDN**.
+1. Haga clic en la pestaña **Configuración de la CDN**.
 
-   ![Ficha Configuración de CDN](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
+   ![Pestaña Configuración de la CDN](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
 
-1. Haga clic en **Comenzar**.
+1. Haga clic en **Empezar**.
 1. Junto a **Activar perspectivas de tráfico de IA**, haga clic en **Configurar**.
 
    ![Configuración](/help/overview/assets/log-forwarding/common/configure.png)
 1. Seleccione **Fastly (BYOCDN)**.
 
-   ![Seleccionar rápidamente](/help/overview/assets/log-forwarding/fastly/fastly-select.png)
+   ![Seleccione Fastly](/help/overview/assets/log-forwarding/fastly/fastly-select.png)
 1. Haga clic en **Incorporar**.
 
-## Paso 2: Crear un extremo S3 en Fastly {#step-2}
+## Paso 2: Crear un punto final S3 en Fastly {#step-2}
 
-Para crear un extremo S3, en el **Panel de control de Campaign de Fastly**:
+Para crear un punto final S3, en el **Panel de control de Fastly**:
 
-1. En el panel de Fastly, vaya a **servicios CDN** (no servicios de cómputo).
-1. En el área de **Amazon Web Service S3**, haga clic en **Crear extremo**.
-1. Rellene los campos **Crear un extremo de Amazon S3**:
+1. En el panel de control de Fastly, vaya a **Servicios de CDN** (no a Servicios de computación).
+1. En el área de **Amazon Web Services S3**, haga clic en **Crear punto final**.
+1. Rellene los campos de **Crear un punto final de Amazon S3**:
 
 | Campo | Descripción |
 | --- | --- |
 | **Nombre** | Nombre legible en lenguaje natural para el punto final. |
 | **Ubicación** | Predeterminado |
-| **Formato de registro** | Utilice la cadena de formato de registro que se muestra en la sección **Cadena de formato de registro** a continuación. |
-| **Formato de marca de hora** | `%Y-%m-%dT%H:%M:%S.000` |
-| **Nombre del contenedor** | Copie el **Nombre del contenedor** de la página de configuración de LLM Optimizer. ![Nombre del contenedor](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
+| **Formato de registro** | Utilice la cadena de formato de registro que se muestra en la sección **Cadena de formato de registro** que viene a continuación. |
+| **Formato de marca de tiempo** | `%Y-%m-%dT%H:%M:%S.000` |
+| **Nombre del bloque** | Copie el **Nombre del bloque** en la página de configuración de LLM Optimizer. ![Nombre del bloque](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
 | **Dominio** | Copie el **Nombre de dominio** de la página de configuración de LLM Optimizer. ![Nombre de dominio](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
 | **Método de acceso** | **Credenciales de usuario** |
-| **Credenciales de usuario** | Copie la **clave de acceso** y la **clave secreta** de la página de configuración de LLM Optimizer. ![Claves de acceso](/help/overview/assets/log-forwarding/common/access-keys.png) |
+| **Credenciales de usuario** | Copie la **Clave de acceso** y la **Clave secreta** en la página de configuración de LLM Optimizer. ![Claves de acceso](/help/overview/assets/log-forwarding/common/access-keys.png) |
 | **Período** | `300` |
 
 **Cadena de formato de registro:**
@@ -74,13 +74,13 @@ Para crear un extremo S3, en el **Panel de control de Campaign de Fastly**:
 
 >[!WARNING]
 >
->Los administradores de contraseñas pueden rellenar automáticamente el campo **Clave secreta** con su contraseña de Fastly. Si la integración de AWS falla, introduzca la clave secreta manualmente.
+>Los administradores de contraseñas pueden rellenar automáticamente el campo **Clave secreta** con su contraseña de Fastly. Si la integración con AWS falla, introduzca la clave secreta manualmente.
 
-Después de completar los pasos anteriores, haga clic en **Opciones avanzadas** y establezca:
+Después de completar los pasos anteriores, haga clic en **Opciones avanzadas** y establezca lo siguiente:
 
 | Campo | Descripción |
 | --- | --- |
-| **Ruta** | Copie **Ruta** de la página de configuración de LLM Optimizer. ![Ruta](/help/overview/assets/log-forwarding/fastly/fastly-path.png) |
+| **Ruta** | Copie **Ruta** en la página de configuración de LLM Optimizer. ![Ruta](/help/overview/assets/log-forwarding/fastly/fastly-path.png) |
 | **Seleccionar un formato de línea de registro** | En blanco |
 | **Compresión** | Gzip |
 | **Nivel de redundancia** | Estándar |
@@ -90,16 +90,16 @@ Después de completar los pasos anteriores, haga clic en **Opciones avanzadas** 
 
 Después de configurar las opciones avanzadas:
 
-1. Haga clic en **Crear** para crear el extremo.
+1. Haga clic en **Crear** para crear el punto final.
 1. En el menú **Activar**, seleccione **Activar en producción** para implementar.
 
 >[!NOTE]
 >
->Transmite rápidamente los registros continuamente a S3, el sitio web y la API de S3 solo hacen que los archivos estén disponibles una vez completada la carga.
+>Fastly transmite los registros de forma continua a S3, pero el sitio web y la API de S3 solo permiten que los archivos estén disponibles una vez finalizada la carga.
 
 ### Ejemplo de entrada de registro {#example}
 
-A continuación se muestra un ejemplo de cadena de formato para enviar datos a Amazon S3:
+A continuación se presenta un ejemplo de cadena de formato para enviar datos a Amazon S3:
 
 ```json
 {

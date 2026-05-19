@@ -1,6 +1,6 @@
 ---
 title: 'Reenvío de registros: CloudFront (CLI de AWS)'
-description: Reenvíe los registros de CDN de CloudFront al bloque S3 de Adobe mediante la CLI de AWS para la configuración y las operaciones de entrega.
+description: Reenvíe registros de CDN de CloudFront al bloque S3 de Adobe mediante la CLI de AWS para las operaciones de configuración y envío.
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:42:44.992Z'
 TQID: 'https://experienceleague.adobe.com/NoVv3qv1RbtqAWGMPYC1Rz4wO-5Au1yL2e8tRKd9Hao'
@@ -17,14 +17,14 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 379
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Reenvío de registros: CloudFront (CLI de AWS) {#log-forwarding-cloudfront-cli}
 
-Esta página detalla cómo reenviar los registros de CDN de CloudFront al bloque S3 de Adobe para la recopilación de datos de tráfico auténtico. Utilizará la página de configuración de CDN de LLM Optimizer para incorporarse a LLM Optimizer. Una vez completado el proceso de incorporación, siga los pasos proporcionados en esta página para configurar el reenvío de registros mediante la [Interfaz de línea de comandos de AWS](https://aws.amazon.com/cli/) en [Paso 2](#step-2-cli).
+En esta página se explica con detalle cómo reenviar registros de CDN de CloudFront al bloque S3 de Adobe para la recopilación de datos de tráfico agéntico. Utilizará la página de configuración de CDN de LLM Optimizer para incorporarse a LLM Optimizer. Una vez completado el proceso de incorporación, siga los pasos que se indican en esta página para configurar el reenvío de registros mediante la [Interfaz de línea de comandos de AWS](https://aws.amazon.com/cli/) en el [Paso 2](#step-2-cli).
 
 >[!NOTE]
 >
@@ -34,15 +34,15 @@ Esta página detalla cómo reenviar los registros de CDN de CloudFront al bloque
 
 En la página de LLM Optimizer [https://llmo.now/](https://llmo.now/):
 
-1. Vaya a **Panel de configuración del cliente**.
+1. Vaya al **panel de control Configuración del cliente**.
 
    ![Botón Configuración](/help/overview/assets/log-forwarding/common/config-button.png)
 
-1. Haga clic en la ficha **Configuración de CDN**.
+1. Haga clic en la pestaña **Configuración de la CDN**.
 
-   ![Ficha Configuración de CDN](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
+   ![Pestaña Configuración de la CDN](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
 
-1. Haga clic en **Comenzar**.
+1. Haga clic en **Empezar**.
 
    <!-- ![Onboard CDN button](/help/overview/assets/log-forwarding/common/onboard-cdn-button.png)-->
 
@@ -50,7 +50,7 @@ En la página de LLM Optimizer [https://llmo.now/](https://llmo.now/):
 
    ![Configuración](/help/overview/assets/log-forwarding/common/configure.png)
 
-1. Escriba su **ID de cuenta de AWS**.
+1. Escriba su ID de la **cuenta de AWS**
 
 <!--  ![AWS Account ID](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)-->
 
@@ -62,13 +62,13 @@ En la página de LLM Optimizer [https://llmo.now/](https://llmo.now/):
 
 <!-- ![Onboard button](/help/overview/assets/log-forwarding/common/onboard-button.png)-->
 
-## Paso 2: Configurar el reenvío de registros de CDN con AWS CLI {#step-2-cli}
+## Paso 2: Configurar el reenvío de registros de CDN con la CLI de AWS {#step-2-cli}
 
 Configure el reenvío de registros de CDN con la CLI de AWS de la siguiente manera:
 
 ### Configurar las credenciales de CLI de AWS
 
-Configure la credencial MAC de CLI de AWS. Abra ~/.aws/credentials e introduzca los valores de las variables siguientes:
+Configure las credenciales de CLI de AWS en MAC. Abra ~/.aws/credentials e introduzca los valores de las variables siguientes:
 
 ```text
 [LLMO]
@@ -77,7 +77,7 @@ aws_secret_access_key=<VALUE_OF_SECRET_KEY>
 aws_session_token=<ONLY_IF_USING_SECURITY_TOKEN_SERVICE> ## Optional
 ```
 
-### Prueba de la conexión
+### Probar la conexión
 
 Ejecute el siguiente comando para probar la conexión:
 
@@ -96,7 +96,7 @@ aws sts get-caller-identity --profile LLMO
 }
 ```
 
-### Inicializar variables
+### Inicializar las variables
 
 Reemplace `REPLACEME123@AdobeOrg` por su ID de organización de Adobe IMS de organización y ejecute el comando siguiente. El identificador de salida de este comando se denominará `TRANSFORM_IMS_ID`.
 
@@ -104,7 +104,7 @@ Reemplace `REPLACEME123@AdobeOrg` por su ID de organización de Adobe IMS de org
 echo "REPLACEME123@AdobeOrg" | sed 's/@AdobeOrg$//' | tr '[:upper:]' '[:lower:]'
 ```
 
-Escriba los valores de `CUSTOMER`, `CDN_ID`, `ACCT1` y `TRANSFORM_IMS_ID` siguiendo las directrices que se indican a continuación y, a continuación, ejecute comandos desde el terminal.
+Escriba los valores de `CUSTOMER`, `CDN_ID`, `ACCT1` y `TRANSFORM_IMS_ID` siguiendo las directrices que se indican a continuación y ejecute los comandos desde el terminal.
 
 ```bash
 export PROFILE1=LLMO
@@ -117,7 +117,7 @@ export DELIVERY_DEST_ARN=arn:aws:logs:us-east-1:640168421876:delivery-destinatio
 
 <!--Use the **Delivery destination ARN** and org values from the LLM Optimizer CDN configuration page if they differ from the pattern above.-->
 
-### Creación del origen de entrega
+### Crear la fuente de envío
 
 Desde el mismo terminal en el que se ejecutó el paso 3, ejecute el siguiente comando:
 
@@ -130,18 +130,18 @@ aws logs put-delivery-source --name llmo-cf-${CUSTOMER}-${CDN_ID} \
 
 >[!IMPORTANT]
 >
->Si recibe el siguiente error, busque el origen de entrega existente: *Se produjo un error (ConflictException) al llamar a la operación PutDeliverySource: ResourceId ya se ha utilizado en otra Source de entrega de esta cuenta.*
+>Si recibe el siguiente error, busque la fuente de envío existente: *Se produjo un error (ConflictException) al llamar a la operación PutDeliverySource: este ResourceId ya se ha utilizado en otra Fuente de envío en esta cuenta.*
 >
->Para buscar el origen de entrega existente, ejecute este comando:
+>Para buscar la fuente de envío existente, ejecute este comando:
 >
 >```bash
 >aws logs describe-delivery-sources --region us-east-1 \
 >--query "deliverySources[?contains(resourceArns[0], '<CDN DistributionID>')]"
 >```
 >
->En el siguiente comando, utilice el nombre de origen de entrega de los resultados del comando anterior.
+>En el siguiente comando, utilice el nombre de la fuente de envío de los resultados del comando anterior.
 
-### Creación de la configuración de envío
+### Crear la configuración del envío
 
 ```bash
 aws logs create-delivery \
@@ -152,4 +152,4 @@ aws logs create-delivery \
   --record-fields 'date' 'time' 'x-edge-location' 'cs-method' 'cs(Host)' 'cs-uri-stem' 'sc-status' 'cs(Referer)' 'cs(User-Agent)' 'time-to-first-byte' 'sc-content-type' 'x-host-header'
 ```
 
-&lt;!—Alinee `--record-fields` y `--s3-delivery-configuration` con la lista de campos y el sufijo de ruta que se muestra en la página de configuración de CDN de LLM Optimizer si cambian los valores de la documentación o del producto.—>
+&lt;!--Alinee `--record-fields` y `--s3-delivery-configuration` con la lista de campos y el sufijo de ruta que se muestra en la página de configuración de la CDN de LLM Optimizer si cambian los valores de la documentación o del producto.-->

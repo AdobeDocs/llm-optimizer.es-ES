@@ -13,7 +13,7 @@ subfeature_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 809
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +32,11 @@ Antes de configurar las reglas del Administrador de propiedades de Akamai, aseg�
 
 **Configuración**
 
-La siguiente regla del Administrador de propiedades de Akamai enruta el tráfico auténtico de la página de HTML a Edge Optimize. La configuración incluye los pasos siguientes:
+La siguiente regla del Administrador de propiedades de Akamai dirige el tráfico de páginas HTML agénticas a Edge Optimize. La configuración incluye los pasos siguientes:
 
-**1. Establecer criterios de enrutamiento (coincidencia de tráfico de agente de usuario y HTML)**
+**1. Establecer criterios de enrutamiento (coincidencia de usuario-agente y tráfico de HTML)**
 
-Establezca el enrutamiento para los siguientes agentes de usuario:
+Establecer el enrutamiento de los siguientes agentes de usuario:
 
 ```
  *AdobeEdgeOptimize-AI*
@@ -49,7 +49,7 @@ Establezca el enrutamiento para los siguientes agentes de usuario:
 
 >[!NOTE]
 >
->Aplique la regla de enrutamiento Optimizar en Edge solo al tráfico auténtico de la página de HTML. Una configuración común es usar criterios del lado de la solicitud como **Extensión de archivo** para que coincida con `html` y `EMPTY_STRING` para direcciones URL de páginas sin extensión. Si su sitio proporciona HTML desde otros patrones de URL o incluye rutas sin extensión que no sean de página, como puntos finales de API, perfeccione la regla con criterios adicionales basados en rutas.
+>Aplique la regla de enrutamiento Optimizar en Edge solo al tráfico de páginas HTML agénticas. Una configuración común es usar criterios del lado de la solicitud como, por ejemplo, **Extensión de archivo** para que coincida con `html` y `EMPTY_STRING` para direcciones URL de páginas sin extensión. Si su sitio sirve HTML desde otros patrones de URL o incluye rutas sin extensión que no sean de página, como los puntos finales de API, perfeccione la regla con criterios adicionales basados en rutas.
 
 ![Establecer criterios de enrutamiento](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
@@ -59,7 +59,7 @@ Establecer origen como `live.edgeoptimize.net` y hacer coincidir SAN con `*.edge
 
 >[!NOTE]
 >
->Si la activación de la propiedad falla después de agregar la regla Optimizar en Edge, compruebe si la regla utiliza un modo de verificación SSL del servidor de origen diferente al de la regla predeterminada. Si es así, actualice la regla Optimize at Edge para que coincida con la regla predeterminada. Por ejemplo, si la regla predeterminada usa **Configuración de plataforma**, use **Configuración de plataforma** aquí también. Si no puede utilizar la configuración requerida, póngase en contacto con el soporte de Akamai.
+>Si la activación de la propiedad falla después de añadir la regla Optimizar en Edge, compruebe si la regla utiliza un modo de verificación SSL del servidor de origen diferente al de la regla predeterminada. Si es así, actualice la regla Optimizar en Edge para que coincida con la regla predeterminada. Por ejemplo, si la regla predeterminada utiliza **Configuración de la plataforma**, utilice **Configuración de la plataforma** aquí también. Si no puede utilizar la configuración requerida, póngase en contacto con el servicio de asistencia de Akamai.
 
 ![Establecer origen y comportamiento de SSL](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -76,13 +76,13 @@ Establecer la variable de la clave de caché `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` e
 **5. Modificar encabezados de solicitud entrantes**
 
 Establezca los siguientes encabezados de solicitud entrantes:
-`x-edgeoptimize-api-key` a la clave de API recuperada de LMO
+`x-edgeoptimize-api-key` para la clave de API recuperada de LLMO
 `x-edgeoptimize-config` a `LLMCLIENT=TRUE;`
 `x-edgeoptimize-url` a `{{builtin.AK_URL}}`
 
 ![Modificar encabezados de solicitud entrantes](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
-**Permitir la optimización en Edge mediante reglas de firewall (opcional)**
+**Permitir Optimizar en Edge mediante reglas de cortafuegos (opcional)**
 
 {{waf-allowlist-setup}}
 
@@ -90,7 +90,7 @@ Establezca los siguientes encabezados de solicitud entrantes:
 
 >[!NOTE]
 >
->También realice la lista de permitidos del agente de usuario `*AdobeEdgeOptimize/1.0*` y el encabezado `x-edgeoptimize-fetcher-key` en el administrador de bots de Akamai.
+>Añada también a la lista de permitidos el agente de usuario `*AdobeEdgeOptimize/1.0*` y el encabezado `x-edgeoptimize-fetcher-key` en el administrador de bots de Akamai.
 
 **6. Modificar encabezados de respuesta entrantes**
 
@@ -116,7 +116,7 @@ Dentro de la regla de enrutamiento principal, configure el comportamiento de con
 
 >[!IMPORTANT]
 >
->El fragmento XML de este paso requiere el comportamiento **Advanced**. En algunos entornos de Akamai, este comportamiento no está disponible para la edición de autoservicio. Si no ve la opción **Avanzada**, póngase en contacto con el equipo de su cuenta de Akamai o con el servicio de atención al cliente de Akamai para habilitar la configuración requerida.
+>El fragmento XML de este paso requiere el comportamiento **Avanzado**. En algunos entornos de Akamai, este comportamiento no está disponible para la edición de autoservicio. Si no visualiza la opción **Avanzado**, póngase en contacto con el equipo de cuentas de Akamai o con el servicio de asistencia de Akamai para habilitar la configuración necesaria.
 
 ![Conmutación por error del sitio](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
@@ -148,7 +148,7 @@ Añada el encabezado de la solicitud `x-edgeoptimize-request` con el valor `fo` 
 >
 >Esto garantiza que la regla del encabezado de la prueba de conmutación por error se evalúe para **todas** las reglas de enrutamiento, no solo una.
 >
->Asegúrese también de que la regla **Optimizar en enrutamiento de Edge** no se anule con ninguna regla que coincida posteriormente y que cambie el origen, el comportamiento del almacenamiento en caché o el ID de caché para las mismas solicitudes. Si otra regla coincidente restablece estos comportamientos, es posible que el enrutamiento o el almacenamiento en caché de Optimize at Edge no funcione según lo esperado.
+>Asegúrese también de que la regla **Enrutamiento de Optimizar en Edge** no se anule con ninguna regla posterior que coincida y que cambie el origen, el comportamiento del almacenamiento en caché o el ID de caché para las mismas solicitudes. Si otra regla coincidente restablece estos comportamientos, es posible que el enrutamiento o el almacenamiento en caché de Optimizar en Edge no funcione según lo previsto.
 
 Si el valor del encabezado de la solicitud `x-edgeoptimize-request` es `fo`, establezca el encabezado de la respuesta saliente `x-edgeoptimize-fo` en `true`.
 

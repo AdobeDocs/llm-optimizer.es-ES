@@ -1,6 +1,6 @@
 ---
 title: Integración de Adobe Analytics
-description: Aprenda a conectar Adobe Analytics con LLM Optimizer para medir la detección basada en IA, la participación en el sitio y los resultados empresariales en el panel de Tráficos de referencia.
+description: Aprenda a conectar Adobe Analytics con LLM Optimizer para medir el descubrimiento basado en la IA, la participación en el sitio y los resultados comerciales en el panel de control de Tráfico de referencia.
 feature: Referral Traffic
 autotag-review: '2026-05-15T17:29:50.263Z'
 TQID: 'https://experienceleague.adobe.com/Wo-7p-mNQRrpS3EhmnS38UF1-IcaKEJpUz5H3BwY8Yo'
@@ -18,96 +18,96 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 879
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
 # Integración de Adobe Analytics
 
-La integración de Adobe Analytics conecta LLM Optimizer con los datos de Adobe Analytics de su organización para que pueda medir cómo la detección impulsada por IA se traduce en participación real en el sitio web y resultados comerciales. Una vez completado el proceso de integración, los datos estarán disponibles en el panel **Tráfico de referencia** en la pestaña **Impacto en la empresa**.
+La integración de Adobe Analytics conecta LLM Optimizer con los datos de Adobe Analytics de su organización para que pueda medir cómo el descubrimiento basado en la IA se traduce en una participación real en el sitio web y en resultados comerciales. Una vez finalizado el proceso de integración, los datos estarán disponibles en el panel de control **Tráfico de referencia** en la pestaña **Impacto en la empresa**.
 
-Al vincular datos de análisis con perspectivas de visibilidad de IA, LLM Optimizer le ayuda a realizar el seguimiento:
+Al vincular los datos analíticos con la información de visibilidad de la IA, LLM Optimizer le ayuda a realizar un seguimiento de lo siguiente:
 
-* Participación del usuario en páginas referidas a IA.
-* Señales de conversión vinculadas a recorridos de detección de IA.
+* Participación del usuario en páginas referenciadas por IA.
+* Señales de conversión vinculadas a los procesos de descubrimiento de la IA.
 * Impacto en el rendimiento de las optimizaciones GEO.
 
-Esta integración reduce la brecha entre la medición de visibilidad de IA y los análisis de rendimiento empresarial. Los equipos ahora pueden ver no solo dónde aparece la marca en las respuestas de IA, sino también qué sucede después de que llegan los usuarios.
+Esta integración tiende un puente entre la medición de la visibilidad de la IA y el análisis del rendimiento empresarial. Ahora, los equipos pueden ver no solo dónde aparece la marca en las respuestas de la IA, sino también qué ocurre después de que los usuarios lleguen.
 
 ## Disponibilidad {#availability}
 
 >[!IMPORTANT]
 >
->La integración de Adobe Analytics se incluye en la oferta de LLM Optimizer de pago. Los clientes que utilicen la prueba gratuita no podrán conectar Adobe Analytics hasta que se actualicen a una oferta de pago.
+>La integración de Adobe Analytics está incluida en la oferta de pago de LLM Optimizer. Los clientes que utilicen la versión de prueba gratuita no podrán conectar Adobe Analytics hasta que actualicen a una oferta de pago.
 
-## Conectar Adobe Analytics al tablero de Tráfico de referencia {#connect}
+## Conectar Adobe Analytics con el panel de control de tráfico de referencia {#connect}
 
-El flujo de conexión se inicia desde el panel [Tráfico de referencia](/help/dashboards/referral-traffic.md) de la siguiente manera:
+El flujo de conexión empieza desde el panel de control [Tráfico de referencia](/help/dashboards/referral-traffic.md) de la siguiente manera:
 
-1. Abra el tablero [Tráfico de referencia](/help/dashboards/referral-traffic.md). La vista predeterminada es **Perspectivas de tráfico**.
+1. Abra el panel de control [Tráfico de referencia](/help/dashboards/referral-traffic.md). La vista predeterminada es **Datos del tráfico**.
 
-   ![Tablero de Tráfico de referencia, ficha Perspectivas de tráfico](/help/dashboards/assets/aa-integration-01-referral-traffic-traffic-insights.png)
+   ![Panel de control Tráfico de referencia, pestaña Perspectivas del tráfico](/help/dashboards/assets/aa-integration-01-referral-traffic-traffic-insights.png)
 
-1. Seleccione la ficha **Impacto en la empresa**. Si no hay ningún proveedor de análisis conectado, aparecerá un banner: **Conectar para ver el impacto en la empresa**, con **Conectarse a Analytics**.
+1. Seleccione la pestaña **Impacto en la empresa**. Si no hay ningún proveedor de análisis conectado, aparecerá un banner: **Conectar para ver el impacto en la empresa**, con **Conectar con Analytics**.
 
-   ![Pestaña Impacto empresarial con Connect to Analytics](/help/dashboards/assets/aa-integration-02-business-impact-connect.png)
+   ![Pestaña Impacto en la empresa con Conectar con Analytics](/help/dashboards/assets/aa-integration-02-business-impact-connect.png)
 
-1. Seleccione **Conectarse a Analytics**. Se abrirá el panel de [Configuración del cliente](/help/dashboards/customer-configuration.md) en la ficha **Analytics**.
+1. Seleccione **Conectar con Analytics**. Se abrirá el panel [Configuración del cliente](/help/dashboards/customer-configuration.md) en la pestaña **Análisis**.
 
-   ![Configuración del cliente, ficha Analytics](/help/dashboards/assets/aa-integration-03-analytics-tab.png)
+   ![Configuración del cliente, pestaña Análisis](/help/dashboards/assets/aa-integration-03-analytics-tab.png)
 
-1. En **Credenciales**, escriba **ID de cliente** y **Secreto de cliente** y, a continuación, seleccione **Verificar y continuar**. Tenga en cuenta lo siguiente:
+1. En **Credenciales**, introduzca el **ID de cliente** y el **Secreto de cliente**, y a continuación seleccione **Verificar y continuar**. Tenga en cuenta lo siguiente:
 
-   * **Verificar y continuar** solo está disponible cuando se rellenan ambos campos.
-   * Después de una verificación correcta, se cargan los grupos de informes.
-   * Use **ID de cliente** y **Secreto de cliente** de una [cuenta técnica](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) que tenga acceso al grupo de informes que necesita.
+   * **Verificar y continuar** solo está disponible cuando ambos campos se han completado.
+   * Tras una verificación satisfactoria, se cargarán los grupos de informes.
+   * Utilice el **ID de cliente** y el **Secreto de cliente** de una [cuenta técnica](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) que tenga acceso al grupo de informes que necesita.
 
-   ![Credenciales de Analytics y Verificar y continuar](/help/dashboards/assets/aa-integration-04-credentials.png)
+   ![Credenciales de análisis y Verificar y continuar](/help/dashboards/assets/aa-integration-04-credentials.png)
 
-1. En **Configuración**, elija un **grupo de informes**.
+1. En **Configuración**, elija un **Grupo de informes**.
 
-   Cuando se selecciona un grupo de informes, LLM Optimizer carga las opciones de **URL de la página Dimension** disponibles para ese grupo de informes.
+   Cuando se selecciona un conjunto de informes, LLM Optimizer carga las opciones **Dimensión de URL de página** disponibles para ese grupo.
 
-   ![Grupo de informes seleccionado y dimensiones cargando](/help/dashboards/assets/aa-integration-05-report-suite.png)
+   ![Se ha seleccionado el grupo de informes y se están cargando las dimensiones](/help/dashboards/assets/aa-integration-05-report-suite.png)
 
-1. Elija una **URL de la página Dimension** (lista de dimensiones específica del grupo de informes) y, a continuación, seleccione **Guardar y habilitar**.
+1. Elija una **dimensión de URL de página** (lista de dimensiones específicas del grupo) y, a continuación, seleccione **Guardar y habilitar**.
 
-   * **La URL de la página Dimension** permanece deshabilitada hasta que se selecciona un grupo de informes y se cargan las dimensiones.
-   * **Guardar y habilitar** solo está disponible después de seleccionar una dimensión de dirección URL de página.
+   * **Dimensión de URL de página** permanece deshabilitada hasta que se seleccione un grupo de informes y se carguen las dimensiones.
+   * **Guardar y habilitar** solo está disponible después de seleccionar una dimensión de URL de página.
 
-   ![Dimensión de URL de página y Guardar y habilitar](/help/dashboards/assets/aa-integration-06-page-url-dimension.png)
+   ![Dimensión de URL de la página y Guardar y habilitar](/help/dashboards/assets/aa-integration-06-page-url-dimension.png)
 
-1. Después de guardar, la configuración debería mostrar el estado **Conectado**. Puede volver al panel de Tráfico de referencia con **Ir al panel de Tráfico de referencia**. En el **Tráfico de referencia** de la ficha **Impacto en la empresa**, el estado debería aparecer como **Conectado a Adobe Analytics**.
+1. Después de guardarla, la configuración debería mostrar el estado **Conectado**. Puede volver al panel de control de tráfico de referencia con **Ir al panel de control de tráfico de referencia**. En **Tráfico de referencia** en la pestaña **Impacto en la empresa**, el estado debería aparecer como **Conectado a Adobe Analytics**.
 
-   ![Conectado a Adobe Analytics en la configuración y el impacto empresarial](/help/dashboards/assets/aa-integration-07-connected.png)
+   ![Conectado a Adobe Analytics en la configuración e Impacto en la empresa](/help/dashboards/assets/aa-integration-07-connected.png)
 
-### Después de conectar {#after-connect}
+### Después de conectarse {#after-connect}
 
-* LLM Optimizer rellena **las últimas cuatro semanas** y **el calendario actual hasta la fecha**.
-* Después del relleno, los datos se actualizan **diariamente** con una extracción de **día anterior completo**.
+* LLM Optimizer rellena las **últimas cuatro semanas naturales completas** y la **semana natural actual hasta la fecha**.
+* Después de rellenarse, los datos se actualizan **diariamente** con una extracción del **día completo anterior**.
 
 >[!NOTE]
 >
->El relleno puede tardar unas horas en completarse.
+>El relleno puede tardar un par de horas en completarse.
 
 ## Funcionamiento {#how-it-works}
 
 ### Configuración
 
-Durante la configuración, puede definir qué grupo de informes y qué dimensión de página utiliza LLM Optimizer para la ingesta de Adobe Analytics. La dimensión de página puede ser la asignación estándar `variables/page` o una `eVar` personalizada, según el grupo de informes.
+Durante la configuración, debe definir qué conjunto de informes y dimensión de página utiliza LLM Optimizer para la ingesta de datos de Adobe Analytics. La dimensión de la página puede ser la asignación `variables/page` estándar o una `eVar` personalizada, dependiendo de su grupo de informes.
 
-### Cómo se identifica el tráfico LLM
+### Cómo se identifica el tráfico de LLM
 
-El tráfico originado en LLM se identifica mediante el tipo de referente de Adobe Analytics [Herramientas de inteligencia artificial aplicada a la conversación](https://experienceleague.adobe.com/es/docs/analytics/components/dimensions/referrer-type#conversational-ai-tools).
+El tráfico originado en LLM se identifica mediante el uso del [Tipo de referente: herramientas de IA conversacional](https://experienceleague.adobe.com/es/docs/analytics/components/dimensions/referrer-type#conversational-ai-tools) de Adobe Analytics.
 
-### Datos introducidos {#data-ingested}
+### Datos ingeridos {#data-ingested}
 
-LLM Optimizer incorpora los siguientes datos:
+LLM Optimizer ingiere los siguientes datos:
 
 **Dimensiones**
 
-* Dominio de referente
+* Dominio del referente
 * Tipo de referente
 * País
 * Tipo de dispositivo
@@ -122,50 +122,50 @@ LLM Optimizer incorpora los siguientes datos:
 * Salidas
 * Rechazos
 * Visitas a una sola página
-* Tiempo empleado
-* Carritos
-* Adiciones al carro
-* Eliminaciones del carro
-* Vistas del carro
+* Tiempo dedicado
+* Carros de compras
+* Incorporaciones al carro de compras
+* Eliminaciones del carro de compras
+* Visualizaciones del carro de compras
 * Cierres de compra
 * Pedidos
 * Ingresos
 * Unidades
 
-### Cómo utiliza LLM Optimizer estos datos
+### Cómo LLM Optimizer utiliza estos datos
 
-Este conjunto de datos alimenta las perspectivas de LLM Optimizer para:
+Este conjunto de datos proporciona información valiosa sobre LLM Optimizer para lo siguiente:
 
-* Rendimiento del tráfico LLM de nivel de página.
-* Rendimiento del referente en todas las fuentes LLM.
-* Tendencias regionales y de nivel de dispositivo.
-* Resultados comerciales descendentes.
+* Rendimiento del tráfico LLM a nivel de página.
+* Rendimiento del referente en las distintas fuentes de LLM.
+* Tendencias regionales y a nivel de dispositivo.
+* Resultados comerciales posteriores.
 
 ## Preguntas frecuentes {#faq}
 
-P: ¿La integración de Adobe Analytics está disponible durante la versión de prueba?
+P: ¿Está disponible la integración de Adobe Analytics durante la versión de prueba?
 
-No. La integración solo está disponible para clientes de LLM Optimizer de pago.
+No. Esta integración solo está disponible para los clientes de pago de LLM Optimizer.
 
 P: ¿Qué datos se recopilan o almacenan?
 
-Consulte el capítulo [Datos ingeridos](#data-ingested) anterior. LLM Optimizer funciona con métricas agregadas de las API de Adobe Analytics autorizadas por su organización, no con los datos sin procesar en el nivel de visita.
+Consulte el capítulo [Datos ingeridos](#data-ingested) anterior. LLM Optimizer funciona con métricas agregadas de las API de Adobe Analytics autorizadas por su organización, no con los datos sin procesar a nivel de visita.
 
-P: ¿Cómo se incorporan los datos?
+P: ¿Cómo se ingieren los datos?
 
-Su organización autoriza a LLM Optimizer a consultar las API de Adobe Analytics. El tráfico de referencia alineado con las fuentes LLM se consume a través de esas API.
+Su organización autoriza a LLM Optimizer a consultar las API de Adobe Analytics. El tráfico de referencia alineado con las fuentes de LLM se consume a través de esas API.
 
 P: ¿Con qué frecuencia se actualizan los datos?
 
 Los datos se actualizan **diariamente** (día anterior completo después de que se complete el relleno).
 
-P: ¿Los datos sin procesar en el nivel de visita se almacenan en LLM Optimizer?
+P: ¿Se almacenan los datos sin procesar a nivel de visita en LLM Optimizer?
 
-No. Solo se usan **métricas agregadas** para comprender patrones y tendencias de tráfico.
+No. Solo se utilizan métricas **agregadas** para comprender los patrones y tendencias del tráfico.
 
-P: ¿Se almacenan direcciones URL completas, cadenas de consulta o contenido de página?
+P: ¿Se almacenan direcciones URL completas, cadenas de consulta o el contenido de página?
 
-Se pueden introducir las direcciones URL completas utilizadas para la dimensión de página seleccionada; las cadenas de consulta y el contenido de página no se incorporan para esta integración.
+Se pueden introducir las direcciones URL completas que se utilizan para la dimensión de página seleccionada; las cadenas de consulta y el contenido de página no se introducen para esta integración.
 
 P: ¿Se almacenan los identificadores de usuario (ECID, dirección IP, ID de cookie)?
 
@@ -175,10 +175,10 @@ P: ¿Durante cuánto tiempo se conservan los datos?
 
 Tenga en cuenta que las políticas de retención pueden evolucionar. Actualmente, los datos se almacenan indefinidamente.
 
-P: ¿Los datos están cifrados en tránsito y en reposo?
+P: ¿Los datos se cifran en tránsito y en reposo?
 
 Actualmente, los datos se cifran en tránsito y no en reposo. Esto puede cambiar en futuras actualizaciones.
 
-P: ¿Los datos históricos están rellenados?
+P: ¿Los datos históricos se rellenan?
 
-Sí. Después de una configuración correcta, se rellenan las cuatro últimas semanas del calendario completo y la semana natural actual. Ver también [Después de conectar](#after-connect).
+Sí. Una vez completada correctamente la configuración, se rellenarán los datos de las cuatro últimas semanas naturales y de la semana natural actual. Consulte también [Después de conectarse](#after-connect).

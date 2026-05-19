@@ -15,7 +15,7 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 508
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -64,10 +64,10 @@ La optimización del motor generativo es interfuncional por naturaleza. LLM Opti
 Con Adobe LLM Optimizer, puede hacer lo siguiente:
 
 **Medir la visibilidad de la marca**: realice un seguimiento de cuándo, dónde y con qué frecuencia se menciona su marca en los resultados de la búsqueda con tecnología de IA. Supere las conjeturas con una puntuación de visibilidad clara que pueda comparar a lo largo del tiempo.
-**Otros de referencia** - Vea cómo su marca se apila contra otros en motores generativos. Identifique las lagunas de la cuota de voz y descubra las ventajas competitivas.
-**Descubre oportunidades procesables** - Encuentra oportunidades de contenido (por ejemplo, preguntas frecuentes, resúmenes, esquemas) y oportunidades técnicas (rastreabilidad, problemas de indexación) que aumentan directamente las menciones y citas.
-**Seguimiento del impacto del tráfico desde IA**: supervise el tráfico auténtico (de los asistentes de IA) y el tráfico de referencia (los clics de los usuarios en las citas) en sus propiedades. Vincule la visibilidad de GEO con la participación real.
-**Habilitar Team Collaboration**: comparta paneles, asigne propietarios para preguntas o categorías y asegúrese de que se realiza un seguimiento de los objetivos de visibilidad en las funciones de marketing, SEO y comunicaciones.
+**Referencia de otros**: descubra cómo se posiciona su marca frente a otros, en los motores generativos. Identifique las lagunas de la cuota de voz y descubra las ventajas competitivas.
+**Descubrir oportunidades procesables**: identifique oportunidades de contenido (p. ej., preguntas frecuentes, resúmenes, esquemas) y oportunidades técnicas (rastreabilidad, problemas de indexación) que aumenten directamente las menciones y citas.
+**Rastrear el impacto del tráfico de la IA**: monitorice el tráfico agéntico (de los asistentes de IA) y el tráfico de referencia (los clics de los usuarios procedentes de las citas) hacia sus propiedades. Vincule la visibilidad de GEO con la participación real.
+**Habilitar la colaboración en equipo**: comparta paneles de control, asigne propietarios para indicaciones o categorías y asegúrese de que se realice un seguimiento de los objetivos de visibilidad en las funciones de marketing, de optimización del motor de búsqueda (SEO) y de las funciones de comunicaciones.
 
 
 ## Referencias

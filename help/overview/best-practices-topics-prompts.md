@@ -21,7 +21,7 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1530
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -39,17 +39,17 @@ En el panel de control [!UICONTROL Configuración del cliente], puede personaliz
 
 ## Experiencia centrada en la marca
 
-De forma predeterminada, los nuevos clientes empiezan en una interfaz centrada y de marca con una configuración basada en la incorporación. En esta nueva interfaz, cada organización comienza con una marca activa y marcas sugeridas adicionales para elegir. Los clientes existentes de LLM Optimizer cambiarán gradualmente a esta experiencia centrada en la marca.
+De forma predeterminada, los nuevos clientes acceden a una interfaz específica, centrada en la marca con una configuración basada en la incorporación. En esta nueva interfaz, cada organización empieza con una marca activa y marcas sugeridas adicionales entre las que elegir. Los clientes existentes de LLM Optimizer se pasarán gradualmente a esta experiencia centrada en la marca.
 
-Si se encuentra en la experiencia de Brand Centric, **Brands Management** es donde define cómo se supervisa y analiza su marca.
+Si se encuentra en la experiencia centrada en la marca, **Administración de marcas** es el lugar donde debe definir cómo se monitoriza y analiza su marca.
 
-![Gestión de marcas — Navegación de aplicaciones (experiencia centrada en las marcas)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+![Administración de marcas: navegación por las aplicaciones (experiencia centrada en las marcas)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-![Administración de marcas — información general sobre la configuración](/help/assets/brand-centric-experience/brands-management-configuration.png)
+![Administración de marcas: información general sobre la configuración](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
-Para configurar los temas y las indicaciones de una marca específica, use **Administración de indicaciones**.
+Para configurar los temas y las indicaciones de una marca específica, utilice **Administración de indicaciones**.
 
-![Administración de indicadores](/help/assets/brand-centric-experience/prompts-management.png)
+![Administración de indicaciones](/help/assets/brand-centric-experience/prompts-management.png)
 
 ## Biblioteca de indicaciones del sector
 
@@ -119,7 +119,7 @@ La forma de decidir cómo se configuran las categorías se basa en una pregunta:
 >[!IMPORTANT]
 >
 > * Elija un enfoque y manténgase fiel a él.
-> * Solo puede tener **un** modelo de categoría por cuenta o marca. No mezcles **SBU** y **URL_DIR** al mismo tiempo.
+> * Solo puede tener **un** modelo de categoría por cuenta o marca. No combine **UEN** y **DIR_URL** al mismo tiempo.
 <!--Can you mix Product/Service with these?-->
 
 Ejemplo:

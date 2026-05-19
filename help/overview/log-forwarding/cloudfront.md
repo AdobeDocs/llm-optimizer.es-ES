@@ -1,6 +1,6 @@
 ---
 title: 'Reenvío de registros: CloudFront'
-description: Aprenda a reenviar registros de CDN de CloudFront al bloque S3 de Adobe para la recopilación de datos de tráfico auténtico en LLM Optimizer.
+description: Aprenda a reenviar registros de CDN desde CloudFront al bloque S3 de Adobe para la recopilación de datos del tráfico agéntico en LLM Optimizer.
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:43:07.178Z'
 TQID: 'https://experienceleague.adobe.com/TXnY-eK1SUuKrlVoGWd2hZO5bjUqEspvyFmcyOuei3Q'
@@ -17,28 +17,28 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 466
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Reenvío de registros: CloudFront {#log-forwarding-cloudfront}
 
-En esta página se explica cómo reenviar registros de CDN de CloudFront al bloque S3 de Adobe para la recopilación de datos de tráfico auténtico. Utilizará la página de configuración de CDN de LLM Optimizer para incorporarse a LLM Optimizer. Una vez completado el proceso de incorporación, siga los pasos proporcionados en esta página para configurar el reenvío de registros en la consola del panel de CloudFront.
+En esta página se explica cómo reenviar registros de CDN desde CloudFront al bloque S3 de Adobe para la recopilación de datos del tráfico agéntico. Utilizará la página de configuración de CDN de LLM Optimizer para incorporarse a LLM Optimizer. Una vez completado el proceso de incorporación, siga los pasos que se indican en esta página para configurar el reenvío de registros en la consola del panel de control de CloudFront.
 
 ## Paso 1: Incorporación en LLM Optimizer {#step-1}
 
 En la página de LLM Optimizer [https://llmo.now/](https://llmo.now/):
 
-1. Vaya a **Panel de configuración del cliente**.
+1. Vaya al **panel de control Configuración del cliente**.
 
    ![Botón Configuración](/help/overview/assets/log-forwarding/common/config-button.png)
 
-1. Haga clic en la ficha **Configuración de CDN**.
+1. Haga clic en la pestaña **Configuración de la CDN**.
 
-   ![Ficha Configuración de CDN](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
+   ![Pestaña Configuración de la CDN](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
 
-1. Haga clic en **Comenzar**.
+1. Haga clic en **Empezar**.
 
    <!-- ![Onboard CDN button](/help/overview/assets/log-forwarding/common/onboard-cdn-button.png)-->
 
@@ -46,9 +46,9 @@ En la página de LLM Optimizer [https://llmo.now/](https://llmo.now/):
 
    ![Configuración](/help/overview/assets/log-forwarding/common/configure.png)
 
-1. Escriba su **ID de cuenta de AWS**.
+1. Escriba su ID de la **cuenta de AWS**
 
-   ![ID de cuenta de AWS](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)
+   ![ID de la cuenta de AWS](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)
 
 1. Seleccione **CloudFront (BYOCDN)**.
 
@@ -56,33 +56,33 @@ En la página de LLM Optimizer [https://llmo.now/](https://llmo.now/):
 
 1. Haga clic en **Incorporar**.
 
-   ![Botón de incorporación](/help/overview/assets/log-forwarding/common/onboard-button.png)
+   ![Botón Incorporar](/help/overview/assets/log-forwarding/common/onboard-button.png)
 
 ## Paso 2: Habilitar el registro estándar (consola de CloudFront) {#step-2}
 
-Para habilitar el registro estándar, en [AWS Management console](https://aws.amazon.com/console/):
+Para habilitar el registro estándar, desde la [Consola de administración de AWS](https://aws.amazon.com/console/):
 
-1. Acceda a la consola [CloudFront](https://console.aws.amazon.com/cloudfront/v4/home) y [actualice una distribución existente](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowToUpdateDistribution.html#HowToUpdateDistributionProcedure).
+1. Acceda a la [consola de CloudFront](https://console.aws.amazon.com/cloudfront/v4/home) y [actualice una distribución existente](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowToUpdateDistribution.html#HowToUpdateDistributionProcedure).
 
-1. Abra la ficha **Registro**.
+1. Abra la pestaña **Registro**.
 
-1. Elija **Add** y, a continuación, seleccione el servicio para recibir registros, en este caso **Amazon S3**.
+1. Seleccione **Añadir** y luego seleccione el servicio para recibir registros, en este caso **Amazon S3**.
 
-1. Para **Destino**, seleccione o cree el recurso. Escriba el **nombre del contenedor**, puede copiar el valor desde la página de configuración de CDN de LLM Optimizer.
+1. Para **Destino**, seleccione o cree el recurso. Escriba el **nombre del bloque**; puede copiar el valor desde la página de configuración de CDN de LLM Optimizer.
 
-   ![Nombre del contenedor de CloudFront](/help/overview/assets/log-forwarding/cloudfront/cloudfront-bucket-name.png)
+   ![Nombre del bloque de CloudFront](/help/overview/assets/log-forwarding/cloudfront/cloudfront-bucket-name.png)
 
-1. Configurar **ajustes adicionales**:
+1. Defina **Configuración adicional**:
 
    - **Selección de campo**: elija los campos del archivo de registro. Consulte los campos obligatorios en la página de configuración de CDN de LLM Optimizer.
 
      ![Selección de campo de CloudFront](/help/overview/assets/log-forwarding/cloudfront/cloudfront-field-selection.png)
 
-   - **Partición**: copie el **sufijo de ruta** de la página de configuración de LLM Optimizer.
+   - **Particionamiento**: copie el **sufijo de ruta** en la página de configuración de LLM Optimizer.
 
-     ![Partición de CloudFront](/help/overview/assets/log-forwarding/cloudfront/cloudfront-partitioning.png)
+     ![Particionamiento de CloudFront](/help/overview/assets/log-forwarding/cloudfront/cloudfront-partitioning.png)
 
-   - **Formato de salida** — el formato debe ser JSON.
+   - **Formato de salida**: el formato debe ser JSON.
 
      ![Formato de salida de CloudFront](/help/overview/assets/log-forwarding/cloudfront/cloudfront-output-format.png)
 
@@ -90,23 +90,23 @@ Para habilitar el registro estándar, en [AWS Management console](https://aws.am
 
 1. En la página **Registros**, confirme que **Habilitado** aparece junto a la distribución.
 
-## Habilitar el registro estándar para la entrega entre cuentas {#cross-account}
+## Habilitar el registro estándar para el envío entre cuentas {#cross-account}
 
-La **cuenta de origen** (con la distribución de CloudFront) envía registros de acceso a la **cuenta de destino** (el contenedor de S3 que se muestra en la página de configuración de CDN de LLM Optimizer). Ambas cuentas deben tener los permisos adecuados.
+La **cuenta de origen** (con la distribución de CloudFront) envía registros de acceso a la **cuenta de destino** (el bloque S3 que se muestra en la página de configuración de CDN de LLM Optimizer). Ambas cuentas deben tener los permisos adecuados.
 
-Por ejemplo: la cuenta de origen `111111111111` envía registros a un bloque S3 en la cuenta de destino `222222222222`. Puede usar la [Interfaz de línea de comandos de AWS](https://aws.amazon.com/cli/).
+Por ejemplo: la cuenta de origen `111111111111` envía registros a un bloque S3 en la cuenta de destino `222222222222`. Puede utilizar la [interfaz de línea de comandos de AWS](https://aws.amazon.com/cli/).
 
 >[!NOTE]
 >
->En los comandos siguientes, reemplace el valor ARN de destino de entrega (`arn:aws:logs:us-east-1:222222222222:delivery-destination:cloudfront-delivery-destination`) por el valor de **ARN de destino de entrega** de la página de configuración de LLM Optimizer.
+>En los comandos siguientes, reemplace el valor del ARN de destino del envío (`arn:aws:logs:us-east-1:222222222222:delivery-destination:cloudfront-delivery-destination`) por el valor de **ARN de destino del envío** en la página de configuración de LLM Optimizer.
 
-![ARN de destino de envío](/help/overview/assets/log-forwarding/cloudfront/cloudfront-delivery-destination-arn.png)
+![ARN de destino del envío](/help/overview/assets/log-forwarding/cloudfront/cloudfront-delivery-destination-arn.png)
 
-### Configuración de la cuenta de origen {#source-account}
+### Configurar la cuenta de origen {#source-account}
 
-A continuación, debe configurar la cuenta de origen:
+A continuación, deberá configurar la cuenta de origen:
 
-1. **Crear un origen de entrega**; reemplace el nombre y el ARN de distribución:
+1. **Crear un origen de envío**; reemplace el nombre y el ARN de distribución:
 
    ```bash
    aws logs put-delivery-source --name s3-cf-delivery \
@@ -114,7 +114,7 @@ A continuación, debe configurar la cuenta de origen:
      --log-type ACCESS_LOGS
    ```
 
-1. **Cree la entrega** - vincule el origen al destino; use el ARN de destino desde el paso &quot;Configurar la cuenta de destino&quot;:
+1. **Crear el envío**: vincule el origen al destino; utilice el ARN de destino del paso “Configurar la cuenta de destino”:
 
    ```bash
    aws logs create-delivery --delivery-source-name s3-cf-delivery \
@@ -123,5 +123,5 @@ A continuación, debe configurar la cuenta de origen:
 
 1. **Verificar:**
 
-   - En la cuenta de **source**: consola de CloudFront > su distribución > pestaña **Registro**. En **Tipo** debería ver el envío de registro entre cuentas de S3.
-   - En la cuenta de **destination**: consola S3 > contenedor. Debería ver el prefijo (por ejemplo, `MyLogPrefix`) y los registros de esa carpeta.
+   - En la cuenta de **origen**: Consola de CloudFront > su distribución > pestaña **Registro**. En **Tipo** debería ver el envío de registros entre cuentas de S3.
+   - En la cuenta de **destino**: consola S3 > bloque. Debería ver el prefijo (por ejemplo, `MyLogPrefix`) y los registros de esa carpeta.

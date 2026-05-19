@@ -13,7 +13,7 @@ subfeature_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 349
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -94,7 +94,7 @@ El fragmento `vcl_deliver` administra la conmutación por error automáticamente
 | Edge Optimize devuelve `4XX` o `5XX` | La solicitud se reinicia y se sirve desde el origen predeterminado. |
 | Respuesta de conmutación por error | Incluye el encabezado `x-edgeoptimize-fo: 1`. |
 
-**Permitir la optimización en Edge mediante reglas de firewall (opcional)**
+**Permitir Optimizar en Edge mediante reglas de cortafuegos (opcional)**
 
 {{waf-allowlist-setup}}
 

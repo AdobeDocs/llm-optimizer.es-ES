@@ -16,7 +16,7 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 2249
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 37%
 
 El panel de control Configuración del cliente es una potente herramienta que proporciona perspectivas sobre la visibilidad de su marca en los LLM. Al configurar correctamente categorías, temas e indicaciones, puede asegurarse de que la marca esté bien posicionada para aparecer en las respuestas generadas por LLM. Esta configuración garantiza que la plataforma adapte las perspectivas a su contexto empresarial, lo que permite una visibilidad precisa, el tráfico y el análisis de oportunidades.
 
-El panel de configuración del cliente (que se muestra a continuación) se aplica cuando su organización sigue utilizando este sistema de navegación.
+El panel de control de configuración del cliente (que se muestra a continuación) se aplica cuando su organización sigue utilizando esta navegación.
 
 ![Panel de control Configuración del cliente](/help/dashboards/assets/customer-config.png)
 
@@ -38,11 +38,11 @@ Para configurar cómo LLM Optimizer monitoriza y analiza su presencia de marca e
 * [Configuración de la CDN](#agentic-cdn)
 * [Consola de búsqueda de Google](#google-console)
 
-Si estás en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), ve a **Administración de marcas** para configurar marcas, alias de marcas y definir competidores con los cuales realizar seguimientos. **Brands Management** también se usa para configurar integraciones como la consola de búsqueda de Google, Adobe Analytics y el reenvío de registros de CDN en relación con las direcciones URL asociadas con las marcas. Para ello, haga clic en las pestañas correspondientes: GSC, CDN, etc.
+Si se encuentra en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya a **Administración de marcas** para configurar marcas, alias de marcas y definir los competidores de los cuales desea realizar un seguimiento. **Administración de marcas** también se usa para configurar integraciones como Google Search Console, Adobe Analytics y el reenvío de registros de CDN en relación con las direcciones URL asociadas con las marcas. Para ello, haga clic en las pestañas correspondientes: GSC, CDN, etc.
 
-![Gestión de marcas — Navegación de aplicaciones (experiencia centrada en las marcas)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+![Administración de marcas: navegación por las aplicaciones (experiencia centrada en las marcas)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-![Administración de marcas — información general sobre la configuración (experiencia centrada en las marcas)](/help/assets/brand-centric-experience/brands-management-configuration.png)
+![Administración de marcas: información general sobre la configuración (experiencia centrada en la marca)](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
 >[!IMPORTANT]
 >
@@ -50,7 +50,7 @@ Si estás en la [experiencia centrada en la marca](/help/overview/quick-start.md
 
 ## Indicaciones {#prompts-brand}
 
-Desde la ficha **Indicadores**, puede revisar, administrar y personalizar los mensajes. Puede cargar un archivo .csv de [análisis de Presencia de marca](/help/dashboards/brand-presence.md), y la lista se rellenará con indicaciones y temas de ese análisis, o [descargar una biblioteca de indicaciones](/help/overview/best-practices-topics-prompts.md) creada por Adobe. También puede eliminar, modificar y añadir temas y sus indicaciones asociadas según sea necesario.
+En la pestaña **Indicaciones**, puede revisar, administrar y personalizar las indicaciones. Puede cargar un archivo .csv de [análisis de Presencia de marca](/help/dashboards/brand-presence.md), y la lista se rellenará con indicaciones y temas de ese análisis, o [descargar una biblioteca de indicaciones](/help/overview/best-practices-topics-prompts.md) creada por Adobe. También puede eliminar, modificar y añadir temas y sus indicaciones asociadas según sea necesario.
 
 Para importar un archivo .csv de data insights, primero debe exportar un archivo desde el panel de control Presencia de marca. Consulte la sección [data insights](/help/dashboards/brand-presence.md#data-insights) para obtener información sobre cómo hacerlo. Una vez que tenga el archivo, haga lo siguiente:
 
@@ -71,9 +71,9 @@ Además, también puede añadir temas/indicaciones a la lista independientemente
 5. Seleccione la región.
 6. Haga clic en **Añadir indicación** y el tema con la indicación aparece en la lista.
 
-Para que los clientes que están en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience) agreguen temas e indicadores, vaya a **Administración de indicadores**.
+Para que los clientes que se encuentran en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience) añadan temas e indicaciones, vaya a **Administración de indicaciones**.
 
-![Administración de indicadores (experiencia centrada en la marca)](/help/assets/brand-centric-experience/prompts-management.png)
+![Administración de indicaciones (experiencia centrada en la marca)](/help/assets/brand-centric-experience/prompts-management.png)
 
 >[!NOTE]
 >Las indicaciones añadidas recientemente no aparecen en la presencia de marca hasta que se complete el procesamiento.
@@ -115,7 +115,7 @@ Al utilizar el alias de marca, puede configurar nombres alternativos y variacion
 4. Añada el alias de la marca.
 5. Haga clic en **Guardar** y el alias de la marca aparecerá en la lista.
 
-Para eliminar un alias de marca, haz clic en el icono **Eliminar** de la lista de alias.
+Para eliminar un alias de marca, haga clic en el icono **Eliminar** en la lista de alias.
 
 ## Configuración de la CDN {#cdn-configuration}
 
@@ -132,129 +132,129 @@ Si selecciona **Otro**, tendrá que ponerse en contacto con llmo-now@adobe.com p
 
 ## Consola de búsqueda de Google {#google-console}
 
-Adobe LLM Optimizer le permite integrar su cuenta de Google Search Console para llevar las consultas de búsqueda real directamente a la interfaz. Al mostrar consultas reales de la consola de búsqueda de Google, puede crear conjuntos de mensajes basados en el comportamiento de búsqueda real y en patrones de detección de alta intención. Esto le ayuda a priorizar los indicadores en función de la demanda comprobada y alinea los esfuerzos de optimización de LLM con la forma en que los usuarios buscan actualmente. Además, permanece en control total porque las consultas nunca se agregan automáticamente y deben seleccionarse explícitamente antes de convertirse en mensajes activos.
+Adobe LLM Optimizer le permite integrar su cuenta de Google Search Console para incorporar consultas de búsqueda reales directamente en la interfaz. Al mostrar consultas reales de Google Search Console, puede crear conjuntos de indicaciones basados en el comportamiento de búsqueda real y en patrones de detección con alta intención. Esto le ayuda a priorizar las indicaciones en función de la demanda comprobada y adapta los esfuerzos de optimización de LLM a la forma en que los usuarios realizan búsquedas actualmente. Además, tendrá control total porque las consultas nunca se añaden automáticamente y deben seleccionarse explícitamente antes de convertirse en indicaciones activas.
 
 ### Funcionamiento {#how-it-works}
 
-Lo principal que hay que recordar acerca de la integración entre LLM Optimizer y la consola de búsqueda de Google es lo siguiente: en lugar de adivinar manualmente qué podrían preguntar los clientes a un asistente de IA, vemos lo que **ya están buscando** y transformamos esas consultas reales en mensajes naturales y conversacionales. Este proceso de pasar de consultas de búsqueda a peticiones de datos de IA se ejemplifica en el diagrama siguiente.
+Lo que hay que recordar principalmente sobre la integración entre LLM Optimizer y Google Search Console es lo siguiente: en lugar de adivinar manualmente qué podrían preguntar los clientes a un Asistente de IA, vemos lo que **ya están buscando** y transformamos esas consultas reales en indicaciones naturales y conversacionales. Este proceso de pasar de consultas de búsqueda a indicaciones de IA se muestra en el diagrama siguiente.
 
 ![Flujo de proceso](/help/dashboards/assets/diagram-flow.png)
 
 En términos generales, el proceso consta de cinco pasos:
 
-#### Paso 1: Recopilar los datos de búsqueda real {#gsc-one}
+#### Paso 1: Recopilar los datos de búsqueda reales {#gsc-one}
 
-El proceso comienza con las palabras clave que la audiencia está utilizando cuando encuentra el sitio web a través de Google. Este conjunto de datos sin procesar (a menudo miles de consultas únicas) es la base de todo lo que sigue.
+El proceso comienza con las palabras clave que el público está utilizando cuando encuentra el sitio web a través de Google. Este conjunto de datos sin procesar (a menudo miles de consultas únicas) es la base de todo lo que sigue.
 
 #### Paso 2: Analizar el significado y filtrar por seguridad {#gsc-two}
 
-Cada consulta se analiza por su significado semántico (lo que el usuario realmente está preguntando) y se analiza a través de un filtro de seguridad que elimina el contenido inapropiado o fuera de marca. Esto garantiza que solo las palabras clave relevantes y limpias avancen.
+Cada consulta se analiza para determinar su significado semántico (lo que el usuario realmente está preguntando) y se somete a un filtro de seguridad que elimina el contenido inapropiado o ajeno a la marca. Esto garantiza que solo se mantengan las palabras clave relevantes y limpias.
 
 #### Paso 3: Agrupar en categorías y temas {#gsc-three}
 
-Las consultas relacionadas se agrupan automáticamente en **categorías** (temas empresariales generales) y **temas** (subtemas centrados dentro de cada categoría). El sistema prioriza las categorías que ya están configuradas en la configuración de LLM Optimizer. Además, también pueden surgir nuevas categorías que los datos de búsqueda revelen, pero que aún no se estén monitoreando. El diagrama siguiente es un ejemplo de categorías y temas para una marca de muebles:
+Las consultas relacionadas se agrupan automáticamente en **categorías** (temas empresariales generales) y **temas** (subtemas centrados dentro de cada categoría). El sistema prioriza las categorías que ya están configuradas en la configuración de LLM Optimizer. Además, también pueden surgir nuevas categorías que los datos de búsqueda revelen, pero que aún no se estén monitorizando. En el siguiente diagrama se muestra un ejemplo de categorías y temas para una marca de muebles:
 
 ![Marca de muebles](/help/dashboards/assets/diagram-example.png)
 
-#### Paso 4: Generar mensajes basados en palabras clave reales {#gsc-four}
+#### Paso 4: Generar indicaciones basadas en palabras clave reales {#gsc-four}
 
-Para cada tema, el sistema genera indicadores similares a cómo las personas reales hablan con los asistentes de IA. Cada mensaje se ve directamente influido por las palabras clave de búsqueda reales de la consola de búsqueda de Google, lo que transforma la intención de la palabra clave en preguntas conversacionales naturales.
+Para cada tema, el sistema genera indicaciones similares a cómo las personas reales hablan con los asistentes de IA. Cada indicación se ve directamente influida por las palabras clave de búsqueda reales de Google Search Console, lo que transforma la intención de la palabra clave en preguntas conversacionales naturales.
 
-Este enfoque (basado en palabras clave) significa:
+Este enfoque (basado en palabras clave) significa lo siguiente:
 
-* Los indicadores reflejan una demanda real, no preguntas hipotéticas.
-* El lenguaje refleja cómo sus clientes realmente dicen las cosas.
-* La cobertura abarca toda la amplitud de lo que las personas buscan en el sitio.
+* Las indicaciones reflejan una demanda real, no preguntas hipotéticas.
+* El lenguaje refleja cómo sus clientes se expresan realmente.
+* La cobertura abarca todo lo que las personas buscan en el sitio.
 
-La generación rápida también tiene en cuenta el perfil de su marca, incluidos los productos, la competencia, el posicionamiento en el sector y la audiencia destinataria, para garantizar que las indicaciones sean contextualmente precisas.
+La generación de indicaciones también tiene en cuenta el perfil de su marca, incluidos los productos, la competencia, el posicionamiento en el sector y el público destinatario, para garantizar que las indicaciones sean precisas desde el punto de vista contextual.
 
-#### Paso 5: Garantía de calidad y entrega {#gsc-five}
+#### Paso 5: Control de calidad y envío {#gsc-five}
 
-Antes de la entrega, cada mensaje pasa por varias comprobaciones de calidad automatizadas:
+Antes de enviarse, cada indicación se somete a varias comprobaciones de calidad automatizadas:
 
-* Deduplicación: se eliminan las indicaciones casi idénticas.
-* Equilibrio de proporción de marca: garantiza una combinación realista (aproximadamente 75% sin marca, ~25% con marca).
-* Calidad del lenguaje: elimina la fraseología robótica para que suene natural.
+* Anulación de duplicación: se eliminan las indicaciones casi idénticas.
+* Equilibrio de proporción de marca: garantiza una combinación realista (aproximadamente 75 % sin marca, ~25 % con marca).
+* Calidad del lenguaje: elimina la fraseología robótica para que las indicaciones suenen naturales.
 * Comprobaciones de coherencia: valida, elimina las frases de relleno y garantiza una longitud concisa.
 
-Además, cada mensaje está etiquetado con su categoría, tema, tipo de intención y clasificación con marca/sin marca, listo para que LLM Optimizer empiece a monitorizarlo.
+Además, cada indicación se etiqueta con su categoría, tema, tipo de intención y clasificación con marca/sin marca, lista para que LLM Optimizer empiece a monitorizarla.
 
-#### Anatomía del indicador {#prompt-anatomy}
+#### Anatomía de la indicación {#prompt-anatomy}
 
-Una vez completado el proceso anterior, cada mensaje enviado a LLM Optimizer tiene los siguientes atributos:
+Una vez completado el proceso anterior, cada indicación enviada a LLM Optimizer tiene los siguientes atributos:
 
 | Campo | Descripción |
 |---------|----------|
-| Texto | El mensaje, similar a cómo lo escribiría un usuario en un asistente de IA |
-| Categoría | Tema empresarial general asignado a este mensaje. |
+| Texto | La indicación, similar a cómo la escribiría un usuario en un Asistente de IA |
+| Categoría | El tema empresarial general asignado a esta indicación. |
 | Tema | El subtema específico dentro de la categoría. |
-| Región | El mercado objetivo (por ejemplo, EE. UU., Reino Unido, etc.). |
-| Intención | La mentalidad del usuario: informativa, comparativa, transaccional, instruccional, de planificación o de delegación. |
-| Tipo | El tipo puede ser de marca (menciona la marca o los productos) o sin marca (pregunta genérica del sector). |
+| Región | El mercado de destino (por ejemplo, EE. UU., Reino Unido, etc.). |
+| Intención | La mentalidad del usuario: informativa, comparativa, transaccional, instruccional, de planificación o delegación. |
+| Tipo | El tipo puede ser con marca (menciona la marca o los productos) o sin marca (pregunta genérica del sector). |
 
 ### Usos {#how-to-use}
 
-Siga los pasos presentados a continuación para integrar y utilizar las consultas de la consola de búsqueda de Google con LLM Optimizer.
+Siga los pasos que se indican a continuación para integrar y utilizar las consultas de Google Search Console con LLM Optimizer.
 
-#### Conectar la consola de búsqueda de Google {#connect-console}
+#### Conectar Google Search Console {#connect-console}
 
-Antes de utilizar esta función, debe integrar su cuenta de Google Search Console con el optimizador LLM.
+Antes de utilizar esta función, debe integrar su cuenta de Google Search Console con LLM Optimizer.
 
-1. Abra el panel **Configuración del cliente** (navegación clásica) o **Administración de marcas** (experiencia de Brand Centric) y, a continuación, vaya a la integración de Google Search Console (etiqueta GSC en la experiencia de Brand Centric).
-1. Vaya a la pestaña Google Search Console y haga clic en **Conectar cuenta**.
-   ![Consola de búsqueda de Google](/help/dashboards/assets/google-console.png)
+1. Abra el panel de control **Configuración del cliente** (navegación clásica) o **Administración de marcas** (experiencia centrada en la marca) y, a continuación, vaya a la integración de Google Search Console (etiqueta GSC en la experiencia centrada en la marca).
+1. Vaya a la pestaña de Google Search Console y haga clic en **Conectar cuenta**.
+   ![Google Search Console](/help/dashboards/assets/google-console.png)
 1. Inicie sesión con una cuenta de Google que tenga acceso a la propiedad de Search Console deseada.
    ![Cuenta de Google](/help/dashboards/assets/google-account.png)
 1. Elija la propiedad que desea conectar.
    ![Propiedad de la consola](/help/dashboards/assets/console-property.png)
 1. Una vez finalizada la conexión, LLM Optimizer empieza a recuperar las consultas de búsqueda relevantes.
-   ![Recuperando datos](/help/dashboards/assets/console-complete.png)
+   ![Recuperación de datos](/help/dashboards/assets/console-complete.png)
 
-#### Consultas de revisión y búsqueda {#search-query}
+#### Revisión y búsqueda de consultas {#search-query}
 
-Después de integrar la cuenta de Google Search Console con el optimizador LLM, puede revisar la lista de temas y peticiones de datos procedentes de la consola de búsqueda y añadirlos desde la lista.
+Después de integrar la cuenta de Google Search Console con LLM Optimizer, puede revisar la lista de temas e indicaciones de datos procedentes de la consola de búsqueda y añadirlas desde la lista.
 
-1. En la pestaña Consola de búsqueda de Google, revise la lista de temas y preguntas procedentes de la Consola de búsqueda.
-   ![Lista de indicadores](/help/dashboards/assets/prompts-list.png)
-1. Haga clic en el tema o categoría de solicitud que desee para expandir la lista.
-1. Utilice el botón **Agregar** para agregar mensajes de la lista. También puede agregar avisos y categorías de forma masiva usando **Agregar todo**.
-   ![Agregar indicadores](/help/dashboards/assets/add-prompts.png)
+1. En la pestaña Google Search Console, revise la lista de temas e indicaciones procedentes de Search Console.
+   ![Lista de indicaciones](/help/dashboards/assets/prompts-list.png)
+1. Haga clic en el tema o categoría de indicación que desee para expandir la lista.
+1. Utilice el botón **Añadir** para añadir indicaciones de la lista. También puede añadir indicaciones y categorías de forma masiva usando **Añadir todo**.
+   ![Añadir indicaciones](/help/dashboards/assets/add-prompts.png)
 1. Una vez que esté satisfecho con la selección, haga clic en **Guardar** en el mensaje de notificación.
 
-#### Ver consultas agregadas en la lista de indicadores {#prompts-list}
+#### Visualización de las consultas añadidas en la lista de indicaciones {#prompts-list}
 
-Después de agregar una consulta, aparece en la ficha [Indicadores](#prompts-brand) del panel de configuración del cliente (navegación clásica) o en **Administración de indicadores** (experiencia centrada en la marca). Las solicitudes procedentes de la consola de búsqueda de Google se marcan con un icono de consola de búsqueda de Google en la columna **Origen**. El icono le ayuda a distinguir entre los indicadores basados en el comportamiento de búsqueda real del usuario y los agregados manualmente o desde otras fuentes.
+Después de añadir una consulta, aparecerá en la pestaña [Indicaciones](#prompts-brand) en el panel de control de configuración del cliente (navegación clásica) o en **Administración de indicaciones** (experiencia centrada en la marca). Las indicaciones procedentes de Google Search Console se marcan con un icono de Google Search Console en la columna **Origen**. El icono le ayuda a distinguir entre las indicaciones basadas en el comportamiento de búsqueda real del usuario y las añadidas manualmente o desde otras fuentes.
 
 ### Preguntas frecuentes {#gsc-faq}
 
-P: ¿Con qué frecuencia se actualizan las preguntas en el panel de la consola de búsqueda de Google?
+P: ¿Con qué frecuencia se actualizan las indicaciones en el panel de control de Google Search Console?
 
-Las solicitudes procedentes de la consola de búsqueda de Google generalmente se actualizan una vez al mes. Cada actualización extrae los datos de consulta de búsqueda más recientes de la consola de búsqueda de Google, vuelve a ejecutar la canalización de generación y actualiza el conjunto de mensajes. Esto garantiza que los indicadores permanezcan alineados con las tendencias de búsqueda actuales y los cambios estacionales en el comportamiento del usuario.
+Las indicaciones procedentes de Google Search Console generalmente se actualizan una vez al mes. Cada actualización extrae los datos de consulta de búsqueda más recientes de Google Search Console, vuelve a ejecutar la canalización de generación y actualiza el conjunto de indicaciones. Esto garantiza que las indicaciones se mantengan en consonancia con las tendencias de búsqueda actuales y los cambios estacionales en el comportamiento del usuario.
 
-P: ¿Cuántas peticiones de datos suelen proceder de la consola de búsqueda de Google?
+P: ¿Cuántas indicaciones suelen proceder de Google Search Console?
 
 El número depende del tamaño de la implementación y de la cantidad de categorías rastreadas. Por ejemplo:
 
-| Categorías | Total de temas | Indicadores entregados |
+| Categorías | Total de temas | Indicaciones enviadas |
 |---------|----------|----------|
-| 1-2 | 3-8 | ~65-180 |
-| 4-5 | 12-20 | ~270-450 |
-| 10 | 30-40 | ~675-900 |
+| 1-2 | 3-8 | ~65–180 |
+| 4-5 | 12-20 | ~270–450 |
+| 10 | 30-40 | ~675–900 |
 
-Nuestro objetivo es ofrecer conjuntos de mensajes rápidos que cumplan los objetivos de calidad comunicados durante la prueba e incorporación: al menos 20 mensajes por tema, con 3-4 temas por categoría y un equilibrio entre marca y marca saludable.
+Nuestro objetivo es ofrecer conjuntos de indicaciones rápidas que cumplan los objetivos de calidad comunicados durante la versión de prueba y la incorporación: al menos 20 indicaciones por tema, con 3-4 temas por categoría y un equilibrio adecuado entre con marca y sin marca.
 
-P: ¿Con qué frecuencia veré las solicitudes procedentes de la consola de búsqueda de Google después de conectarme a la consola de búsqueda de Google?
+P: ¿Con qué frecuencia veré las indicaciones procedentes de Google Search Console después de conectarme a Google Search Console?
 
-Los indicadores suelen estar disponibles **en un plazo de pocas horas** después de que se haya establecido la conexión a la consola de búsqueda de Google. La canalización extrae automáticamente los datos de búsqueda, los procesa a través de los pasos de generación y garantía de calidad y envía el mensaje final definido a LLM Optimizer.
+Las indicaciones suelen estar disponibles **al cabo de unas pocas horas** después de que se haya establecido la conexión a Google Search Console. La canalización extrae automáticamente los datos de búsqueda, los procesa a través de los pasos de generación y control de calidad y envía la indicación final definida a LLM Optimizer.
 
-P: ¿Quién puede conectarse a la consola de búsqueda de Google?
+P: ¿Quién puede conectarse a Google Search Console?
 
-Cualquier persona con **Propietario** o **Permiso completo** en la propiedad de la consola de búsqueda de Google puede autorizar la conexión. Niveles de permisos que conceden acceso de lectura a los datos de consulta de búsqueda. Si no está seguro del nivel de permisos, puede comprobarlo en **Configuración>Usuarios** y en los permisos de la consola de búsqueda de Google.
+Cualquier persona que sea **Propietaria** o tenga **Permiso completo** en la propiedad de Google Search Console puede autorizar la conexión. Son niveles de permiso que conceden acceso de lectura a los datos de consulta de búsqueda. Si no está seguro del nivel de permiso, puede comprobarlo en **Configuración>Usuarios** y en los permisos de Google Search Console.
 
-P: ¿Puedo marcar los mensajes como ignorados u omitidos para que no los vea en la lista de mensajes de la consola de búsqueda de Google?
+P: ¿Puedo marcar las indicaciones como ignoradas u omitidas para que no las vea en la lista de indicaciones de Google Search Console.
 
-Sí, puede eliminar cualquier mensaje que no desee supervisar. Los mensajes eliminados se eliminan de la lista de mensajes activa y no aparecerán en los informes futuros. Si una solicitud eliminada se vuelve a generar en una actualización mensual posterior, puede eliminarla de nuevo.
+Sí, puede eliminar cualquier indicación que no desee monitorizar. Las indicaciones eliminadas se eliminarán de la lista de indicaciones activa y no aparecerán en el sistema de informes futuros. Si una indicación eliminada se vuelve a generar en una actualización mensual posterior, puede eliminarla de nuevo.
 
-P: Una vez que añada peticiones de datos de la consola de búsqueda de Google a mi lista de peticiones de datos, ¿con qué frecuencia veo datos de Presencia de marca para ellas?
+P: Una vez que añada indicaciones procedentes de Google Search Console a mi lista de indicaciones, ¿con qué frecuencia veré datos de Presencia de marca para dichas indicaciones?
 
-Los datos de presencia de marca de los mensajes recién añadidos aparecerán durante la siguiente actualización de datos programada, que generalmente se ejecuta al principio de cada semana. Según el momento en el que agregue los indicadores, es posible que vea los resultados en unos días.
+Los datos de Presencia de marca de las indicaciones recién añadidas aparecerán durante la siguiente actualización de datos programada, que generalmente se ejecuta al principio de cada semana. Según el momento en el que añada las indicaciones, es posible que obtenga resultados en unos días.

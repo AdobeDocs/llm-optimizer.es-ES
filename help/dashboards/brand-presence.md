@@ -17,7 +17,7 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1346
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 96%
 
 El panel de control Presencia de marca proporciona una descripción detallada sobre cómo se percibe su marca en el nivel de respuestas generadas por IA. Muestra dónde, con qué frecuencia y en qué contexto se menciona su marca. Puede utilizar el panel de control para medir la visibilidad, hacer un seguimiento de las citas y explorar las tendencias de opinión. El panel de control se divide en varias secciones, cada una de las cuales proporciona diferentes perspectivas. También hay filtros personalizables para perfeccionar los datos mostrados.
 
-![descripción general de la Presencia de marca](/help/dashboards/assets/brand-main.png)
+![Información general sobre la presencia de marca](/help/dashboards/assets/brand-main.png)
 
 Esta página detalla lo siguiente:
 
@@ -36,7 +36,7 @@ Esta página detalla lo siguiente:
 * [Tendencia de opinión](#sentiment-trend)
 * [Información de datos](#data-insights)
 
-Si estás en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), ve a la **Presencia de marca**. En la lista desplegable de marca, selecciona la marca que desees analizar o elige **Todas las marcas** para revisar la visibilidad de tu conjunto de marcas completo.
+Si se encuentra en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya a **Presencia de marca**. En la lista desplegable de marcas, seleccione la marca que desee analizar o elija **Todas las marcas** para revisar la visibilidad de su conjunto de marcas completo.
 
 ![Presencia de marca con selector de marca (experiencia centrada en la marca)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 
