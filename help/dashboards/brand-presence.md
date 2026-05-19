@@ -4,20 +4,14 @@ description: Aprenda a utilizar el panel de control Presencia de marca para comp
 feature: Brand Presence
 autotag-review: '2026-05-15T17:37:11.161Z'
 TQID: 'https://experienceleague.adobe.com/sDPtwR-uMfeIYp5K93gzYF27qYgLHBwhyajj9hGVB7Q'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: ab7fdb62-bd53-4cfd-8c2c-169f7e47f20e
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: ab7fdb62-bd53-4cfd-8c2c-169f7e47f20e
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1346
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +20,7 @@ ht-degree: 96%
 
 El panel de control Presencia de marca proporciona una descripción detallada sobre cómo se percibe su marca en el nivel de respuestas generadas por IA. Muestra dónde, con qué frecuencia y en qué contexto se menciona su marca. Puede utilizar el panel de control para medir la visibilidad, hacer un seguimiento de las citas y explorar las tendencias de opinión. El panel de control se divide en varias secciones, cada una de las cuales proporciona diferentes perspectivas. También hay filtros personalizables para perfeccionar los datos mostrados.
 
-![descripción general de la Presencia de marca](/help/dashboards/assets/brand-main.png)
+![Información general sobre la presencia de marca](/help/dashboards/assets/brand-main.png)
 
 Esta página detalla lo siguiente:
 
@@ -36,7 +30,7 @@ Esta página detalla lo siguiente:
 * [Tendencia de opinión](#sentiment-trend)
 * [Información de datos](#data-insights)
 
-Si estás en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), ve a la **Presencia de marca**. En la lista desplegable de marca, selecciona la marca que desees analizar o elige **Todas las marcas** para revisar la visibilidad de tu conjunto de marcas completo.
+Si se encuentra en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya a **Presencia de marca**. En la lista desplegable de marcas, seleccione la marca que desee analizar o elija **Todas las marcas** para revisar la visibilidad de su conjunto de marcas completo.
 
 ![Presencia de marca con selector de marca (experiencia centrada en la marca)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 

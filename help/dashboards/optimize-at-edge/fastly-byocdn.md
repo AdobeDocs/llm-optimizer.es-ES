@@ -4,16 +4,13 @@ description: Obtenga información sobre cómo configurar Fastly BYOCDN para Opti
 feature: Opportunities
 autotag-review: '2026-05-15T17:51:24.924Z'
 TQID: 'https://experienceleague.adobe.com/qXp1pbmZrxahHFOUzIuo-WEawdgNWIIQKDyy0yL2MLA'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 349
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -94,7 +91,7 @@ El fragmento `vcl_deliver` administra la conmutación por error automáticamente
 | Edge Optimize devuelve `4XX` o `5XX` | La solicitud se reinicia y se sirve desde el origen predeterminado. |
 | Respuesta de conmutación por error | Incluye el encabezado `x-edgeoptimize-fo: 1`. |
 
-**Permitir la optimización en Edge mediante reglas de firewall (opcional)**
+**Permitir Optimizar en Edge mediante reglas de cortafuegos (opcional)**
 
 {{waf-allowlist-setup}}
 

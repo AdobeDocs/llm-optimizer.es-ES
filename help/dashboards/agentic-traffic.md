@@ -4,21 +4,14 @@ description: Aprenda a utilizar el panel de control Tráfico agéntico para ver 
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:33:15.711Z'
 TQID: 'https://experienceleague.adobe.com/3dWNUxcquDVip4Gg1WMYfwv8MUSbZYWqJYnkQ3aZkmc'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: e06fae5f-830b-4222-a469-b5e148d36465
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1407
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -38,9 +31,9 @@ Esta página detalla lo siguiente:
 * [Mayores y menores variaciones](#top-bottom-movers)
 * [Análisis de agente de usuario y de rendimiento de URL](#user-url-performance)
 
-Si está en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya a **Tráfico de agente** y seleccione el sitio para el cual desea ver las perspectivas de tráfico reales.
+Si se encuentra en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya a **Tráfico agéntico** y seleccione el sitio para el que desea ver las perspectivas del tráfico agéntico.
 
-![Tráfico agéntico — selector de sitio (experiencia centrada en la marca)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+![Tráfico agéntico: selector del sitio (experiencia centrada en la marca)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
 
 ## Reenvío de registros de CDN {#cdn-setup}
 
@@ -67,15 +60,15 @@ En la ventana **Incorporar proveedor de CDN**:
 Si selecciona **Otro**, tendrá que ponerse en contacto con llmo-now@adobe.com para obtener ayuda.
 
 >[!NOTE]
->Para obtener más información sobre el reenvío de registros al usar una CDN administrada por el cliente (BYOCDN), consulte [Información general sobre el reenvío de registros BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
+>Para obtener más información sobre el reenvío de registros al utilizar una CDN administrada por el cliente (BYOCDN), consulte [Información general sobre el reenvío de registros BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 Una vez activados, los registros se incorporan y el panel de control se rellena con métricas como interacciones totales del agente, tasa de éxito, visitas por mercado, análisis de agente de usuario y rendimiento a nivel de URL.
 
 ### Experiencia centrada en la marca
 
-Si está en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), puede agregar información de reenvío de registro de CDN navegando a **Administración de marcas** y haciendo clic en la etiqueta **CDN**.
+Si se encuentra en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), puede añadir la información de reenvío de registros de CDN accediendo a **Administración de marcas** y haciendo clic en la etiqueta **CDN**.
 
-![Gestión de marcas — Reenvío de registros de CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
+![Administración de marcas: reenvío de registros de CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
 LLM Optimizer procesa un subconjunto de campos de los registros de CDN. Aunque los nombres de los campos de registro sin procesar varían según el proveedor de CDN, se normalizan y presentan de la siguiente manera:
 
@@ -126,7 +119,7 @@ Utilice el gráfico Tendencias de tráfico agéntico para realizar un seguimient
 
 ## Mayores y menores variaciones {#top-bottom-movers}
 
-La vista Desplazamientos superiores e inferiores resalta las direcciones URL con los mayores cambios de una semana a otra en el tráfico auténtico: visitas o visitas de sistemas de IA que acceden a su contenido. **Modificadores principales** muestra las páginas que ganan visibilidad o participación, mientras que **Modificadores inferiores** muestra las direcciones URL con las disminuciones más pronunciadas. Esto le ayuda a identificar rápidamente qué contenido tiende al alza, cuál puede necesitar atención y dónde están cambiando los patrones de detección basados en la IA.
+La vista Mayores subidas y Mayores bajadas resalta las direcciones URL con los mayores cambios de una semana a otra en el tráfico agéntico: visitas o accesos de sistemas de IA que acceden a su contenido. **Mayores subidas** muestra las páginas que ganan visibilidad o participación, mientras que **Mayores bajadas** muestra las direcciones URL con las bajadas más pronunciadas. Esto le ayuda a identificar rápidamente qué contenido tiende al alza, cuál puede necesitar atención y dónde están cambiando los patrones de detección basados en la IA.
 
 ![Mayores y menores variaciones](/help/dashboards/assets/movers.png)
 
