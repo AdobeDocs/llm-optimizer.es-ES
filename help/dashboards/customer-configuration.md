@@ -4,19 +4,14 @@ description: Utilice la configuración del cliente para definir cómo se monitor
 feature: Customer Configuration
 autotag-review: '2026-05-15T17:45:12.067Z'
 TQID: 'https://experienceleague.adobe.com/qa7zk54n9G19-Azz9f6mn7V1kAGvnJSOJjpxbTBeHgc'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: f16c1bda1c9919a62077811653f92d5fc2c74045
 workflow-type: tm+mt
-source-wordcount: 2249
-ht-degree: 100%
+source-wordcount: 3935
+ht-degree: 57%
 
 ---
 
@@ -37,6 +32,7 @@ Para configurar cómo LLM Optimizer monitoriza y analiza su presencia de marca e
 * [Alias de marca](#brand-aliases)
 * [Configuración de la CDN](#agentic-cdn)
 * [Consola de búsqueda de Google](#google-console)
+* [Sugerencias rápidas basadas en intentos de citas y Tráfico de referencia](#prompt-suggestions)
 
 Si se encuentra en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya a **Administración de marcas** para configurar marcas, alias de marcas y definir los competidores de los cuales desea realizar un seguimiento. **Administración de marcas** también se usa para configurar integraciones como Google Search Console, Adobe Analytics y el reenvío de registros de CDN en relación con las direcciones URL asociadas con las marcas. Para ello, haga clic en las pestañas correspondientes: GSC, CDN, etc.
 
@@ -258,3 +254,122 @@ Sí, puede eliminar cualquier indicación que no desee monitorizar. Las indicaci
 P: Una vez que añada indicaciones procedentes de Google Search Console a mi lista de indicaciones, ¿con qué frecuencia veré datos de Presencia de marca para dichas indicaciones?
 
 Los datos de Presencia de marca de las indicaciones recién añadidas aparecerán durante la siguiente actualización de datos programada, que generalmente se ejecuta al principio de cada semana. Según el momento en el que añada las indicaciones, es posible que obtenga resultados en unos días.
+
+## Sugerencias rápidas basadas en intentos de citas y Tráfico de referencia {#prompt-suggestions}
+
+En lugar de adivinar qué indicadores importan, **Sugerencias de mensajes** empiezan por lo que los agentes de IA y los usuarios ya están accediendo o a lo que se hace referencia en el sitio.
+
+Adobe LLM Optimizer analiza los datos de su CDN para identificar a qué páginas acceden ya de forma coherente los agentes de IA (intentos de citas) y los usuarios de referencia (tráfico de referencia LLM). Después, genera automáticamente sugerencias rápidas en función de los huecos en la cobertura de mensajes actual. En lugar de adivinar qué direcciones URL priorizar y qué indicadores crear, el flujo de trabajo comienza a partir de señales de tráfico reales: páginas a las que los agentes ya están buscando y, a continuación, definiendo el tipo de indicadores de usuario que esas páginas deben responder.
+
+Cuando los agentes de IA ya acceden de forma constante a una página, la pregunta no es cómo hacer que los agentes conozcan la página, sino qué preguntas podría responder el contenido de la página. Si no hay mensajes configurados para estas páginas, no tendrá visibilidad de cómo se muestra su marca en las respuestas de IA sobre los temas más importantes. Sugerencias rápidas del tráfico de la agencia cierra esa brecha para que pueda iniciar el seguimiento y mejorar la visibilidad de la marca de las páginas en las que los agentes ya están más activos.
+
+>[!NOTE]
+>
+> En la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), las sugerencias de mensajes aparecen en la sección **Administración de mensajes**.
+
+### Funcionamiento {#prompt-suggestions-how-it-works}
+
+El flujo de trabajo Sugerencias de mensajes se ejecuta en cuatro pasos, lo que convierte las señales de tráfico de CDN en sugerencias de mensajes listas para configurar. Cada paso se basa en el anterior: a partir de páginas en las que la actividad del agente de IA ya está probada, comprender de qué tratan esas páginas, comprobar lo que ya se cubre y generar indicadores específicos, basados en tierra y listos para publicar.
+
+![Sugerencias de mensajes del flujo de trabajo de tráfico del agente](/help/dashboards/assets/prompt-suggestions-workflow.png)
+
+#### Paso 1: Identificación de páginas de alta señal de tráfico auténtico {#prompt-suggestions-step-1}
+
+La canalización comienza identificando páginas del sitio con las que los sistemas de IA ya están interactuando de forma activa, mediante dos señales de los datos de CDN: la frecuencia con la que los sistemas de IA acceden a las páginas como fuente al responder preguntas reales del usuario y si esas páginas ya están dirigiendo a los usuarios reales a su sitio desde respuestas generadas por IA.
+
+* **Intentos de cita**: cómo los sistemas de IA accedieron a una página como fuente potencial al responder preguntas del usuario. La canalización busca páginas que muestran intentos de citas coherentes semana tras semana, lo que ofrece una imagen más holística del interés que un solo punto en el tiempo.
+* **tráfico de referencia LLM**: casos en los que un usuario hizo clic desde una respuesta generada por IA para aterrizar en la dirección URL. La canalización se centra en los datos de referencia más recientes y prioriza las páginas con el mayor volumen de visitas impulsadas por IA, lo que garantiza que las sugerencias se basen en los patrones de recomendación de IA actuales y comprobados.
+
+| Señal | Lo que significa |
+|--------|---------------|
+| Solo intentos de cita | Los agentes acceden de forma consistente a esta página como un origen potencial |
+| Solo tráfico de referencia LLM | Los agentes están enviando usuarios a esta página de forma activa |
+| Ambas | Los agentes acceden a él y los usuarios hacen clic en él, el destinatario de mayor confianza |
+
+Una página puede calificarse a través de una señal o de ambas. Las páginas que muestran ambas señales representan los objetivos de mayor confianza para la generación rápida.
+
+#### Paso 2: Análisis del contenido y la intención de la página {#prompt-suggestions-step-2}
+
+Para cada página correspondiente, la canalización lee el contenido de la página y:
+
+* **Lo resume** en una descripción concisa basada en hechos que se convierte en la base de todo lo que sigue.
+* **Clasifica** el tipo de página, ya sea un producto, un recurso, un soporte técnico o un concentrador.
+* Identifica la **intención de recorrido principal**: el tipo de pregunta que la página está en mejor posición para responder, como informativa, instructiva, comparativa o transaccional.
+
+Las dos clasificaciones funcionan juntas. Por ejemplo, es más probable que los mensajes generados a partir de una página de asistencia, como una guía de configuración o un tutorial, sean relevantes para un perfil de usuario existente que para una nueva audiencia.
+
+#### Paso 3: Comprobar la cobertura de mensajes existente {#prompt-suggestions-step-3}
+
+Antes de generar algo nuevo, la canalización comprueba si cada página elegible ya está cubierta por mensajes configurados en su cuenta de LLM Optimizer, que se ejecutan en dos pasos:
+
+1. Un análisis de similitud semántica que identifica rápidamente los mensajes candidatos de la biblioteca de mensajes existente que están potencialmente relacionados con la página.
+2. Una revisión con tecnología LLM que puntúa cómo se alinea cada candidato puntual con el contenido de la página, no solo si está relacionado temporalmente, sino si cubre de qué trata la página.
+
+Una página se considera cubierta si al menos un mensaje existente cumple ese umbral. Las páginas sin coincidencia adecuada se identifican como brechas y se mueven al paso 4.
+
+#### Paso 4: Generación, comprobación de calidad y clasificación de mensajes por dirección URL {#prompt-suggestions-step-4}
+
+![Generación de mensajes y comprobación de calidad](/help/dashboards/assets/prompt-suggestions-generation.png)
+
+Para cada página con espacios, la canalización genera mensajes que suenan naturales basados en el contenido de la página. Comienza identificando personas relevantes: alguien que de manera realista haría preguntas a las que esta página responde y construye un escenario realista alrededor de esa persona antes de generar peticiones de candidatos.
+
+Cada mensaje pasa por una revisión de calidad automatizada en tres dimensiones:
+
+* Si es **específico** para esta página en lugar de una pregunta genérica que podría aplicarse a cualquier página de la categoría.
+* Si está **conectado a tierra** en el contenido real de la página.
+* Si suena como algo que un **usuario real** escribiría en una herramienta de IA como ChatGPT.
+
+Las peticiones de datos que no pasan esta revisión se vuelven a escribir con comentarios específicos y se vuelven a revisar. Si todavía no pasan, se caen.
+
+El paso final es una comprobación de la diversidad, los indicadores de dirección URL demasiado similares se eliminan de la lista final. Cada mensaje está etiquetado con el tema y la categoría preconfigurados, e incluye un campo de razonamiento que explica por qué la URL de origen se segmentó en función de sus señales de intento de cita y tráfico de referencia. A los indicadores también se les asigna una clasificación de prioridad para que sepa sobre qué sugerencias actuar primero: una prioridad mayor significa una señal de IA combinada más fuerte desde la dirección URL de origen. Los indicadores están listos para revisarse en la ficha **Sugerencias para los mensajes** del panel de configuración del cliente.
+
+### Usos {#prompt-suggestions-how-to-use}
+
+1. Abra el panel **Configuración del cliente** y vaya a la pestaña **Sugerencias de mensajes**.
+1. Use el filtro **Source** para seleccionar **Intento de cita** y ver las sugerencias generadas a partir del tráfico auténtico.
+1. Revise las columnas **Razonamiento** y **Prioridad** para evaluar cada sugerencia.
+1. Seleccione los indicadores que desee agregar y haga clic en **Agregar selección** para agregarlos a los indicadores configurados.
+
+![Pestaña Sugerencias de mensajes con el filtro de origen Intento de cita](/help/dashboards/assets/prompt-suggestions-citation-attempt.png)
+
+![Agregar sugerencias de solicitud seleccionadas](/help/dashboards/assets/prompt-suggestions-add-selection.png)
+
+### Preguntas frecuentes {#prompt-suggestions-faq}
+
+P: ¿Necesita mi organización alguna configuración adicional para utilizar esta función?
+
+Esta función se basa en los datos de registro de CDN. Si ya ha habilitado el [reenvío de registros de CDN](#cdn-configuration), no se necesita ninguna configuración adicional. Sin los registros de CDN, los datos de intentos de cita o tráfico de referencia no estarán disponibles para su análisis.
+
+P: ¿Por qué no aparece una dirección URL específica en las sugerencias?
+
+Hay algunas razones comunes. Es posible que la página aún no tenga una actividad de recuperación de IA coherente o un tráfico de referencia significativo; sin una de esas señales, no entra en la canalización. Es posible que ya esté cubierto por una solicitud configurada existente, ya que la canalización solo genera sugerencias para lagunas reales. O puede que el tipo de página no sea apto para la generación de mensajes.
+
+P: ¿Las sugerencias pueden cambiar con el tiempo?
+
+Sí. La canalización se ejecuta periódicamente a medida que hay nuevos datos de CDN disponibles. A medida que evoluciona el comportamiento de los usuarios y los agentes (a qué páginas se accede, con qué frecuencia y cuáles generan tráficos de referencia), las sugerencias reflejan esos cambios. Las páginas que antes no eran de alta señal pueden calificarse en ejecuciones futuras y las lagunas existentes que se han abordado ya no generarán nuevas sugerencias.
+
+P: ¿Por qué veo direcciones URL que no esperaba en las sugerencias?
+
+Las direcciones URL que aparecen se basan completamente en el comportamiento agéntico observado: páginas a las que los sistemas de IA han accedido o al que han hecho referencia constantemente los usuarios, independientemente de su importancia en la estrategia de contenido. En algunos casos, pueden ser páginas que nunca consideró importantes, pero que AI ha buscado repetidamente. Si aparece una dirección URL en las sugerencias, es porque los datos la admiten. Siempre es libre de ignorar las sugerencias que no se ajustan a su estrategia, pero los datos detrás de cada sugerencia se basan en una actividad de IA real.
+
+P: ¿Qué significa el campo de razonamiento?
+
+Cada mensaje incluye una explicación de por qué su dirección URL de origen se enumeró como sugerencia. Para las páginas que cumplen los requisitos mediante intentos de citas, muestra cómo la página se clasifica entre todas las páginas a las que se accede en función de los intentos semanales. Para las páginas que se clasifican mediante el tráfico de referencia, muestra lo mismo para las vistas de página de referencia. Las páginas con ambas señales muestran ambas. Esto le ayuda a comprender la prioridad y elegir qué sugerencias publicar primero.
+
+Para una página con ambas señales, el razonamiento podría ser: *Generado para [URL de página] — se encuentra en el 3% superior por la mediana de intentos de citas semanales y en el 1% superior por el tráfico de referencia LLM.*
+
+P: ¿Cómo se determina la prioridad?
+
+La prioridad se basa en una puntuación combinada de dos señales: cómo una página se clasifica entre todas las páginas por intentos de citas y cómo se clasifica entre todas las páginas por vistas de páginas de referencia de LM. Ambos se expresan como percentiles y se suman, de modo que las páginas que marcan con fuerza en ambas señales ascienden naturalmente a la parte superior. Una página a la que AI accede de forma constante y a la que envía usuarios de forma activa, siempre tendrá una clasificación más alta que una página con una sola señal.
+
+P: ¿Cómo decide la canalización qué páginas cumplen los requisitos en función de los intentos de citas?
+
+La canalización busca páginas que muestren una actividad de recuperación de IA coherente a lo largo del tiempo. Para ello, una página debe cumplir dos condiciones: debe mostrar actividad significativa en al menos la mitad de las semanas en los datos disponibles y su recuento medio de visitas reales durante esas semanas activas debe estar en el 25 % superior en todas las páginas. Ambas condiciones deben mantenerse: la frecuencia por sí sola no es suficiente y el volumen de visitas por sí solo tampoco es suficiente.
+
+P: ¿Cómo decide la canalización qué páginas cumplen los requisitos en función del tráfico de referencia?
+
+Una página cumple los requisitos si aparece en el 10 % de todas las páginas según el total de visitas de recomendación de LLM en los últimos tres meses. Esto garantiza que las sugerencias se basen en páginas que ya están generando clics reales y mensurables a partir de respuestas de IA, según el comportamiento reciente.
+
+P: ¿Las sugerencias rápidas están disponibles en idiomas distintos del inglés?
+
+Todavía no. Actualmente, la canalización solo genera peticiones de datos en inglés. En una versión futura se añadirá compatibilidad con varios idiomas.
