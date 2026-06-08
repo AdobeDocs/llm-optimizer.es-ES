@@ -4,16 +4,13 @@ description: Obtenga información sobre cómo configurar Akamai BYOCDN para Opti
 feature: Opportunities
 autotag-review: '2026-05-15T17:34:47.891Z'
 TQID: 'https://experienceleague.adobe.com/oGtqsnvHYn0BSNLl40-KpVl0TjCZHESRgH1LcVmjOiY'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 34837b04c48141b8c3657b8f07cb3c2e4852a9ea
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+source-git-commit: c5a8f033aac85913b56a40bb1560537da04847f2
 workflow-type: tm+mt
-source-wordcount: 809
-ht-degree: 100%
+source-wordcount: 810
+ht-degree: 98%
 
 ---
 
@@ -24,7 +21,7 @@ Esta configuración enruta el tráfico agéntico (solicitudes de bots de IA y ag
 
 **Requisitos previos**
 
-Antes de configurar las reglas del Administrador de propiedades de Akamai, asegúrese de tener:
+Antes de configurar las reglas del Administrador de propiedades de Akamai, asegúrese de lo siguiente:
 
 * Acceso al Administrador de propiedades de Akamai para su dominio.
 * Haber recuperado una clave de API de Edge Optimize de la IU de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
