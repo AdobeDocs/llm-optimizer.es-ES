@@ -10,10 +10,10 @@ feature_v2:
   - id: d1956731-2adb-4bb7-8301-2b239254ac72
 subfeature_v2:
   - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+source-git-commit: 5a903ec2b6976e7997c45848265d022ca67bed9d
 workflow-type: tm+mt
-source-wordcount: 2217
-ht-degree: 99%
+source-wordcount: 2204
+ht-degree: 96%
 
 ---
 
@@ -67,7 +67,7 @@ Antes de establecer la configuración de CloudFront, asegúrese de que dispone d
    * **Nombre:** `edgeoptimize-routing`
    * **Tiempo de ejecución:** `cloudfront-js-2.0`
 
-3. Reemplace el código predeterminado por el código de [viewer-request.js](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/cloudfront-function/viewer-request.js).
+3. Reemplace el código predeterminado por el código de [viewer-request.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/cloudfront-function/viewer-request.js).
 
    Antes de publicar, personalice los siguientes valores del código:
 
@@ -120,7 +120,7 @@ Si su comportamiento ya utiliza una directiva de caché personalizada (una que u
 
 2. Haga clic en **Editar**.
 
-3. Se recomienda establecer **TTL mínimo** en `0`. Sin embargo, si su TTL mínimo actual ya es muy corto, es posible que no necesite cambiarlo.
+3. Se recomienda establecer **TTL mínimo** en `0`. Sin embargo, si el TTL mínimo actual ya es muy corto, es posible que no necesite cambiarlo.
    ![Configuración de TTL de la directiva de caché](/help/assets/optimize-at-edge/cloudfront-cache-policy-ttl.png)
 
 4. En **Configuración de clave de caché** > **Encabezados**, junto con sus inclusiones existentes, añada `x-edgeoptimize-config` y `x-edgeoptimize-url`.
@@ -195,7 +195,7 @@ Si su comportamiento utiliza una directiva de caché administrada por AWS (por e
 
 4. Haga clic en **Crear función**.
 
-5. En el editor de código, reemplace el código predeterminado por el código de [origin-request-response.js](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/lambda/origin-request-response.js).
+5. En el editor de código, reemplace el código predeterminado por el código de [origin-request-response.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/lambda/origin-request-response.js).
 
 6. Haga clic en **Implementar** para guardar el código.
 
@@ -209,7 +209,7 @@ La función creada automáticamente solo confía en `lambda.amazonaws.com`. Para
 
 1. Haga clic en **Editar directiva de confianza**.
 
-2. Reemplace la directiva por el contenido de [trust-policy.json](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/lambda/trust-policy.json).
+2. Reemplace la directiva por el contenido de [trust-policy.json](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/lambda/trust-policy.json).
 
 3. Haga clic en **Actualizar directiva**.
 
@@ -224,7 +224,7 @@ La función creada automáticamente viene con una directiva `AWSLambdaBasicExecu
 
 1. Haga clic en **Editar**.
 
-2. Reemplace la directiva por el contenido de [cloudwatch-policy.json](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/lambda/cloudwatch-policy.json).
+2. Reemplace la directiva por el contenido de [cloudwatch-policy.json](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/lambda/cloudwatch-policy.json).
 
    En el JSON, reemplace `ACCOUNT_ID` por su ID de cuenta de AWS real (que se encuentra en la esquina superior derecha de la consola de AWS) y `FUNCTION_NAME` por el nombre de su función Lambda (por ejemplo, `edgeoptimize-origin`).
 
