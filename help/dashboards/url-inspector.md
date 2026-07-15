@@ -4,30 +4,23 @@ description: Aprenda a utilizar el Inspector de URL para analizar el rendimiento
 feature: URL Inspector
 autotag-review: '2026-05-15T18:10:59.172Z'
 TQID: 'https://experienceleague.adobe.com/n5IgVprujFrB8bImxkgzcAzK1fT6bsvnwNzSdBaV-4E'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: aedaee53-dfb4-4ab4-9d23-fa6188148769
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2: id: aedaee53-dfb4-4ab4-9d23-fa6188148769
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: d547cf05e232756afacbba7d942a27578839da98
 workflow-type: tm+mt
-source-wordcount: 718
-ht-degree: 100%
+source-wordcount: 710
+ht-degree: 97%
 
 ---
 
 
 # Inspector de URL
 
-El inspector de URL le ayuda a analizar el rendimiento de páginas específicas de su dominio en las búsquedas por IA. Combina visibilidad, tráfico agéntico y datos de referencia a nivel de la URL para ofrecerle una vista granular de las direcciones URL que se citan y de la frecuencia con la que aparecen en las respuestas.
+El inspector de URL le ayuda a analizar el rendimiento de páginas específicas de su dominio en las búsquedas por IA. Combina visibilidad, tráfico agéntico y datos de referencia a nivel de la URL para ofrecerle una vista granular de las direcciones URL que se citan y de la frecuencia con la que aparecen en las respuestas. Vaya a **Inspector de URL** y seleccione el sitio cuya información desee ver.
 
 ![Inspector de URL](/help/dashboards/assets/url-insp.png)
-
-Si se encuentra en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya a **Inspector de URL** y seleccione el sitio para el cual desea ver las perspectivas.
 
 ![Inspector de URL: selector del sitio (experiencia centrada en la marca)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
 
