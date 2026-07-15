@@ -15,19 +15,21 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+source-git-commit: a5bfae0a2fecc48f8deb80394817002cfb7c1a32
 workflow-type: tm+mt
-source-wordcount: 1407
-ht-degree: 100%
+source-wordcount: 1254
+ht-degree: 97%
 
 ---
 
 
 # Tráfico agéntico {#agentic-traffic}
 
-El panel de control Tráfico agéntico muestra cómo los agentes de IA (rastreadores y bots de chat) interactúan con el sitio. Con esta vista puede realizar un seguimiento de la cantidad total de solicitudes y de las métricas generales relacionadas con el rendimiento. También puede ver la distribución del tráfico entre mercados, categorías, páginas y agentes. Los datos que este panel de control utiliza proceden de los registros de CDN, por lo que debe configurar **el reenvío de registros de CDN** para poder mostrar las métricas. También hay filtros personalizables para perfeccionar los datos mostrados.
+El panel de control Tráfico agéntico muestra cómo los agentes de IA (rastreadores y bots de chat) interactúan con el sitio. Con esta vista puede realizar un seguimiento de la cantidad total de solicitudes y de las métricas generales relacionadas con el rendimiento. También puede ver la distribución del tráfico entre mercados, categorías, páginas y agentes. Los datos que este panel de control utiliza proceden de los registros de CDN, por lo que debe configurar **el reenvío de registros de CDN** para poder mostrar las métricas. También hay filtros personalizables para perfeccionar los datos mostrados. Vaya a **Tráfico agéntico** y seleccione el sitio para el cual desea ver las perspectivas de tráfico reales.
 
-![Distribución del tráfico](/help/dashboards/assets/ag-main.png)
+![Tráfico agéntico: selector del sitio (experiencia centrada en la marca)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+
+<!-- ![Traffic Distribution](/help/dashboards/assets/ag-main.png)-->
 
 Esta página detalla lo siguiente:
 
@@ -38,44 +40,15 @@ Esta página detalla lo siguiente:
 * [Mayores y menores variaciones](#top-bottom-movers)
 * [Análisis de agente de usuario y de rendimiento de URL](#user-url-performance)
 
-Si se encuentra en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya a **Tráfico agéntico** y seleccione el sitio para el que desea ver las perspectivas del tráfico agéntico.
-
-![Tráfico agéntico: selector del sitio (experiencia centrada en la marca)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
-
 ## Reenvío de registros de CDN {#cdn-setup}
 
 Sin **reenvío de registros de CDN**, el panel de control Tráfico agéntico está en blanco. Para ver interacciones reales, debe configurar **Reenvío de registros de CDN**.
 
-### Configuración del cliente (navegación clásica)
-
-Al iniciar sesión por primera vez, verá un mensaje tal como se muestra en la siguiente imagen.
-
-![Configuración de CDN](/help/dashboards/assets/ag-log-forward1.png)
-
-Seleccione **Ir a configuración** y navegará automáticamente a la pestaña **Configuración de CDN** del [panel de control Configuración del cliente](/help/dashboards/customer-configuration.md).
-
-![Incorporación de configuración de CDN](/help/dashboards/assets/ag-log-forward2.png)
-
-En esta pestaña, seleccione **Incorporar CDN**. Y aparece la ventana del proveedor de CDN.
-
-<!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
-En la ventana **Incorporar proveedor de CDN**:
-
-1. Seleccione su proveedor de CDN (por ejemplo, Akamai, Fastly administrado por Adobe, Fastly, AWS Cloudfront, CDN de Azure, Cloudflare u otro).
-2. Haga clic en **Incorporar** para habilitar el reenvío de registros.
-
-Si selecciona **Otro**, tendrá que ponerse en contacto con llmo-now@adobe.com para obtener ayuda.
-
->[!NOTE]
->Para obtener más información sobre el reenvío de registros al utilizar una CDN administrada por el cliente (BYOCDN), consulte [Información general sobre el reenvío de registros BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
-
-Una vez activados, los registros se incorporan y el panel de control se rellena con métricas como interacciones totales del agente, tasa de éxito, visitas por mercado, análisis de agente de usuario y rendimiento a nivel de URL.
-
-### Experiencia centrada en la marca
-
-Si se encuentra en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), puede añadir la información de reenvío de registros de CDN accediendo a **Administración de marcas** y haciendo clic en la etiqueta **CDN**.
+Para agregar información de reenvío de registros de CDN, vaya a **Brands Management** y haga clic en la etiqueta **CDN**.
 
 ![Administración de marcas: reenvío de registros de CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
+
+Para obtener más información sobre el reenvío de registros al utilizar una CDN administrada por el cliente (BYOCDN), consulte [Información general sobre el reenvío de registros BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 LLM Optimizer procesa un subconjunto de campos de los registros de CDN. Aunque los nombres de los campos de registro sin procesar varían según el proveedor de CDN, se normalizan y presentan de la siguiente manera:
 

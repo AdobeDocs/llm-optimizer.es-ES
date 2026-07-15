@@ -14,10 +14,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+source-git-commit: d547cf05e232756afacbba7d942a27578839da98
 workflow-type: tm+mt
-source-wordcount: 1346
-ht-degree: 100%
+source-wordcount: 1335
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,11 @@ ht-degree: 100%
 
 El panel de control Presencia de marca proporciona una descripción detallada sobre cómo se percibe su marca en el nivel de respuestas generadas por IA. Muestra dónde, con qué frecuencia y en qué contexto se menciona su marca. Puede utilizar el panel de control para medir la visibilidad, hacer un seguimiento de las citas y explorar las tendencias de opinión. El panel de control se divide en varias secciones, cada una de las cuales proporciona diferentes perspectivas. También hay filtros personalizables para perfeccionar los datos mostrados.
 
-![Información general sobre la presencia de marca](/help/dashboards/assets/brand-main.png)
+Vaya a **Presencia de marca**. En la lista desplegable de marcas, seleccione la marca que desee analizar o elija **Todas las marcas** para revisar la visibilidad de su conjunto de marcas completo.
+
+![Presencia de marca con selector de marca (experiencia centrada en la marca)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
+
+<!-- ![Brand Presence overview](/help/dashboards/assets/brand-main.png)-->
 
 Esta página detalla lo siguiente:
 
@@ -35,10 +39,6 @@ Esta página detalla lo siguiente:
 * [Comparativa de competidores](##others-comparison)
 * [Tendencia de opinión](#sentiment-trend)
 * [Información de datos](#data-insights)
-
-Si se encuentra en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya a **Presencia de marca**. En la lista desplegable de marcas, seleccione la marca que desee analizar o elija **Todas las marcas** para revisar la visibilidad de su conjunto de marcas completo.
-
-![Presencia de marca con selector de marca (experiencia centrada en la marca)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 
 ## Filtros {#filters}
 

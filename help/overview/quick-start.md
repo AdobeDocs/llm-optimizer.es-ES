@@ -10,10 +10,10 @@ feature_v2:
   - id: c0713b97-4af8-4c41-b742-5afcc6ced468
 subfeature_v2:
   - id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: a5bfae0a2fecc48f8deb80394817002cfb7c1a32
 workflow-type: tm+mt
-source-wordcount: 1472
-ht-degree: 96%
+source-wordcount: 1201
+ht-degree: 87%
 
 ---
 
@@ -26,7 +26,7 @@ Para empezar a usar LLM Optimizer, complete el proceso de incorporación. A cont
 
 ## Experiencia centrada en la marca {#brand-centric-experience}
 
-De forma predeterminada, los nuevos clientes acceden a una interfaz específica, centrada en la marca con una configuración basada en la incorporación. En esta nueva interfaz, cada organización empieza con una marca activa y marcas sugeridas adicionales entre las que elegir. Los clientes existentes de LLM Optimizer se pasarán gradualmente a esta experiencia centrada en la marca.
+De forma predeterminada, los clientes empiezan en una interfaz centrada en la marca con una configuración basada en la incorporación. En esta interfaz, cada organización comienza con una marca activa y marcas sugeridas adicionales para elegir. <!--Existing LLM Optimizer customers will shift to this Brand Centric experience gradually.-->
 
 ## Información general sobre la incorporación
 
@@ -115,30 +115,9 @@ Cuando la organización haya concluido el acuerdo empresarial, se le incorporar�
 
 Una vez incorporado el sitio, podrá ver el análisis de Presencia de marca en función del pequeño conjunto de indicaciones que se generaron automáticamente durante la fase de incorporación. A partir de ahora, podrá personalizar las categorías, los temas y las indicaciones de su marca.
 
-### Configuración del cliente (navegación clásica)
-
-Si utiliza la navegación clásica (no la experiencia centrada en la marca), puede personalizar categorías, temas e indicaciones para su marca en el [panel de control de configuración del cliente](/help/dashboards/customer-configuration.md).
-
-![Panel de control Configuración del cliente](/help/overview/assets/prompt-creation.png)
-
-En el panel Configuración del cliente, puede:
-
-* Añadir **nuevas categorías** que se ajusten a las prioridades de su empresa Las categorías pueden ser amplias áreas de contenido relevantes para su dominio.
-* Escribir **temas personalizados** o subtemas de los que quiera realizar un seguimiento. Los temas pueden ser temas específicos vinculados a palabras clave sin marca de gran volumen asociadas con su dominio.
-* Crear **sus indicaciones** para supervisar la visibilidad en consultas específicas. Las indicaciones son consultas (con y sin marca) que proporcionan una visibilidad de línea de base. Solo se generará automáticamente un número limitado de indicaciones en función de las categorías y los temas que haya proporcionado.
-* Definir la mención de los **alias** para asegurarse de que se capturen y se contabilicen todas las menciones de una marca.
-* Definir los **otros alias** para realizar un seguimiento preciso de otras marcas.
-
->[!NOTE]
->Las indicaciones exactas que solicite a los LLM no están disponibles porque los LLM no las revelan.
-
->[!NOTE]
->
-> Para obtener información detallada sobre cómo configurar las categorías, temas e indicaciones, consulte la página [Prácticas recomendadas para configurar categorías, temas e indicaciones](/help/overview/best-practices-topics-prompts.md).
-
 ### Categorías, temas e indicaciones de la experiencia centrada en la marca
 
-Para los clientes que se encuentran en la experiencia centrada en la marca, puede añadir categorías, temas e indicaciones de la siguiente manera:
+Puede agregar categorías, temas y peticiones de datos de la siguiente manera:
 
 * **Categorías**: vaya a **Administración de marcas** y haga clic en **Categorías**. Las categorías se definen a nivel global y se aplican a todas las marcas en Administración de marcas.
 
@@ -148,48 +127,40 @@ Para los clientes que se encuentran en la experiencia centrada en la marca, pued
 
   ![Administración de indicaciones](/help/assets/brand-centric-experience/prompts-management.png)
 
+>[!NOTE]
+>Las indicaciones exactas que solicite a los LLM no están disponibles porque los LLM no las revelan.
+
+>[!NOTE]
+>
+> Para obtener información detallada sobre cómo configurar las categorías, temas e indicaciones, consulte la página [Prácticas recomendadas para configurar categorías, temas e indicaciones](/help/overview/best-practices-topics-prompts.md).
+
 ## Paso 3: Información sobre la Presencia de marca
 
 Una vez incorporado el dominio, obtendrá información inicial en la vista Presencia de marca en función de las indicaciones que se generaron automáticamente durante la incorporación. Una vez que haya personalizado sus propias categorías, temas e indicaciones, LLM Optimizer activará automáticamente el análisis de Presencia de marca en función de las indicaciones que haya proporcionado, y los resultados estarán disponibles al cabo de 24 horas.
 
->[!NOTE]
->
-> Para los clientes que se encuentran en la experiencia centrada en la marca, vaya a **Presencia de marca** y seleccione una marca para la que desee ver la Presencia de marca mediante el menú desplegable de marca. También puede ver la visibilidad de la marca a un nivel de **Todas las marcas** con esta experiencia.
+Vaya a **Presencia de marca** y seleccione una marca de la cual quiera ver la Presencia de marca mediante la lista desplegable de marcas. También puede ver la visibilidad de la marca a un nivel de **Todas las marcas** con esta experiencia.
 
 ## Paso 4: Proporcionar información para el reenvío de registros de CDN {#step-4}
 
 Para obtener información sobre el tráfico agéntico y el tráfico de referencia, registre el reenvío de registros de CDN para que LLM Optimizer pueda leer sus registros de acceso.
 
-### Configuración del cliente (navegación clásica)
+### Reenvío de registros de CDN
 
-Si utiliza la navegación clásica, puede añadir información de reenvío de registros de CDN desde el [panel de control de configuración del cliente](/help/dashboards/customer-configuration.md#cdn-configuration). Abra la pestaña **Configuración de la CDN** y seleccione **Incorporar CDN**.
+Puede agregar información de reenvío de registros de CDN desde **Brands Management** de la siguiente manera: abra **Brands Management** y haga clic en la etiqueta **CDN**.
 
-![CDN de configuración del cliente](/help/overview/assets/cc-cdn.png)
-
-O bien, si no se ha añadido ningún proveedor de CDN previamente (tal como se ha descrito anteriormente), se le pedirá que añada el reenvío de registros de CDN al acceder a los paneles de control Tráfico de agéntico y Tráfico de referencia por primera vez. Para obtener más información, consulte lo siguiente:
-
-* [Tráfico agéntico](/help/dashboards/agentic-traffic.md#cdn-setup)
-* [Tráfico de referencia](/help/dashboards/referral-traffic.md#setup)
+![Administración de marcas: reenvío de registros de CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
 >[!NOTE]
 >Para obtener más información sobre el reenvío de registros al utilizar una CDN administrada por el cliente (BYOCDN), consulte [Información general sobre el reenvío de registros BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
-### Reenvío de registros de CDN de la experiencia centrada en la marca
-
-Para los clientes que utilizan la experiencia centrada en la marca, puede añadir información de reenvío de registros de CDN desde **Administración de marcas** de la siguiente manera: abra **Administración de marcas** y haga clic en la etiqueta **CDN**.
-
-![Administración de marcas: reenvío de registros de CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
 ## Paso 5: Explorar paneles de control y realizar acciones
 
-Después de proporcionar información para el reenvío de registros de CDN, podrá hacer lo siguiente:
+Después de proporcionar información para el Reenvío de registros de CDN, puede acceder al panel deseado desde la sección de navegación a la izquierda.
 
 * Ver el panel de control [Presencia de marca](/help/dashboards/brand-presence.md), ver su puntuación de visibilidad y realizar un seguimiento de su rendimiento en relación con otras marcas.
 * Explore los paneles de control [Tráfico agéntico](/help/dashboards/agentic-traffic.md) y [Tráfico de referencia](/help/dashboards/referral-traffic.md), si se ha configurado el reenvío de registros de CDN.
 * Usar [Oportunidades](/help/dashboards/opportunities-overview.md) para identificar contenido y mejoras técnicas.
 * Exportar datos y colaborar con su equipo o invitar a su compañero de trabajo para que utilice el producto.
-
->[!NOTE]
-> En la experiencia centrada en la marca, acceda a la vista deseada desde la sección de navegación de la izquierda.
 
 Por último, para comprender completamente las capacidades de LLM Optimizer, debería explorar todos los [paneles de control](/help/dashboards/dashboards-overview.md) disponibles.
