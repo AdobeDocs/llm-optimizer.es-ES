@@ -2,20 +2,17 @@
 title: Agregar tabla de contenido
 description: Descubra cómo LLM Optimizer identifica las páginas de alto tráfico que carecen de una estructura de navegación clara para los agentes de IA y cómo revisar e implementar una tabla de contenido con Optimizar en Edge.
 feature: Opportunities
-autotag-review: '2026-05-15T17:29:21.334Z'
-TQID: 'https://experienceleague.adobe.com/A-Oxmmn-Cb4l9-iVx1TAKxvBTEOxRIAnRe1w1PqF6OI'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+autotag-review: '2026-07-15T16:47:42.882Z'
+TQID: 'https://experienceleague.adobe.com/x-7FiZKCLMmEfm1x2lQNtfOd4su1MyGLrcAtLnjpaqw'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 655
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -55,7 +52,7 @@ En **Sugerencias actuales**, para cada URL puede:
 
 Las sugerencias están organizadas en **Sugerencias actuales**, **Sugerencias fijas** y **Sugerencias ignoradas**, lo que concuerda con otras oportunidades de Optimizar en Edge.
 
-### Implementación de la optimización
+### Implementar la optimización
 
 Cuando esté listo para publicar en el perímetro de, seleccione las sugerencias de la tabla de contenido que desee implementar. El pie de página resume cuántos elementos se han seleccionado y, por lo general, ofrece **Marcar como fijos**, **Ignorar sugerencias** y **Implementar optimizaciones**.
 
@@ -65,7 +62,7 @@ Después de una implementación correcta, **Implementación completada** confirm
 
 >[!NOTE]
 >
->La implementación de optimizaciones requiere completar el proceso de incorporación de Optimizar en Edge. Si aún no se ha incorporado, al hacer clic en **Implementar optimizaciones**, se le dirigirá al proceso de incorporación. Para obtener información detallada sobre cómo funciona Optimizar en Edge, los proveedores de CDN admitidos y el proceso de incorporación, consulte la página [Optimizar en Edge](/help/dashboards/optimize-at-edge/overview.md).
+>Para implementar las optimizaciones, es necesario completar el proceso de incorporación de Optimizar en Edge. Si aún no ha completado el proceso de incorporación, al hacer clic en **Implementar optimizaciones** se le dirigirá al proceso de incorporación. Para obtener información completa sobre cómo funciona Optimizar en Edge, los proveedores de CDN compatibles y el proceso de incorporación, consulte la página [Optimizar en Edge](/help/dashboards/optimize-at-edge/overview.md).
 
 ### Sugerencias fijas y Ver en directo
 

@@ -2,20 +2,17 @@
 title: Añadir preguntas frecuentes relevantes
 description: Descubra cómo LLM Optimizer identifica las páginas de alto tráfico que carecen de contenido de preguntas y respuestas estructurado para los agentes de IA y cómo revisar e implementar las preguntas frecuentes generadas por IA con Optimizar en Edge.
 feature: Opportunities
-autotag-review: '2026-05-15T17:28:53.611Z'
-TQID: 'https://experienceleague.adobe.com/491jK6SRnc2yJ4Uw9UzK71W3nsTWDhxt3lW0Sy8-3NQ'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+autotag-review: '2026-07-15T16:47:24.291Z'
+TQID: 'https://experienceleague.adobe.com/ObmJKEvR9-ovzugCtAsRkcUBemcsMw6cNwizkuKYPcc'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 742
-ht-degree: 1%
+ht-degree: 10%
 
 ---
 
@@ -42,7 +39,7 @@ LLM Optimizer identifica páginas de alto tráfico en las que el contenido de pr
 
 ![URL con sugerencias sobre sugerencias actuales, fila expandida con preguntas frecuentes y respuestas generadas por IA](/help/dashboards/opportunities/assets/add-relevant-faqs-expand.png)
 
-La tabla **URL con sugerencias** enumera páginas donde las preguntas frecuentes ayudarían a realizar descubrimientos controlados por IA. Las sugerencias están organizadas en **Sugerencias actuales**, **Sugerencias fijas** y **Sugerencias ignoradas**. Para cada URL puede:
+La tabla **URL con sugerencias** enumera páginas donde las preguntas frecuentes ayudarían a realizar descubrimientos controlados por IA. Las sugerencias están organizadas en **Sugerencias actuales**, **Sugerencias fijas** y **Sugerencias ignoradas**. En cada URL puede hacer lo siguiente:
 
 - **Expanda la fila** para ver el contenido de preguntas más frecuentes propuesto para esa página.
 - **Vista previa** de la comparación antes y después para el tráfico auténtico.
@@ -59,11 +56,11 @@ Seleccione las sugerencias de preguntas frecuentes que desee enviar mediante las
 
 ![Sugerencias de preguntas frecuentes seleccionadas sobre sugerencias actuales con la implementación de optimizaciones](/help/dashboards/opportunities/assets/add-relevant-faqs-ui-02.png)
 
-### Implementación de la optimización
+### Implementar la optimización
 
 Cuando esté listo para publicar en Edge, haga clic en **Implementar optimizaciones**. Un cuadro de diálogo **Implementar en Edge** enumera las direcciones URL, preguntas y respuestas que está a punto de insertar. Revise la lista y, a continuación, elija **Implementar** o **Cancelar**.
 
-![Implementar en el cuadro de diálogo de Edge](/help/dashboards/opportunities/assets/add-relevant-faqs-ui-03.png)
+Cuadro de diálogo ![Implementar en Edge](/help/dashboards/opportunities/assets/add-relevant-faqs-ui-03.png)
 
 Después de una implementación correcta, **Implementación completada** confirma cuántas optimizaciones se activaron. Cierre el cuadro de diálogo y abra **Sugerencias fijas** para comprobar el estado.
 
@@ -71,7 +68,7 @@ Después de una implementación correcta, **Implementación completada** confirm
 
 >[!NOTE]
 >
->La implementación de optimizaciones requiere completar el proceso de incorporación de Optimizar en Edge. Si aún no se ha incorporado, al hacer clic en **Implementar optimizaciones**, se le dirigirá al proceso de incorporación. Para obtener información detallada sobre cómo funciona Optimizar en Edge, los proveedores de CDN admitidos y el proceso de incorporación, consulte la página [Optimizar en Edge](/help/dashboards/optimize-at-edge/overview.md).
+>Para implementar las optimizaciones, es necesario completar el proceso de incorporación de Optimizar en Edge. Si aún no ha completado el proceso de incorporación, al hacer clic en **Implementar optimizaciones** se le dirigirá al proceso de incorporación. Para obtener información completa sobre cómo funciona Optimizar en Edge, los proveedores de CDN compatibles y el proceso de incorporación, consulte la página [Optimizar en Edge](/help/dashboards/optimize-at-edge/overview.md).
 
 ### Sugerencias fijas y Ver en directo
 

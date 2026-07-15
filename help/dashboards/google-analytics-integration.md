@@ -2,10 +2,16 @@
 title: Integración de Google Analytics
 description: Aprenda a conectar Google Analytics 4 con LLM Optimizer para medir la detección basada en IA, la participación en el sitio y los resultados empresariales en el panel de Tráficos de referencia.
 feature: Referral Traffic
-source-git-commit: 368b3c1ee79660ede0c4bf9824f299d2e801c8b2
+autotag-review: '2026-07-15T17:51:53.586Z'
+TQID: 'https://experienceleague.adobe.com/SvWn3W6hpVsWNzfWdJFvPs94lwlKX4ufjjcXKM-6xIc'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: f5a6cbd1-8a9a-4c79-a6db-ba46537f516e
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 1%
+source-wordcount: 1169
+ht-degree: 17%
 
 ---
 
@@ -30,7 +36,7 @@ No necesita **not** para crear un proyecto de Google Cloud, generar una cuenta d
 
 ## Conecte GA4 al tablero de Tráficos de referencia {#connect}
 
-El flujo de conexión se inicia desde el panel [Tráfico de referencia](/help/dashboards/referral-traffic.md) de la siguiente manera:
+El flujo de conexión empieza desde el panel de control [Tráfico de referencia](/help/dashboards/referral-traffic.md) de la siguiente manera:
 
 1. Abra **Tráfico de referencia** en LLM Optimizer.
 
@@ -38,7 +44,7 @@ El flujo de conexión se inicia desde el panel [Tráfico de referencia](/help/da
 
    ![Tablero de Tráfico de referencia, ficha Impacto empresarial](/help/dashboards/assets/ga4-integration-01-business-impact-tab.png)
 
-1. Seleccione **Conectarse a Analytics**. LLM Optimizer lo enruta a **Configuración del cliente > Analytics**. En el selector de proveedores de Analytics, seleccione **Conectar Google Analytics 4**.
+1. Seleccione **Conectar con Analytics**. LLM Optimizer lo enruta a **Configuración del cliente > Analytics**. En el selector de proveedores de Analytics, seleccione **Conectar Google Analytics 4**.
 
    ![Configuración del cliente, ficha Analytics con GA4 seleccionado](/help/dashboards/assets/ga4-integration-02-analytics-ga4-picker.png)
 
@@ -52,16 +58,16 @@ El flujo de conexión se inicia desde el panel [Tráfico de referencia](/help/da
 
 1. Vuelva a la pestaña LLM Optimizer. La pestaña Analytics detecta automáticamente la conexión completada y la tarjeta GA4 muestra el estado **Conectado**.
 
-### Después de conectar {#after-connect}
+### Después de conectarse {#after-connect}
 
 Después de conectar GA4 a LLM Optimizer, ocurre lo siguiente:
 
-* LLM Optimizer rellena **las últimas cuatro semanas** y **el calendario actual hasta la fecha**.
-* Después del relleno, los datos se actualizan **diariamente** con una extracción de **día anterior completo**.
+* LLM Optimizer rellena las **últimas cuatro semanas naturales completas** y la **semana natural actual hasta la fecha**.
+* Después de rellenarse, los datos se actualizan **diariamente** con una extracción del **día completo anterior**.
 
 >[!NOTE]
 >
->El relleno puede tardar unas horas en completarse. El tablero Impacto empresarial comienza a rellenarse progresivamente a medida que los datos aterrizan; no se requiere ninguna acción por su parte mientras se ejecuta el relleno.
+>El relleno puede tardar un par de horas en completarse. El tablero Impacto empresarial comienza a rellenarse progresivamente a medida que los datos aterrizan; no se requiere ninguna acción por su parte mientras se ejecuta el relleno.
 
 Si se vuelve a conectar (por ejemplo, para cambiar la cuenta de Google o la propiedad de GA4), solo se vuelve a rellenar la semana natural actual, se conservan las semanas anteriores que ya se han cargado.
 
@@ -71,11 +77,11 @@ Si se vuelve a conectar (por ejemplo, para cambiar la cuenta de Google o la prop
 
 La integración utiliza el flujo delegado por el usuario de OAuth 2.0 estándar de Google. LLM Optimizer almacena un token de actualización con ámbito en la propiedad de GA4 seleccionada y ese token permite a LLM Optimizer llamar a la API de datos de GA4 en su nombre (con acceso de solo lectura) hasta que la revoque de su cuenta de Google.
 
-### Cómo se identifica el tráfico LLM
+### Cómo se identifica el tráfico de LLM
 
 LLM Optimizer pregunta a GA4 solo por las sesiones que el propio GA4 atribuye a una plataforma LLM. Hoy, son sesiones cuyos `sessionSourceMedium` coinciden con uno de `chatgpt`, `gemini.google.com`, `copilot.microsoft.com`, `claude` o `perplexity`. Adobe mantiene la lista de fuentes de LLM admitidas, que pueden ampliarse con el tiempo.
 
-### Datos introducidos {#data-ingested}
+### Datos ingeridos {#data-ingested}
 
 Cada extracción diaria recupera un informe agregado que contiene lo siguiente:
 
@@ -101,7 +107,7 @@ Cada extracción diaria recupera un informe agregado que contiene lo siguiente:
 | `purchaseRevenue` | Ingresos por compras (USD). |
 | `totalRevenue` | Ingresos totales (USD). |
 
-### Cómo utiliza LLM Optimizer estos datos
+### Cómo LLM Optimizer utiliza estos datos
 
 LLM Optimizer utiliza estos datos para rellenar el rendimiento de nivel de página, los desgloses de origen, las divisiones de país y dispositivo y las tendencias temporales del panel de Impacto empresarial. No se utilizan datos para entrenar modelos ni se comparten fuera del inquilino.
 
@@ -113,7 +119,7 @@ Sin identificadores de usuario (ID de cliente de Google, dirección IP, ID de di
 
 P: ¿La integración de GA4 está disponible durante la versión de prueba?
 
-No. La integración solo está disponible para clientes de LLM Optimizer de pago.
+No. Esta integración solo está disponible para los clientes de pago de LLM Optimizer.
 
 P: ¿Debo crear un proyecto o una cuenta de servicio de Google Cloud?
 
@@ -123,7 +129,7 @@ P: ¿Qué datos se recopilan o almacenan?
 
 LLM Optimizer funciona con métricas agregadas de la API de datos de GA4 autorizadas por su organización, no con datos sin procesar a nivel de evento.
 
-P: ¿Cómo se incorporan los datos?
+P: ¿Cómo se ingieren los datos?
 
 Su organización autoriza a LLM Optimizer a consultar la API de datos de GA4 para la propiedad seleccionada. El tráfico de referencia alineado con las fuentes LLM se consume a través de esa API.
 
@@ -133,9 +139,9 @@ Los datos se actualizan **diariamente** (día anterior completo después de que 
 
 P: ¿Los datos sin procesar a nivel de evento se almacenan en LLM Optimizer?
 
-No. Solo se usan **métricas agregadas** para comprender patrones y tendencias de tráfico.
+No. Solo se utilizan métricas **agregadas** para comprender los patrones y tendencias del tráfico.
 
-P: ¿Se almacenan direcciones URL completas, cadenas de consulta o contenido de página?
+P: ¿Se almacenan direcciones URL completas, cadenas de consulta o el contenido de página?
 
 Las rutas de la página de aterrizaje se incorporan como parte del informe estándar; las cadenas de consulta y el contenido de la página no se incorporan para esta integración.
 
@@ -147,13 +153,13 @@ P: ¿Durante cuánto tiempo se conservan los datos?
 
 Actualmente, los datos se almacenan indefinidamente.
 
-P: ¿Los datos están cifrados en tránsito y en reposo?
+P: ¿Los datos se cifran en tránsito y en reposo?
 
 Actualmente, los datos están cifrados en tránsito, no en reposo. Esto puede cambiar en futuras actualizaciones.
 
-P: ¿Los datos históricos están rellenados?
+P: ¿Los datos históricos se rellenan?
 
-Sí. Después de una configuración correcta, se rellenan las cuatro últimas semanas del calendario completo y la semana natural actual. Ver también [Después de conectar](#after-connect).
+Sí. Una vez completada correctamente la configuración, se rellenarán los datos de las cuatro últimas semanas naturales y de la semana natural actual. Consulte también [Después de conectarse](#after-connect).
 
 P: ¿Puedo desconectar o revocar el acceso?
 

@@ -2,20 +2,17 @@
 title: Agregar resúmenes compatibles con LLM
 description: Descubra cómo LLM Optimizer identifica las páginas de alto tráfico que carecen de resúmenes concisos y puntos clave para los agentes de IA, y cómo revisarlas e implementarlas con Optimizar en Edge.
 feature: Opportunities
-autotag-review: '2026-05-15T17:27:51.631Z'
-TQID: 'https://experienceleague.adobe.com/QpBdx3B-qg41ZWtPU2R4CNq-POrSs31UIb0kms1H3GU'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+autotag-review: '2026-07-15T16:47:03.003Z'
+TQID: 'https://experienceleague.adobe.com/InOzeT7WlDaACpB-WT0F-JqI1nopOJewihCP9eUQnNY'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 793
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -42,7 +39,7 @@ LLM Optimizer identifica páginas de alto tráfico donde los **resúmenes** y **
 
 ![URL con sugerencias sobre sugerencias actuales, fila expandida con sugerencias de resumen de página y sección](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-expand.png)
 
-La tabla **URL con sugerencias** enumera páginas donde los resúmenes podrían ayudar a realizar un descubrimiento auténtico. Las sugerencias están organizadas en **Sugerencias actuales**, **Sugerencias fijas** y **Sugerencias ignoradas**. Para cada URL puede:
+La tabla **URL con sugerencias** enumera páginas donde los resúmenes podrían ayudar a realizar un descubrimiento auténtico. Las sugerencias están organizadas en **Sugerencias actuales**, **Sugerencias fijas** y **Sugerencias ignoradas**. En cada URL puede hacer lo siguiente:
 
 - **Expanda la fila** para ver el análisis y el texto de resumen propuesto (y los puntos clave cuando se incluyan).
 - **Vista previa** de la comparación antes y después para el tráfico auténtico.
@@ -57,11 +54,11 @@ Cuando esté listo para publicar, seleccione el resumen y los elementos de líne
 
 ![Sugerencias actuales con elementos de línea de resumen seleccionados e Implementar optimizaciones en el pie de página](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-select-url.png)
 
-### Implementación de la optimización
+### Implementar la optimización
 
 Cuando esté listo para publicar en Edge, haga clic en **Implementar optimizaciones**. Un cuadro de diálogo **Implementar en Edge** enumera las direcciones URL y los detalles de optimización seleccionados. Revise la lista y, a continuación, elija **Implementar** o **Cancelar**.
 
-![Implementar en el cuadro de diálogo de Edge](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-deploy-dialog.png)
+Cuadro de diálogo ![Implementar en Edge](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-deploy-dialog.png)
 
 Después de una implementación correcta, **Implementación completada** confirma cuántas optimizaciones se activaron y observa que los agentes de IA pueden tardar algún tiempo en indexar la actualización. Cierre el cuadro de diálogo y abra **Sugerencias fijas** para comprobar el estado.
 
@@ -69,7 +66,7 @@ Después de una implementación correcta, **Implementación completada** confirm
 
 >[!NOTE]
 >
->La implementación de optimizaciones requiere completar el proceso de incorporación de Optimizar en Edge. Si aún no se ha incorporado, al hacer clic en **Implementar optimizaciones**, se le dirigirá al proceso de incorporación. Para obtener información detallada sobre cómo funciona Optimizar en Edge, los proveedores de CDN admitidos y el proceso de incorporación, consulte la página [Optimizar en Edge](/help/dashboards/optimize-at-edge/overview.md).
+>Para implementar las optimizaciones, es necesario completar el proceso de incorporación de Optimizar en Edge. Si aún no ha completado el proceso de incorporación, al hacer clic en **Implementar optimizaciones** se le dirigirá al proceso de incorporación. Para obtener información completa sobre cómo funciona Optimizar en Edge, los proveedores de CDN compatibles y el proceso de incorporación, consulte la página [Optimizar en Edge](/help/dashboards/optimize-at-edge/overview.md).
 
 ### Sugerencias fijas y Ver en directo
 

@@ -2,20 +2,17 @@
 title: Agregar resúmenes de transcripciones multimedia
 description: Descubra cómo LLM Optimizer identifica las páginas en las que la información clave está incrustada en vídeo sin texto legible por máquina, y cómo revisar e implementar los resúmenes de transcripciones generados por IA con Optimizar en Edge.
 feature: Opportunities
-autotag-review: '2026-05-15T17:28:28.569Z'
-TQID: 'https://experienceleague.adobe.com/LiXMsMq6D08ciXR85aQBNDpmR5Csiv-5b9kv3lfTpDc'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+autotag-review: '2026-07-15T16:47:13.112Z'
+TQID: 'https://experienceleague.adobe.com/lsMTVS4cFaGnhZonULQE4MB31bMdkzxoKA62o4IBcz0'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 775
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -51,7 +48,7 @@ Para cada página, tiene:
 
 ![URL con sugerencias sobre sugerencias actuales, fila expandida con parche de contenido, detalles de implementación y justificación](/help/dashboards/opportunities/assets/add-multimedia-transcript-summaries-expand.png)
 
-La tabla **URL con sugerencias** enumera páginas donde el texto de transcripción o resumen ayudaría a realizar un descubrimiento auténtico. Las sugerencias están organizadas en **Sugerencias actuales**, **Sugerencias fijas** y **Sugerencias ignoradas**. Para cada URL puede:
+La tabla **URL con sugerencias** enumera páginas donde el texto de transcripción o resumen ayudaría a realizar un descubrimiento auténtico. Las sugerencias están organizadas en **Sugerencias actuales**, **Sugerencias fijas** y **Sugerencias ignoradas**. En cada URL puede hacer lo siguiente:
 
 - **Expanda la fila** para ver el texto de **Parche de contenido**, los detalles de **Implementación** (incluida la operación DOM y el selector CSS planeados) y **Motivo** para el cambio.
 - **Vista previa** de la comparación antes y después para el tráfico auténtico.
@@ -60,7 +57,7 @@ La tabla **URL con sugerencias** enumera páginas donde el texto de transcripci�
 
 Puede editar el texto del parche desde la fila cuando sea compatible (control de lápiz) y, a continuación, utilizar las casillas de verificación de fila para seleccionar lo que desea implementar. El pie de página muestra cuántos están seleccionados y proporciona **Marcar como fijos**, **Ignorar sugerencias** y **Implementar optimizaciones**.
 
-### Implementación de la optimización
+### Implementar la optimización
 
 Cuando esté listo para publicar en Edge, haga clic en **Implementar optimizaciones**. Un cuadro de diálogo **Implementar en Edge** enumera las direcciones URL, los selectores y las operaciones que está a punto de ejecutar. Revise la lista y, a continuación, elija **Implementar** o **Cancelar**.
 
@@ -72,7 +69,7 @@ Después de una implementación correcta, **Implementación completada** confirm
 
 >[!NOTE]
 >
-> La implementación de optimizaciones requiere completar el proceso de incorporación de Optimizar en Edge. Si aún no se ha incorporado, al hacer clic en **Implementar optimizaciones**, se le dirigirá al proceso de incorporación. Para obtener información detallada sobre cómo funciona Optimizar en Edge, los proveedores de CDN admitidos y el proceso de incorporación, consulte la página [Optimizar en Edge](/help/dashboards/optimize-at-edge/overview.md).
+> Para implementar las optimizaciones, es necesario completar el proceso de incorporación de Optimizar en Edge. Si aún no ha completado el proceso de incorporación, al hacer clic en **Implementar optimizaciones** se le dirigirá al proceso de incorporación. Para obtener información completa sobre cómo funciona Optimizar en Edge, los proveedores de CDN compatibles y el proceso de incorporación, consulte la página [Optimizar en Edge](/help/dashboards/optimize-at-edge/overview.md).
 
 ### Sugerencias fijas y Ver en directo
 

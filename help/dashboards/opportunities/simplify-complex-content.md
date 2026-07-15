@@ -2,20 +2,17 @@
 title: Simplificar contenido complejo
 description: Descubra cómo LLM Optimizer identifica las páginas de alto tráfico con copia densa que es difícil de interpretar para los agentes de IA, y cómo revisar e implementar texto simplificado con Optimizar en Edge.
 feature: Opportunities
-autotag-review: '2026-05-15T17:58:39.879Z'
-TQID: 'https://experienceleague.adobe.com/wO3ZY-fEgOi7cD4dq0kCltk-YJSD431bkA6-9PW42Lo'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+autotag-review: '2026-07-15T18:04:55.581Z'
+TQID: 'https://experienceleague.adobe.com/uMK9qeAGMNrtvR0TYbeg8SIOKlwKf4L5NIE9ZgsJaUw'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 785
-ht-degree: 1%
+ht-degree: 10%
 
 ---
 
@@ -47,7 +44,7 @@ Las direcciones URL afectadas aparecen en la tabla **direcciones URL con sugeren
 
 ![URL con sugerencias sobre sugerencias actuales, fila expandida con texto mejorado y vista previa](/help/dashboards/opportunities/assets/simplify-complex-content-expand.png)
 
-La tabla **URL con sugerencias** enumera páginas donde el contenido simplificado ayudaría a una comprensión auténtica. Las sugerencias están organizadas en **Sugerencias actuales**, **Sugerencias fijas** y **Sugerencias ignoradas**. Para cada URL puede:
+La tabla **URL con sugerencias** enumera páginas donde el contenido simplificado ayudaría a una comprensión auténtica. Las sugerencias están organizadas en **Sugerencias actuales**, **Sugerencias fijas** y **Sugerencias ignoradas**. En cada URL puede hacer lo siguiente:
 
 - **Expanda la fila** para ver **sugerencias de texto mejorado** para esa página.
 - **Vista previa** de la comparación antes y después para el tráfico auténtico.
@@ -60,11 +57,11 @@ Seleccione las direcciones URL o los elementos de línea con **texto mejorado** 
 
 ![Plan de oportunidades, Sugerencias actuales, fila expandida y Optimizaciones de implementación en el encabezado del plan](/help/dashboards/opportunities/assets/simplify-complex-content-select.png)
 
-### Implementación de la optimización
+### Implementar la optimización
 
 Cuando esté listo para publicar en Edge, haga clic en **Implementar optimizaciones**. Un cuadro de diálogo **Implementar en Edge** enumera las direcciones URL y los detalles de optimización seleccionados. Revise la lista y, a continuación, elija **Implementar** o **Cancelar**.
 
-![Implementar en el cuadro de diálogo de Edge](/help/dashboards/opportunities/assets/simplify-complex-content-deploy-dialog.png)
+Cuadro de diálogo ![Implementar en Edge](/help/dashboards/opportunities/assets/simplify-complex-content-deploy-dialog.png)
 
 Después de una implementación correcta, **Implementación completada** confirma cuántas optimizaciones se activaron y observa que los agentes de IA pueden tardar algún tiempo en indexar la actualización. Cierre el cuadro de diálogo y abra **Sugerencias fijas** para comprobar el estado.
 
@@ -72,7 +69,7 @@ Después de una implementación correcta, **Implementación completada** confirm
 
 >[!NOTE]
 >
->La implementación de optimizaciones requiere completar el proceso de incorporación de Optimizar en Edge. Si aún no se ha incorporado, al hacer clic en **Implementar optimizaciones**, se le dirigirá al proceso de incorporación. Para obtener información detallada sobre cómo funciona Optimizar en Edge, los proveedores de CDN admitidos y el proceso de incorporación, consulte la página [Optimizar en Edge](/help/dashboards/optimize-at-edge/overview.md).
+>Para implementar las optimizaciones, es necesario completar el proceso de incorporación de Optimizar en Edge. Si aún no ha completado el proceso de incorporación, al hacer clic en **Implementar optimizaciones** se le dirigirá al proceso de incorporación. Para obtener información completa sobre cómo funciona Optimizar en Edge, los proveedores de CDN compatibles y el proceso de incorporación, consulte la página [Optimizar en Edge](/help/dashboards/optimize-at-edge/overview.md).
 
 ### Sugerencias fijas y Ver en directo
 
