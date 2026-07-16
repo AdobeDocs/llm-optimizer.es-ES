@@ -2,20 +2,23 @@
 title: Enriquecimiento del catálogo de productos
 description: Descubra cómo LLM Optimizer identifica productos con descripciones genéricas o técnicamente densas y cómo mejorarlos mediante enriquecimientos narrativos generados por IA con tecnología Adobe Commerce.
 feature: Opportunities
-autotag-review: '2026-05-15T17:45:51.619Z'
-TQID: 'https://experienceleague.adobe.com/5ihGQ8L-37uWsZSDo4TVCUPBPqsqqQ5waGbH3VKPIig'
+autotag-review: '2026-07-15T17:49:49.047Z'
+TQID: 'https://experienceleague.adobe.com/icskl9CwYYRbnFNXWLflduAD9Eba1y4xtXTKaebh-hs'
 product_v2:
   - id: d830747e-f8f3-4fce-8eff-d53b333b1639
 feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
   - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+subfeature_v2:
+  - id: a6256a78-8814-462c-9627-86699b39cee1
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 1266
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -26,7 +29,7 @@ Los LLM intentan conectar los atributos del producto con el valor real, los caso
 
 La oportunidad de enriquecimiento del catálogo de productos identifica los productos del catálogo de Commerce donde los nombres y las descripciones son demasiado genéricos, demasiado densos técnicamente o demasiado ambiguos para que los LLM los interpreten con precisión. Con la tecnología de Adobe Commerce, genera enriquecimientos basados en narrativas e intencionados para los nombres y descripciones de sus productos y los aplica directamente al catálogo de Commerce con un solo clic.
 
-De un vistazo, muestra dos métricas clave:
+Permite ver de un vistazo dos métricas clave:
 
 - **URL**: una lista de páginas de detalles del producto (productos del catálogo) que se han evaluado para comprobar la calidad del enriquecimiento.
 - **Tráfico agéntico**: El total de visitas e interacciones en un sitio que inician e impulsan agentes de IA autónomos (como asistentes o bots con tecnología LLM) que actúan en nombre de usuarios para descubrir, recuperar o interactuar con contenido.
@@ -62,11 +65,11 @@ La tabla **URL con sugerencias** enumera todos los productos con oportunidades d
 - **Marcar como fijo** una vez que se haya revisado y aplicado el enriquecimiento.
 - **Ignorar** sugerencias que no sean relevantes para su estrategia de catálogo.
 
-Las sugerencias están organizadas en tres vistas: **Sugerencias actuales**, **Sugerencias fijas** y **Sugerencias ignoradas**. Una vez aplicado un enriquecimiento, pasa a Fixed Suggestions con un estado de **Applied** y una acción de **View in Catalog** para comprobar la actualización en Adobe Commerce. Los enriquecimientos aplicados se pueden revertir en cualquier momento, restaurando el nombre y la descripción del producto original.
+Las sugerencias se organizan en tres vistas:**Sugerencias actuales**,**Sugerencias corregidas** y **Sugerencias ignoradas**. Una vez aplicado un enriquecimiento, pasa a Fixed Suggestions con un estado de **Applied** y una acción de **View in Catalog** para comprobar la actualización en Adobe Commerce. Los enriquecimientos aplicados se pueden revertir en cualquier momento, restaurando el nombre y la descripción del producto original.
 
 <!--[Fixed suggestions with Applied status](/help/dashboards/opportunities/assets/enrich-product-catalog-fixed.png)-->
 
-## Implementación de la optimización
+## Implementar la optimización
 
 Una vez que haya revisado y opcionalmente editado las sugerencias para los productos seleccionados, haga clic en **Implementar optimizaciones** para publicar el nombre y la descripción actualizados del producto en su catálogo de Adobe Commerce. Un cuadro de diálogo de confirmación muestra los productos seleccionados y los cambios que se aplican. Después de la confirmación, una pantalla de resultados confirma qué productos se actualizaron correctamente.
 

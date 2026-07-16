@@ -2,30 +2,31 @@
 title: Información general sobre LLM Optimizer
 description: Obtenga información sobre cómo Adobe LLM Optimizer aumenta la visibilidad de la marca en la búsqueda basada en la IA. Realice un seguimiento de menciones, citas y datos. Empiece a optimizar hoy mismo para mejorar la participación y la influencia.
 feature: Onboarding
-autotag-review: '2026-05-15T17:54:37.542Z'
-TQID: 'https://experienceleague.adobe.com/5qyk6PCTaT93tz-UUnYRYznylOh4lXHuH1yN98g3wIE'
+autotag-review: '2026-07-15T18:10:25.350Z'
+TQID: 'https://experienceleague.adobe.com/C-54mDBaDgmIWPOrLhkeUHlK1cXMbX0kRNrJZTC--4c'
 product_v2:
   - id: d830747e-f8f3-4fce-8eff-d53b333b1639
 feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
+  - id: c898dfb2-0885-42fb-b2af-b2d756752646
+  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+  - id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: 1a2549151ab0bfe16eee89dafe5710bf6edba6a0
 workflow-type: tm+mt
-source-wordcount: 618
-ht-degree: 100%
+source-wordcount: 623
+ht-degree: 97%
 
 ---
 
 
 # Información general sobre LLM Optimizer
 
->[!SLIDE](llm-optimizer-overview)
+>[!VIDEO](https://video.tv.adobe.com/v/3492474/?captions=spa&learn=on){transcript=true}
 
-En esta página se describe todo lo que necesita saber sobre Adobe LLM Optimizer antes de empezar a utilizar la herramienta:
+Esta página describe todo lo que necesita saber sobre Adobe LLM Optimizer antes de empezar a utilizar la herramienta:
 
 * [¿Qué es Adobe LLM Optimizer?](#what-is-adobe-llm-optimizer)
 * [¿Cuáles son las funcionalidades de LLM Optimizer?](#what-are-llm-optimizer-capabilities)
