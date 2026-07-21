@@ -4,58 +4,37 @@ description: Optimice las perspectivas de LLM al configurar las categorías, los
 feature: Best Practices, Customer Configuration
 autotag-review: '2026-07-15T17:42:20.391Z'
 TQID: 'https://experienceleague.adobe.com/nnLohajbU-fogbmBfGE5PUzdsoTJ5fjwW-ruVTjOWtM'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c898dfb2-0885-42fb-b2af-b2d756752646
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: addf009e-030a-4310-8534-776a3e62ed48
-  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: e69d5a42-0217-4ca5-9396-a9a826a170da
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: addf009e-030a-4310-8534-776a3e62ed48id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 74484901cba1f054070673f2d706b26b6360aacb
 workflow-type: tm+mt
-source-wordcount: 1537
-ht-degree: 100%
+source-wordcount: 1482
+ht-degree: 77%
 
 ---
 
-# Prácticas recomendadas para configurar categorías, temas, indicaciones y otros para realizar seguimientos
+# Prácticas recomendadas para configurar categorías, temas, indicadores y otras marcas para realizar el seguimiento
 
-En esta sección se describen las prácticas recomendadas para decidir cómo desea configurar las categorías, los temas, las indicaciones y otros elementos para realizar un seguimiento. Además, incluye información sobre la biblioteca de indicaciones del sector, que Adobe desarrolló con una amplia investigación con expertos del sector.
+En esta sección se describen las prácticas recomendadas para decidir cómo desea configurar las categorías, los temas, los mensajes y otras marcas que se van a rastrear. Además, incluye información sobre la biblioteca de indicaciones del sector, que Adobe desarrolló con una amplia investigación con expertos del sector.
 
-Este es un primer paso fundamental. Lo que decida ahora determina cómo se adapta la información a su contexto empresarial. Cualquier cambio en las categorías en el futuro restablecerá los datos históricos.
+Esta configuración es un primer paso vital. Lo que decida ahora determina cómo se adapta la información a su contexto empresarial. Cualquier cambio en las categorías en el futuro restablecerá los datos históricos.
 
-En el panel [[!UICONTROL Configuración del cliente]](/help/dashboards/customer-configuration.md) se define cómo se supervisa y analiza su marca dentro de la plataforma de LLM Optimizer. Consulte [[!UICONTROL Configuración del cliente]](/help/dashboards/customer-configuration.md) para obtener información sobre cómo usar el panel de control.
+En el tablero de [[!UICONTROL Brands Management]](/help/dashboards/customer-configuration.md) se define cómo se supervisa y analiza la marca en la plataforma del optimizador LLM.
 
-![Ventana de configuración del cliente](/help/assets/best-practices/customer-configuration-best-practices.png)
+Aquí puede personalizar categorías (como unidades de negocio o líneas de productos), rastrear otras marcas y agregar alias de mención de la marca para capturar todas las variaciones de su marca en los mensajes. Esta configuración garantiza que la plataforma adapte las perspectivas a su contexto empresarial, lo que permite una visibilidad precisa, el tráfico y el análisis de oportunidades.
 
-En el panel de control [!UICONTROL Configuración del cliente], puede personalizar categorías (como unidades de negocio o líneas de productos), realizar un seguimiento de otras marcas y añadir alias de mención de la marca para capturar todas las variaciones de su marca en las indicaciones. Esta configuración garantiza que la plataforma adapte las perspectivas a su contexto empresarial, lo que permite una visibilidad precisa, el tráfico y el análisis de oportunidades.
+De forma predeterminada, cada organización comienza con una marca activa y marcas sugeridas adicionales para elegir.
 
-## Experiencia centrada en la marca
+![Administración de marcas - navegación por la aplicación (experiencia centrada en la marca)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-De forma predeterminada, los nuevos clientes acceden a una interfaz específica, centrada en la marca con una configuración basada en la incorporación. En esta nueva interfaz, cada organización empieza con una marca activa y marcas sugeridas adicionales entre las que elegir. Los clientes existentes de LLM Optimizer se pasarán gradualmente a esta experiencia centrada en la marca.
+![Administración de marcas - información general de configuración](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
-Si se encuentra en la experiencia centrada en la marca, **Administración de marcas** es el lugar donde debe definir cómo se monitoriza y analiza su marca.
+Para configurar temas y mensajes para una marca específica, use el panel **Biblioteca de mensajes**.
 
-![Administración de marcas: navegación por las aplicaciones (experiencia centrada en las marcas)](/help/assets/brand-centric-experience/llmo-app-shell.png)
-
-![Administración de marcas: información general sobre la configuración](/help/assets/brand-centric-experience/brands-management-configuration.png)
-
-Para configurar los temas y las indicaciones de una marca específica, utilice **Administración de indicaciones**.
+<!-- Add link to Prompt Library page when available-->
 
 ![Administración de indicaciones](/help/assets/brand-centric-experience/prompts-management.png)
 
@@ -65,12 +44,13 @@ Para empezar a utilizar indicaciones y temas, Adobe ha creado una biblioteca de 
 
 Para usar la biblioteca de indicaciones del sector, haga lo siguiente:
 
-1. Vaya al panel de control **Configuración del cliente**.
-1. Seleccione **Descargar biblioteca de indicaciones** para descargar el archivo de la biblioteca de LLM Optimizer.
-   ![Descarga de Biblioteca de indicaciones de la industria](/help/assets/best-practices/customer-configuration-prompts-library.png)
+1. Vaya al panel **Biblioteca de mensajes**.
+1. Seleccione **Descargar biblioteca de mensajes** para descargar el archivo de biblioteca de LLM Optimizer.
 1. Revise los **temas** e **indicaciones** sugeridas para la industria de su marca en la pestaña correspondiente y elija las opciones que sean más relevantes.
 1. Revise la **columna fase de Recorrido del cliente** para ver las opciones de solicitud en todo el ciclo de vida del cliente (por ejemplo, la detección para la conversión a retención). La fase inicial/parte superior de las indicaciones de embudo son de alta prioridad, pero también hay que tener en cuenta las opciones de fase posterior para fomentar la retención, habilitar la asistencia al cliente, etc.
 1. Modifique los temas o las indicaciones según sea necesario para lograr los objetivos y las metas antes de cargar los temas y las indicaciones en Adobe LLM Optimizer (por ejemplo, añada el nombre de su marca/producto o la terminología coherente con la marca). Las indicaciones se pueden añadir a LLM Optimizer manualmente o con la carga masiva mediante la plantilla *.CSV* proporcionada.
+
+<!--![Industry prompt library download](/help/assets/best-practices/download-prompts.png) - add screenshot to steps-->
 
 >[!TIP]
 >
@@ -86,11 +66,11 @@ La biblioteca de indicaciones del sector se desarrolló a través de una iniciat
 
 Temas principales buscados por clientes en todos los sectores:
 
-* **Automóvil:** resolución de problemas de automóviles, comparación de vehículos y financiación/leasing.
+* **Automático:** Resolución de problemas de automóviles, comparación de vehículos y financiación/leasing
 * **Servicios financieros:** investigación de productos financieros.
-* **Atención médica:** búsqueda de síntomas o problemas de salud, comparación de opciones de tratamiento, comprensión de los resultados de laboratorio o los términos médicos.
-* **Telecomunicaciones:** comparación de planes, condiciones y promociones de contratos, comprobación del servicio en el área local.
-* **Viajes:** preparación, investigación y reserva de viajes.
+* **Atención médica:** Busca síntomas o problemas de salud, compara opciones de tratamiento y comprende los resultados de laboratorio o los términos médicos
+* **Telecomunicaciones:** Comparar planes, términos y promociones de contrato y comprobar el servicio en el área local
+* **Viajes en avión:** Prepararse para un viaje, e investigar y reservar viajes
 
 Tendencias del cliente en la búsqueda por IA y comportamiento de las indicaciones en las herramientas LLM:
 
@@ -122,12 +102,15 @@ La forma de decidir cómo se configuran las categorías se basa en una pregunta:
 * Si es un *propietario de contenidos/web*, elija el enfoque **DIR_URL**.
 * Si es un *administrador de comercialización/ofertas*, elija el enfoque de **categoría de producto/servicio**.
 
-![Incorporación de categorías en LLM Optimizer](/help/assets/best-practices/add-category.png)
+<!--How do you pick a region? Or is that handled differently?-->
+
+![Incorporación de categorías en LLM Optimizer](/help/assets/best-practices/create-category1.png)
 
 >[!IMPORTANT]
 >
 > * Elija un enfoque y manténgase fiel a él.
 > * Solo puede tener **un** modelo de categoría por cuenta o marca. No combine **UEN** y **DIR_URL** al mismo tiempo.
+
 <!--Can you mix Product/Service with these?-->
 
 Ejemplo:
@@ -158,13 +141,14 @@ A la hora de decidir los temas, desea crear una lista breve y sencilla (entre 6 
 * Contacto de atención al cliente
 * Corporativo/noticias (si realmente lo necesita)
 
-![Incorporación de temas en LLM Optimizer](/help/assets/best-practices/add-topic.png)
+![Incorporación de temas en LLM Optimizer](/help/assets/best-practices/add-new-topic1.png)
 
 A la hora de crear la lista, tenga en cuenta lo siguiente:
 
-* ¿Puede un editor comprender el tema en cinco segundos a partir del texto de indicación? Si no es así, cambie el nombre o simplifíquelo.
+* ¿Puede alguien entender el tema en 5 segundos a partir del texto del mensaje? Si no es así, cambie el nombre o simplifíquelo.
 * ¿La corrección de diferentes temas será responsabilidad de un equipo? Si es así, ha elegido temas útiles.
-  <!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
+
+<!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
 
 Algunas sugerencias útiles adicionales:
 
@@ -174,7 +158,7 @@ Algunas sugerencias útiles adicionales:
 >[!IMPORTANT]
 >
 > * Mantenga los temas basados en intenciones, no en la organización.
-> * No añada categorías o filtros para marcas/no marcas/zonas geográficas, ya que puede filtrar específicamente por esto en la pestaña **[!UICONTROL Marcas]**.
+> * No agregue categorías/filtros para marcas/no marcas/zonas geográficas, ya que puede filtrar específicamente para esto en el panel **[!UICONTROL Presencia de marca]**.
 > * Los temas se distribuyen en varias categorías. **No puede** definir temas únicos para cada categoría.
 > * **Puede** haber una sola indicación en varios temas o categorías.
 
@@ -197,11 +181,11 @@ Prácticas recomendadas para las indicaciones:
 
 ## Prácticas recomendadas para el seguimiento de otras marcas
 
-Realizar un seguimiento de otros le permite monitorizar la visibilidad y las menciones en las respuestas de LLM en busca de indicaciones y temas que son importantes para su empresa.
+El seguimiento de otras marcas le permite supervisar la visibilidad y las menciones de las respuestas de LLM en busca de preguntas y temas importantes para su empresa.
 
-La pestaña [!UICONTROL **Seguimiento de otros**] le permite añadir a otros, incluida la competencia, para rastrear su visibilidad en busca de indicaciones y temas específicos.
+[!UICONTROL **Otras marcas para rastrear**] está disponible en **Administración de marcas** > **Seguimiento de mercados** y le permite agregar otras, incluyendo competidores, para rastrear su visibilidad en preguntas y temas específicos.
 
-Con el seguimiento de otros, puede descubrir con qué frecuencia se mencionan otras marcas junto con su marca en diferentes regiones y categorías y comparar su visibilidad con la suya propia.
+Con otras marcas que rastrear, puede ver con qué frecuencia se mencionan otras marcas junto con su marca en diferentes regiones y categorías y comparar su visibilidad con la suya propia.
 
 >[!TIP]
 >
@@ -209,6 +193,7 @@ Con el seguimiento de otros, puede descubrir con qué frecuencia se mencionan ot
 
 ## Más información
 
-* [Panel de control Configuración del cliente](/help/dashboards/customer-configuration.md) es el lugar donde se configuran las categorías, los temas, las indicaciones y el seguimiento de otros.
+* [Administración de marcas](/help/dashboards/customer-configuration.md) es donde configuras tus categorías y otras marcas para que las rastreen.
+* [Biblioteca de mensajes](/help/dashboards/customer-configuration.md) es donde se configuran los temas y mensajes.
 * [Prácticas recomendadas en LLM Optimizer](/help/tutorials/best-practices.md) describe las prácticas recomendadas en la optimización de LLM
 

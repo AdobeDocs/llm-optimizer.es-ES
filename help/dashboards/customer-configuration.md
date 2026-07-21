@@ -4,26 +4,15 @@ description: Utilice la configuración del cliente para definir cómo se monitor
 feature: Customer Configuration
 autotag-review: '2026-07-15T17:48:20.742Z'
 TQID: 'https://experienceleague.adobe.com/BvaFF-pMzojy1TNZvCQQRbcT5c5AQ75OqjclmDi14Z0'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c898dfb2-0885-42fb-b2af-b2d756752646
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-subfeature_v2:
-  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+subfeature_v2: id: e69d5a42-0217-4ca5-9396-a9a826a170da
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+source-git-commit: 72cc645997dbd5ae0442fefad73fe6a4e7ffe050
 workflow-type: tm+mt
-source-wordcount: 3935
-ht-degree: 57%
+source-wordcount: 3923
+ht-degree: 56%
 
 ---
 
@@ -48,9 +37,9 @@ Para configurar cómo LLM Optimizer monitoriza y analiza su presencia de marca e
 
 Si se encuentra en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya a **Administración de marcas** para configurar marcas, alias de marcas y definir los competidores de los cuales desea realizar un seguimiento. **Administración de marcas** también se usa para configurar integraciones como Google Search Console, Adobe Analytics y el reenvío de registros de CDN en relación con las direcciones URL asociadas con las marcas. Para ello, haga clic en las pestañas correspondientes: GSC, CDN, etc.
 
-![Administración de marcas: navegación por las aplicaciones (experiencia centrada en las marcas)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+![Administración de marcas - navegación por la aplicación (experiencia centrada en la marca)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-![Administración de marcas: información general sobre la configuración (experiencia centrada en la marca)](/help/assets/brand-centric-experience/brands-management-configuration.png)
+![Administración de marcas - información general de configuración (experiencia centrada en la marca)](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
 >[!IMPORTANT]
 >
@@ -225,7 +214,7 @@ Después de integrar la cuenta de Google Search Console con LLM Optimizer, puede
 1. En la pestaña Google Search Console, revise la lista de temas e indicaciones procedentes de Search Console.
    ![Lista de indicaciones](/help/dashboards/assets/prompts-list.png)
 1. Haga clic en el tema o categoría de indicación que desee para expandir la lista.
-1. Utilice el botón **Añadir** para añadir indicaciones de la lista. También puede añadir indicaciones y categorías de forma masiva usando **Añadir todo**.
+1. Utilice el botón **Agregar** para agregar mensajes de la lista. También puede agregar avisos y categorías de forma masiva usando **Agregar todo**.
    ![Añadir indicaciones](/help/dashboards/assets/add-prompts.png)
 1. Una vez que esté satisfecho con la selección, haga clic en **Guardar** en el mensaje de notificación.
 

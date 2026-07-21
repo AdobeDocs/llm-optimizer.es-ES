@@ -4,27 +4,20 @@ description: Obtenga información sobre cómo Adobe LLM Optimizer aumenta la vis
 feature: Onboarding
 autotag-review: '2026-07-15T18:10:25.350Z'
 TQID: 'https://experienceleague.adobe.com/C-54mDBaDgmIWPOrLhkeUHlK1cXMbX0kRNrJZTC--4c'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c898dfb2-0885-42fb-b2af-b2d756752646
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
-source-git-commit: 1a2549151ab0bfe16eee89dafe5710bf6edba6a0
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+source-git-commit: 6b0e86f1373c3b1d85d67bd8222459acfc3620dc
 workflow-type: tm+mt
-source-wordcount: 623
-ht-degree: 97%
+source-wordcount: 485
+ht-degree: 88%
 
 ---
 
 
 # Información general sobre LLM Optimizer
 
->[!VIDEO](https://video.tv.adobe.com/v/3492474/?captions=spa&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3492471/?learn=on){transcript=true}
 
 Esta página describe todo lo que necesita saber sobre Adobe LLM Optimizer antes de empezar a utilizar la herramienta:
 
@@ -69,11 +62,11 @@ La optimización del motor generativo es interfuncional por naturaleza. LLM Opti
 
 Con Adobe LLM Optimizer, puede hacer lo siguiente:
 
-**Medir la visibilidad de la marca**: realice un seguimiento de cuándo, dónde y con qué frecuencia se menciona su marca en los resultados de la búsqueda con tecnología de IA. Supere las conjeturas con una puntuación de visibilidad clara que pueda comparar a lo largo del tiempo. Consulte el [panel de control Presencia de marca](/help/dashboards/brand-presence.md).
-**Comparar con otros**: descubra cómo se posiciona su marca frente a otros, incluida la competencia en motores generativos. Identifique las lagunas de la cuota de voz y descubra las ventajas competitivas. Consulte el [panel de control Presencia de marca](/help/dashboards/brand-presence.md).
-**Descubrir oportunidades procesables**: identifique oportunidades de contenido (p. ej., preguntas frecuentes, resúmenes, esquemas) y oportunidades técnicas (rastreabilidad, problemas de indexación) que aumenten directamente las menciones y citas. Consulte el [panel de control Oportunidades](/help/dashboards/opportunities-overview.md).
-**Rastrear el impacto del tráfico de la IA**: monitorice el tráfico agéntico (de los asistentes de IA) y el tráfico de referencia (los clics de los usuarios procedentes de las citas) hacia sus propiedades. Vincule la visibilidad de GEO con la participación real. Consulte el [panel de control Tráfico agéntico](/help/dashboards/agentic-traffic.md) y el [panel de control Tráfico de referencia](/help/dashboards/referral-traffic.md).
-**Habilitar la colaboración en equipo**: comparta paneles de control, asigne propietarios para indicaciones o categorías y asegúrese de que se realiza un seguimiento de los objetivos de visibilidad en las funciones de marketing, de optimización del motor de búsqueda (SEO) y de las comunicaciones. Consulte el [panel de control Colaboración](/help/dashboards/collaboration.md).
+**Visibilidad de la marca de medidas**: realiza un seguimiento de cuándo, dónde y con qué frecuencia se menciona tu marca en los resultados de búsqueda con tecnología de IA. Supere las conjeturas con una puntuación de visibilidad clara que pueda comparar con el paso del tiempo. Consulte [tablero de Presencia de marca](/help/dashboards/brand-presence.md).
+**Benchmark Otros** - Vea cómo su marca se amontona contra otros, incluyendo a la competencia, en motores generativos. Identifique las lagunas de cuota de voz y descubra las ventajas competitivas. Consulte [tablero de Presencia de marca](/help/dashboards/brand-presence.md).
+**Descubre oportunidades procesables** - Encuentra oportunidades de contenido (por ejemplo, preguntas frecuentes, resúmenes, esquemas) y oportunidades técnicas (rastreabilidad, problemas de indexación) que aumentan directamente las menciones y citas. Consulte [Panel de oportunidades](/help/dashboards/opportunities-overview.md).
+**Seguimiento del impacto del tráfico desde IA**: supervise el tráfico auténtico (de los asistentes de IA) y el tráfico de referencia (los clics de los usuarios debido a las citas) en sus propiedades. Vincule la visibilidad GEO con la participación real. Ver [Tablero de tráfico de agente](/help/dashboards/agentic-traffic.md) y [Tablero de Tráfico de referencia](/help/dashboards/referral-traffic.md).
+**Habilitar Team Collaboration**: comparta paneles, asigne propietarios para preguntas o categorías y garantice que se rastrearán los objetivos de visibilidad en las funciones de marketing, optimización de los motores de búsqueda (SEO) y comunicaciones. Consulte [tablero de Collaboration](/help/dashboards/collaboration.md).
 
 ## Más información
 
@@ -81,7 +74,7 @@ Estos son los recursos que pueden ayudarle a sacar el máximo partido a LLM Opti
 
 * [Inicio rápido](/help/overview/quick-start.md) le permite ponerse en marcha rápidamente.
 * [Información general sobre los paneles de control](/help/dashboards/dashboards-overview.md) describe todos los paneles de control disponibles en LLM Optimizer.
-* [Prácticas recomendadas para configurar categorías, temas, indicaciones y otros](/help/overview/best-practices-topics-prompts.md) incluye información esencial para configurar LLM Optimizer.
+* [Prácticas recomendadas para configurar categorías, temas, mensajes y otras marcas de los que realizar un seguimiento](/help/overview/best-practices-topics-prompts.md) incluyen información esencial para configurar LLM Optimizer.
 * [Prácticas recomendadas](/help/tutorials/best-practices.md) le permite descubrir las prácticas recomendadas para la optimización de LLM a fin de aumentar la visibilidad de su marca en la búsqueda por IA.
 
 
