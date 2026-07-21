@@ -4,24 +4,15 @@ description: Obtenga información sobre cómo configurar Akamai BYOCDN para Opti
 feature: Opportunities
 autotag-review: '2026-07-15T17:40:02.356Z'
 TQID: 'https://experienceleague.adobe.com/XlHpXbtxqPl-XQQKWeQc3rbsizCT7U0TF1bQkyv0iM8'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3aid: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 9d2324e23e07f01e16c4fc16c96213d03214918f
 workflow-type: tm+mt
-source-wordcount: 810
-ht-degree: 98%
+source-wordcount: 795
+ht-degree: 76%
 
 ---
 
@@ -119,58 +110,44 @@ Establecer el encabezado `x-forwarded-host` en `{{builtin.AK_HOST}}`
 
 **9. Conmutación por error del sitio**
 
-La configuración de la conmutación por error del sitio consta de dos partes: el comportamiento de la conmutación por error (configurado dentro de la regla de enrutamiento principal de Optimizar en Edge) y una regla de encabezado de prueba de conmutación por error independiente.
+La configuración de conmutación por error del sitio consta de dos partes: un comportamiento de conmutación por error dentro de la regla de enrutamiento principal Optimizar en Edge y una regla del mismo nivel que agrega un encabezado de respuesta cuando se produce una reserva.
 
-**9a. Comportamiento de conmutación por error del sitio (dentro de la regla de enrutamiento principal de Optimizar en Edge)**
+**9a. Configurar el comportamiento de conmutación por error del sitio**
 
-Dentro de la regla de enrutamiento principal, configure el comportamiento de conmutación por error del sitio y el fragmento XML avanzado de la siguiente manera:
+Dentro de la regla de enrutamiento principal Optimizar en Edge, cree una regla secundaria llamada **Comportamiento de conmutación por error del sitio**. Configúrelo en **Coincidir con cualquiera** y agregue estos criterios:
 
->[!IMPORTANT]
->
->El fragmento XML de este paso requiere el comportamiento **Avanzado**. En algunos entornos de Akamai, este comportamiento no está disponible para la edición de autoservicio. Si no visualiza la opción **Avanzado**, póngase en contacto con el equipo de cuentas de Akamai o con el servicio de asistencia de Akamai para habilitar la configuración necesaria.
+* **El código de estado de respuesta** está en el intervalo de `400` a `599`.
+* **Tiempo de espera de origen** es `Yes`.
 
 ![Conmutación por error del sitio](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
-Añada el encabezado de la solicitud `x-edgeoptimize-request` con el valor `fo` mediante XML avanzado:
+![Configurar el comportamiento de conmutación por error del sitio](/help/assets/optimize-at-edge/akamai-step9-failover-settings.png)
 
-```
-<forward:availability.fail-action2>
-<add-header>
-<status>on</status>
-<name>x-edgeoptimize-request</name>
-<value>fo</value>
-</add-header>
-</forward:availability.fail-action2>
-```
-
-![Comportamientos de conmutación por error](/help/assets/optimize-at-edge/akamai-step9-failover-behaviors.png)
-
-**9b. Regla del encabezado de la prueba de conmutación por error (regla del mismo nivel)**
+**9b. Configurar la regla de encabezado de respuesta de conmutación por error**
 
 >[!IMPORTANT]
 >
 >Cree la regla **Conmutación por error de Edge Optimize: encabezado de la prueba** como **similar** (en el mismo nivel) de las reglas de enrutamiento: **no** anidadas en ellas. En el árbol de reglas del Administrador de propiedades de Akamai, la jerarquía debe tener un aspecto similar al siguiente:
 >
 >```
->▼ Parent Rule
->   ▶ Optimize at Edge Routing     ← routing rule
->       EdgeOptimize Failover - Test Header       ← sibling, same level
+>▼ Optimize at Edge                         ← parent rule group
+>   ▼ Optimize at Edge Routing               ← routing child
+>       Site Failover Behavior                 ← nested child
+>   EdgeOptimize Failover - Test Header      ← sibling of routing child
 >```
 >
->Esto garantiza que la regla del encabezado de la prueba de conmutación por error se evalúe para **todas** las reglas de enrutamiento, no solo una.
+>La regla del mismo nivel se evalúa cuando Akamai vuelve a crear la solicitud fallida para el nombre de host original. El criterio de clave de API en la regla de enrutamiento evita que esa solicitud se envíe de nuevo a Edge Optimize.
 >
 >Asegúrese también de que la regla **Enrutamiento de Optimizar en Edge** no se anule con ninguna regla posterior que coincida y que cambie el origen, el comportamiento del almacenamiento en caché o el ID de caché para las mismas solicitudes. Si otra regla coincidente restablece estos comportamientos, es posible que el enrutamiento o el almacenamiento en caché de Optimizar en Edge no funcione según lo previsto.
 
-Si el valor del encabezado de la solicitud `x-edgeoptimize-request` es `fo`, establezca el encabezado de la respuesta saliente `x-edgeoptimize-fo` en `true`.
+![Configurar la regla de encabezado de respuesta de conmutación por error](/help/assets/optimize-at-edge/akamai-step9-failover-header.png)
 
-![Reglas de conmutación por error](/help/assets/optimize-at-edge/akamai-step9-failover-rules.png)
-
-La conmutación por error del sitio garantiza que si Edge Optimize devuelve un error `4XX` o `5XX`, la solicitud se redirigirá de nuevo automáticamente a su origen predeterminado para que el usuario final siga recibiendo una respuesta.
+La conmutación por error del sitio garantiza que, si Edge Optimize devuelve un error o un tiempo de espera agotado, Akamai vuelva a crear la solicitud para el nombre de host original de modo que el visitante siga recibiendo la respuesta normal del sitio.
 
 | Escenario | Comportamiento |
 | --- | --- |
-| Edge Optimize devuelve `2XX` | Se sirve una respuesta optimizada al cliente. |
-| Edge Optimize devuelve `4XX` o `5XX` | La solicitud se redirige de nuevo al origen predeterminado. |
+| Edge Optimize devuelve `2XX` o `3XX` | Se proporciona la respuesta optimizada. `x-edgeoptimize-request-id` está presente. |
+| Edge Optimize devuelve `4XX`-`5XX` o se agota el tiempo de espera del origen | La solicitud se vuelve a crear para el nombre de host original. La respuesta incluye `x-edgeoptimize-fo: true`. |
 
 **Verificar la configuración**
 
@@ -208,7 +185,7 @@ La respuesta **no** debe contener el encabezado `x-edgeoptimize-request-id`. El 
 | Encabezado | Tráfico de bots (optimizado) | Tráfico humano (no afectado) |
 |---|---|---|
 | `x-edgeoptimize-request-id` | Presente: contiene un ID de solicitud único | Ausente |
-| `x-edgeoptimize-fo` | Solo está presente si se produjo la conmutación por error (valor: `1`) | Ausente |
+| `x-edgeoptimize-fo` | Solo está presente si se produjo la conmutación por error (valor: `true`) | Ausente |
 
 {{verify-routing-status-in-ui}}
 
