@@ -20,10 +20,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: 72cc645997dbd5ae0442fefad73fe6a4e7ffe050
 workflow-type: tm+mt
-source-wordcount: 3935
-ht-degree: 57%
+source-wordcount: 3923
+ht-degree: 56%
 
 ---
 
@@ -48,9 +48,9 @@ Para configurar cómo LLM Optimizer monitoriza y analiza su presencia de marca e
 
 Si se encuentra en la [experiencia centrada en la marca](/help/overview/quick-start.md#brand-centric-experience), vaya a **Administración de marcas** para configurar marcas, alias de marcas y definir los competidores de los cuales desea realizar un seguimiento. **Administración de marcas** también se usa para configurar integraciones como Google Search Console, Adobe Analytics y el reenvío de registros de CDN en relación con las direcciones URL asociadas con las marcas. Para ello, haga clic en las pestañas correspondientes: GSC, CDN, etc.
 
-![Administración de marcas: navegación por las aplicaciones (experiencia centrada en las marcas)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+![Administración de marcas - navegación por la aplicación (experiencia centrada en la marca)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-![Administración de marcas: información general sobre la configuración (experiencia centrada en la marca)](/help/assets/brand-centric-experience/brands-management-configuration.png)
+![Administración de marcas - información general de configuración (experiencia centrada en la marca)](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
 >[!IMPORTANT]
 >
@@ -225,7 +225,7 @@ Después de integrar la cuenta de Google Search Console con LLM Optimizer, puede
 1. En la pestaña Google Search Console, revise la lista de temas e indicaciones procedentes de Search Console.
    ![Lista de indicaciones](/help/dashboards/assets/prompts-list.png)
 1. Haga clic en el tema o categoría de indicación que desee para expandir la lista.
-1. Utilice el botón **Añadir** para añadir indicaciones de la lista. También puede añadir indicaciones y categorías de forma masiva usando **Añadir todo**.
+1. Utilice el botón **Agregar** para agregar mensajes de la lista. También puede agregar avisos y categorías de forma masiva usando **Agregar todo**.
    ![Añadir indicaciones](/help/dashboards/assets/add-prompts.png)
 1. Una vez que esté satisfecho con la selección, haga clic en **Guardar** en el mensaje de notificación.
 
