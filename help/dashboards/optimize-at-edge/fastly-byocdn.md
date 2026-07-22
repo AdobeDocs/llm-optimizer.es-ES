@@ -4,24 +4,15 @@ description: Obtenga información sobre cómo configurar Fastly BYOCDN para Opti
 feature: Opportunities
 autotag-review: '2026-07-15T17:50:43.991Z'
 TQID: 'https://experienceleague.adobe.com/Ueis3UcuGZz19FUJavq44dF3q3Irz2Ri4s7JTCB-H80'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3aid: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
 source-wordcount: 350
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -38,7 +29,7 @@ Antes de configurar las reglas de VCL de Fastly, asegúrese de lo siguiente:
 * Haber recuperado una clave de API de Edge Optimize de la IU de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Opcional) Para probar el enrutamiento de ensayo, consulte [Clave de API de ensayo](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
-**Configuración**
+## Configuración
 
 Añada los tres fragmentos de VCL siguientes a su servicio de Fastly. Estos fragmentos administran las solicitudes del enrutamiento de las solicitudes agénticas a Edge Optimize, la separación de claves de caché y la conmutación por error a su origen predeterminado.
 
@@ -46,7 +37,7 @@ Añada los tres fragmentos de VCL siguientes a su servicio de Fastly. Estos frag
 
 ![Añadir fragmentos de VCL](/help/assets/optimize-at-edge/add-vcl-snippets.png)
 
-**fragmento vcl_recv**
+### fragmento vcl_recv
 
 ```
 unset req.http.x-edgeoptimize-url;
@@ -66,7 +57,7 @@ if (!req.http.x-edgeoptimize-request
 }
 ```
 
-**fragmento vcl_hash**
+### vcl_hash_snippet
 
 ```
 if (req.http.x-edgeoptimize-config) {
@@ -75,7 +66,7 @@ if (req.http.x-edgeoptimize-config) {
 }
 ```
 
-**fragmento vcl_deliver**
+### vcl_deliver_snippet
 
 ```
 if (req.http.x-edgeoptimize-config && resp.status >= 400) {
@@ -92,7 +83,7 @@ if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failo
 }
 ```
 
-**Conmutación por error**
+### Conmutación por error
 
 El fragmento `vcl_deliver` administra la conmutación por error automáticamente. Si Edge Optimize devuelve un error `4XX` o `5XX`, la solicitud se reinicia y se redirige de nuevo al origen predeterminado para que el usuario final siga recibiendo una respuesta. Las respuestas de conmutación por error incluyen el encabezado `x-edgeoptimize-fo: 1`.
 
@@ -102,11 +93,11 @@ El fragmento `vcl_deliver` administra la conmutación por error automáticamente
 | Edge Optimize devuelve `4XX` o `5XX` | La solicitud se reinicia y se sirve desde el origen predeterminado. |
 | Respuesta de conmutación por error | Incluye el encabezado `x-edgeoptimize-fo: 1`. |
 
-**Permitir Optimizar en Edge mediante reglas de cortafuegos (opcional)**
+## Permitir la optimización en Edge mediante reglas de cortafuegos (opcional)
 
 {{waf-allowlist-setup}}
 
-**Verificar la configuración**
+## Verificación de la configuración
 
 Una vez completada la configuración, compruebe que el tráfico de bots se enrute a Edge Optimize y que el tráfico humano no se vea afectado.
 

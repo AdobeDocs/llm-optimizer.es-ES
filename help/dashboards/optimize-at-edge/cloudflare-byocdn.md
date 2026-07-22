@@ -4,26 +4,15 @@ description: Obtenga información sobre cómo configurar Cloudflare BYOCDN para 
 feature: Opportunities
 autotag-review: '2026-07-15T17:46:02.378Z'
 TQID: 'https://experienceleague.adobe.com/ZgOX0yC8qyb13Y7YNCg3Y1A6Q3TSk9-mUQ8gthzQvLM'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e0828736-236a-487b-a478-5a635455eadc
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e0828736-236a-487b-a478-5a635455eadcid: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
 source-wordcount: 1919
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -41,11 +30,11 @@ Antes de configurar las reglas de enrutamiento de Cloud Flare Worker, asegúrese
 * Haber recuperado una clave de API de Edge Optimize de la IU de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Opcional) Para probar el enrutamiento de ensayo, consulte [Clave de API de ensayo](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
-**Cómo funciona el enrutamiento**
+## Funcionamiento del enrutamiento
 
 Cuando se configura correctamente, Cloudflare Worker intercepta una solicitud a su dominio (por ejemplo, `www.example.com/page.html`) desde un agente de usuario agéntico y la enruta al back-end de Edge Optimize. La solicitud de back-end incluye los encabezados necesarios.
 
-**Prueba de la solicitud de back-end**
+### Prueba de la solicitud de servidor
 
 Puede verificar el enrutamiento realizando una solicitud directa al back-end de Edge Optimize.
 
@@ -57,7 +46,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
   -H 'x-edgeoptimize-config: LLMCLIENT=TRUE;'
 ```
 
-**Encabezados obligatorios**
+### Encabezados obligatorios
 
 Se deben configurar los siguientes encabezados en las solicitudes dirigidas al back-end de Edge Optimize:
 
@@ -85,13 +74,13 @@ Esta opción utiliza el botón **Implementar en Cloudflare** para crear automát
 >
 >Utilice esta opción únicamente si **no** cuenta con un Cloudflare Worker existente en su dominio. Si ya tiene un trabajador, utilice la [Opción 2: configuración manual](#option-2-manual-setup) para añadir la lógica de enrutamiento de Edge Optimize a su trabajador existente.
 
-**Paso 1: implementar el trabajador**
+### Paso 1: Implementar el trabajador
 
 Haga clic en el botón de abajo para implementar el trabjador de Edge Optimize en su cuenta de Cloudflare:
 
 [![Implementar en Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/adobe/llmo-code-samples/tree/main/optimize-at-edge/cloudflare/automation)
 
-**Paso 2: rellenar el formulario de implementación**
+### Paso 2: Rellene el formulario de implementación
 
 Al hacer clic en el botón, se abrirá la página de configuración de Workers. Rellene el formulario de la siguiente manera:
 
@@ -115,7 +104,7 @@ Una vez implementado el trabajador, prosiga con [Añadir una ruta a su dominio](
 
 Siga estos pasos para crear y configurar el trabajador manualmente.
 
-**Paso 1: crear Cloudflare Worker**
+### Paso 1: Creación del trabajador de Cloudflare
 
 1. Inicie sesión en su panel de control de Cloudflare.
 2. Vaya a **Trabajadores y páginas** en la barra lateral.
@@ -125,13 +114,13 @@ Siga estos pasos para crear y configurar el trabajador manualmente.
 
 ![Panel control de Cloudflare Workers](/help/assets/optimize-at-edge/cloudflare-workers-dashboard.png)
 
-**Paso 2: añadir el código de trabajador**
+### Paso 2: Añadir el código de Worker
 
 Después de crear el trabajador, haga clic en **Editar código** y reemplace el código predeterminado por el código de [worker.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudflare/automation/src/worker.js). Si ya tiene un Cloudflare Worker, combine el código con el código de trabajador existente en lugar de reemplazarlo por completo.
 
 Haga clic en **Guardar e implementar** para publicar el trabajador.
 
-**Paso 3: configurar variables de entorno y secretos**
+### Paso 3: Configurar las variables y los secretos de entorno
 
 Las variables del entorno almacenan la configuración confidencial como su clave de API de forma segura.
 
@@ -167,7 +156,7 @@ También puede configurar rutas en el nivel de zona:
 
 ![Rutas de Cloudflare Worker](/help/assets/optimize-at-edge/cloudflare-worker-routes.png)
 
-**Comprobación del comportamiento de la conmutación por error**
+### Verificación del comportamiento de failover
 
 Si Edge Optimize no está disponible o devuelve un error, el trabajador conmuta automáticamente por error a su origen. Las respuestas de la conmutación por error incluyen el encabezado `x-edgeoptimize-fo`:
 
@@ -178,7 +167,7 @@ Si Edge Optimize no está disponible o devuelve un error, el trabajador conmuta 
 
 Puede supervisar los eventos de conmutación por error en los registros de Cloudflare Workers para solucionar problemas.
 
-**Explicación de la lógica de Worker**
+### Explicación de la lógica de trabajo
 
 Cloudflare Worker implementa la siguiente lógica:
 
@@ -200,11 +189,11 @@ Cloudflare Worker implementa la siguiente lógica:
 
 7. **Administración de redireccionamiento:** la opción `redirect: "manual"` garantiza que las respuestas de redireccionamiento de Edge Optimize se pasen al cliente sin que el trabajador las siga.
 
-**Personalización de la configuración**
+## Personalizar la configuración
 
 Puede personalizar el comportamiento del trabajador modificando las constantes de configuración en la parte superior del código:
 
-**Lista de bots agénticos**
+### Lista de bots agénticos
 
 Modifique la matriz `AGENTIC_BOTS` para añadir o quitar agentes de usuario:
 
@@ -223,7 +212,7 @@ const AGENTIC_BOTS = [
 ];
 ```
 
-**Rutas de destino**
+### Rutas de destino
 
 De forma predeterminada, todas las páginas HTML se enrutan a Edge Optimize. Para limitar el enrutamiento a rutas de acceso específicas, modifique la matriz `TARGETED_PATHS`:
 
@@ -235,7 +224,7 @@ const TARGETED_PATHS = null;
 const TARGETED_PATHS = ['/', '/page.html', '/products', '/about-us'];
 ```
 
-**Configuración de conmutación por error**
+### Configuración de conmutación por error
 
 De forma predeterminada, el trabajador conmuta por error cualquier error 4XX o 5XX de Edge Optimize. Personalice este comportamiento:
 
@@ -253,7 +242,7 @@ const FAILOVER_ON_4XX = false;
 const FAILOVER_ON_5XX = false;
 ```
 
-**Consideraciones importantes**
+### Consideraciones importantes
 
 * **Comportamiento de conmutación por error:** el trabajador conmuta automáticamente por error a su origen si Edge Optimize devuelve algún error (códigos de estado 4XX o 5XX) o si la solicitud falla debido a un error de red. La conmutación por error usa `EDGE_OPTIMIZE_TARGET_HOST` como dominio de origen (similar a `F_Default_Origin` de Fastly o `Default_Origin` de CloudFront). Las respuestas de conmutación por error incluyen el encabezado `x-edgeoptimize-fo: 1`, que puede utilizar para la supervisión y la depuración.
 
@@ -265,7 +254,7 @@ const FAILOVER_ON_5XX = false;
 
 * **Registro:** habilite el registro de Cloudflare Workers para supervisar solicitudes y solucionar problemas. Vaya a **Trabajadores** > **su trabajador** > **Registros** para ver los registros en tiempo real. El trabajador registra eventos de conmutación por error para la depuración.
 
-**Solución de problemas**
+## Resolución de problemas
 
 | Problema | Causa posible | Solución |
 |-------|----------------|----------|
@@ -280,11 +269,11 @@ const FAILOVER_ON_5XX = false;
 | Las solicitudes fallan con un host no válido | `EDGE_OPTIMIZE_TARGET_HOST` incluye un protocolo (por ejemplo, `https://`). | Use solamente el nombre del dominio sin protocolo (por ejemplo, `example.com`, no `https://example.com`). |
 | Error 530 durante la conmutación por error | Cloudflare no se puede conectar al origen o la solicitud de conmutación por error tiene encabezados no válidos. | Asegúrese de que la función de conmutación por error elimine los encabezados de Edge Optimize. Compruebe que su origen sea accesible y que el DNS esté configurado correctamente. |
 
-**Permitir Optimizar en Edge mediante reglas de cortafuegos (opcional)**
+## Permitir la optimización en Edge mediante reglas de cortafuegos (opcional)
 
 {{waf-allowlist-setup}}
 
-**Verificar la configuración**
+## Verificación de la configuración
 
 Una vez completada la configuración, compruebe que el tráfico de bots se enrute a Edge Optimize y que el tráfico humano no se vea afectado.
 
