@@ -18,10 +18,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 9d2324e23e07f01e16c4fc16c96213d03214918f
+source-git-commit: 4f0c6d398e2aab337485b7e26cf6f2aba56375fd
 workflow-type: tm+mt
 source-wordcount: 795
-ht-degree: 76%
+ht-degree: 70%
 
 ---
 
@@ -42,7 +42,7 @@ Antes de configurar las reglas del Administrador de propiedades de Akamai, aseg�
 
 La siguiente regla del Administrador de propiedades de Akamai dirige el tráfico de páginas HTML agénticas a Edge Optimize. La configuración incluye los pasos siguientes:
 
-**1. Establecer criterios de enrutamiento (coincidencia de usuario-agente y tráfico de HTML)**
+## &#x200B;1. Definir criterios de enrutamiento (coincidencia de tráfico de agente de usuario y HTML)
 
 Establecer el enrutamiento de los siguientes agentes de usuario:
 
@@ -64,7 +64,7 @@ Establecer el enrutamiento de los siguientes agentes de usuario:
 
 ![Establecer criterios de enrutamiento](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
-**2. Establecer origen y comportamiento de SSL**
+## &#x200B;2. Definir el comportamiento de origen y SSL
 
 Establecer origen como `live.edgeoptimize.net` y hacer coincidir SAN con `*.edgeoptimize.net`
 
@@ -74,17 +74,17 @@ Establecer origen como `live.edgeoptimize.net` y hacer coincidir SAN con `*.edge
 
 ![Establecer origen y comportamiento de SSL](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
-**3. Establecer variable de clave de caché**
+## &#x200B;3. Establecer variable de clave de caché
 
 Establecer la variable de la clave de caché `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` en `LLMCLIENT=TRUE;X_FORWARDED_HOST={{builtin.AK_HOST}}`
 
 ![Establecer variable de clave de caché](/help/assets/optimize-at-edge/akamai-step3-cachekey.png)
 
-**4. Reglas de almacenamiento en caché**
+## &#x200B;4. Reglas de almacenamiento en caché
 
 ![Reglas de almacenamiento en caché](/help/assets/optimize-at-edge/akamai-step4-rules.png)
 
-**5. Modificar encabezados de solicitud entrantes**
+## &#x200B;5. Modificar encabezados de solicitud entrantes
 
 Establezca los siguientes encabezados de solicitud entrantes:
 `x-edgeoptimize-api-key` para la clave de API recuperada de LLMO
@@ -93,7 +93,7 @@ Establezca los siguientes encabezados de solicitud entrantes:
 
 ![Modificar encabezados de solicitud entrantes](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
-**Permitir Optimizar en Edge mediante reglas de cortafuegos (opcional)**
+## Permitir la optimización en Edge mediante reglas de cortafuegos (opcional)
 
 {{waf-allowlist-setup}}
 
@@ -103,25 +103,25 @@ Establezca los siguientes encabezados de solicitud entrantes:
 >
 >Añada también a la lista de permitidos el agente de usuario `*AdobeEdgeOptimize/1.0*` y el encabezado `x-edgeoptimize-fetcher-key` en el administrador de bots de Akamai.
 
-**6. Modificar encabezados de respuesta entrantes**
+## &#x200B;6. Modificar encabezados de respuesta entrantes
 
 ![Modificar encabezados de respuesta entrantes](/help/assets/optimize-at-edge/akamai-step6-response.png)
 
-**7. Modificación de ID de caché**
+## &#x200B;7. Modificación de ID de caché
 
 ![Modificación de ID de caché](/help/assets/optimize-at-edge/akamai-step7-cacheid.png)
 
-**8. Modificar los encabezados de solicitud salientes**
+## &#x200B;8. Modificar encabezados de solicitud salientes
 
 Establecer el encabezado `x-forwarded-host` en `{{builtin.AK_HOST}}`
 
 ![Modificar encabezados de solicitudes salientes](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
 
-**9. Conmutación por error del sitio**
+## &#x200B;9. Failover del sitio
 
 La configuración de conmutación por error del sitio consta de dos partes: un comportamiento de conmutación por error dentro de la regla de enrutamiento principal Optimizar en Edge y una regla del mismo nivel que agrega un encabezado de respuesta cuando se produce una reserva.
 
-**9a. Configurar el comportamiento de conmutación por error del sitio**
+### 9 bis. Configuración del comportamiento de conmutación por error del sitio
 
 Dentro de la regla de enrutamiento principal Optimizar en Edge, cree una regla secundaria llamada **Comportamiento de conmutación por error del sitio**. Configúrelo en **Coincidir con cualquiera** y agregue estos criterios:
 
@@ -132,7 +132,7 @@ Dentro de la regla de enrutamiento principal Optimizar en Edge, cree una regla s
 
 ![Configurar el comportamiento de conmutación por error del sitio](/help/assets/optimize-at-edge/akamai-step9-failover-settings.png)
 
-**9b. Configurar la regla de encabezado de respuesta de conmutación por error**
+### 9 ter. Configurar la regla de encabezado de respuesta de conmutación por error
 
 >[!IMPORTANT]
 >
@@ -158,7 +158,7 @@ La conmutación por error del sitio garantiza que, si Edge Optimize devuelve un 
 | Edge Optimize devuelve `2XX` o `3XX` | Se proporciona la respuesta optimizada. `x-edgeoptimize-request-id` está presente. |
 | Edge Optimize devuelve `4XX`-`5XX` o se agota el tiempo de espera del origen | La solicitud se vuelve a crear para el nombre de host original. La respuesta incluye `x-edgeoptimize-fo: true`. |
 
-**Verificar la configuración**
+## Verificación de la configuración
 
 Una vez completada la configuración, compruebe que el tráfico de bots se enrute a Edge Optimize y que el tráfico humano no se vea afectado.
 
