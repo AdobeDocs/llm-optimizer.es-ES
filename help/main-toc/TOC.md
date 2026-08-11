@@ -5,7 +5,7 @@ user-guide-description: 'Impulse su marca con Adobe LLM Optimizer. Realice un se
 source-git-commit: d7e723161836027dcdde931378f5d0f776a1ecfc
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -29,10 +29,10 @@ ht-degree: 84%
     + [Errores del tráfico agéntico](/help/dashboards/opportunities/agentic-traffic-errors.md)
     + [Tráfico bloqueado por robots.txt](/help/dashboards/opportunities/traffic-blocked-by-robots.md)
     + [Recuperar visibilidad del contenido](/help/dashboards/opportunities/recover-content-visibility.md)
-    + [Agregar resúmenes compatibles con LLM](/help/dashboards/opportunities/add-llm-friendly-summaries.md)
+    + [Añadir resúmenes compatibles con LLM](/help/dashboards/opportunities/add-llm-friendly-summaries.md)
     + [Añadir preguntas frecuentes relevantes](/help/dashboards/opportunities/add-relevant-faqs.md)
-    + [Agregar resúmenes de transcripciones multimedia](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md)
-    + [Agregar tabla de contenido](/help/dashboards/opportunities/add-table-of-contents.md)
+    + [Añadir resúmenes de transcripciones multimedia](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md)
+    + [Añadir tabla de contenidos](/help/dashboards/opportunities/add-table-of-contents.md)
     + [Simplificar contenido complejo](/help/dashboards/opportunities/simplify-complex-content.md)
     + [Análisis de Wikipedia](/help/dashboards/opportunities/wikipedia-analysis.md)
     + [Análisis de opinión de YouTube](/help/dashboards/opportunities/youtube-sentiment-analysis.md)
@@ -60,7 +60,7 @@ ht-degree: 84%
     + [Akamai (BYOCDN)](/help/dashboards/optimize-at-edge/akamai-byocdn.md)
     + [Cloudflare (BYOCDN)](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md)
     + [CloudFront (BYOCDN)](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md)
-    + [Puerta delantera del Azure (BYOCDN)](/help/dashboards/optimize-at-edge/azure-front-door-byocdn.md)
+    + [Azure Front Door (BYOCDN)](/help/dashboards/optimize-at-edge/azure-front-door-byocdn.md)
     + [Apache HTTP Server](/help/dashboards/optimize-at-edge/apache-http-server.md)
   + [Control de acceso](/help/dashboards/access-control.md)
   + [Integración de Adobe Analytics](/help/dashboards/adobe-analytics-integration.md)

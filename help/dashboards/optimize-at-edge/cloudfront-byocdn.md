@@ -4,25 +4,15 @@ description: Obtenga información sobre cómo configurar CloudFront BYOCDN para 
 feature: Opportunities
 autotag-review: '2026-07-15T17:46:25.674Z'
 TQID: 'https://experienceleague.adobe.com/yIEUTzlnvOX-WBf276KQcAN8sGYDpZNVibJt024VMWU'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3aid: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
-source-wordcount: 2343
-ht-degree: 85%
+source-wordcount: 2360
+ht-degree: 95%
 
 ---
 
@@ -129,7 +119,7 @@ Si su comportamiento ya utiliza una directiva de caché personalizada (una que u
 
 2. Haga clic en **Editar**.
 
-3. Se recomienda establecer **TTL mínimo** en `0`. Sin embargo, si el TTL mínimo actual ya es muy corto, es posible que no necesite cambiarlo.
+3. Se recomienda establecer **TTL mínimo** en `0`. Sin embargo, si su TTL mínimo actual ya es muy corto, es posible que no necesite cambiarlo.
    ![Configuración de TTL de la directiva de caché](/help/assets/optimize-at-edge/cloudfront-cache-policy-ttl.png)
 
 4. En **Configuración de clave de caché** > **Encabezados**, junto con sus inclusiones existentes, añada `x-edgeoptimize-config` y `x-edgeoptimize-url`.
@@ -254,14 +244,14 @@ De manera predeterminada, el acceso directo **Ver registros de CloudWatch** en l
 
 3. Establezca el nombre del grupo de registro personalizado en `/aws/lambda/us-east-1.edgeoptimize-origin`.
 
-4. En **Permisos**, deje la casilla de verificación **Agregar permisos necesarios** **sin marcar**.
+4. En **Permisos**, deje la casilla de verificación **Añadir permisos necesarios** **sin marcar**.
 
    ![Configuración del grupo de registro personalizado Lambda](/help/assets/optimize-at-edge/cloudfront-lambda-custom-log-group.png)
 
 5. Haga clic en **Guardar**.
 
 >[!NOTE]
->Incluso después de esta corrección, el vínculo **Ver registros de CloudWatch** abre el nombre de grupo de registro correcto, pero es posible que no muestre datos si se encuentra en la región incorrecta. Los registros de Lambda@Edge se escriben en la región de Edge que proporcionó la solicitud (por ejemplo, `eu-west-1`, `ap-south-1`), no en `us-east-1`. Aún debe cambiar a la región correcta en Cloud Watch para ver los registros.
+>Incluso después de esta corrección, el vínculo **Ver registros de CloudWatch** abre el nombre de grupo de registro correcto, pero es posible que no muestre datos si se encuentra en la región incorrecta. Los registros de Lambda@Edge se escriben en CloudWatch en la región que atendió la solicitud (por ejemplo, `eu-west-1`, `ap-south-1`), no `us-east-1`. Aún debe cambiar a la región correcta en Cloud Watch para ver los registros.
 
 ### Publicar una versión
 
@@ -294,7 +284,7 @@ De manera predeterminada, el acceso directo **Ver registros de CloudWatch** en l
 
 4. Haga clic en **Guardar cambios**.
 
-## Permitir la optimización en Edge mediante reglas de cortafuegos (opcional)
+## Permitir Optimize en Edge mediante reglas de cortafuegos (opcional)
 
 {{waf-allowlist-setup}}
 

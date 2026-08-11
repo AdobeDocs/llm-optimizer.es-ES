@@ -4,24 +4,15 @@ description: Obtenga información sobre cómo configurar Akamai BYOCDN para Opti
 feature: Opportunities
 autotag-review: '2026-07-15T17:40:02.356Z'
 TQID: 'https://experienceleague.adobe.com/XlHpXbtxqPl-XQQKWeQc3rbsizCT7U0TF1bQkyv0iM8'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3aid: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4f0c6d398e2aab337485b7e26cf6f2aba56375fd
 workflow-type: tm+mt
 source-wordcount: 795
-ht-degree: 70%
+ht-degree: 93%
 
 ---
 
@@ -32,7 +23,7 @@ Esta configuración enruta el tráfico agéntico (solicitudes de bots de IA y ag
 
 **Requisitos previos**
 
-Antes de configurar las reglas del Administrador de propiedades de Akamai, asegúrese de lo siguiente:
+Antes de configurar las reglas del Administrador de propiedades de Akamai, asegúrese de tener lo siguiente:
 
 * Acceso al Administrador de propiedades de Akamai para su dominio.
 * Haber recuperado una clave de API de Edge Optimize de la IU de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
@@ -93,7 +84,7 @@ Establezca los siguientes encabezados de solicitud entrantes:
 
 ![Modificar encabezados de solicitud entrantes](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
-## Permitir la optimización en Edge mediante reglas de cortafuegos (opcional)
+## Permitir Optimize en Edge mediante reglas de cortafuegos (opcional)
 
 {{waf-allowlist-setup}}
 
@@ -119,14 +110,14 @@ Establecer el encabezado `x-forwarded-host` en `{{builtin.AK_HOST}}`
 
 ## &#x200B;9. Failover del sitio
 
-La configuración de conmutación por error del sitio consta de dos partes: un comportamiento de conmutación por error dentro de la regla de enrutamiento principal Optimizar en Edge y una regla del mismo nivel que agrega un encabezado de respuesta cuando se produce una reserva.
+La configuración de conmutación por error del sitio consta de dos partes: un comportamiento de conmutación por error dentro de la regla de enrutamiento principal Optimizar en Edge y una regla del mismo nivel que añade un encabezado de respuesta cuando se produce una reserva.
 
 ### 9 bis. Configuración del comportamiento de conmutación por error del sitio
 
-Dentro de la regla de enrutamiento principal Optimizar en Edge, cree una regla secundaria llamada **Comportamiento de conmutación por error del sitio**. Configúrelo en **Coincidir con cualquiera** y agregue estos criterios:
+Dentro de la regla de enrutamiento principal de Optimize en Edge, cree una regla secundaria llamada **Comportamiento de conmutación por error del sitio**. Configúrela en **Coincidir con cualquiera** y agregue estos criterios:
 
 * **El código de estado de respuesta** está en el intervalo de `400` a `599`.
-* **Tiempo de espera de origen** es `Yes`.
+* **El tiempo de espera de origen** es `Yes`.
 
 ![Conmutación por error del sitio](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
