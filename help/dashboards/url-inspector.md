@@ -4,28 +4,22 @@ description: Aprenda a utilizar el Inspector de URL para analizar el rendimiento
 feature: URL Inspector
 autotag-review: '2026-07-15T18:01:06.691Z'
 TQID: 'https://experienceleague.adobe.com/fD1LpXh53O8SCV-c1VHXr1CxX8UWdUt9rIVk0OA2dro'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: aedaee53-dfb4-4ab4-9d23-fa6188148769
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: aedaee53-dfb4-4ab4-9d23-fa6188148769
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 710
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # Inspector de URL
 
-El inspector de URL le ayuda a analizar el rendimiento de páginas específicas de su dominio en las búsquedas por IA. Combina visibilidad, tráfico agéntico y datos de referencia a nivel de la URL para ofrecerle una vista granular de las direcciones URL que se citan y de la frecuencia con la que aparecen en las respuestas. Vaya a **Inspector de URL** y seleccione el sitio cuya información desee ver.
+El inspector de URL le ayuda a analizar el rendimiento de páginas específicas de su dominio en las búsquedas por IA. Combina visibilidad, tráfico agéntico y datos de referencia a nivel de la URL para ofrecerle una vista granular de las direcciones URL que se citan y de la frecuencia con la que aparecen en las respuestas. Vaya al **Inspector de URL** y seleccione el sitio para el cual desea ver las perspectivas.
 
 ![Inspector de URL](/help/dashboards/assets/url-insp.png)
 

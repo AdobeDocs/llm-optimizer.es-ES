@@ -4,23 +4,15 @@ description: Aprenda a conectar Adobe Analytics con LLM Optimizer para medir el 
 feature: Referral Traffic
 autotag-review: '2026-07-15T16:46:49.693Z'
 TQID: 'https://experienceleague.adobe.com/H0p8HV2bf1KuKYqF1ByAF2BpGlb4YScsWDQU5mMkTRY'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: e69d5a42-0217-4ca5-9396-a9a826a170da
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 950
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -95,11 +87,11 @@ El flujo de conexión empieza desde el panel de control [Tráfico de referencia]
 
 ## Consulte Impacto empresarial en acción
 
-La visibilidad de la IA es solo parte de la historia. Para comprender si sus esfuerzos de optimización están impulsando los resultados empresariales, debe saber qué sucede después de que los visitantes llegan al sitio.
+La visibilidad de la IA es solo parte de la historia. Para saber si su esfuerzo de optimización está impulsando los resultados empresariales, debe saber qué sucede después de que los visitantes llegan al sitio.
 
-Este vídeo presenta la vista **Impacto en la empresa**, que combina LLM Optimizer con Adobe Analytics para mostrar cómo el tráfico referido a IA se traduce en participación, conversiones e ingresos, lo que le ayuda a medir el verdadero valor de su presencia de IA.
+Este vídeo presenta la vista **Impacto en la empresa**, que combina LLM Optimizer con Adobe Analytics para mostrar cómo el tráfico atraído por la IA se traduce en participación, conversiones e ingresos, lo que le ayuda a medir el verdadero valor de su presencia de IA.
 
->[!VIDEO](https://video.tv.adobe.com/v/3492508/?captions=spa&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3492503/?learn=on){transcript=true}
 
 ## Funcionamiento {#how-it-works}
 
