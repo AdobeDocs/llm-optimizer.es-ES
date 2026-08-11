@@ -99,7 +99,7 @@ La visibilidad de la IA es solo parte de la historia. Para saber si su esfuerzo 
 
 Este vídeo presenta la vista **Impacto en la empresa**, que combina LLM Optimizer con Adobe Analytics para mostrar cómo el tráfico atraído por la IA se traduce en participación, conversiones e ingresos, lo que le ayuda a medir el verdadero valor de su presencia de IA.
 
->[!VIDEO](https://video.tv.adobe.com/v/3492503/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3492508/?captions=spa&learn=on){transcript=true}
 
 ## Funcionamiento {#how-it-works}
 
