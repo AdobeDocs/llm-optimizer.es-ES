@@ -16,8 +16,8 @@ topic_v2:
   - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
 source-git-commit: 6b0e86f1373c3b1d85d67bd8222459acfc3620dc
 workflow-type: tm+mt
-source-wordcount: 485
-ht-degree: 88%
+source-wordcount: 626
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 88%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3492474/?captions=spa&learn=on){transcript=true}
 
-Esta página describe todo lo que necesita saber sobre Adobe LLM Optimizer antes de empezar a utilizar la herramienta:
+En esta página se describe todo lo que necesita saber sobre Adobe LLM Optimizer antes de empezar a utilizar la herramienta:
 
 * [¿Qué es Adobe LLM Optimizer?](#what-is-adobe-llm-optimizer)
 * [¿Cuáles son las funcionalidades de LLM Optimizer?](#what-are-llm-optimizer-capabilities)
@@ -69,11 +69,11 @@ La optimización del motor generativo es interfuncional por naturaleza. LLM Opti
 
 Con Adobe LLM Optimizer, puede hacer lo siguiente:
 
-**Visibilidad de la marca de medidas**: realiza un seguimiento de cuándo, dónde y con qué frecuencia se menciona tu marca en los resultados de búsqueda con tecnología de IA. Supere las conjeturas con una puntuación de visibilidad clara que pueda comparar con el paso del tiempo. Consulte [tablero de Presencia de marca](/help/dashboards/brand-presence.md).
-**Benchmark Otros** - Vea cómo su marca se amontona contra otros, incluyendo a la competencia, en motores generativos. Identifique las lagunas de cuota de voz y descubra las ventajas competitivas. Consulte [tablero de Presencia de marca](/help/dashboards/brand-presence.md).
-**Descubre oportunidades procesables** - Encuentra oportunidades de contenido (por ejemplo, preguntas frecuentes, resúmenes, esquemas) y oportunidades técnicas (rastreabilidad, problemas de indexación) que aumentan directamente las menciones y citas. Consulte [Panel de oportunidades](/help/dashboards/opportunities-overview.md).
-**Seguimiento del impacto del tráfico desde IA**: supervise el tráfico auténtico (de los asistentes de IA) y el tráfico de referencia (los clics de los usuarios debido a las citas) en sus propiedades. Vincule la visibilidad GEO con la participación real. Ver [Tablero de tráfico de agente](/help/dashboards/agentic-traffic.md) y [Tablero de Tráfico de referencia](/help/dashboards/referral-traffic.md).
-**Habilitar Team Collaboration**: comparta paneles, asigne propietarios para preguntas o categorías y garantice que se rastrearán los objetivos de visibilidad en las funciones de marketing, optimización de los motores de búsqueda (SEO) y comunicaciones. Consulte [tablero de Collaboration](/help/dashboards/collaboration.md).
+**Medir la visibilidad de la marca**: realice un seguimiento de cuándo, dónde y con qué frecuencia se menciona su marca en los resultados de la búsqueda con tecnología de IA. Supere las conjeturas con una puntuación de visibilidad clara que pueda comparar a lo largo del tiempo. Consulte el [panel de control Presencia de marca](/help/dashboards/brand-presence.md).
+**Comparar con otros**: descubra cómo se posiciona su marca frente a otros, incluida la competencia en motores generativos. Identifique las lagunas de la cuota de voz y descubra las ventajas competitivas. Consulte el [panel de control Presencia de marca](/help/dashboards/brand-presence.md).
+**Descubrir oportunidades procesables**: identifique oportunidades de contenido (p. ej., preguntas frecuentes, resúmenes, esquemas) y oportunidades técnicas (rastreabilidad, problemas de indexación) que aumenten directamente las menciones y citas. Consulte el [panel de control Oportunidades](/help/dashboards/opportunities-overview.md).
+**Rastrear el impacto del tráfico de la IA**: monitorice el tráfico agéntico (de los asistentes de IA) y el tráfico de referencia (los clics de los usuarios procedentes de las citas) hacia sus propiedades. Vincule la visibilidad de GEO con la participación real. Consulte el [panel de control Tráfico agéntico](/help/dashboards/agentic-traffic.md) y el [panel de control Tráfico de referencia](/help/dashboards/referral-traffic.md).
+**Habilitar la colaboración en equipo**: comparta paneles de control, asigne propietarios para indicaciones o categorías y asegúrese de que se realiza un seguimiento de los objetivos de visibilidad en las funciones de marketing, de optimización del motor de búsqueda (SEO) y de las comunicaciones. Consulte el [panel de control Colaboración](/help/dashboards/collaboration.md).
 
 ## Más información
 

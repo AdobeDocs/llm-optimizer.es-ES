@@ -23,7 +23,7 @@ topic_v2:
 source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
 source-wordcount: 1919
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ Esta configuración enruta el tráfico agéntico (solicitudes de bots de IA y ag
 
 **Requisitos previos**
 
-Antes de configurar las reglas de enrutamiento de Cloud Flare Worker, asegúrese de lo siguiente:
+Antes de configurar las reglas de enrutamiento de Cloudflare Worker, asegúrese de:
 
 * Tener una cuenta de Cloudflare con trabajadores habilitados en su dominio.
 * Tener acceso a la configuración DNS de su dominio en Cloudflare.
@@ -280,7 +280,7 @@ const FAILOVER_ON_5XX = false;
 | Las solicitudes fallan con un host no válido | `EDGE_OPTIMIZE_TARGET_HOST` incluye un protocolo (por ejemplo, `https://`). | Use solamente el nombre del dominio sin protocolo (por ejemplo, `example.com`, no `https://example.com`). |
 | Error 530 durante la conmutación por error | Cloudflare no se puede conectar al origen o la solicitud de conmutación por error tiene encabezados no válidos. | Asegúrese de que la función de conmutación por error elimine los encabezados de Edge Optimize. Compruebe que su origen sea accesible y que el DNS esté configurado correctamente. |
 
-## Permitir la optimización en Edge mediante reglas de cortafuegos (opcional)
+## Permitir Optimize en Edge mediante reglas de cortafuegos (opcional)
 
 {{waf-allowlist-setup}}
 

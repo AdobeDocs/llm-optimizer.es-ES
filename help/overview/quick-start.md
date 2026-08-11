@@ -19,9 +19,9 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1201
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Para empezar a usar LLM Optimizer, complete el proceso de incorporación. A cont
 
 ## Experiencia centrada en la marca {#brand-centric-experience}
 
-De forma predeterminada, los clientes empiezan en una interfaz centrada en la marca con una configuración basada en la incorporación. En esta interfaz, cada organización comienza con una marca activa y marcas sugeridas adicionales para elegir. <!--Existing LLM Optimizer customers will shift to this Brand Centric experience gradually.-->
+De forma predeterminada, los clientes acceden a una interfaz específica, centrada en la marca con una configuración basada en la incorporación.En esta interfaz, cada organización empieza con una marca activa y marcas sugeridas adicionales entre las que elegir. <!--Existing LLM Optimizer customers will shift to this Brand Centric experience gradually.-->
 
 ## Información general sobre la incorporación
 
@@ -68,9 +68,9 @@ Para activar la versión de prueba, como cliente de AEM Cloud, puede realizar la
 
 ![Versión de prueba de LLM Optimizer](/help/overview/assets/llm-trial.png)
 
-#### ADOBE ANALYTICS y ADOBE CUSTOMER JOURNEY ANALYTICS
+#### Adobe Analytics y Adobe Customer Journey Analytics
 
-Para los clientes de Adobe Analytics y Adobe Customer Journey Analytics, verá un banner en la página de inicio de Experience Cloud.
+En el caso de los clientes de Adobe Analytics y Adobe Customer Journey Analytics, aparecerá un banner en la página principal de Experience Cloud.
 
 ![Página principal de Experience Cloud con el banner Iniciar la versión de prueba de Adobe LLM Optimizer](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
 
@@ -83,7 +83,7 @@ Cuando la versión de prueba esté activa, prosiga con la incorporación del nom
 
 >[!NOTE]
 >
-> * **Prueba gratuita:** Los clientes de AEM Cloud y Adobe Analytics/Customer Journey Analytics pueden usar la versión de prueba gratuita de LLM Optimizer.
+> * **Versión de prueba gratuita:** los clientes de AEM Cloud y Adobe Analytics/Customer Journey Analytics pueden usar la versión de prueba gratuita de LLM Optimizer.
 > * **Los clientes que activen la versión de prueba a partir del 1 de abril de 2026** pueden utilizar hasta 100 indicaciones, un dominio y pueden implementar optimizaciones en un máximo de 10 direcciones URL para un único tipo de oportunidad.
 > * **Los clientes que activaron la versión de prueba antes del 1 de abril de 2026** continuarán teniendo acceso a hasta 200 indicaciones de acuerdo con los términos existentes.
 >
@@ -125,7 +125,7 @@ Una vez incorporado el sitio, podrá ver el análisis de Presencia de marca en f
 
 ### Categorías, temas e indicaciones de la experiencia centrada en la marca
 
-Puede agregar categorías, temas y peticiones de datos de la siguiente manera:
+Puede añadir categorías, temas e indicaciones de la siguiente manera:
 
 * **Categorías**: vaya a **Administración de marcas** y haga clic en **Categorías**. Las categorías se definen a nivel global y se aplican a todas las marcas en Administración de marcas.
 
@@ -136,7 +136,7 @@ Puede agregar categorías, temas y peticiones de datos de la siguiente manera:
   ![Administración de indicaciones](/help/assets/brand-centric-experience/prompts-management.png)
 
 >[!NOTE]
->Las indicaciones exactas que solicite a los LLM no están disponibles porque los LLM no las revelan.
+>Las indicaciones exactas que solicite a los LLM no están disponibles porque estos no las revelan.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Puede agregar categorías, temas y peticiones de datos de la siguiente manera:
 
 Una vez incorporado el dominio, obtendrá información inicial en la vista Presencia de marca en función de las indicaciones que se generaron automáticamente durante la incorporación. Una vez que haya personalizado sus propias categorías, temas e indicaciones, LLM Optimizer activará automáticamente el análisis de Presencia de marca en función de las indicaciones que haya proporcionado, y los resultados estarán disponibles al cabo de 24 horas.
 
-Vaya a **Presencia de marca** y seleccione una marca de la cual quiera ver la Presencia de marca mediante la lista desplegable de marcas. También puede ver la visibilidad de la marca a un nivel de **Todas las marcas** con esta experiencia.
+Vaya a **Presencia de marca** y seleccione una marca para la que desee ver la Presencia de marca mediante el menú desplegable de marca. También puede ver la visibilidad de la marca a un nivel de **Todas las marcas** con esta experiencia.
 
 ## Paso 4: Proporcionar información para el reenvío de registros de CDN {#step-4}
 
@@ -154,7 +154,7 @@ Para obtener información sobre el tráfico agéntico y el tráfico de referenci
 
 ### Reenvío de registros de CDN
 
-Puede agregar información de reenvío de registros de CDN desde **Brands Management** de la siguiente manera: abra **Brands Management** y haga clic en la etiqueta **CDN**.
+Puede añadir información de reenvío de registros de CDN desde **Administración de marcas** de la siguiente manera: abra **Administración de marcas** y haga clic en la etiqueta **CDN**.
 
 ![Administración de marcas: reenvío de registros de CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
 

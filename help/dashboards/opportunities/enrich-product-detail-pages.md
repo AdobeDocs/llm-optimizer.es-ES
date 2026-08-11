@@ -1,5 +1,5 @@
 ---
-title: Enriquecimiento de página de detalles del producto
+title: Enriquecimiento de la página de detalles del producto
 description: Descubra cómo LLM Optimizer identifica las páginas de productos en las que los datos del catálogo se ocultan a los agentes de IA y cómo recuperar esa visibilidad mediante la optimización basada en Edge y las perspectivas del catálogo de productos con tecnología de Adobe Commerce.
 feature: Opportunities
 autotag-review: '2026-07-15T17:50:18.330Z'
@@ -18,59 +18,59 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1210
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 
 # Enriquecimiento de páginas de detalles del producto
 
-Los agentes de IA solo pueden recomendar productos que puedan comprender completamente. En la mayoría de las tiendas de comercio, las páginas de productos están diseñadas para compradores humanos. Como tal, estos productos dependen de pestañas procesadas por JavaScript, paneles expandibles, asistentes de compras, modelos interactivos y vínculos a variantes, especificaciones y características de productos de superficie. Los agentes de IA no analizan las profundidades de la página de detalles del producto, lo que significa que los rastreadores de LLM que impulsan la detección impulsada por IA nunca ven estos datos de producto enriquecidos, incluso cuando son totalmente visibles para los visitantes humanos.
+Los agentes de IA solo pueden recomendar productos que puedan comprender completamente.En la mayoría de las tiendas de comercio, las páginas de productos están diseñadas para compradores humanos. Como tal, estos productos dependen de pestañas procesadas por JavaScript, paneles expandibles, asistentes de compras, modelos interactivos y vínculos a variantes, especificaciones y características de productos de superficie.Los agentes de IA no analizan las profundidades de la página de detalles del producto, lo que significa que los rastreadores de LLM que impulsan la detección impulsada por IA nunca ven estos datos de producto enriquecidos, incluso cuando son totalmente visibles para los visitantes humanos.
 
-La oportunidad Enriquecimiento de las páginas de detalles del producto identifica las páginas de producto en el catálogo de Adobe Commerce donde existe este hueco de visibilidad. Con la tecnología del catálogo de Adobe Commerce, compara los agentes de IA que pueden acceder a la tienda con los datos de producto completos disponibles en el catálogo y muestra todos los atributos, variantes y la profundidad de las características del producto que faltan en la vista del agente de IA.
+La oportunidad Enriquecimiento de las páginas de detalles del producto identifica las páginas de producto en el catálogo de Adobe Commerce donde existe esta laguna de visibilidad. Con la tecnología del catálogo de Adobe Commerce, compara los agentes de IA que pueden acceder al escaparate con los datos de producto completos disponibles en el catálogo y muestra todos los atributos, variantes y la profundidad de las características del producto que faltan desde la perspectiva del agente de IA.
 
-De un vistazo, muestra las siguientes métricas clave:
+Se muestran dos métricas clave de un vistazo:
 
 - **Páginas de producto**: la lista de todas las páginas de detalles de producto identificadas con un intervalo de visibilidad de datos del catálogo.
-- **Tráfico agéntico**: El total de visitas e interacciones en un sitio que inician e impulsan agentes de IA autónomos (como asistentes o bots con tecnología LLM) que actúan en nombre de usuarios para descubrir contenido, recuperarlo o interactuar con él.
+- **Tráfico agéntico**: el total de visitas e interacciones en un sitio que inician e impulsan agentes de IA autónomos (como asistentes o bots con tecnología LLM) que actúan en nombre de usuarios para descubrir contenido, recuperarlo o interactuar con él.
 
 ![Enriquecer panel de páginas de detalles del producto](/help/dashboards/opportunities/assets/enrich-product-detail-pages-overview.png)
 
-Esta oportunidad se puede optimizar utilizando[Optimizar en Edge](https://experienceleague.adobe.com/es/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge). Las optimizaciones se entregan exclusivamente a agentes de IA sin impacto en los visitantes humanos (entrega solo de bots), se aplican en el nivel de CDN sin necesidad de cambios de CMS o catálogo y pueden entrar en vigor en minutos sin participación del desarrollador, lo que lo convierte en una ruta de implementación rápida y de bajo riesgo para catálogos de productos grandes.
+Esta oportunidad se puede optimizar utilizando [Optimizar en Edge](https://experienceleague.adobe.com/es/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge).Las optimizaciones se aplican exclusivamente a los agentes de IA, sin que ello afecte a los visitantes humanos (aplicación exclusiva a los bots); se aplican en la capa de la CDN sin necesidad de realizar cambios en el CMS ni en el catálogo, y pueden entrar en vigor en cuestión de minutos sin necesidad de intervención por parte de los desarrolladores, lo que las convierte en una vía de implementación rápida y de bajo riesgo para catálogos de productos de gran tamaño.
 
 ## Funcionamiento
 
-El agente de catálogo de Adobe Commerce lee todos los datos de su catálogo de productos, incluidas las variantes, las relaciones de producto más profundas, los atributos, las facetas, los metadatos de categoría y todas las características del producto. A continuación, compara los datos con lo que realmente pueden acceder los agentes de IA en la PDP de la tienda correspondiente. Las páginas en las que se ocultan los datos del catálogo de los rastreadores de IA aparecen en la tabla **URL con sugerencias**, priorizadas por el volumen de tráfico auténtico.
+El agente de catálogo de Adobe Commerce lee todos los datos de su catálogo de productos, incluidas las variantes, las relaciones de producto más profundas, los atributos, las facetas, los metadatos de categoría y todas las características del producto. A continuación, compara los datos con lo que realmente pueden acceder los agentes de IA en la PDP de la tienda correspondiente. Las páginas en las que se ocultan los datos del catálogo de los rastreadores de IA aparecen en la tabla **URL con sugerencias**, priorizadas por el volumen de tráfico agéntico.
 
-Para cada página de producto afectada, LLM Optimizer proporciona:
+En cada página de producto afectada, LLM Optimizer proporciona:
 
 - **Vista previa del análisis de IA**: una lista completa de la información de catálogo que falta en la vista del agente de IA y por qué es importante para el descubrimiento de productos impulsados por LLM, incluida una lista de puntos de datos recuperables como variantes de productos, opciones de tamaño, especificaciones de materiales y detalles de compatibilidad, entre otros.
 
-La corrección se aplica usando [Optimizar en Edge](https://experienceleague.adobe.com/es/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge): la capacidad de implementación basada en Edge de Adobe que ofrece una instantánea de HTML totalmente procesada previamente y compatible con IA a los agentes de usuario de LLM en el nivel de CDN. Esto recupera todos los datos de catálogo previamente ocultos (incluidas las variantes de producto, las especificaciones técnicas y los detalles de características) sin tocar el catálogo de Commerce ni la interfaz de usuario de tienda visible humana.
+La solución se aplica con [Optimize en Edge](https://experienceleague.adobe.com/es/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge), la capacidad de implementación basada en el extremo de Adobe que proporciona una instantánea HTML totalmente prerenderizada y compatible con IA a los agentes de usuario de LLM en la capa CDN.Esto recupera todos los datos de catálogo previamente ocultos (incluidas las variantes de producto, las especificaciones técnicas y los detalles de características) sin tocar el catálogo de Commerce ni la interfaz de usuario de tienda visible humana.
 
 ![URL con tabla de sugerencias](/help/dashboards/opportunities/assets/enrich-product-detail-pages-suggestions.png)
 
 ## URL con sugerencias
 
-La tabla **URL con sugerencias** enumera todas las páginas de productos identificadas que se benefician de una optimización. Para cada URL de producto puede:
+La tabla **URL con sugerencias** enumera todas las páginas de productos identificadas que se benefician de una optimización. En cada URL de producto puede hacer lo siguiente:
 
 - **Vista previa** para ver el análisis de IA, incluida la información de catálogo que falta y por qué son importantes para la detección controlada por IA
-- **Marcar como fijo** una vez que se haya implementado y validado la optimización
+- **Marcar como arreglada** una vez que se haya resuelto implementado y validado la optimización
 - **Ignorar** sugerencias que no sean relevantes para su estrategia de comercialización
 
-Las sugerencias se organizan en tres vistas:**Sugerencias actuales**,**Sugerencias corregidas** y **Sugerencias ignoradas**. Una vez implementada una sugerencia, pasa a Fixed Suggestions con un estado de **Optimized** y una acción de **View Live** para verificar que el enriquecimiento esté activo para el tráfico auténtico. Las sugerencias fijas se pueden revertir en cualquier momento.
+Las sugerencias se organizan en tres vistas:**Sugerencias actuales**,**Sugerencias corregidas** y **Sugerencias ignoradas**.Una vez que se implementa una sugerencia, pasa a Sugerencias corregidas con un estado de **Optimizada** y una acción **Ver en vivo** para verificar que el enriquecimiento esté activo para el tráfico agéntico. Las sugerencias corregidas también se pueden revertir en cualquier momento.
 
 ## Implementar la optimización
 
-Una vez que haya revisado las sugerencias y seleccionado las páginas de productos que desea optimizar, haga clic en **Implementar optimizaciones** para publicar el enriquecimiento en el perímetro de CDN. Un cuadro de diálogo de confirmación de **Implementar en Edge** muestra las direcciones URL del producto seleccionado, el tipo de optimización y el enriquecimiento que se está aplicando. Después de la implementación, una pantalla de confirmación confirma qué páginas de productos se optimizaron correctamente.
+Una vez que haya revisado las sugerencias y seleccionado las URL que desea optimizar, haga clic en **Implementar optimizaciones** para publicar el enriquecimiento en el extremo de la CDN. Un cuadro de diálogo de confirmación **Implementar en Edge** muestra las URL seleccionadas, el tipo de optimización y el enriquecimiento que se está aplicando. Tras la implementación, una pantalla de confirmación indica qué páginas de producto se optimizaron correctamente.
 
 La optimización se entrega exclusivamente a los agentes de usuario de IA a través de la capa perimetral de CDN. Los visitantes humanos siguen viendo la experiencia existente de la tienda exactamente como antes sin cambios en el diseño de la PDP, el rendimiento de la página o la experiencia de la marca.
 
 >[!NOTE]
 >
->La implementación de optimizaciones requiere (1) conectar LLM Optimizer a Adobe Commerce y (2) completar el proceso de incorporación de Optimize at Edge.
+>La implementación de optimizaciones requiere (1) conectar LLM Optimizer a Adobe Commerce y (2) completar el proceso de incorporación de Optimize en Edge.
 
 Si la instancia de Commerce aún no está conectada a LLM Optimizer, se le dirigirá a la configuración de conexión antes de que se puedan aplicar los enriquecimientos.
 
@@ -80,7 +80,7 @@ Cuadro de diálogo ![Implementar en Edge](/help/dashboards/opportunities/assets/
 
 ## Probar en la demostración
 
-Vea la oportunidad de Enriquecer las páginas de detalles del producto en acción usando el entorno de demostración de Frescopa.
+Vea la oportunidad de páginas de detalles de productos enriquecidas en acción utilizando el entorno de demostración de Frescopa.
 
 [Ver páginas de detalles de producto enriquecidos en la demostración de Frescopa](https://play.llmo.now/org/demo-org/opportunities/commerce-product-page-enrichment/4e8b0428-0893-4864-a00e-fc1d77fb3372?siteId=9ae8877a-bbf3-407d-9adb-d6a72ce3c5e3)
 
@@ -94,14 +94,14 @@ Los escaparates de Commerce están diseñados para compradores humanos. A menudo
 
 El agente de catálogo recupera toda la información de producto disponible en su catálogo de Adobe Commerce a la que los agentes de IA no pueden acceder actualmente en la tienda. Esto incluye caracteres de producto, relaciones, variantes (tamaños, colores, configuraciones), especificaciones y atributos técnicos, detalles de compatibilidad, metadatos de categoría y valores de faceta.
 
-**¿Afectará esta optimización a mis visitantes humanos, bots SEO o rendimiento de tienda?**
+**¿Esta optimización afectará a mis visitantes humanos o al rendimiento del escaparate**?
 
-No. Optimizar en Edge está pensado únicamente para los agentes de usuario de IA. Los visitantes humanos y los bots de optimización de los motores de búsqueda reciben la página de producto original exactamente como antes, sin cambios en su experiencia, rendimiento de carga de página ni diseño de tienda.
+No. Optimizar en Edge está pensado únicamente para los agentes de usuario de IA. Los visitantes humanos y los bots de SEO reciben la página original de producto exactamente como antes, sin cambios en su experiencia ni en el rendimiento de carga de la página o en el diseño del escaparate.
 
-**¿Debo cambiar mi catálogo de Commerce, CMS, o involucrar a desarrolladores?**
+**¿Necesito cambiar mi catálogo de Commerce, CMS o involucrar a los desarrolladores**?
 
-No. La optimización se aplica en la capa perimetral de la CDN y no requiere cambios en el catálogo de Adobe Commerce, implementaciones de código ni participación del desarrollador. Una vez incorporado para optimizar en Edge, puede implementar y revertir los enriquecimientos en minutos directamente desde la interfaz de LLM Optimizer.
+No. La optimización se aplica en la capa de extremo de la CDN y no requiere cambios en su catálogo de Adobe Commerce, ni implementaciones de código, ni la intervención de desarrolladores.Una vez que se haya incorporado a Optimize en Edge, podrá implementar y restablecer enriquecimientos en cuestión de minutos directamente desde la interfaz de LLM Optimizer.
 
-**¿Qué sucede si los datos de mis productos cambian después de la implementación?**
+**¿Qué sucede si los datos de mi producto cambian después de la implementación**?
 
-Para la oportunidad Enriquecimiento de las páginas de detalles del producto, LLM Optimizer utiliza la configuración de TTL de caché baja para que cualquier actualización de producto en el catálogo de Commerce déclencheur una actualización en cuestión de minutos. Los agentes de IA siempre recibirán los datos de producto más actualizados disponibles.
+Para la oportunidad Enriquecimiento de las páginas de detalles del producto, LLM Optimizer utiliza la configuración de TTL de caché baja para que cualquier actualización de producto en el catálogo de Commerce active una actualización en cuestión de minutos. Los agentes de IA siempre recibirán los datos de producto más actualizados disponibles.

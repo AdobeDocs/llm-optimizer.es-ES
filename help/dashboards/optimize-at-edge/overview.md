@@ -26,8 +26,8 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 7df9f2722df2f532efe7f05e84c49e9f5a63b58b
 workflow-type: tm+mt
-source-wordcount: 2941
-ht-degree: 63%
+source-wordcount: 3129
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ Para guiarle en el proceso de configuración, seleccione a continuación su prov
 | Akamai (BYOCDN) | Traer su propia CDN | [Ver la guía de configuración](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
 | Cloudflare (BYOCDN) | Traer su propia CDN | [Ver la guía de configuración](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
 | CloudFront (BYOCDN) | Traer su propia CDN | [Ver la guía de configuración](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
-| Puerta delantera del Azure (BYOCDN) | Traer su propia CDN | [Ver la guía de configuración](/help/dashboards/optimize-at-edge/azure-front-door-byocdn.md) |
+| Azure Front Door (BYOCDN) | Traer su propia CDN | [Ver la guía de configuración](/help/dashboards/optimize-at-edge/azure-front-door-byocdn.md) |
 | Apache HTTP Server | Traer su propia CDN | [Ver la guía de configuración](/help/dashboards/optimize-at-edge/apache-http-server.md) |
 
 >[!NOTE]
@@ -112,12 +112,12 @@ En la tabla siguiente se presentan las oportunidades que pueden mejorar la exper
 | Oportunidad | Tipo | Identificación automática | Sugerencia automática | Optimización automática |
 |---------|----------|----------|----------|----------|
 | [Recuperar visibilidad del contenido](/help/dashboards/opportunities/recover-content-visibility.md) | Optimización técnica del motor generativo | Detecta páginas donde se oculta contenido crítico a los agentes de IA. Muestra las direcciones URL afectadas y el contenido previsto que se puede recuperar. | Resalta el contenido que puede estar disponible para los agentes de IA y recomienda habilitar el procesamiento previo para esas páginas. | Proporciona una instantánea de HTML totalmente procesada y compatible con IA al tráfico agéntico que recupera el contenido oculto anteriormente. |
-| [Enriquecer páginas de detalles del producto](/help/dashboards/opportunities/enrich-product-detail-pages.md) | Optimización técnica del motor generativo | En el caso de las tiendas Adobe Commerce, compara los datos de catálogo completos con los datos a los que los agentes de IA pueden acceder en cada página de detalles del producto; muestra los PDP en los que faltan variantes, especificaciones, atributos y campos de catálogo relacionados en el HTML visible del agente, priorizados por el tráfico auténtico. | Resalta la información de catálogo recuperable que falta en la vista del agente y por qué importa para el descubrimiento de productos impulsados por LLM. | Proporciona una instantánea de HTML totalmente procesada previamente y compatible con IA al tráfico auténtico en el perímetro de la CDN para que los agentes reciban un contexto de producto enriquecido de su catálogo sin CMS ni cambios de catálogo. |
-| [Agregar resúmenes compatibles con LLM](/help/dashboards/opportunities/add-llm-friendly-summaries.md) | Optimización de contenido | Identifica páginas de alto tráfico que carecen de resúmenes concisos y puntos clave estructurados en el nivel de página o sección, lo que dificulta que los agentes de IA las analicen e interpreten. | Recomienda resúmenes breves generados por IA y puntos clave basados en contenido existente. | Inserta resúmenes y puntos clave en las secciones relevantes de HTML, lo que mejora la forma en que los modelos interpretan y describen el contenido de la página. |
-| [Agregar preguntas más frecuentes](/help/dashboards/opportunities/add-relevant-faqs.md) | Optimización de contenido | Identifica páginas de alto tráfico que carecen de contenido de preguntas y respuestas estructurado y que están alineadas con el conjunto de mensajes, lo que dificulta que los agentes de inteligencia artificial relacionen las preguntas del usuario con su página. | Sugiere contenido de preguntas más frecuentes generado por IA y alineado con la intención del usuario y los temas de la página existentes. | Inserta contenido de preguntas frecuentes en el HTML, lo que hace que las páginas sean más detectables y relevantes en las respuestas basadas en IA. |
+| [Enriquecer páginas de detalles del producto](/help/dashboards/opportunities/enrich-product-detail-pages.md) | Optimización técnica del motor generativo | En el caso de las tiendas Adobe Commerce, compara los datos de catálogo completos con los datos a los que los agentes de IA pueden acceder en cada página de detalles del producto; muestra los PDP en los que faltan variantes, especificaciones, atributos y campos de catálogo relacionados en el HTML visible del agente, priorizados por el tráfico agéntico. | Resalta la información de catálogo recuperable que falta en la vista del agente y por qué es importante para el descubrimiento de productos impulsados por LLM. | Proporciona una instantánea de HTML totalmente procesada previamente y compatible con IA al tráfico agéntico en el extremo de la CDN para que los agentes reciban un contexto de producto enriquecido de su catálogo sin CMS ni cambios de catálogo. |
+| [Añadir resúmenes compatibles con LLM](/help/dashboards/opportunities/add-llm-friendly-summaries.md) | Optimización de contenido | Identifica páginas de tráfico alto que carecen de resúmenes concisos y puntos clave estructurados a nivel de página o sección, lo que dificulta a los agentes de IA escanearlos e interpretarlos. | Recomienda resúmenes breves generados por IA y puntos clave basados en contenido existente. | Inserta resúmenes y puntos clave en las secciones relevantes de HTML, lo que mejora la forma en que los modelos interpretan y describen el contenido de la página. |
+| [Añadir preguntas frecuentes relevantes](/help/dashboards/opportunities/add-relevant-faqs.md) | Optimización de contenido | Identifica páginas de alto tráfico que carecen de contenido de preguntas y respuestas estructurado y que están alineadas con el conjunto de indicaciones, lo que dificulta que los agentes de IA relacionen las preguntas del usuario con su página. | Sugiere contenido de preguntas frecuentes generado por IA alineado con la intención del usuario y los temas existentes. | Inserta contenido de preguntas frecuentes en el HTML, lo que hace que las páginas sean más detectables y relevantes en las respuestas basadas en IA. |
 | [Simplificar contenido complejo](/help/dashboards/opportunities/simplify-complex-content.md) | Optimización de contenido | Indica las páginas con texto complejo que puede dificultar la comprensión de la IA. | Proporciona versiones simplificadas de texto complejo generadas por IA preservando al mismo tiempo el significado original. | Reescribe secciones complejas en la página, lo que mejora la legibilidad de la IA. |
-| [Agregar tabla de contenido](/help/dashboards/opportunities/add-table-of-contents.md) | Optimización técnica del motor generativo | Detecta páginas que carecen de encabezados de navegación u organización estructural claros, lo que dificulta que los agentes de IA analicen y asignen contenido a consultas de usuarios. | Sugiere una tabla de contenido estructurada con encabezados vinculados por anclajes que reflejen las secciones principales de la página. | Inserta una tabla de contenido en HTML, lo que mejora la estructura de la página para que los modelos de IA puedan extraer, asignar y citar más fácilmente secciones relevantes. |
-| [Agregar resúmenes de transcripciones multimedia](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md) | Optimización de contenido | Identifica las páginas en las que la información clave está incrustada en vídeo u otros medios sin transcripciones o resúmenes legibles por el equipo, lo que dificulta el uso del contenido para los agentes de IA. Muestra las direcciones URL afectadas y el texto recomendado. | Recomienda resúmenes de transcripciones generados por IA basados en los medios y en la página. | Inserta resúmenes de transcripción en HTML para que el tráfico auténtico reciba texto legible por máquina (por ejemplo, cerca del vídeo correspondiente). |
+| [Añadir Tabla de contenidos](/help/dashboards/opportunities/add-table-of-contents.md) | Optimización técnica del motor generativo | Detecta páginas que carecen de encabezados de navegación u organización estructural claros, lo que dificulta que los agentes de IA analicen y asignen contenido a consultas de usuarios. | Sugiere una tabla de contenido estructurada con encabezados vinculados por anclajes que reflejen las secciones principales de la página. | Inserta una tabla de contenido en HTML, lo que mejora la estructura de la página para que los modelos de IA puedan extraer, asignar y citar más fácilmente secciones relevantes. |
+| [Añadir resúmenes de transcripciones multimedia](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md) | Optimización de contenido | Identifica las páginas en las que la información clave está incrustada en vídeo u otros medios sin transcripciones o resúmenes legibles por el equipo, lo que dificulta el uso del contenido para los agentes de IA. Muestra las direcciones URL afectadas y el texto recomendado. | Recomienda resúmenes de transcripciones generados por IA basados en los medios y en la página. | Inserta resúmenes de transcripción en HTML para que el tráfico agéntico reciba texto legible por máquina (por ejemplo, cerca del vídeo correspondiente). |
 
 ### Herramientas adicionales
 
@@ -131,7 +131,7 @@ En las secciones siguientes, puede ver detalles adicionales de cada oportunidad 
 
 ### Recuperar visibilidad del contenido
 
-Esta oportunidad marca páginas donde el contenido clave está oculto para los agentes de IA debido al procesamiento en el lado del cliente. Para cada página identificada, muestra exactamente qué contenido falta en la vista del agente de IA, resalta los huecos de visibilidad y le permite aplicar cambios directamente para recuperar el contenido oculto. Al implementar esta oportunidad con Optimizar en Edge, se proporciona una versión de la página procesada previamente y optimizada para IA a los agentes de usuario de LM para que puedan acceder al contexto completo sin ejecutar JavaScript.
+Esta oportunidad indica las páginas donde el contenido clave está oculto para los agentes de IA debido al procesamiento en el lado del cliente. Para cada página identificada, muestra exactamente qué contenido falta en la vista del agente de IA, resalta los huecos de visibilidad y le permite aplicar cambios directamente para recuperar el contenido oculto. Al implementar esta oportunidad con Optimizar en Edge, se proporciona una versión de la página procesada previamente y optimizada con IA para los agentes de usuario de LLM para que puedan acceder al contexto completo sin ejecutar JavaScript.
 Esto garantiza que la página sea primero totalmente visible para los agentes de IA. Además de ese HTML preprocesado, se aplican mejoras adicionales.
 
 >[!IMPORTANT]
@@ -141,39 +141,39 @@ Consulte [Recuperar visibilidad del contenido](/help/dashboards/opportunities/re
 
 ### Enriquecimiento de páginas de detalles del producto
 
-Esta oportunidad se dirige a páginas de detalles de productos de Adobe Commerce donde los compradores ven un contexto de producto completo a través de experiencias de tienda interactivas, pero los agentes de IA solo reciben una instantánea de HTML superficial. El agente de catálogo compara el catálogo de Commerce autorizado con el PDP visible del agente, enumera todas las lagunas significativas (por ejemplo, variantes o especificaciones que nunca aparecen en HTML estático) y le permite implementar una respuesta perimetral solo de bots que restaura la paridad para los rastreadores LLM sin alterar los registros del catálogo ni la IU humana.
+Esta oportunidad se destina a páginas de detalles de productos de Adobe Commerce donde los compradores ven un contexto de producto completo a través de experiencias de tienda interactivas, pero los agentes de IA solo reciben una instantánea de HTML superficial. El agente de catálogo compara el catálogo de Commerce autorizado con el PDP visible del agente, enumera todas las lagunas significativas (por ejemplo, variantes o especificaciones que nunca aparecen en HTML estático) y le permite implementar una respuesta del extremo solo de bots que restaura la paridad para los rastreadores LLM sin alterar los registros del catálogo ni la IU humana.
 
-Consulte [Enriquecimiento de las páginas de detalles del producto](/help/dashboards/opportunities/enrich-product-detail-pages.md) para ver una guía de panel, los pasos de implementación y las preguntas más frecuentes.
+Consulte [Enriquecer páginas de detalles de productos](/help/dashboards/opportunities/enrich-product-detail-pages.md) para ver una guía del panel de control, los pasos de implementación y las preguntas frecuentes.
 
 ### Añadir resúmenes compatibles con LLM
 
-Esta oportunidad identifica páginas de alto tráfico que pueden beneficiarse de resúmenes concisos y puntos clave estructurados para que los LLM puedan entender rápidamente las reclamaciones en la página. Para cada página, detecta dónde más se necesita un resumen y propone resúmenes generados por IA (y puntos clave cuando son relevantes) a nivel de página o sección, basados en contenido existente. Al implementar con Optimizar en Edge, ese contenido se inserta en HTML que recuperan los agentes de IA, lo que mejora la precisión con que la marca se representa en las respuestas de IA.
+Esta oportunidad identifica páginas de alto tráfico que pueden beneficiarse de resúmenes concisos y puntos clave estructurados para que los LLM puedan entender rápidamente las afirmaciones en la página. Para cada página, detecta dónde más se necesita un resumen y propone resúmenes generados por IA (y puntos clave cuando son relevantes) a nivel de página o sección, basados en contenido existente. Al implementar con Optimize en Edge, ese contenido se inserta en HTML que recuperan los agentes de IA, lo que mejora la precisión con que la marca se representa en las respuestas de IA.
 
-Consulte [Agregar resúmenes aptos para LLM](/help/dashboards/opportunities/add-llm-friendly-summaries.md) para obtener más información sobre esta oportunidad.
+Consulte [Añadir resúmenes aptos para LLM](/help/dashboards/opportunities/add-llm-friendly-summaries.md) para obtener más información sobre esta oportunidad.
 
 ### Añadir preguntas frecuentes relevantes
 
-Esta oportunidad indica páginas de alto tráfico en las que el contenido adicional de preguntas y respuestas podría coincidir mejor con la intención del usuario y las indicaciones en el descubrimiento controlado por IA. Para cada página, propone bloques de preguntas más frecuentes generados por IA vinculados a su conjunto de mensajes y al contenido de la página. Con Optimizar en Edge, estas preguntas frecuentes se insertan en HTML, lo que hace que su página sea más compatible con IA y aumenta la probabilidad de que las respuestas de IA reflejen directamente sus directrices.
+Esta oportunidad indica las páginas de tráfico alto en las que el contenido adicional de preguntas y respuestas podría ajustarse mejor a la intención del usuario y las indicaciones en la detección basada en la IA. Para cada página, propone bloques de preguntas frecuentes generados por IA vinculados al conjunto de indicaciones y al contenido de la página. Con Optimize en Edge, estas preguntas frecuentes se insertan en el HTML, lo que hace que su página sea más compatible con la IA y aumenta la probabilidad de que las respuestas con IA reflejen directamente sus indicaciones.
 
-Consulte [Agregar preguntas más frecuentes](/help/dashboards/opportunities/add-relevant-faqs.md) relevantes para ver una guía de panel, los pasos de implementación y las preguntas más frecuentes.
+Consulte [Añadir preguntas frecuentes relevantes](/help/dashboards/opportunities/add-relevant-faqs.md) para ver una guía del panel de control, los pasos de implementación y las preguntas frecuentes.
 
 ### Simplificar contenido complejo
 
 Esta oportunidad encuentra páginas con párrafos largos y complejos que pueden reducir la comprensión de la IA. Para cada página que supera los umbrales de legibilidad, crea contenido generado por IA que es más sencillo y fácil de analizar, conservando al mismo tiempo el significado original. Cuando se implementa en el perímetro, el contenido simplificado que se entrega al tráfico agéntico ayuda a los LLM a interpretar y resumir el contenido con mayor fiabilidad.
 
-Consulte [Simplificar contenido complejo](/help/dashboards/opportunities/simplify-complex-content.md) para ver una guía de panel, los pasos de implementación y las preguntas más frecuentes.
+Consulte [Simplificar contenido complejo](/help/dashboards/opportunities/simplify-complex-content.md) para ver una guía del panel de control, los pasos de implementación y las preguntas frecuentes.
 
-### Agregar tabla de contenido
+### Añadir tabla de contenidos
 
-Esta oportunidad detecta las páginas que son difíciles de navegar para los agentes de IA porque los encabezados y la estructura de sección no están claros o no están presentes. Para cada página afectada, propone una tabla de contenido estructurada con entradas enlazadas con anclaje alineadas con las secciones principales. Al implementar con Optimizar en Edge, esa tabla de contenido se inserta en HTML para que los modelos puedan asignar de forma más fiable las consultas de usuario a las partes correctas de la página y citarlas.
+Esta oportunidad detecta las páginas que son difíciles de navegar para los agentes de IA porque los encabezados y la estructura de sección no están claros o no están presentes. Para cada página implicada, propone una tabla de contenido estructurada con entradas enlazadas con anclaje alineadas con las secciones principales. Al implementar con Optimize en Edge, esa tabla de contenido se inserta en HTML para que los modelos puedan asignar de forma más fiable las consultas de usuario a las partes correctas de la página y citarlas.
 
-Consulte [Agregar tabla de contenido](/help/dashboards/opportunities/add-table-of-contents.md) para ver una guía de panel, los pasos de implementación y las instrucciones de acceso anticipado.
+Consulte [Añadir tabla de contenido](/help/dashboards/opportunities/add-table-of-contents.md) para ver una guía de panel, los pasos de implementación y las instrucciones de acceso anticipado.
 
-### Agregar resúmenes de transcripciones multimedia
+### Añadir resúmenes de transcripciones multimedia
 
-Esta oportunidad se dirige a páginas donde la información importante solo se encuentra dentro de la reproducción de vídeo, sin transcripciones ni resúmenes de texto que los agentes de IA puedan leer. Para cada página, recomienda transcripciones generadas por IA y breves resúmenes de los puntos clave de los medios. Con Optimizar en Edge, estos resúmenes se añaden a HTML como texto legible por máquina, de modo que los agentes pueden utilizar el mismo contenido que obtienen los visitantes humanos al ver el vídeo.
+Esta oportunidad está destinada a páginas donde la información importante solo se encuentra dentro de la reproducción de vídeo, sin transcripciones ni resúmenes de texto que los agentes de IA puedan leer. Para cada página, recomienda transcripciones generadas por IA y breves resúmenes de los puntos clave de los medios. Con Optimize en Edge, estos resúmenes se añaden a HTML como texto legible por máquina, de modo que los agentes pueden utilizar el mismo contenido que obtienen los visitantes humanos al ver el vídeo.
 
-Consulte [Agregar resúmenes de transcripciones multimedia](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md) para ver una guía de panel, los pasos de implementación y las preguntas más frecuentes.
+Consulte [Añadir resúmenes de transcripciones multimedia](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md) para ver una guía del panel de control, los pasos de implementación y las preguntas frecuentes.
 
 ## Optimización automática en Edge
 
@@ -213,7 +213,7 @@ Una reversión de forma segura revierte una optimización implementada anteriorm
 
 ## Recursos adicionales
 
-Para obtener más información sobre la capacidad Optimizar en Edge, consulte la siguiente lista de reproducción [LLM Optimizer — Optimizar en Edge](https://www.youtube.com/playlist?list=PLzbVcr6JHocVSMWBCaCw4xxjQ_VFVvFh0).
+Para obtener más información sobre la capacidad Optimize en Edge, consulte la siguiente lista de reproducción [LLM Optimizer: Optimize en Edge](https://www.youtube.com/playlist?list=PLzbVcr6JHocVSMWBCaCw4xxjQ_VFVvFh0).
 
 ## Preguntas frecuentes
 
@@ -241,7 +241,7 @@ Si hace clic en **Implementar optimizaciones** antes de completar la configuraci
 
 P: ¿Qué sucede cuando el contenido se actualiza en la fuente?
 
-Servimos la versión optimizada de su página desde la caché siempre y cuando la página de origen subyacente no haya cambiado. Sin embargo, cuando el origen cambia para **Recuperar Visibilidad del contenido**, nuestro sistema se actualiza automáticamente para que los agentes de IA siempre reciban el contenido más actualizado. Esto se debe a que utilizamos la configuración de tiempo de duración de caché (TTL) bajo (por orden de minutos) para que cualquier actualización de contenido en su sitio déclencheur una nueva optimización dentro de esa ventana. Para oportunidades de contenido como **Agregar resúmenes compatibles con LLM**, LLM Optimizer supervisa la página de origen para ver si hay cambios. Si se detecta un cambio, pausamos la optimización y la marcamos para que sea analizada por humanos a fin de evitar que el contenido se desplace entre la página visible del agente y la página visible por humanos.
+Servimos la versión optimizada de su página desde la caché siempre y cuando la página fuente subyacente no haya cambiado. Sin embargo, cuando la fuente cambia en **Recuperar la visibilidad del contenido**, nuestro sistema se actualiza automáticamente para que los agentes de IA siempre reciban el contenido más actualizado. Esto se debe a que utilizamos una configuración de tiempo de vida (TTL) de la caché baja (del orden de minutos) de modo que cualquier actualización de contenido en su sitio activa una nueva optimización dentro de ese intervalo. Para oportunidades de contenido como **Añadir resúmenes compatibles con LLM**, LLM Optimizer supervisa la página de origen en busca de cambios. Si se detecta un cambio, detenemos la optimización y lo marcamos para que sea analizado por personas a fin de evitar discrepancias entre la página visible para el agente y la página visible para las personas.
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 P. ¿Optimize at Edge solo es para sitios que utilizan Adobe Edge Delivery Service (EDS)?
@@ -252,13 +252,13 @@ P. ¿En qué se diferencia el procesamiento previo de Optimizar en Edge del proc
 
 Ambos resuelven diferentes problemas y pueden trabajar juntos. El SSR tradicional procesa contenido del lado del servidor, pero no incluye contenido cargado posteriormente en el explorador. El procesamiento previo de Optimizar en Edge captura la página después de que JavaScript y los datos del lado del cliente se hayan cargado, lo que produce la versión completamente ensamblada en el perímetro de CDN. SSR se centra en mejorar la experiencia humana y Optimizar en Edge mejora la experiencia web para los LLM.
 
-P. ¿Recuperar Visibilidad del contenido (es decir, preprocesamiento) es un encubrimiento? Parece que se está ofreciendo una versión diferente de la página a los agentes de inteligencia artificial.
+P. ¿Recuperar Visibilidad del contenido (es decir, preprocesamiento) es un encubrimiento? Parece que se está ofreciendo una versión diferente de la página a los agentes de IA.
 
-No. El procesamiento previo garantiza que los agentes de IA puedan ver el mismo contenido que los visitantes humanos y los bots de SEO ya ven. Muchos sitios cargan contenido significativo con JavaScript, que los agentes de IA típicos no ejecutan, de modo que los agentes pueden perder grandes partes de la página. El procesamiento previo produce una instantánea estática que captura el texto completo, de modo que los agentes reciben la misma información que los seres humanos y los motores de búsqueda. **restaura** la paridad de contenido para los LLM; no agrega ni cambia contenido factual.
+No. El procesamiento previo garantiza que los agentes de IA puedan ver el mismo contenido que los visitantes humanos y los bots de SEO ya ven. Muchos sitios cargan contenido significativo con JavaScript, que los agentes de IA típicos no ejecutan, de modo que los agentes pueden perder grandes partes de la página. El procesamiento previo produce una instantánea estática que captura el texto completo, de modo que los agentes reciben la misma información que los seres humanos y los motores de búsqueda. **Restaura** la paridad de contenido para los LLM; no añade ni cambia contenido factual.
 
-P. ¿Qué sucede con otras oportunidades de contenido, como Agregar resúmenes descriptivos de LLM, en los que aparece una copia nueva en la página ofrecida a los agentes? ¿Eso es encubrimiento?
+P. ¿Qué sucede con otras oportunidades de contenido, como Añadir resúmenes descriptivos de LLM, en los que aparece una copia nueva en la página ofrecida a los agentes? ¿Eso es encubrimiento?
 
-No. Optimizar en Edge no presenta información a la que los usuarios humanos y los rastreadores en optimización de los motores de búsqueda no puedan acceder. El servicio reorganiza o resume el contenido que ya existe en la página para que los agentes de inteligencia artificial puedan interpretarlo más fácilmente. Cuando alguien sigue un vínculo de una respuesta de IA a su sitio, puede encontrar la misma información subyacente en la página activa.
+No. Optimize en Edge no presenta información a la que los usuarios humanos y los rastreadores en optimización de los motores de búsqueda no puedan acceder. El servicio reorganiza o resume el contenido que ya existe en la página para que los agentes de inteligencia artificial puedan interpretarlo más fácilmente. Cuando alguien sigue un vínculo de una respuesta de IA a su sitio, puede encontrar la misma información subyacente en la página activa.
 
 P. ¿Qué sucede si implemento optimizaciones para algunas URL de mi dominio, pero no para todas?
 

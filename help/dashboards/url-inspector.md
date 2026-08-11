@@ -16,16 +16,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 710
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # Inspector de URL
 
-El inspector de URL le ayuda a analizar el rendimiento de páginas específicas de su dominio en las búsquedas por IA. Combina visibilidad, tráfico agéntico y datos de referencia a nivel de la URL para ofrecerle una vista granular de las direcciones URL que se citan y de la frecuencia con la que aparecen en las respuestas. Vaya a **Inspector de URL** y seleccione el sitio cuya información desee ver.
+El inspector de URL le ayuda a analizar el rendimiento de páginas específicas de su dominio en las búsquedas por IA. Combina visibilidad, tráfico agéntico y datos de referencia a nivel de la URL para ofrecerle una vista granular de las direcciones URL que se citan y de la frecuencia con la que aparecen en las respuestas. Vaya al **Inspector de URL** y seleccione el sitio para el cual desea ver las perspectivas.
 
 ![Inspector de URL](/help/dashboards/assets/url-insp.png)
 

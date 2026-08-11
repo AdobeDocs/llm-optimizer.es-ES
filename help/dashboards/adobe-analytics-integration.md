@@ -18,9 +18,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 950
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -95,9 +95,9 @@ El flujo de conexión empieza desde el panel de control [Tráfico de referencia]
 
 ## Consulte Impacto empresarial en acción
 
-La visibilidad de la IA es solo parte de la historia. Para comprender si sus esfuerzos de optimización están impulsando los resultados empresariales, debe saber qué sucede después de que los visitantes llegan al sitio.
+La visibilidad de la IA es solo parte de la historia. Para saber si su esfuerzo de optimización está impulsando los resultados empresariales, debe saber qué sucede después de que los visitantes llegan al sitio.
 
-Este vídeo presenta la vista **Impacto en la empresa**, que combina LLM Optimizer con Adobe Analytics para mostrar cómo el tráfico referido a IA se traduce en participación, conversiones e ingresos, lo que le ayuda a medir el verdadero valor de su presencia de IA.
+Este vídeo presenta la vista **Impacto en la empresa**, que combina LLM Optimizer con Adobe Analytics para mostrar cómo el tráfico atraído por la IA se traduce en participación, conversiones e ingresos, lo que le ayuda a medir el verdadero valor de su presencia de IA.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3492508/?captions=spa&learn=on){transcript=true}
 

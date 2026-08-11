@@ -1,6 +1,6 @@
 ---
-title: Optimizar en Edge - Puerta delantera de Azure (BYOCDN)
-description: Aprenda a configurar Azure Front Door BYOCDN para optimizar en Edge en LLM Optimizer.
+title: Optimizar en Edge - Azure Front Door (BYOCDN)
+description: Obtenga información sobre cómo configurar Azure Front Door BYOCDN para Optimizar en Edge en LLM Optimizer.
 feature: Opportunities
 autotag-review: '2026-07-15T17:40:54.797Z'
 TQID: 'https://experienceleague.adobe.com/fe-kultqzWQdRdcUjzfNs21UpL6m5zcoAmaQyMMv5kk'
@@ -19,39 +19,39 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 768
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
 
-# Puerta delantera del Azure (BYOCDN)
+# Azure Front Door (BYOCDN)
 
 Esta configuración enruta el tráfico agéntico (solicitudes de bots de IA y agentes de usuario LLM) al servicio de back-end de Edge Optimize (`live.edgeoptimize.net`). Los visitantes humanos y los bots de SEO se siguen sirviendo desde su origen como de costumbre. Para probar la configuración, una vez completados los ajustes, busque el encabezado `x-edgeoptimize-request-id` en la respuesta.
 
-La puerta delantera del Azure no ejecuta código personalizado en el borde. El enrutamiento se ha configurado con un **conjunto de reglas** junto con un **grupo de origen** específico para Edge Optimize. La conmutación por error se gestiona mediante los sondeos de mantenimiento del grupo de origen basados en prioridades de Azure Front Door.
+Azure Front Door no ejecuta código personalizado en el borde.El enrutamiento se ha configurado con un **conjunto de reglas** junto con un **grupo de origen** específico para Edge Optimize.La conmutación por error se gestiona mediante los sondeos de mantenimiento del grupo de origen basados en prioridades de Azure Front Door.
 
 **Requisitos previos**
 
-Antes de configurar las reglas de enrutamiento de puerta delantera de Azure, asegúrese de lo siguiente:
+Antes de configurar las reglas de enrutamiento de Azure Front Door, asegúrese de lo siguiente:
 
 * Acceso a su perfil de Azure Front Door.
 * Haber recuperado una clave de API de Edge Optimize de la IU de LLM Optimizer. Para ver los pasos, consulte [Recuperar las claves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Opcional) Para probar el enrutamiento de ensayo, consulte [Clave de API de ensayo](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
-## Paso 1: Crear un grupo de origen para Optimizar de Edge
+## Paso 1: Crear grupo de origen de Edge Optimize
 
-Su perfil de Azure Front Door ya tiene un grupo de origen predeterminado que apunta a su origen. Crear un grupo de origen **new** para Edge Optimize:
+Su perfil de Azure Front Door ya tiene un grupo de origen predeterminado que apunta a su origen. Crear un grupo de origen **nuevo** para Edge Optimize:
 
 * **Nombre:** `edge-optimize-origin-group`
-* **Orígenes (conmutación por error basada en prioridad):**
-   * **Prioridad 1** — `live.edgeoptimize.net` (Encabezado de host de origen: `live.edgeoptimize.net`)
-   * **Prioridad 2**: su extremo de dominio (por ejemplo, `www.example.com`). Esto es para la conmutación por error: si Edge Optimize no está en buen estado, solicita la ruta a su dominio, que vuelve a entrar en Azure Front Door y se proporciona desde su origen predeterminado.
+* **Orígenes (conmutación por error basada en prioridades):**
+  * **Prioridad 1:** — `live.edgeoptimize.net` (encabezado de host de origen: `live.edgeoptimize.net`)
+  * **Prioridad 2** — su punto final de dominio (por ejemplo, `www.example.com`). Esto es para la conmutación por error: si Edge Optimize no está en buen estado, solicita la ruta a su dominio, que vuelve a entrar en Azure Front Door y se proporciona desde su origen predeterminado.
 * **Sondeos de estado:** **Habilitado**
-   * Ruta: `/health/<your-domain>` (por ejemplo, `/health/www.example.com`)
-   * Protocolo: HTTPS
-   * Intervalo: 225 segundos
+  * Ruta: `/health/<your-domain>` (por ejemplo: `/health/www.example.com`)
+  * Protocolo: HTTPS
+  * Intervalo: 225 segundos
 * **Afinidad de la sesión:** **Deshabilitada**
 * **Validación del nombre del sujeto del certificado:** **Habilitado**
 
@@ -59,23 +59,23 @@ Su perfil de Azure Front Door ya tiene un grupo de origen predeterminado que apu
 
 >[!NOTE]
 >
->El grupo de origen `edge-optimize-origin-group` muestra una advertencia **&quot;Sin asociar&quot;** en el portal. Esto es lógico: se hace referencia a él a través de una anulación de ruta de conjunto de reglas, no directamente a través de una ruta.
+>El grupo de origen `edge-optimize-origin-group` muestra una advertencia **“Sin asociar”** en el portal. Esto es lógico: se hace referencia a él a través de una anulación de ruta de conjunto de reglas, no directamente a través de una ruta.
 
 ## Paso 2: Configuración de la ruta
 
-Normalmente, se crea una ruta predeterminada con el perfil de la puerta principal de Azure. El conjunto de reglas (paso 3) anula el grupo de origen para el tráfico auténtico, por lo que no se necesita una ruta independiente para Optimizar de Edge.
+Normalmente, se crea una ruta predeterminada con el perfil de Azure Front Door. El conjunto de reglas (paso 3) anula el grupo de origen del tráfico agéntico, por lo que no se necesita una ruta independiente para Edge Optimize.
 
 ## Paso 3: Crear el conjunto de reglas
 
-Vaya a **Conjuntos de reglas** > **Agregue un conjunto de reglas** y asígnele el nombre `EORouting`. Añada tres reglas en este orden.
+Vaya a **Conjuntos de reglas** > **Añadir un conjunto de reglas** y asígnele un nombre `EORouting`. Añada tres reglas en este orden.
 
-![conjunto de reglas EORouting que muestra las reglas de eliminación de encabezados y de enrutamiento de bots](/help/assets/optimize-at-edge/azure-front-door-ruleset-routing.png)
+![Conjunto de reglas EORouting que muestra las reglas de eliminación de encabezados y de enrutamiento de bots](/help/assets/optimize-at-edge/azure-front-door-ruleset-routing.png)
 
 ### Regla 1: StripIncomingEOHeaders01
 
-Elimina los encabezados entrantes de Edge Optimize para evitar la suplantación. Sin condiciones: se aplica a todas las solicitudes. Dejar de evaluar: **Desactivado**.
+Elimina los encabezados entrantes de Edge Optimize para evitar la suplantación. Sin condiciones: se aplica a todas las solicitudes. Detener evaluación: **Desactivado**.
 
-**Acciones** — Eliminar encabezado de solicitud para cada una de:
+**Acciones**: eliminar encabezado de solicitud para cada una de:
 
 * `x-edgeoptimize-url`
 * `x-edgeoptimize-config`
@@ -84,13 +84,13 @@ Elimina los encabezados entrantes de Edge Optimize para evitar la suplantación.
 
 ### Regla 2: EOGPTBotRootGET03
 
-Enruta las solicitudes de bots en las rutas de página de HTML a Edge Optimize. Dejar de evaluar: **El**.
+Enruta las solicitudes de bots en las rutas de página de HTML a Edge Optimize. Detener evaluación: **Activado**.
 
 **Condiciones** (todas deben coincidir):
 
-* Método de solicitud: **Igual** `GET`
+* Método de solicitud: **Equal** `GET`
 * Ruta de solicitud: **RegEx** `(^$|^.*/$|(^|.*/)[^./]+$|^.*\.html$)` (coincide con la raíz del sitio, las rutas de acceso que terminan en `/`, las rutas de acceso de página sin extensión y las rutas de acceso de `.html`)
-* Agente de usuario: **Contiene cualquiera de** `chatgpt-user`, `gptbot`, `oai-searchbot`, `adobeedgeoptimize-ai`, `perplexitybot`, `perplexity-user`, `claudebot`, `claude-user`, `claude-searchbot`. Establezca la transformación de la cadena en **A minúsculas**.
+* Agente de usuario: **contiene cualquiera de** `chatgpt-user`, `gptbot`, `oai-searchbot`, `adobeedgeoptimize-ai`, `perplexitybot`, `perplexity-user`, `claudebot`, `claude-user`, `claude-searchbot`. Establezca la transformación de la cadena en **A minúsculas**.
 * `x-edgeoptimize-monitor`: **No contiene** `1`
 * `x-edgeoptimize-request`: **No contiene ninguno de** `failover`, `1`
 
@@ -104,7 +104,7 @@ Enruta las solicitudes de bots en las rutas de página de HTML a Edge Optimize. 
 
 ### Regla 3: HealthProbeRewrite03
 
-Reescribe las solicitudes de sondeo de mantenimiento de puerta principal de Azure para que lleguen a su origen como `/` en lugar de como `/health/<domain>`. Esto permite que Azure Front Door supervise la disponibilidad de Edge Optimize sin requerir un punto final de estado específico en su origen. Dejar de evaluar: **El**.
+Reescribe las solicitudes de sondeo de mantenimiento de Azure Front Door para que lleguen a su origen como `/` en lugar de como `/health/<domain>`. Esto permite que Azure Front Door supervise la disponibilidad de Edge Optimize sin requerir un punto final de estado específico en su origen. Detener evaluación: **Activado**.
 
 ![Regla de reescritura de sondeo de estado](/help/assets/optimize-at-edge/azure-front-door-ruleset-healthprobe.png)
 
@@ -115,16 +115,16 @@ Reescribe las solicitudes de sondeo de mantenimiento de puerta principal de Azur
 
 **Acciones**:
 
-* Reescritura de URL — Patrón de Source: `/health/`, destino: `/`
+* Reescritura de URL — Patrón de fuente: `/health/`, destino: `/`
 * Sobrescritura del encabezado de respuesta `custom-origin-health` = `routed` (diagnóstico: se puede eliminar después de la verificación)
-* Anexar encabezado de solicitud `user-agent` = ` AdobeEdgeOptimize/1.0` (agregar un espacio inicial — Azure Front Door anexa el valor tal cual)
-* Anulación de configuración de ruta: grupo de origen → `default-origin-group`, protocolo de reenvío → Coincidir con la solicitud entrante, almacenamiento en caché → **deshabilitado**
+* Anexar encabezado de solicitud `user-agent` = ` AdobeEdgeOptimize/1.0` (añadir un espacio inicial — Azure Front Door anexa el valor tal cual)
+* Anulación de configuración de ruta: grupo de origen → `default-origin-group`, protocolo de reenvío → coincidir con la solicitud entrante, almacenamiento en caché → **deshabilitado**
 
 ## Paso 4: Asociar el conjunto de reglas con la ruta
 
-Abra la ruta, desplácese hasta la sección **Reglas** de la parte inferior y seleccione el conjunto de reglas `EORouting` en la lista desplegable. Si tiene conjuntos de reglas existentes, use **Mover al principio** para colocar `EORouting` en **#1**. Las reglas de Optimización en Edge solo interceptan tráfico auténtico y solicitudes de bucle invertido de Optimización de Edge: el resto del tráfico pasa sin verse afectado por las demás reglas. Guarde y espere a que se propague (aproximadamente 20 minutos).
+Abra la ruta, desplácese hasta la sección **Reglas** de la parte inferior y seleccione el conjunto de reglas `EORouting` en la lista desplegable. Si tiene conjuntos de reglas existentes, use **Mover al principio** para colocar `EORouting` en **#1**. Las reglas de Optimize en Edge solo interceptan tráfico agéntico y solicitudes de bucle invertido de Edge Optimize: el resto del tráfico pasa sin verse afectado por las demás reglas. Guarde y espere a que se propague (aproximadamente 20 minutos).
 
-## Permitir la optimización en Edge mediante reglas de cortafuegos (opcional)
+## Permitir Optimize en Edge mediante reglas de cortafuegos (opcional)
 
 {{waf-allowlist-setup}}
 

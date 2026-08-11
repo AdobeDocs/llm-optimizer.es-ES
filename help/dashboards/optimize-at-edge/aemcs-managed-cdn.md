@@ -22,8 +22,8 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
-source-wordcount: 836
+workflow-type: ht
+source-wordcount: 815
 ht-degree: 100%
 
 ---
@@ -37,9 +37,9 @@ Esta configuración enruta el tráfico agéntico (solicitudes de bots de IA y ag
 
 Para acceder a esta función, haga lo siguiente:
 
-- Los clientes de pago deben tener acceso al perfil de producto de IMS **Usuarios de Adobe LLM Optimizer**. Póngase en contacto con el administrador de su organización para solicitar acceso.
-  ![Añadir usuario a un perfil del producto](/help/assets/optimize-at-edge/cs-fastly-user-product-profiles.png)
-- Los clientes de la versión de prueba deben formar parte del grupo de IMS **Administradores de LLMO**. Si el grupo no existe, el administrador de su organización puede crearlo y añadirle
+- Los clientes de pago deben tener acceso al perfil de producto de IMS **Usuarios de Adobe LLM Optimizer**. Contacte con el administrador de su organización para solicitar acceso.
+  ![Añadir un usuario a un perfil del producto](/help/assets/optimize-at-edge/cs-fastly-user-product-profiles.png)
+- Los clientes de prueba deben formar parte del grupo de IMS de **administradores de LLMO**. Si el grupo no existe, el administrador de su organización puede crearlo y añadirle.
   ![Crear grupo de IMS de administradores de LLMO](/help/assets/optimize-at-edge/cs-fastly-create-ims-group.png)
 
 >[!NOTE]

@@ -21,8 +21,8 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
-source-wordcount: 2343
-ht-degree: 85%
+source-wordcount: 2360
+ht-degree: 95%
 
 ---
 
@@ -129,7 +129,7 @@ Si su comportamiento ya utiliza una directiva de caché personalizada (una que u
 
 2. Haga clic en **Editar**.
 
-3. Se recomienda establecer **TTL mínimo** en `0`. Sin embargo, si el TTL mínimo actual ya es muy corto, es posible que no necesite cambiarlo.
+3. Se recomienda establecer **TTL mínimo** en `0`. Sin embargo, si su TTL mínimo actual ya es muy corto, es posible que no necesite cambiarlo.
    ![Configuración de TTL de la directiva de caché](/help/assets/optimize-at-edge/cloudfront-cache-policy-ttl.png)
 
 4. En **Configuración de clave de caché** > **Encabezados**, junto con sus inclusiones existentes, añada `x-edgeoptimize-config` y `x-edgeoptimize-url`.
@@ -254,14 +254,14 @@ De manera predeterminada, el acceso directo **Ver registros de CloudWatch** en l
 
 3. Establezca el nombre del grupo de registro personalizado en `/aws/lambda/us-east-1.edgeoptimize-origin`.
 
-4. En **Permisos**, deje la casilla de verificación **Agregar permisos necesarios** **sin marcar**.
+4. En **Permisos**, deje la casilla de verificación **Añadir permisos necesarios** **sin marcar**.
 
    ![Configuración del grupo de registro personalizado Lambda](/help/assets/optimize-at-edge/cloudfront-lambda-custom-log-group.png)
 
 5. Haga clic en **Guardar**.
 
 >[!NOTE]
->Incluso después de esta corrección, el vínculo **Ver registros de CloudWatch** abre el nombre de grupo de registro correcto, pero es posible que no muestre datos si se encuentra en la región incorrecta. Los registros de Lambda@Edge se escriben en la región de Edge que proporcionó la solicitud (por ejemplo, `eu-west-1`, `ap-south-1`), no en `us-east-1`. Aún debe cambiar a la región correcta en Cloud Watch para ver los registros.
+>Incluso después de esta corrección, el vínculo **Ver registros de CloudWatch** abre el nombre de grupo de registro correcto, pero es posible que no muestre datos si se encuentra en la región incorrecta. Los registros de Lambda@Edge se escriben en CloudWatch en la región que atendió la solicitud (por ejemplo, `eu-west-1`, `ap-south-1`), no `us-east-1`. Aún debe cambiar a la región correcta en Cloud Watch para ver los registros.
 
 ### Publicar una versión
 
@@ -294,7 +294,7 @@ De manera predeterminada, el acceso directo **Ver registros de CloudWatch** en l
 
 4. Haga clic en **Guardar cambios**.
 
-## Permitir la optimización en Edge mediante reglas de cortafuegos (opcional)
+## Permitir Optimize en Edge mediante reglas de cortafuegos (opcional)
 
 {{waf-allowlist-setup}}
 

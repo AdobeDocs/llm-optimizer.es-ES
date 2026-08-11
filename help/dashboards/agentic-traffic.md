@@ -16,16 +16,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1254
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # Tráfico agéntico {#agentic-traffic}
 
-El panel de control Tráfico agéntico muestra cómo los agentes de IA (rastreadores y bots de chat) interactúan con el sitio. Con esta vista puede realizar un seguimiento de la cantidad total de solicitudes y de las métricas generales relacionadas con el rendimiento. También puede ver la distribución del tráfico entre mercados, categorías, páginas y agentes. Los datos que este panel de control utiliza proceden de los registros de CDN, por lo que debe configurar **el reenvío de registros de CDN** para poder mostrar las métricas. También hay filtros personalizables para perfeccionar los datos mostrados. Vaya a **Tráfico agéntico** y seleccione el sitio para el cual desea ver las perspectivas de tráfico reales.
+El panel de control Tráfico agéntico muestra cómo los agentes de IA (rastreadores y bots de chat) interactúan con el sitio. Con esta vista puede realizar un seguimiento de la cantidad total de solicitudes y de las métricas generales relacionadas con el rendimiento. También puede ver la distribución del tráfico entre mercados, categorías, páginas y agentes. Los datos que este panel de control utiliza proceden de los registros de CDN, por lo que debe configurar **el reenvío de registros de CDN** para poder mostrar las métricas. También hay filtros personalizables para perfeccionar los datos mostrados. Vaya a **Tráfico agéntico** y seleccione el sitio para el que desea ver las perspectivas del tráfico agéntico.
 
 ![Tráfico agéntico: selector del sitio (experiencia centrada en la marca)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
 
@@ -44,7 +44,7 @@ Esta página detalla lo siguiente:
 
 Sin **reenvío de registros de CDN**, el panel de control Tráfico agéntico está en blanco. Para ver interacciones reales, debe configurar **Reenvío de registros de CDN**.
 
-Para agregar información de reenvío de registros de CDN, vaya a **Brands Management** y haga clic en la etiqueta **CDN**.
+Puede añadir información de reenvío de registros de CDN accediendo a **Administración de marcas** y haciendo clic en la etiqueta **CDN**.
 
 ![Administración de marcas: reenvío de registros de CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
 

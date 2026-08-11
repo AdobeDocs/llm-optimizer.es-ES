@@ -19,9 +19,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 612
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ En el panel de control de Akamai [https://control.akamai.com/](https://control.a
 
 ## Paso 3: Elegir parámetros de datos {#step-3}
 
-Después de crear la secuencia, en el panel de control de Akamai, haga clic en **Siguiente** para continuar con la pestaña **Conjuntos de datos**. Siga los pasos de la documentación oficial de Akamai para elegir los [parámetros de datos](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters). Se necesitarán los siguientes campos de la configuración de LLM Optimizer:
+Después de crear el flujo, en el panel de control de Akamai, haga clic en **Siguiente** para continuar hasta la pestaña **Conjuntos de datos**.Siga los pasos de la documentación oficial de Akamai para elegir los [parámetros de datos](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters). Se necesitarán los siguientes campos de la configuración de LLM Optimizer:
 
 ![Campos de configuración de LLMO](/help/overview/assets/log-forwarding/akamai/akamai-llmo-config-fields.png)
 

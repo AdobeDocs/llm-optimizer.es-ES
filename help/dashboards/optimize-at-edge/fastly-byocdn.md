@@ -21,7 +21,7 @@ topic_v2:
 source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
 source-wordcount: 350
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ Antes de configurar las reglas de VCL de Fastly, asegúrese de lo siguiente:
 
 Añada los tres fragmentos de VCL siguientes a su servicio de Fastly. Estos fragmentos administran las solicitudes del enrutamiento de las solicitudes agénticas a Edge Optimize, la separación de claves de caché y la conmutación por error a su origen predeterminado.
 
-![Configuración de servidor rápida](/help/assets/optimize-at-edge/fastly-backend-config.png)
+![Configuración del backend de Fastly](/help/assets/optimize-at-edge/fastly-backend-config.png)
 
 ![Añadir fragmentos de VCL](/help/assets/optimize-at-edge/add-vcl-snippets.png)
 
@@ -102,7 +102,7 @@ El fragmento `vcl_deliver` administra la conmutación por error automáticamente
 | Edge Optimize devuelve `4XX` o `5XX` | La solicitud se reinicia y se sirve desde el origen predeterminado. |
 | Respuesta de conmutación por error | Incluye el encabezado `x-edgeoptimize-fo: 1`. |
 
-## Permitir la optimización en Edge mediante reglas de cortafuegos (opcional)
+## Permitir Optimize en Edge mediante reglas de cortafuegos (opcional)
 
 {{waf-allowlist-setup}}
 

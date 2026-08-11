@@ -1,6 +1,6 @@
 ---
-title: Agregar tabla de contenido
-description: Descubra cómo LLM Optimizer identifica las páginas de alto tráfico que carecen de una estructura de navegación clara para los agentes de IA y cómo revisar e implementar una tabla de contenido con Optimizar en Edge.
+title: Añadir tabla de contenidos
+description: Descubra cómo LLM Optimizer identifica las páginas de alto tráfico que carecen de una estructura de navegación clara para los agentes de IA y cómo revisar e implementar una tabla de contenido con Optimize en Edge.
 feature: Opportunities
 autotag-review: '2026-07-15T16:47:42.882Z'
 TQID: 'https://experienceleague.adobe.com/x-7FiZKCLMmEfm1x2lQNtfOd4su1MyGLrcAtLnjpaqw'
@@ -17,26 +17,26 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 655
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
 
-# Agregar tabla de contenido
+# Añadir tabla de contenidos
 
 >[!NOTE]
 >
-> **Acceso anticipado** — Esta capacidad está disponible en Acceso anticipado. La disponibilidad, la idoneidad y las partes del flujo de trabajo pueden cambiar a medida que la capacidad madura. Póngase en contacto con el equipo de su cuenta de Adobe si tiene alguna pregunta sobre el acceso.
+> **Acceso anticipado**: esta capacidad está disponible en Acceso anticipado.La disponibilidad, la idoneidad y las partes del flujo de trabajo pueden cambiar a medida que la capacidad va madurando.Póngase en contacto con su equipo de cuentas de Adobe si tiene alguna pregunta sobre el acceso.
 
-La oportunidad Agregar tabla de contenido identifica páginas de alto tráfico que carecen de una **tabla de contenido** y una guía estructural claras, lo que dificulta que los agentes de IA analicen la página y asignen las consultas de usuario a las secciones correctas. Presenta una tabla de contenido estructurada con **encabezados vinculados por anclajes** que reflejan las secciones principales de la página. Esta estructura ayuda a los agentes a extraer, asignar y citar pasajes relevantes de forma más fiable.
+La oportunidad de Añadir una tabla de contenido identifica páginas de alto tráfico que carecen de una **tabla de contenido** y una guía estructural claras, lo que dificulta que los agentes de IA analicen la página y asignen las consultas de usuario a las secciones correctas.Presenta una tabla de contenido estructurada con **encabezados vinculados por anclajes** que reflejan las secciones principales de la página. Esta estructura ayuda a los agentes a extraer, asignar y citar pasajes relevantes de forma más fiable.
 
-Para cada URL afectada, puede revisar las entradas sugeridas de la Tabla de contenido e implementarlas con [Optimizar en Edge](/help/dashboards/optimize-at-edge/overview.md) para que el tráfico real reciba un contexto de navegación más claro sin que se requieran cambios en el Sistema de administración de contenido (CMS).
+Para cada URL implicada, puede revisar las entradas sugeridas de la Tabla de contenido e implementarlas con [Optimize en Edge](/help/dashboards/optimize-at-edge/overview.md) para que el tráfico agéntico reciba un contexto de navegación más claro sin que se requieran cambios en el Sistema de administración de contenido (CMS).
 
 ## Cómo soluciona el problema
 
-Las correcciones se aplican usando [Optimizar en Edge](/help/dashboards/optimize-at-edge/overview.md), que:
+Las correcciones se aplican usando [Optimize en Edge](/help/dashboards/optimize-at-edge/overview.md), que:
 
 - Ofrece una instantánea de HTML procesada previamente a los agentes de IA.
 - Agrega una tabla de contenido a la página.
@@ -50,36 +50,36 @@ LLM Optimizer identifica páginas de alto tráfico donde una **Tabla de contenid
 
 Las direcciones URL afectadas aparecen en la tabla **direcciones URL con sugerencias** de la ficha **Sugerencias actuales**.
 
-En **Sugerencias actuales**, para cada URL puede:
+En **Sugerencias actuales**, puede hacer lo siguiente en cada URL:
 
 - **Expanda la fila** para inspeccionar la tabla de contenido propuesta (analizada a partir de encabezados de página y presentada como entradas con vínculos de anclaje).
-- **Vista previa** a antes y después de la comparación.
-- **Marcar como fijo** si se dirigió a la oportunidad fuera de LLM Optimizer.
+- **Vea una vista previa** de una comparación del antes y el después.
+- **Marcar como corregido** si se dirigió a la oportunidad fuera de LLM Optimizer.
 - **Ignorar** sugerencias que no sean relevantes.
 
-Las sugerencias están organizadas en **Sugerencias actuales**, **Sugerencias fijas** y **Sugerencias ignoradas**, lo que concuerda con otras oportunidades de Optimizar en Edge.
+Las sugerencias se organizan en **Sugerencias actuales**, **Sugerencias corregidas** y **Sugerencias ignoradas**, en coherencia con otras oportunidades de Optimize en Edge.
 
 ### Implementar la optimización
 
-Cuando esté listo para publicar en el perímetro de, seleccione las sugerencias de la tabla de contenido que desee implementar. El pie de página resume cuántos elementos se han seleccionado y, por lo general, ofrece **Marcar como fijos**, **Ignorar sugerencias** y **Implementar optimizaciones**.
+Cuando esté listo para publicar en el extremo de, seleccione las sugerencias de la tabla de contenido que desee implementar. El pie de página resume cuántos elementos se han seleccionado y, por lo general, permite **Marcar como corregidas**, **Ignorar sugerencias** y **Implementar optimizaciones**.
 
 Haga clic en **Implementar optimizaciones**. Un cuadro de diálogo **Implementar en Edge** enumera las direcciones URL y los detalles de optimización seleccionados. Revise la lista y, a continuación, elija **Implementar** o **Cancelar**.
 
-Después de una implementación correcta, **Implementación completada** confirma cuántas optimizaciones se activaron. Cierre el cuadro de diálogo y abra **Sugerencias fijas** para comprobar el estado.
+Después de una implementación correcta, **Implementación completada** confirma cuántas optimizaciones se activaron. Cierre el cuadro de diálogo y abra **Sugerencias corregidas** para comprobar el estado.
 
 >[!NOTE]
 >
 >Para implementar las optimizaciones, es necesario completar el proceso de incorporación de Optimizar en Edge. Si aún no ha completado el proceso de incorporación, al hacer clic en **Implementar optimizaciones** se le dirigirá al proceso de incorporación. Para obtener información completa sobre cómo funciona Optimizar en Edge, los proveedores de CDN compatibles y el proceso de incorporación, consulte la página [Optimizar en Edge](/help/dashboards/optimize-at-edge/overview.md).
 
-### Sugerencias fijas y Ver en directo
+### Sugerencias corregidas y Ver en vivo
 
-En **Sugerencias fijas**, las direcciones URL implementadas muestran **Optimizado** en la columna de estado. Expanda una fila para revisar la tabla de contenido implementada, use **Detalles** para análisis donde esté disponible o haga clic en **Ver en directo** para abrir una vista de solo lectura del **contenido de la página actual** que se ha servido para la verificación (incluida la **tabla de contenido insertada**).
+En **Sugerencias corregidas**, las direcciones URL implementadas muestran **Optimizado** en la columna de estado. Expanda una fila para revisar la tabla de contenido implementada, use **Detalles** para análisis donde esté disponible o haga clic en **Ver en vivo** para abrir una vista de solo lectura del **contenido de la página actual** que se ha usado para la verificación (incluida la **tabla de contenido insertada**).
 
-Cuando necesite revertir los cambios de borde de forma masiva, seleccione las filas optimizadas mediante las casillas de verificación y, a continuación, utilice **Rollback** en el encabezado.
+Cuando necesite revertir los cambios en el extremo de forma masiva, seleccione las filas optimizadas mediante las casillas de verificación y, a continuación, utilice **Reversión** en el encabezado.
 
 ## Reversión
 
-Si cambia de opinión, puede revertir una optimización implementada. En la vista **Sugerencias fijas**, seleccione las filas optimizadas que desee revertir y, a continuación, haga clic en **Deshacer** en el encabezado.
+Si cambia de opinión, puede revertir una optimización implementada. En la vista **Sugerencias corregidas**, seleccione las filas optimizadas que desee revertir y, a continuación, haga clic en **Deshacer** en el encabezado.
 
 El cuadro de diálogo **Reversión** enumera las sugerencias que se revertirán, con una breve advertencia de que se revertirán las optimizaciones implementadas. Confirme la lista y haga clic en **Reversión** o **Cancelar**.
 

@@ -16,25 +16,25 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1266
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
 # Enriquecimiento del catálogo de productos
 
-Los LLM intentan conectar los atributos del producto con el valor real, los casos de uso y la intención del comprador. Cuando los nombres y las descripciones de los productos no comunican claramente ese valor, es menos probable que sus productos se citen, recomienden o aparezcan en un descubrimiento impulsado por IA. Esto se debe a que los agentes de IA razonan a través de relaciones, no de campos de datos sin procesar. Una lista de productos con un nombre como &quot;Coffee Grinder X200&quot; y una descripción que enumera las especificaciones técnicas (potencia del motor, configuración de molienda, etc.) da a un LLM muy poco con lo que trabajar cuando un comprador pide &quot;el mejor molinillo de espresso para un barista casero&quot;.
+Los LLM intentan conectar los atributos del producto con el valor real, los casos de uso y la intención del comprador.Cuando los nombres y las descripciones de los productos no transmiten claramente ese valor, es menos probable que sus productos se citen, recomienden o aparezcan en un descubrimiento impulsado por IA.Esto se debe a que los agentes de IA razonan a través de relaciones, no de campos de datos sin procesar.Una lista de productos con un nombre como “Molinillo de café X200” y una descripción que enumera las especificaciones técnicas (potencia del motor, configuración de molienda, etc.) da a un LLM muy poco con lo que trabajar cuando un comprador pide “el mejor molinillo de espresso para un barista en casa”.
 
 La oportunidad de enriquecimiento del catálogo de productos identifica los productos del catálogo de Commerce donde los nombres y las descripciones son demasiado genéricos, demasiado densos técnicamente o demasiado ambiguos para que los LLM los interpreten con precisión. Con la tecnología de Adobe Commerce, genera enriquecimientos basados en narrativas e intencionados para los nombres y descripciones de sus productos y los aplica directamente al catálogo de Commerce con un solo clic.
 
 Permite ver de un vistazo dos métricas clave:
 
 - **URL**: una lista de páginas de detalles del producto (productos del catálogo) que se han evaluado para comprobar la calidad del enriquecimiento.
-- **Tráfico agéntico**: El total de visitas e interacciones en un sitio que inician e impulsan agentes de IA autónomos (como asistentes o bots con tecnología LLM) que actúan en nombre de usuarios para descubrir, recuperar o interactuar con contenido.
+- **Tráfico agéntico**: el total de visitas e interacciones en un sitio que inician e impulsan agentes de IA autónomos (como asistentes o bots con tecnología LLM) que actúan en nombre de usuarios para descubrir, recuperar o interactuar con contenido.
 
-![Enriquecer el tablero del catálogo de productos](/help/dashboards/opportunities/assets/enrich-product-catalog-overview.png)
+![Enriquecer el panel del catálogo de productos](/help/dashboards/opportunities/assets/enrich-product-catalog-overview.png)
 
 >[!NOTE]
 >
@@ -42,9 +42,9 @@ Permite ver de un vistazo dos métricas clave:
 
 ## Funcionamiento
 
-El agente de catálogo de Adobe Commerce lee los datos del catálogo de productos y analiza cada SKU de producto, incluidos todos sus atributos técnicos, contexto de categoría, variantes y nombre y descripción existentes. Identifica los productos en los que el nombre o la descripción actuales no comunican el valor relevante para el comprador y genera una alternativa enriquecida que traduce los detalles técnicos a un lenguaje claro y alineado con la intención.
+El agente de catálogo de Adobe Commerce lee los datos del catálogo de productos y analiza cada SKU de producto, incluidos todos sus atributos técnicos, contexto de categoría, variantes y nombre y descripción existentes. Identifica los productos en los que el nombre o la descripción actuales no transmiten el valor relevante para el comprador y genera una alternativa enriquecida que traduce los detalles técnicos a un lenguaje claro y acorde a la intención.
 
-Por ejemplo, un producto llamado *&quot;Coffee Grinder X200&quot;* con una descripción que enumera &quot;18 ajustes de molienda, motor de 450 W&quot; puede enriquecerse para explicar que &quot;El X200 ofrece consistencia de espresso a nivel de café porque su sistema de molienda de 18 pasos está emparejado con un motor de alto par para obtener resultados repetibles en casa&quot;. Los atributos como el precio y el inventario se excluyen intencionadamente del enriquecimiento: el agente de catálogo se centra en atributos que impulsan el valor y explican qué es el producto, cómo se utiliza y por qué importa a un comprador.
+Por ejemplo, un producto llamado *“Molinillo de café X200”* con una descripción que enumera “18 ajustes de molienda, motor de 450 W” puede enriquecerse para explicar que “El X200 ofrece consistencia de espresso a nivel de café porque su sistema de molienda de 18 pasos está emparejado con un motor de alto par para obtener resultados repetibles en casa”. Los atributos como el precio y el inventario se excluyen intencionadamente del enriquecimiento: el agente de catálogo se centra en atributos que impulsan el valor y explican qué es el producto, cómo se utiliza y por qué importa a un comprador.
 
 Los productos con sugerencias de enriquecimiento aparecen en la tabla **URL con sugerencias**, priorizados por el impacto de enriquecimiento. Para cada producto identificado, LLM Optimizer proporciona:
 
@@ -57,15 +57,15 @@ Los productos con sugerencias de enriquecimiento aparecen en la tabla **URL con 
 
 ## Productos con sugerencias
 
-La tabla **URL con sugerencias** enumera todos los productos con oportunidades de enriquecimiento. Para cada producto puede:
+La tabla **URL con sugerencias** enumera todos los productos con oportunidades de enriquecimiento. En cada producto puede hacer lo siguiente:
 
 - **Expanda la fila** para ver el análisis de IA y el enriquecimiento propuesto.
 - **Edite** el nombre o la descripción del producto propuesto antes de aplicar, para alinearlo con las directrices de comercialización y voz de su marca.
 - **Implemente la optimización** para los productos que desea enriquecer y publíquelo directamente en su catálogo de Adobe Commerce.
-- **Marcar como fijo** una vez que se haya revisado y aplicado el enriquecimiento.
-- **Ignorar** sugerencias que no sean relevantes para su estrategia de catálogo.
+- **Marque como solucionado** una vez que se haya revisado y aplicado el enriquecimiento.
+- **Ignore** las sugerencias que no sean relevantes para su estrategia de catálogo.
 
-Las sugerencias se organizan en tres vistas:**Sugerencias actuales**,**Sugerencias corregidas** y **Sugerencias ignoradas**. Una vez aplicado un enriquecimiento, pasa a Fixed Suggestions con un estado de **Applied** y una acción de **View in Catalog** para comprobar la actualización en Adobe Commerce. Los enriquecimientos aplicados se pueden revertir en cualquier momento, restaurando el nombre y la descripción del producto original.
+Las sugerencias se organizan en tres vistas:**Sugerencias actuales**,**Sugerencias corregidas** y **Sugerencias ignoradas**.Una vez aplicado un enriquecimiento, pasa a Sugerencias solucionadas con un estado de **Aplicado** y una acción de **Ver en Catálogo** para comprobar la actualización en Adobe Commerce. Los enriquecimientos aplicados se pueden revertir en cualquier momento, restaurando el nombre y la descripción del producto original.
 
 <!--[Fixed suggestions with Applied status](/help/dashboards/opportunities/assets/enrich-product-catalog-fixed.png)-->
 
@@ -79,11 +79,11 @@ Dado que los enriquecimientos se aplican directamente al catálogo de Adobe Comm
 >
 >El enriquecimiento de catálogo requiere que LLM Optimizer esté conectado a Adobe Commerce. Si la instancia de Commerce aún no está conectada a LLM Optimizer, se le dirigirá a la configuración de conexión antes de que se puedan aplicar los enriquecimientos.
 
-![Cuadro de diálogo Aplicar enriquecimientos](/help/dashboards/opportunities/assets/enrich-product-catalog-deploy.png)
+![Cuadro de diálogo para aplicar enriquecimientos](/help/dashboards/opportunities/assets/enrich-product-catalog-deploy.png)
 
 ## Probar en la demostración
 
-Vea la oportunidad de enriquecer el catálogo de productos en acción usando el entorno de demostración de Frescopa.
+Vea el catálogo de productos enriquecidos en acción utilizando el entorno de demostración de Frescopa.
 
 [Ver el catálogo de productos enriquecidos en la demostración de Frescopa](https://play.llmo.now/org/demo-org/opportunities/commerce-product-catalog-enrichment/e5f2a854-7477-421c-820f-74d5dd595647?siteId=9ae8877a-bbf3-407d-9adb-d6a72ce3c5e3)
 
@@ -95,11 +95,11 @@ Los LLM no hacen coincidir productos con consultas de comprador buscando superpo
 
 **¿Qué atributos de producto utiliza el agente de catálogo para generar enriquecimientos?**
 
-El agente de catálogo utiliza atributos que impulsan el valor en su catálogo Commerce y que ayudan a los LLM a comprender qué es un producto, cómo se utiliza y por qué importa. Atributos que impulsan el valor, como funciones de producto, casos de uso, propiedades de material, contexto de categoría y detalles de compatibilidad. Los atributos como el precio y los niveles de inventario se excluyen intencionalmente, ya que no contribuyen a la comprensión semántica del producto y pueden hacer que las descripciones sean menos duraderas a medida que cambian las condiciones.
+El agente de catálogo utiliza atributos que impulsan el valor en su catálogo Commerce y que ayudan a los LLM a comprender qué es un producto, cómo se utiliza y por qué importa. Atributos que impulsan el valor, como funciones de producto, casos de uso, propiedades del material, contexto de categoría y detalles de compatibilidad. Los atributos como el precio y los niveles de inventario se excluyen intencionalmente, ya que no contribuyen a la comprensión semántica del producto y pueden hacer que las descripciones sean menos duraderas a medida que cambian las condiciones.
 
 **¿Puedo editar el enriquecimiento generado por IA antes de aplicarlo?**
 
-Sí. Cada sugerencia incluye una previsualización editable del nombre y la descripción del producto propuesto. Puede modificar el enriquecimiento para alinearlo con la voz de su marca, corregir cualquier inexactitud o incorporar contexto adicional antes de aplicarlo al catálogo.
+Sí. Cada sugerencia incluye una previsualización editable del nombre y la descripción del producto propuesto. Puede modificar el enriquecimiento para que sea acorde con la voz de su marca, corregir cualquier inexactitud o incorporar contexto adicional antes de aplicarlo al catálogo.
 
 **¿Cambiará el enriquecimiento lo que los visitantes humanos ven en mi tienda?**
 

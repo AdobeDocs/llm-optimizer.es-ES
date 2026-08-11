@@ -17,9 +17,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 716
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -28,12 +28,12 @@ ht-degree: 86%
 
 El tráfico de referencia muestra cómo llegan los visitantes al sitio desde plataformas externas, citas de IA y vínculos de referencia. Rastrea y analiza las fuentes de tráfico, los patrones de referencia y las métricas de conversión de sitios web y plataformas externas. Esto le ayudará a comprender qué fuentes, regiones y páginas generan el tráfico más interesado. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> También hay filtros personalizables para perfeccionar los datos mostrados.
 
-Vaya al **Tráfico de referencia** y seleccione el sitio para el que desea ver las perspectivas del Tráfico de referencia LLM.
+Vaya al **Tráfico de referencia** y seleccione el sitio cuyas perspectivas del Tráfico de referencia de los LLM desea ver.
 
 ![Tráfico de referencia: selector del sitio (experiencia centrada en la marca)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
 
 >[!NOTE]
->De manera predeterminada, esta tabla de control genera perspectivas de tráfico a partir de los **registros de CDN**. Si su organización está en una oferta de pago, puede conectar **Adobe Analytics** o **Google Analytics 4**(GA4) para agregar datos que midan la detección impulsada por IA y la participación en el sitio. Estos datos están disponibles en la pestaña **Impacto en la empresa**. Tenga en cuenta que sin la integración con Adobe Analytics o GA4, la pestaña no se rellena. Para obtener más información, consulte [Integración de Adobe Analytics](/help/dashboards/adobe-analytics-integration.md) o [Integración de Google Analytics](/help/dashboards/google-analytics-integration.md).
+>De manera predeterminada, esta tabla de control genera perspectivas de tráfico a partir de los **registros de CDN**. Si su organización cuenta con una oferta de pago, puede conectar **Adobe Analytics** o **Google Analytics 4**(GA4) para añadir datos que midan el descubrimiento basado en la IA y la participación en el sitio. Estos datos están disponibles en la pestaña **Impacto en la empresa**. Tenga en cuenta que sin la integración con Adobe Analytics o GA4, la pestaña no se cumplimenta. Por tanto, consulte [Integración de Adobe Analytics](/help/dashboards/adobe-analytics-integration.md) o [Google Analytics](/help/dashboards/google-analytics-integration.md) para obtener más información.
 
 <!-- ![Referral Page](/help/dashboards/assets/referral-traffic.png)-->
 
@@ -49,7 +49,7 @@ Esta página detalla lo siguiente:
 
 Al iniciar sesión por primera vez, el panel de control tráfico de referencia puede aparecer en blanco. Para ver los datos, debe configurar el reenvío de registros de CDN.
 
-Para agregar información de reenvío de registros de CDN, vaya a **Brands Management** y haga clic en la etiqueta **CDN**.
+Puede añadir información de reenvío de registros de CDN accediendo a **Administración de marcas** y haciendo clic en la etiqueta **CDN**.
 
 <!-- **Customer Configuration (classic experience):** Configure [CDN log forwarding](/help/dashboards/customer-configuration.md#cdn-configuration) by selecting **Go To Configuration**.-->
 

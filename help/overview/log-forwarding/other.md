@@ -21,7 +21,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 670
 ht-degree: 100%
 
@@ -102,10 +102,10 @@ Las canalizaciones de ingesta y agregación son estrictas sobre los **nombres de
 
 - Los nombres de campo deben coincidir **exactamente** (mayúsculas y minúsculas y ortografía).
 - Los tipos de datos deben ser correctos, tal como se indica a continuación:
-   - **timestamp** debe ser una cadena con formato **ISO 8601**. Es posible que las marcas de tiempo similares a UNIX no funcionen.
-   - **response_status** debe ser un número entero.
-   - **time_to_first_byte** debe ser un número entero y utilzar milisegundos.
-   - Las cadenas deben ser cadenas JSON válidas.
+  - **timestamp** debe ser una cadena con formato **ISO 8601**. Es posible que las marcas de tiempo similares a UNIX no funcionen.
+  - **response_status** debe ser un número entero.
+  - **time_to_first_byte** debe ser un número entero y utilzar milisegundos.
+  - Las cadenas deben ser cadenas JSON válidas.
 - Un JSON con formato incorrecto o campos que falten o son incorrectos pueden provocar que los registros se omitan o no se analicen, lo que daría lugar a la pérdida de datos en los informes.
 
 ### Ubicación de la carga y cadencia de procesamiento {#upload-location}
